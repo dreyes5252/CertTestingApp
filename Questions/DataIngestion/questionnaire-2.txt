@@ -1,0 +1,90 @@
+Question 1 of 5
+In Cortex, which domain focuses on activities such as detecting, preventing, and blocking threats?
+
+
+Security
+
+IT
+
+Hunting
+
+Compliance
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Security
+Question 2 of 5
+What is the main benefit of using built-in domains in Cortex?
+
+
+They can be easily deleted and renamed.
+
+They ensure consistent and supported content management.
+
+They automatically resolve cases.
+
+
+They enhance system security by default.
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+They ensure consistent and supported content management.
+Question 3 of 5
+Which feature in Cortex allows you to specify criteria for forwarding specific types of notifications?
+
+
+Case Domains
+
+
+Issue Exclusions
+
+
+Notification Forwarding Configurations
+
+Layout Rules
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Notification Forwarding Configurations
+Question 4 of 5
+What feature does Cortex provide to help users manage incidents and alerts based on specific operational use cases?
+
+
+Notification Forwarding Configurations
+
+Case Domains
+
+
+Layout Rules
+
+Playbook Triggers
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Case Domains
+
+Question 5 of 5
+In Cortex, which domain focuses on activities such as monitoring network traffic and conducting vulnerability assessments?
+
+
+Security
+
+IT
+
+Hunting
+
+Compliance
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Hunting

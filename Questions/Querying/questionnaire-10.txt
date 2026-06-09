@@ -1,0 +1,94 @@
+Question 1 of 5
+Which of the following is true when using the CALL command?
+
+
+The query must already exist in the Query Library.
+
+The query may not exceed 12 lines.
+
+The query may not access data that is older than 30 days.
+
+The query must contain at least two JOIN stages.
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+The query must already exist in the Query Library.
+Question 2 of 5
+Which of the following best describes the CALL command?
+
+
+A way to insert a saved search query as if it were in-line in the active query.
+
+A way to rename logical operators within XQL.
+
+A command used exclusively to unite two datasets.
+
+A form of role-based XQL searching.
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+A way to insert a saved search query as if it were in-line in the active query.
+Question 3 of 5
+Which of the following functions support using CALL functions in the JOIN stage? (Choose 3)
+
+
+CONST
+(disabled)
+
+INGEST
+(disabled)
+
+COLLECT
+(disabled)
+
+RULE
+(disabled)
+
+DISTRIB
+(disabled)
+Options
+You gave the correct answer and your score is 3
+Correct answer
+Score: 3
+Correct answers:
+CONST
+INGEST
+RULE
+Question 4 of 5
+Which of the following is the correct syntax for a CALL command?
+
+
+| join (call "30 day agent") while averager agent_id = averager.agent_id
+
+| join (call "30 day agent") {averager agent_id = averager.agent_id}
+
+| join (call "30 day agent") (averager agent_id = averager.agent_id)
+
+| join (call "30 day agent") as averager agent_id = averager.agent_id
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+| join (call "30 day agent") as averager agent_id = averager.agent_id
+Question 5 of 5
+Which of the following is true regarding the use of a CALL command on RULES?
+
+
+You cannot call a RULE section that exists in Default Rules from the User Defined Rules Section
+
+You can call a RULE section that exists in Default Rules from the User Defined Rules Section
+
+You can call a RULE section that exists in User Defined Rules Section from the Default Rules
+
+You can call a RULE section that exists in Updated Rules Section from the User Defined Rules Section
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+You cannot call a RULE section that exists in Default Rules from the User Defined Rules Section

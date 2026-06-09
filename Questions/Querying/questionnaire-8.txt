@@ -1,0 +1,95 @@
+Question 1 of 5
+How many rows does the following XQL query return?
+
+   dataset = A | limit 3 | join type=right   (dataset = A ) as A2 (true=true)
+
+
+30
+
+15
+
+10
+
+5
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+30
+Question 2 of 5
+How many rows does the following XQL query return?
+
+   dataset = A | limit 3 | join type=left  (dataset = A ) as A2 (A2.ID = ID)
+
+
+3
+
+2
+
+5
+
+6
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+3
+Question 3 of 5
+How many rows does the following XQL query return?
+
+   dataset = A | limit 4 | join type=right   (dataset = A | limit 3) as A2 (true=true)
+
+
+12
+
+7
+
+4
+
+3
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+12
+Question 4 of 5
+How many rows does the following XQL query return?
+
+   dataset = A | limit 3 | join type=right   (dataset = A ) as A2 (A2.ID = ID)
+
+
+10
+
+15
+
+5
+
+3
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+10
+Question 5 of 5
+How many rows does the following XQL query return?
+
+   dataset = A | limit 4 | join type=inner   (dataset = A | limit 3) as A2 (true=false)
+
+
+0
+
+1
+
+3
+
+4
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+0

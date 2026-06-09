@@ -1,0 +1,85 @@
+Question 1 of 5
+Which statement describes the main challenge that most Security Operations Centers (SOC) face when using traditional SOC tools?
+
+
+Lack of visibility into endpoint behavior in the EDR solution
+
+Failing to maintain compliance with external security audits
+
+Sorting through multiple data silos manually to identify threats
+
+Inability to track insider threats through role-based access controls
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Sorting through multiple data silos manually to identify threats
+Question 2 of 5
+Which Cortex XDR function has the largest impact in reducing investigation time of security incidents?
+
+
+Supports creating custom correlation rules
+
+Prioritizes alerts based on predefined severity levels
+
+Stitches data from multiple sources together to form a unified story
+
+Allows for centralized management of security policies across endpoints
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Stitches data from multiple sources together to form a unified story
+Question 3 of 5
+What is the most notable way in which Cortex XSIAM uses machine learning (ML) and artificial intelligence (AI)?
+
+
+Builds new playbooks using Copilot AI to address gaps in the automated remediation steps
+
+Applies pattern recognition on large amounts of ingested data and positions the analyst to make important high-level decisions
+
+Generates Cortex Query Language (XQL) commands based on the data gathered from the incident for threat hunting activities
+
+Gathers data on manual analyst action on an incident and resolves future incidents of similar type by executing the same action automatically
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Applies pattern recognition on large amounts of ingested data and positions the analyst to make important high-level decisions
+Question 4 of 5
+Which Cortex XSOAR use case provides the most value to Security Operations Center (SOC) teams?
+
+
+Replacing IT ticketing solutions
+
+Automating phishing responses
+
+Developing new marketplace content
+
+Orchestrating tasks across multiple clouds
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Automating phishing responses
+Question 5 of 5
+Which statement best describes how Cortex XSIAM can help save costs for organizations?
+
+
+Automates deduplication of ingested data
+
+Centralizes reporting of compliance requirements
+
+Provides In-house Unit 42 threat research and feed
+
+Consolidates multiple security products into a single platform
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Consolidates multiple security products into a single platform

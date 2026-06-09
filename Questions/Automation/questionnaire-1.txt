@@ -1,0 +1,121 @@
+Question 1 of 10
+Which of the following features plays a pivotal role during case response by allowing users to extract, manipulate and present data in JSON format?
+Playbook inputs and outputs
+Scripts
+Filter and Transformers
+Indicator extraction
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Filter and Transformers
+Question 2 of 10
+Which of the following is a one-stop destination for enhancing the capabilities of your security operations?
+Marketplace
+Playbooks
+Filters and Transformers
+Scripts
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Marketplace
+Question 3 of 10
+How does automation contribute to reducing alert fatigue in Cortex?
+By increasing human intervention
+By automating case triage
+By slowing down response times
+By minimizing efficiency
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+By automating case triage
+Question 4 of 10
+What is the significance of the version history tab in content packs?
+Displays recent cases
+Provides a comprehensive view of installed versions and updates
+Manages playbook metadata
+Allows manual task settings
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Provides a comprehensive view of installed versions and updates
+Question 5 of 10
+What is the primary purpose of content pack updates in Cortex?
+Increasing complexity
+Addressing bugs and enhancing functionality
+Deleting content
+Disabling dependencies
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Addressing bugs and enhancing functionality
+Question 6 of 10
+Which of the following serves as the core automation engine within the Cortex system?
+Marketplace
+Playbooks
+Filters and Transformers
+Scripts
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Playbooks
+Question 7 of 10
+Why is it crucial to review details before installing a content pack in Cortex?
+To increase content complexity
+To understand content dependencies and version history
+To reduce the frequency of updates
+To bypass the Cart management process
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+To understand content dependencies and version history
+Question 8 of 10
+How do Parsing Rules contribute to the effectiveness of security operations?
+By increasing data storage costs
+By reducing data quality
+By enhancing data quality and streamlining analysis
+By creating customizable widgets
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+By enhancing data quality and streamlining analysis
+Question 9 of 10
+Which of the following automation workflow steps involves running scripts to analyze malware before invoking sub-playbooks?
+Data Analysis
+Task and sub-playbook execution
+Issue creation
+Logging and reporting
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Task and sub-playbook execution
+Question 10 of 10
+What is the fundamental role of Playbooks in Cortex's incident case response strategy?
+Creating dashboards
+Reducing API quotas
+Operating in isolation
+Automating workflows
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Automating workflows
+

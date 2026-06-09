@@ -1,0 +1,105 @@
+Question 1 of 5
+Which option describes an Issue Exception?
+
+
+Suppressing issues while maintaining protection
+
+
+Suppressing issues while disabling protection
+
+
+Maintaining issues while maintaining protection
+
+
+Maintaining issues while disabling protection
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Suppressing issues while disabling protection
+
+Question 2 of 5
+Which option describes an Issue Exclusion?
+
+
+Suppressing issues while maintaining protection
+
+
+Suppressing issues while disabling protection
+
+
+Maintaining issues while maintaining protection
+
+
+Maintaining issues while disabling protection
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Suppressing issues while maintaining protection
+
+Question 3 of 5
+In which way can you create an Issue Exclusion?
+
+
+Create a new issue rule
+
+
+Create a new exclusion rule
+
+
+Right-click on an issue and select Create Issue Exception
+
+
+Right-click on a case and select Exclude Case
+
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Create a new exclusion rule
+
+Question 4 of 5
+If an application on a single endpoint is crashing due to one of the Cortex XDR protection modules, which action would resolve it?
+
+
+Create an issue Exclusion
+
+
+Create a Global Exception
+
+Create an Exclusion Rule in that Endpoint’s Exclusion Policy
+
+Create an Exception Rule in that Endpoint’s Exception Policy
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Create an Exception Rule in that Endpoint’s Exception Policy
+Question 5 of 5
+How do you create an issue Exception?
+
+
+Create a new issue rule
+
+
+Create a restrictions profile
+
+
+Right-click on an issue and select Create Issue Exception
+
+
+Right-click on a case and select Issue Exception
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Right-click on an issue and select Create Issue Exception

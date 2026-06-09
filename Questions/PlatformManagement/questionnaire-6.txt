@@ -1,0 +1,99 @@
+Question 1 of 5
+Which of the following actions does an Instance Administrator have to configure the tenant?
+
+
+Create new custom Cortex roles.
+
+
+Activate new Cortex instances.
+
+
+Full privileges over XDR tenant
+
+
+Assign Cortex roles to user accounts.
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Assign Cortex roles to user accounts.
+
+Question 2 of 5
+How are scopes managed in Cortex SBAC?
+
+
+Tags
+
+Endpoints
+
+Groups
+
+Organizations
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Tags
+Question 3 of 5
+Which regional service does Cortex use to receive organizational units?
+
+
+Active Directory
+
+Identity Service
+
+Domain Controller
+
+Cloud Identity Engine
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Cloud Identity Engine
+Question 4 of 5
+What is the geographical deployment requirement for a Cortex instance and its associated infrastructure services?
+
+
+They can be deployed globally with data distributed across multiple regions for redundancy
+
+
+The infrastructure services can reside in a different region, but the Cortex instance must be centralized.
+
+
+They must be bound to the same specific region to ensure data locality.
+
+
+The region is selected only for the Cortex instance, while infrastructure services are globally accessible.
+
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+They must be bound to the same specific region to ensure data locality.
+
+Question 5 of 5
+Which management interface allows a user to manage Cortex roles and permissions for multiple Cortex instances linked to the same CSP account?
+
+
+Cortex Management Console
+
+
+Cortex Gateway
+
+
+Palo Alto Networks hub
+
+
+Customer Support Portal (CSP)
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Cortex Gateway

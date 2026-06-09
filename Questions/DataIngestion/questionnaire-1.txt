@@ -1,0 +1,88 @@
+Question 1 of 5
+What is a lightweight software agent that is installed on endpoint and servers to collect security data and protect them from threats?
+
+
+Engines
+
+CLCS
+
+XDR Agent
+
+
+Broker VM
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+XDR Agent
+
+Question 2 of 5
+What is a key difference between Broker VM and Engines?
+
+
+Broker VM handles only API integrations
+
+Broker VM is only for data collection
+
+Broker VM is more complex than engines
+
+Broker VM is does not support clustering
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Broker VM is only for data collection
+Question 3 of 5
+True or false? XDR Collectors are used by Cortex for on-premise data collection on Windows and Linux machines?
+
+
+True
+
+False
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+True
+Question 4 of 5
+What are two modules Cortex can access to get additional data? (Choose two.)
+
+
+HTTP Collector
+(disabled)
+
+ASM
+(disabled)
+
+Kafka
+(disabled)
+
+TI
+(disabled)
+Options
+You gave the correct answer and your score is 2
+Correct answer
+Score: 2
+Correct answers:
+ASM
+TI
+Question 5 of 5
+What are pre-built bundles of integrations, playbooks and automations that are available from Marketplace?
+
+
+Engines
+
+Content Packs
+
+Agents
+
+Integrations
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Content Packs

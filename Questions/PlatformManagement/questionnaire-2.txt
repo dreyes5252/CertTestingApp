@@ -1,0 +1,103 @@
+Question 1 of 5
+What is the main purpose of the Cortex Gateway?
+
+
+Activate instances and manage user roles via RBAC.
+
+
+Provide a central dashboard for security alerts.
+
+
+Download dynamic updates and agent installers.
+
+
+Create and manage customer support tickets.
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Activate instances and manage user roles via RBAC.
+
+Question 2 of 5
+What is a primary function of the Customer Support Portal (CSP)?
+
+
+Activate new instances and manage user roles.
+
+
+Manage support cases, licenses, and software downloads.
+
+
+Investigate security incidents and alerts.
+
+
+Control endpoint policies and profiles.
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Manage support cases, licenses, and software downloads.
+
+Question 3 of 5
+What are the three ways users can interact with their Cortex XDR instances?
+
+
+Cortex Gateway, Customer Support Portal, and Cytool
+
+
+The management console, the API, and external integrations
+
+
+Live Terminal, the Broker VM, and the local agent console
+
+
+Support tickets, direct email, and phone calls to support
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+The management console, the API, and external integrations
+
+Question 4 of 5
+Which URL do you use to access the Cortex Gateway to view or activate your tenants?
+
+
+https://www.paloaltonetworks.com/subdomain
+
+https://cortex-gateway.paloaltonetworks.com/signin/
+
+
+http://<region>.xdr.<subdomain>.paloaltonetworks.com
+
+https://<"subdomain">.xdr.<"region">.paloaltonetworks.com
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+https://cortex-gateway.paloaltonetworks.com/signin/
+
+Question 5 of 5
+Which condition is required to access a Cortex instance?
+
+
+Several endpoints are integrated via API.
+
+Several endpoints are currently running agents.
+
+A user account has been designed as the super-user.
+
+Access to the Cortex Gateway has been established.
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Access to the Cortex Gateway has been established.

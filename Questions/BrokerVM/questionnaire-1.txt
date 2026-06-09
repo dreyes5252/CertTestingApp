@@ -1,0 +1,191 @@
+Question 1 of 10
+Which applet is available to collect data from agentless endpoints?
+
+
+Syslog Collector
+
+Panorama
+
+CSV Collector
+
+Pathfinder
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Pathfinder
+Question 2 of 10
+Which functionality is provided by Broker VM?
+
+
+Collection and forwarding of logs for further analysis
+
+Complete replacement of Cortex XDR agents
+
+Optimization of hearbeat traffic using caching techniques
+
+Primary storage hub for network data
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Collection and forwarding of logs for further analysis
+Question 3 of 10
+Between which pair of entities does Broker VM broker data?
+
+
+Cortex Data Lake and Cortex
+
+
+Endpoints and Cortex XDR agents
+
+Endpoints and Cortex
+
+
+Cortex and Cortex XDR Agents
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Endpoints and Cortex
+
+Question 4 of 10
+Which one of these is a Broker VM applet?
+
+
+Network Mapper
+
+
+Panorama
+
+
+TCP/IP v4 Properties Manager
+
+
+File Manager
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Network Mapper
+
+Question 5 of 10
+What is the primary role of the Broker VM in the Cortex framework?
+
+
+Serving as a digital firewall to secure the network
+
+Facilitating a secure communication channel between the user's network and Cortex
+
+
+Completely replacing the need for physical network devices
+
+Solely managing the storage and archiving of network data
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Facilitating a secure communication channel between the user's network and Cortex
+
+Question 6 of 10
+Which applets are available in the Broker VM for ingesting data from third party sensors?
+
+
+Syslog Collector
+
+SNMP Manager
+
+Java Interpreter
+
+MineMeld Collector
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Syslog Collector
+Question 7 of 10
+What is the role of Broker VM applets in Cortex?
+
+
+They bring information from customer infrastructure to Cortex analytics functionality.
+
+
+They bring Cortex analytics functionality to endpoints for faster execution.
+
+
+They replace Cortex prevention functionality and provide simpler prevention management.
+
+
+They replace Cortex XDR agents.
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+They bring information from customer infrastructure to Cortex analytics functionality.
+
+Question 8 of 10
+Which statement applies to Broker VM communication with Cortex?
+
+
+It requires a connected Cortex XDR agent.
+
+It provides authentication with the Cortex Management server.
+
+
+It normally occurs during agent heartbeat.
+
+It is only initiated by clicking “check in now.”
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+It provides authentication with the Cortex Management server.
+
+Question 9 of 10
+How does the Network Mapper applet within Broker VM contribute to Cortex's Asset Management feature?
+
+
+It conducts network scans to identify unmanaged devices within the network.
+
+It provides a comprehensive physical layout of the user's network.
+
+It actively monitors and records the performance of each network device.
+
+It enhances network security by functioning as a digital firewall.
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+It conducts network scans to identify unmanaged devices within the network.
+Question 10 of 10
+Which three services are directly supported by the Broker VM applets in the Cortex system?
+
+
+Apache Kafka Collector, Database Collector, and Firewall Controller
+
+
+Database Collector, Firewall Controller, and Files and Folders Collector
+
+
+Apache Kafka Collector, Files and Folders Collector, and Network Speed Optimizer
+
+
+Firewall Controller, Files and Folders Collector, and Network Speed Optimizer
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Apache Kafka Collector, Database Collector, and Firewall Controller

@@ -1,0 +1,101 @@
+Question 1 of 5
+Which of the following is a function of the Legacy Query Builder?
+
+
+Building queries using templates.
+
+
+Correlating logs using XQL statements.
+
+
+Searching on specific entities like files and processes.
+
+
+Providing a visual interface to build queries from the Query Library.
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Searching on specific entities like files and processes.
+
+Question 2 of 5
+If a query is not displayed in the Query Center after you build it in the Query Builder, which condition is the most likely cause for it not to be displayed?
+
+
+The query execution result table is empty.
+
+The query is scheduled and has not run yet.
+
+
+There are required fields to be filled in the query form.
+
+Query Center is not the correct page to get the query execution results.
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+The query is scheduled and has not run yet.
+
+Question 3 of 5
+Which of the following best describes a "lead" in the context of threat management?
+
+
+An immediate, verified security notification.
+
+
+A potential indicator requiring further investigation.
+
+
+A reported issue from a non-Palo Alto Networks system.
+
+
+A dataset found through Cortex threat hunting tools.
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+A potential indicator requiring further investigation.
+
+Question 4 of 5
+On which Cortex management console page can you rerun a query?
+
+
+Query Center
+
+Query Builder
+
+Scheduled Queries
+
+Query Action Center
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Query Center
+Question 5 of 5
+How does Query Builder's template-based approach assist users?
+
+
+It enables complex queries to be built only with XQL.
+
+
+It creates queries that can only run on predefined datasets.
+
+
+It provides a visual display to assist in building queries.
+
+
+It allows users to create effective queries without using XQL.
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+It allows users to create effective queries without using XQL.

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cortex XSIAM Practice Quiz</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js?v=20260608-confirm-submit" defer></script>
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Cortex XSIAM</p>
+          <h1>Practice Quiz</h1>
+        </div>
+        <section class="stat-strip" aria-label="Quiz statistics">
+          <div>
+            <span id="bank-count">0</span>
+            <small>Questions</small>
+          </div>
+          <div>
+            <span id="history-count">0</span>
+            <small>Attempts</small>
+          </div>
+          <div>
+            <span id="missed-count">0</span>
+            <small>Missed</small>
+          </div>
+        </section>
+      </header>
+
+      <section id="setup-view" class="layout">
+        <aside class="panel">
+          <h2>Build Exam</h2>
+          <label class="field" for="module-select">
+            Question source
+            <select id="module-select"></select>
+          </label>
+          <label class="field" for="mode-select">
+            Study mode
+            <select id="mode-select">
+              <option value="standard">Random questions</option>
+              <option value="missed">Missed questions</option>
+            </select>
+          </label>
+          <label class="field" for="question-count">
+            Question count
+            <input id="question-count" type="number" min="1" max="60" value="60" />
+          </label>
+          <label class="toggle-row" for="shuffle-options">
+            <input id="shuffle-options" type="checkbox" checked />
+            Shuffle answer options
+          </label>
+          <button id="start-btn" class="primary" disabled>Start Quiz</button>
+          <p id="load-status" class="status">Loading questions...</p>
+        </aside>
+
+        <section class="wide">
+          <section class="panel">
+            <div class="section-head">
+              <h2>Question Categories</h2>
+            </div>
+            <div id="category-summary" class="category-grid"></div>
+          </section>
+
+          <section class="panel">
+            <div class="section-head">
+              <h2>Saved Attempts</h2>
+              <button id="clear-history-btn" class="secondary">Clear History</button>
+            </div>
+            <div id="history-list" class="history-list"></div>
+          </section>
+        </section>
+      </section>
+
+      <section id="quiz-view" class="panel hidden">
+        <div class="quiz-head">
+          <div>
+            <p id="quiz-category" class="eyebrow"></p>
+            <h2 id="question-position">Question 1 of 60</h2>
+          </div>
+          <span id="answered-counter" class="counter">0 / 60 answered</span>
+        </div>
+        <div class="progress-track"><div id="progress-fill"></div></div>
+        <p id="question-text" class="question-text"></p>
+        <p id="answer-hint" class="answer-hint"></p>
+        <div id="answer-list" class="answer-list"></div>
+        <div class="nav-row">
+          <button id="prev-btn" class="secondary">Previous</button>
+          <button id="next-btn" class="secondary">Next</button>
+          <button id="submit-btn" class="primary">Submit Quiz</button>
+        </div>
+      </section>
+
+      <section id="result-view" class="hidden">
+        <section class="panel">
+          <div class="result-head">
+            <div>
+              <p class="eyebrow">Final Score</p>
+              <h2 id="score-title">0%</h2>
+            </div>
+            <button id="new-quiz-btn" class="primary">New Quiz</button>
+          </div>
+          <div id="score-details" class="score-grid"></div>
+        </section>
+
+        <section class="panel">
+          <h2>Category Performance</h2>
+          <div id="result-categories" class="category-grid"></div>
+        </section>
+
+        <section class="panel">
+          <h2>Review</h2>
+          <div id="review-list" class="review-list"></div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

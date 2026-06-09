@@ -1,0 +1,87 @@
+Question 1 of 5
+When you create a new job, in which section of the configuration panel can you specify a playbook?
+
+
+Triggers
+
+Custom Fields
+
+Queue Handling
+
+Basic Information
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Basic Information
+Question 2 of 5
+Which view of the Jobs page shows information about any cases created by the job?
+
+
+Table View
+
+Chart Panel
+
+Detailed View
+
+Summary View
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Detailed View
+Question 3 of 5
+What type of job would you use to monitor a vulnerability feed for new vulnerabilities?
+
+
+Feed triggered
+
+Time triggered
+
+Case triggered
+
+
+Command triggered
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Feed triggered
+Question 4 of 5
+Which type of job do you create to perform regular checks on the health status of the system?
+
+
+Feed triggered
+
+Time triggered
+
+Case triggered
+
+
+Command triggered
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Time triggered
+Question 5 of 5
+Which option can you use to halt a running job?
+
+
+Halt
+
+Abort
+
+Break
+
+Pause
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Pause

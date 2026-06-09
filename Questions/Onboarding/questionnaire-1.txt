@@ -1,0 +1,197 @@
+Question 1 of 10
+Which term best describes the systematic approach to decomposing tables in order to eliminate data redundancy?
+
+
+Parsing
+
+Filtering
+
+Modeling
+
+Normalization
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Normalization
+Question 2 of 10
+Which XSIAM feature is used to help identify patterns and trends in log data to allow security functions to focus on the most relevant information and potential threats?
+
+
+Rules
+
+Ingestion
+
+Playbooks
+
+Marketplace
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Rules
+Question 3 of 10
+Which type of alerts incorrectly flag a benign event as malicious?
+
+
+True positive
+
+True negative
+
+False positive
+
+False negative
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+False positive
+Question 4 of 10
+What are the three phases of the XSIAM implementation journey? (Choose three.)
+
+
+Prepare
+(disabled)
+
+Deployment
+(disabled)
+
+Adopt
+(disabled)
+
+Research
+(disabled)
+
+Optimization
+(disabled)
+Options
+You gave the correct answer and your score is 3
+Correct answer
+Score: 3
+Correct answers:
+Deployment
+Adopt
+Optimization
+Question 5 of 10
+What are the three parts of a data model rule? (Choose  three.)
+
+
+Data filtering
+(disabled)
+
+Dataset
+(disabled)
+
+Data sorting
+(disabled)
+
+Data extraction
+(disabled)
+
+Data normalization
+(disabled)
+Options
+You gave a partially correct answer and your score is 2
+Partially correct answer
+Score: 2
+Correct answers:
+Dataset
+Data extraction
+Data normalization
+Question 6 of 10
+Which term describes logs that lack substantial information about potential security threats?
+
+
+Best fidelity
+
+High fidelity
+
+Low fidelity
+
+Worst fidelity
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Low fidelity
+Question 7 of 10
+Which three characteristics are built-in elements of data model rules? (Choose three.)
+
+
+Raw data
+(disabled)
+
+Structure
+(disabled)
+
+Occurrence
+(disabled)
+
+Compatibility
+(disabled)
+
+Redundancy
+(disabled)
+Options
+You gave a partially correct answer and your score is 2
+Partially correct answer
+Score: 2
+Correct answers:
+Raw data
+Occurrence
+Compatibility
+Question 8 of 10
+Which phase of the alerting strategy covers reviewing customer goals sourced from existing SIEM correlations?
+
+
+Sources of goals
+
+Requirements discovery
+
+Fast value
+
+Analyze existing customer goals/alerts
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Requirements discovery
+Question 9 of 10
+Which XSIAM feature is designed to guide customers through the process of sending logs, installing Marketplace content, and verifying that fields are parsed correctly?
+
+
+Visibility view
+
+New correlation rule
+
+New data model screen
+
+New onboarding screen
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+New onboarding screen
+Question 10 of 10
+What does the phrase “Parsing is forever” mean in Cortex?
+
+
+Parsing saves data longer than data models.
+
+Parsing is the best option for organizing data.
+
+Parsing makes changes that can’t be reversed.
+
+Parsing is compute intensive and should be avoided.
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Parsing makes changes that can’t be reversed.

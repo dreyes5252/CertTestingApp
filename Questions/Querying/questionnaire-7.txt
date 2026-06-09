@@ -1,0 +1,112 @@
+Question 1 of 5
+Which three columns does a histogram table show in the Fields pane of the Query Results tab? (Choose three.)
+
+
+Value
+(disabled)
+
+Count
+(disabled)
+
+Percentage
+(disabled)
+
+Frequency
+(disabled)
+
+Ratio
+(disabled)
+Options
+You gave the correct answer and your score is 3
+Correct answer
+Score: 3
+Correct answers:
+Value
+Count
+Percentage
+Question 2 of 5
+What is the primary use of the Advanced display mode on the Query Results tab?
+
+
+Easily copying query results as log entities
+
+Analyzing query results using histograms
+
+Reducing the size of the results table
+
+Viewing query results in different log formats
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Easily copying query results as log entities
+Question 3 of 5
+Which two fields does the Advanced display mode show in a results table? (Choose two.)
+
+
+_Time
+(disabled)
+
+Event
+(disabled)
+
+Type
+(disabled)
+
+_Vendor
+(disabled)
+Options
+You gave the correct answer and your score is 2
+Correct answer
+Score: 2
+Correct answers:
+_Time
+Event
+Question 4 of 5
+Which two field types can you analyze using a histogram on the Query Results tab? (Choose two.)
+
+
+String
+(disabled)
+
+ENUM
+(disabled)
+
+JSON
+(disabled)
+
+String array
+(disabled)
+
+Count
+(disabled)
+Options
+You gave the correct answer and your score is 2
+Correct answer
+Score: 2
+Correct answers:
+String
+ENUM
+Question 5 of 5
+In which two log formats can the Advanced mode display XQL query results? (Choose two.)
+
+
+Tree
+(disabled)
+
+JSON
+(disabled)
+
+CEF
+(disabled)
+
+Syslog
+(disabled)
+Options
+You gave the correct answer and your score is 2
+Correct answer
+Score: 2
+Correct answers:
+Tree
+JSON

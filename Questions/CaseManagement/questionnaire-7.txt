@@ -1,0 +1,101 @@
+Question 1 of 5
+Which three node types can a causality instance chain contain? (Choose three.)
+
+
+User
+(disabled)
+
+Issues
+
+(disabled)
+
+Process
+(disabled)
+
+Artifacts
+(disabled)
+
+Endpoint
+(disabled)
+Options
+You gave the correct answer and your score is 3
+Correct answer
+Score: 3
+Correct answers:
+User
+Issues
+
+Process
+Question 2 of 5
+When a node is right-clicked, which of the following information is available? (Choose two)
+
+
+Expand Tree
+(disabled)
+
+End Process
+(disabled)
+
+Search File on All Endpoints
+(disabled)
+
+Isolate Endpoint
+(disabled)
+Options
+You gave the correct answer and your score is 2
+Correct answer
+Score: 2
+Correct answers:
+Expand Tree
+Search File on All Endpoints
+Question 3 of 5
+In which data structure are the nodes in the causality instance chain interconnected?
+
+
+List
+
+Tree
+
+Table
+
+Graph
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Tree
+Question 4 of 5
+What does the color red indicate for a process node in the causality instance graph?
+
+
+A CGO
+
+Malware
+
+Grayware
+
+Terminated Status
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Malware
+Question 5 of 5
+When an issue isn’t stitched, which right-click action option will be disabled?
+
+
+Investigate in Timeline
+
+Open in VirusTotal
+
+Show Parent
+
+View Children
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Investigate in Timeline

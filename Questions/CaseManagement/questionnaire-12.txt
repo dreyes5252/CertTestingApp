@@ -1,0 +1,104 @@
+Question 1 of 5
+Which of the following is a use for context data?
+
+
+Create new playbooks
+
+
+Run playbooks
+
+
+Capture environment configuration data in a structured format
+
+
+Capture issue and command data in structured format
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Capture issue and command data in structured format
+
+Question 2 of 5
+Which symbol is used to run automation scripts or commands in the CLI?
+
+
+!
+
+
+@
+
+
+;
+
+
+#
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+!
+
+Question 3 of 5
+Which of the following is a War Room available in Cortex?
+
+
+Investigation War Room
+
+
+Issue War Room
+
+
+Event War Room
+
+
+Breach War Room
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Issue War Room
+
+Question 4 of 5
+Which format is context data stored in?
+
+
+LEEF
+
+CEF
+
+JSON
+
+Python
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+JSON
+Question 5 of 5
+Which of the following is a place you can find the Command Line Interface (CLI)?
+
+
+The top of the Case War Room
+
+
+The bottom of the Case War Room
+
+
+The top of the Event War Room
+
+
+The bottom of the Event War Room
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+The bottom of the Case War Room

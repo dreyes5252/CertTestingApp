@@ -1,0 +1,85 @@
+Question 1 of 5
+When disabling keys, which statement is true?
+
+
+A user needs to get authorization from an Admin
+
+Re-enabling the keys and re-activating the tenant can be done at any time at the discretion of the organization
+
+Agents will continue to receive updates to policies, configurations, and crucial information
+
+It renders the tenant inaccessible and non-operational
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+It renders the tenant inaccessible and non-operational
+Question 2 of 5
+Why is BYOK considered beneficial for organizations in regulated industries?
+
+
+Enhances control over data encryption
+
+Allows unlimited storage of encryption keys
+
+Automates the key rotations process
+
+Decreases the number of required security protocols
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Enhances control over data encryption
+Question 3 of 5
+How does the architecture of BYOK reduce external risks for organizations?
+
+
+By minimizing internal data access
+
+By utilizing a dedicated key management system (KMS)
+
+Through automated system updates
+
+By requiring only one encryption key
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+By utilizing a dedicated key management system (KMS)
+Question 4 of 5
+What is the recommended number of symmetric keys to generate during the activation of BYOK?
+
+
+1
+
+2
+
+3
+
+4
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+2
+Question 5 of 5
+What capabilities does BYOK have that benefits organizations in terms of compliance?
+
+
+Simplified user interface and design
+
+Faster access to data
+
+Supports key rotation and audit logs
+
+Allows for private access controls
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Supports key rotation and audit logs

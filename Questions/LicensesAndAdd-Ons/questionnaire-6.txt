@@ -1,0 +1,119 @@
+Question 1 of 7
+How do marketplace integrations with incident management systems benefit XSIAM users?
+
+
+They make it challenging to manage security incidents.
+
+They add complexity to the incident response process.
+
+They streamline the creation, management, and tracking of security incidents.
+
+They introduce unnecessary coordination issues.
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+They streamline the creation, management, and tracking of security incidents.
+Question 2 of 7
+What is the purpose of "Attack Surface Rules" in Cortex XSIAM?
+
+
+To monitor customer assets for potential compliance violations
+
+To identify potential risks and vulnerabilities in an organization's digital infrastructure
+
+To perform penetration testing on network services
+
+To enable DDoS testing on network services
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+To identify potential risks and vulnerabilities in an organization's digital infrastructure
+Question 3 of 7
+Why is visibility and inventory of assets important in XSIAM and security management?
+
+
+To make the network more complex
+
+To understand what's connected to the network
+
+To increase the risk associated with each asset
+
+To prioritize security efforts based on risk
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+To understand what's connected to the network
+Question 4 of 7
+What is the primary purpose of Cortex XSIAM marketplace integrations?
+
+
+To complicate security operations
+
+To enhance XSIAM's capabilities with third-party tools
+
+To reduce the functionality of XSIAM
+
+To isolate XSIAM from external security tools
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+To enhance XSIAM's capabilities with third-party tools
+Question 5 of 7
+What role does Cortex XSIAM Playbooks serve in the incident response process?
+
+
+They are used for manual incident logging.
+
+They provide predefined workflows to automate and streamline incident response.
+
+They are designed to confuse security teams during an incident.
+
+They are meant for customization but not automation.
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+They provide predefined workflows to automate and streamline incident response.
+Question 6 of 7
+What is the primary goal of Cortex XSIAM's scanning process?
+
+
+To perform penetration testing on all assets
+
+To conduct scans of known customer assets multiple times a day
+
+To observe and collect data about potential vulnerabilities
+
+To provide fuzzy network service testing
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+To observe and collect data about potential vulnerabilities
+Question 7 of 7
+What is the main purpose of Network Configuration in XSIAM?
+
+
+To slow down network traffic
+
+To define the parameters of a computer network
+
+To initiate a Distributed Denial of Service (DDoS) attack
+
+To install additional software on network devices
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+To define the parameters of a computer network

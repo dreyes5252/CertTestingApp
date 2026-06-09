@@ -1,0 +1,106 @@
+Question 1 of 5
+Which log type can Cortex-enhanced endpoint data contain?
+
+
+Browser history
+
+
+Cortex instance activity
+
+
+Windows Dynamic Host Configuration Protocol
+
+
+Endpoint network activities
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Endpoint network activities
+
+Question 2 of 5
+What type of logs can be viewed directly from the Cortex management console?
+
+
+Policy audit logs
+
+
+Issues audit logs
+
+
+Management audit logs
+
+
+Broker VM audit logs
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Management audit logs
+
+Question 3 of 5
+Which action is found under the Investigate Causality Chain right-click menu of stitched issues?
+
+
+Open Response Flow
+
+
+Open Timeline
+
+
+Open Insights
+
+
+Open Process Flow
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Open Timeline
+
+Question 4 of 5
+Where does Cortex store the enhanced endpoint data log?
+
+
+Panorama
+
+
+Broker VMs
+
+XDR Collectors
+
+
+The Cortex Instance
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+The Cortex Instance
+
+Question 5 of 5
+Which element is a building block of the Cortex Analytical engine?
+
+
+Criticality
+
+
+Detectors
+
+Collectors
+
+Classification
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Detectors

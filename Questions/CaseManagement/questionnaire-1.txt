@@ -1,0 +1,108 @@
+Question 1 of 5
+What is a Causality Group Owner?
+
+
+The analyst who has been assigned to a case
+
+
+The process identified as root cause of an attack
+
+The analyst who has been assigned to an incident
+
+The individual threat actor identified as root cause of an attack
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+The process identified as root cause of an attack
+Question 2 of 5
+Which two options are considered Featured Issue Fields? (Choose two.)
+
+
+User
+(disabled)
+
+Host
+(disabled)
+
+Severity
+(disabled)
+
+Timestamp
+(disabled)
+
+Triggering Event
+(disabled)
+Options
+You gave the correct answer and your score is 2
+Correct answer
+Score: 2
+Correct answers:
+User
+Host
+Question 3 of 5
+Where does an issue’s name come from?
+
+
+The source of the issue, the device that triggers the issue, i.e. firewall, XDR agent, etc.
+
+
+The action taken by the issue generator, such as prevent, block, etc.
+
+
+The category of the issue, such as malware, exploit, etc.
+
+
+The module that triggered the issue, i.e Behavioral Threat
+
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+The module that triggered the issue, i.e Behavioral Threat
+
+Question 4 of 5
+What is a stitched issue?
+
+
+An enhanced issue automatically correlated with logs
+
+
+Two or more cases that have been combined
+
+
+Two or more issues that have been combined
+
+
+An enhanced case automatically correlated with logs
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+An enhanced issue automatically correlated with logs
+
+Question 5 of 5
+What is the purpose of starring an issue/case?
+
+
+To trigger future issues based on the same criteria of the starred issues/case
+
+
+To archive the starred issue/case
+
+
+To highlight and prioritize the starred issue/case
+
+
+To suppress future issues from triggering based upon the same criteria as the starred issue/case
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+To highlight and prioritize the starred issue/case

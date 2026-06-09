@@ -1,0 +1,95 @@
+Question 1 of 5
+Which component can view existing reports that have been run?
+
+
+Dashboards
+
+Reports
+
+Dashboard Manager
+
+Reports Template
+
+Widget Library
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Reports
+Question 2 of 5
+Which component is used to edit templates?
+
+
+Dashboards
+
+Reports
+
+Dashboard Manager
+
+Reports Template
+
+Widget Library
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Reports Template
+Question 3 of 5
+Which component contains widgets that summarize information about endpoints in graphical or table format?
+
+
+Dashboards
+
+Reports
+
+Dashboard Manager
+
+Reports Template
+
+Widget Library
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Dashboards
+Question 4 of 5
+Which component is where to set the default dashboard?
+
+
+Dashboards
+
+Reports
+
+Dashboard Manager
+
+Reports Template
+
+Widget Library
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Dashboard Manager
+Question 5 of 5
+Which component is used to edit custom widgets?
+
+
+Dashboards
+
+Reports
+
+Dashboard Manager
+
+Reports Template
+
+Widget Library
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Widget Library

@@ -1,0 +1,109 @@
+Question 1 of 5
+To conserve bandwidth when updating agents, what distribution method is enabled by default to allow agents to retrieve installer files from other agents on the same subnet?
+
+
+Broker VM Distribution
+
+
+Direct Server Download
+
+
+Peer-to-Peer (P2P) Distribution
+
+
+Manual USB Transfer
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Peer-to-Peer (P2P) Distribution
+
+Question 2 of 5
+Which communication protocol allows for real-time, two-way interactive communication between the Cortex XDR instance and an agent for actions like Live Terminal?
+
+
+HTTPS
+
+
+FTP
+
+
+WebSocket
+
+
+SMTP
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+WebSocket
+
+Question 3 of 5
+On a Windows endpoint, where would you look in the registry to find agent-related settings such as the list of trusted signers?
+
+
+HKLM\SOFTWARE\PaloAltoNetworks
+
+
+HKCU\Software\Cyvera
+
+
+HKLM\SYSTEM\Cyvera
+
+
+HKCR\TrapsAgent
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+HKLM\SYSTEM\Cyvera
+
+Question 4 of 5
+During an uninstall and reinstall operation, why does the Cortex XDR agent reuse the agent.id and hardware.id files?
+
+
+To speed up the reinstallation process.
+
+
+To eliminate duplicate endpoint entries in the management console.
+
+
+To ensure the old log files are preserved.
+
+
+To save the user's custom agent settings.
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+To eliminate duplicate endpoint entries in the management console.
+
+Question 5 of 5
+Which of the following is a key aspect of performing agent health checks?
+
+
+Verifying all agents have the latest security content and threat intelligence updates.
+
+
+Resetting the supervisor password on a weekly basis.
+
+
+Deleting all agent log files to save disk space.
+
+
+Cycling the agent API keys on a monthly basis.
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Verifying all agents have the latest security content and threat intelligence updates.

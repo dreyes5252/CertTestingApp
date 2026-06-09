@@ -1,0 +1,906 @@
+{
+  "questions": [
+    {
+      "id": "training-automation-foundations-001",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Automation Foundations",
+      "topic": "Automation Overview",
+      "source_file": "Lessons/Automation/Automation Foundations.txt",
+      "question": "What is the primary purpose of automation in Cortex security operations?",
+      "options": [
+        "To replace all analyst review with unsupervised actions",
+        "To streamline and optimize security operations tasks through automated workflows",
+        "To disable manual investigation tools during case response",
+        "To store marketplace content outside the Cortex platform"
+      ],
+      "correct_answers": [
+        "To streamline and optimize security operations tasks through automated workflows"
+      ]
+    },
+    {
+      "id": "training-automation-foundations-002",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Automation Foundations",
+      "topic": "Automation Workflow",
+      "source_file": "Lessons/Automation/Automation Foundations.txt",
+      "question": "In a typical Cortex automation workflow, what happens after an issue triggers a playbook?",
+      "options": [
+        "The playbook executes predefined tasks as part of the response workflow",
+        "All issue fields are deleted before analysis begins",
+        "The Marketplace automatically reverts installed content packs",
+        "The case is closed without logging any actions"
+      ],
+      "correct_answers": [
+        "The playbook executes predefined tasks as part of the response workflow"
+      ]
+    },
+    {
+      "id": "training-automation-foundations-003",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Automation Foundations",
+      "topic": "Automation Components",
+      "source_file": "Lessons/Automation/Automation Foundations.txt",
+      "question": "Which component is described as the core automation engine within Cortex?",
+      "options": [
+        "Dashboards",
+        "Playbooks",
+        "Reports",
+        "Version History"
+      ],
+      "correct_answers": [
+        "Playbooks"
+      ]
+    },
+    {
+      "id": "training-automation-foundations-004",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Automation Foundations",
+      "topic": "Automation Components",
+      "source_file": "Lessons/Automation/Automation Foundations.txt",
+      "question": "Which two Cortex components are specifically associated with extracting, manipulating, and presenting data in JSON format?",
+      "options": [
+        "Filters",
+        "Transformers",
+        "Dashboards",
+        "Case layouts"
+      ],
+      "correct_answers": [
+        "Filters",
+        "Transformers"
+      ]
+    },
+    {
+      "id": "training-automation-foundations-005",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Automation Foundations",
+      "topic": "Benefits",
+      "source_file": "Lessons/Automation/Automation Foundations.txt",
+      "question": "How does automation help reduce issue fatigue?",
+      "options": [
+        "By automating initial triage and categorization so analysts can prioritize high-priority cases",
+        "By increasing the number of duplicate issues analysts must review",
+        "By preventing all integrations from triggering events",
+        "By removing all manual escalation paths"
+      ],
+      "correct_answers": [
+        "By automating initial triage and categorization so analysts can prioritize high-priority cases"
+      ]
+    },
+    {
+      "id": "training-automation-foundations-006",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Automation Foundations",
+      "topic": "Marketplace",
+      "source_file": "Lessons/Automation/Automation Foundations.txt",
+      "question": "What is the Cortex Marketplace primarily used for?",
+      "options": [
+        "Managing content packs that enhance operations with playbooks, integrations, scripts, and related content",
+        "Running endpoint scans without installed content",
+        "Replacing the case War Room with a reporting dashboard",
+        "Storing local-only scripts outside Cortex"
+      ],
+      "correct_answers": [
+        "Managing content packs that enhance operations with playbooks, integrations, scripts, and related content"
+      ]
+    },
+    {
+      "id": "training-automation-foundations-007",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Automation Foundations",
+      "topic": "Marketplace Experiences",
+      "source_file": "Lessons/Automation/Automation Foundations.txt",
+      "question": "Which product is associated with the full Cortex Marketplace experience in the lesson's comparison table?",
+      "options": [
+        "Cortex XSIAM",
+        "Cortex Cloud only",
+        "Cortex XDR only",
+        "Any product using Lite Experience"
+      ],
+      "correct_answers": [
+        "Cortex XSIAM"
+      ]
+    },
+    {
+      "id": "training-automation-foundations-008",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Automation Foundations",
+      "topic": "Content Pack Management",
+      "source_file": "Lessons/Automation/Automation Foundations.txt",
+      "question": "Why should users review details before installing a content pack?",
+      "options": [
+        "To examine content, dependencies, version history, and reviews before adding it to the Cart",
+        "To permanently detach all scripts from their content packs",
+        "To prevent content packs from receiving future updates",
+        "To force all optional dependencies to install silently"
+      ],
+      "correct_answers": [
+        "To examine content, dependencies, version history, and reviews before adding it to the Cart"
+      ]
+    },
+    {
+      "id": "training-automation-foundations-009",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Automation Foundations",
+      "topic": "Content Pack Updates",
+      "source_file": "Lessons/Automation/Automation Foundations.txt",
+      "question": "What is true about content pack updates in the Marketplace?",
+      "options": [
+        "Updates are not installed automatically and administrators manually initiate the update process",
+        "Updates always delete user customizations",
+        "Updates can only be performed by opening the War Room",
+        "Updates are available only for Lite Experience products"
+      ],
+      "correct_answers": [
+        "Updates are not installed automatically and administrators manually initiate the update process"
+      ]
+    },
+    {
+      "id": "training-automation-foundations-010",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Automation Foundations",
+      "topic": "Scripts",
+      "source_file": "Lessons/Automation/Automation Foundations.txt",
+      "question": "What is the consequence of detaching a script from its Marketplace content pack?",
+      "options": [
+        "The script can be modified, but it no longer receives updates from that content pack",
+        "The script becomes permanently disabled and cannot be duplicated",
+        "The script is automatically converted to a dashboard widget",
+        "The script loses access to all command arguments"
+      ],
+      "correct_answers": [
+        "The script can be modified, but it no longer receives updates from that content pack"
+      ]
+    },
+    {
+      "id": "training-automation-features-001",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Automation Features",
+      "topic": "Introduction",
+      "source_file": "Lessons/Automation/Automation Features.txt",
+      "question": "What is the main goal of Automation Features in Cortex?",
+      "options": [
+        "To simplify repetitive tasks and enable predefined responses to specific SOC triggers",
+        "To remove all playbooks from case management",
+        "To require separate setup screens for every automation action",
+        "To replace issue-level automation with only manual tasks"
+      ],
+      "correct_answers": [
+        "To simplify repetitive tasks and enable predefined responses to specific SOC triggers"
+      ]
+    },
+    {
+      "id": "training-automation-features-002",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Automation Features",
+      "topic": "Issue-Level Automation",
+      "source_file": "Lessons/Automation/Automation Features.txt",
+      "question": "Automation Features operate primarily at which level?",
+      "options": [
+        "Issue level",
+        "Global license level",
+        "Dashboard widget level",
+        "Archive storage level"
+      ],
+      "correct_answers": [
+        "Issue level"
+      ]
+    },
+    {
+      "id": "training-automation-features-003",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Automation Features",
+      "topic": "No Context Switching",
+      "source_file": "Lessons/Automation/Automation Features.txt",
+      "question": "What does the no-context-switching design help analysts do?",
+      "options": [
+        "Build automations, connect integrations, and create rules from the same workflow area",
+        "Disable all rules when opening the playbook editor",
+        "Move every automation task into the Settings menu",
+        "Prevent playbooks from using integration instances"
+      ],
+      "correct_answers": [
+        "Build automations, connect integrations, and create rules from the same workflow area"
+      ]
+    },
+    {
+      "id": "training-automation-features-004",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Automation Features",
+      "topic": "Playbook Catalog",
+      "source_file": "Lessons/Automation/Automation Features.txt",
+      "question": "Why can the playbook catalog show different playbooks across XSIAM, XDR, and Cortex Cloud tenants?",
+      "options": [
+        "Playbook availability varies by product and compatible content is shown for that platform",
+        "Only manually created playbooks are allowed in XSIAM",
+        "XDR and Cortex Cloud always show more Marketplace content than XSIAM",
+        "The catalog hides all adopted playbooks by design"
+      ],
+      "correct_answers": [
+        "Playbook availability varies by product and compatible content is shown for that platform"
+      ]
+    },
+    {
+      "id": "training-automation-features-005",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Automation Features",
+      "topic": "Adopting Playbooks",
+      "source_file": "Lessons/Automation/Automation Features.txt",
+      "question": "What happens when an out-of-the-box playbook is adopted?",
+      "options": [
+        "Its underlying Marketplace content pack is installed in the background",
+        "It is deleted from the catalog",
+        "It becomes editable without duplication",
+        "It can no longer be enabled or disabled"
+      ],
+      "correct_answers": [
+        "Its underlying Marketplace content pack is installed in the background"
+      ]
+    },
+    {
+      "id": "training-automation-features-006",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Automation Features",
+      "topic": "Editing Playbooks",
+      "source_file": "Lessons/Automation/Automation Features.txt",
+      "question": "Why must an out-of-the-box playbook be duplicated before modification?",
+      "options": [
+        "The original template is locked to preserve its integrity",
+        "Duplicating permanently disables the original playbook",
+        "Duplicating is required only for manual tasks",
+        "The duplicate removes all task inputs"
+      ],
+      "correct_answers": [
+        "The original template is locked to preserve its integrity"
+      ]
+    },
+    {
+      "id": "training-automation-features-007",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Automation Features",
+      "topic": "Automation Rules",
+      "source_file": "Lessons/Automation/Automation Features.txt",
+      "question": "Which trigger type is best suited for immediate response when new issues meet defined criteria?",
+      "options": [
+        "Issue-based trigger",
+        "Feed-based job trigger",
+        "Version history trigger",
+        "Manual list import"
+      ],
+      "correct_answers": [
+        "Issue-based trigger"
+      ]
+    },
+    {
+      "id": "training-automation-features-008",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Automation Features",
+      "topic": "Jobs",
+      "source_file": "Lessons/Automation/Automation Features.txt",
+      "question": "How are jobs different from automation rules in Automation Features?",
+      "options": [
+        "Jobs follow a proactive scheduled or feed-driven approach, while automation rules are typically reactive",
+        "Jobs can only run manually from a case view",
+        "Jobs cannot execute playbooks",
+        "Jobs are used only to delete integration instances"
+      ],
+      "correct_answers": [
+        "Jobs follow a proactive scheduled or feed-driven approach, while automation rules are typically reactive"
+      ]
+    },
+    {
+      "id": "training-automation-features-009",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Automation Features",
+      "topic": "Quick Actions",
+      "source_file": "Lessons/Automation/Automation Features.txt",
+      "question": "What are Quick Actions designed for?",
+      "options": [
+        "Fast, repetitive, single-command automations that do not require full playbook logic",
+        "Large multi-issue workflows that always require complex branching",
+        "Replacing integrations with static reports",
+        "Creating content pack version histories"
+      ],
+      "correct_answers": [
+        "Fast, repetitive, single-command automations that do not require full playbook logic"
+      ]
+    },
+    {
+      "id": "training-automation-features-010",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Automation Features",
+      "topic": "Quick Actions",
+      "source_file": "Lessons/Automation/Automation Features.txt",
+      "question": "From where can an analyst manually launch a Quick Action according to the lesson?",
+      "options": [
+        "By right-clicking an issue in the Issues table and selecting Run Automation",
+        "Only from the Marketplace Browse tab",
+        "Only from the license management screen",
+        "By editing the system health chart panel"
+      ],
+      "correct_answers": [
+        "By right-clicking an issue in the Issues table and selecting Run Automation"
+      ]
+    },
+    {
+      "id": "training-jobs-001",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Creating and Managing Jobs",
+      "topic": "Jobs Overview",
+      "source_file": "Lessons/Automation/Creating and Managing Jobs.txt",
+      "question": "What is the purpose of jobs in Cortex?",
+      "options": [
+        "To execute playbooks in response to specific events or time triggers",
+        "To prevent recurring automation from running",
+        "To replace playbooks with static lists",
+        "To remove all job status information from the interface"
+      ],
+      "correct_answers": [
+        "To execute playbooks in response to specific events or time triggers"
+      ]
+    },
+    {
+      "id": "training-jobs-002",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Creating and Managing Jobs",
+      "topic": "Job Types",
+      "source_file": "Lessons/Automation/Creating and Managing Jobs.txt",
+      "question": "Which two job types are described in the lesson?",
+      "options": [
+        "Time-triggered jobs",
+        "Feed-triggered jobs",
+        "Dashboard-triggered jobs",
+        "License-triggered jobs"
+      ],
+      "correct_answers": [
+        "Time-triggered jobs",
+        "Feed-triggered jobs"
+      ]
+    },
+    {
+      "id": "training-jobs-003",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Creating and Managing Jobs",
+      "topic": "Time-Triggered Jobs",
+      "source_file": "Lessons/Automation/Creating and Managing Jobs.txt",
+      "question": "When should a time-triggered job be used?",
+      "options": [
+        "When tasks need to run at a predetermined time or regular interval",
+        "Only when a feed changes unexpectedly",
+        "Only when an analyst manually opens a War Room",
+        "When a content pack must be deleted"
+      ],
+      "correct_answers": [
+        "When tasks need to run at a predetermined time or regular interval"
+      ]
+    },
+    {
+      "id": "training-jobs-004",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Creating and Managing Jobs",
+      "topic": "Feed-Triggered Jobs",
+      "source_file": "Lessons/Automation/Creating and Managing Jobs.txt",
+      "question": "What causes a feed-triggered job to execute?",
+      "options": [
+        "Changes or updates in all feeds or selected feeds",
+        "A user opening the version history of a list",
+        "A dashboard widget exceeding its width",
+        "A playbook task being marked manual"
+      ],
+      "correct_answers": [
+        "Changes or updates in all feeds or selected feeds"
+      ]
+    },
+    {
+      "id": "training-jobs-005",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Creating and Managing Jobs",
+      "topic": "Use Cases",
+      "source_file": "Lessons/Automation/Creating and Managing Jobs.txt",
+      "question": "Which job use case is best suited for monitoring a vulnerability feed and running remediation when new vulnerabilities appear?",
+      "options": [
+        "A feed-triggered vulnerability management job",
+        "A manual communication task",
+        "A list version rollback",
+        "A content pack deletion action"
+      ],
+      "correct_answers": [
+        "A feed-triggered vulnerability management job"
+      ]
+    },
+    {
+      "id": "training-jobs-006",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Creating and Managing Jobs",
+      "topic": "Jobs Page",
+      "source_file": "Lessons/Automation/Creating and Managing Jobs.txt",
+      "question": "What information can be checked from the Jobs page views?",
+      "options": [
+        "Job status, last run, next run, and additional details",
+        "Only content pack user reviews",
+        "Only case layout rules",
+        "Only endpoint isolation status"
+      ],
+      "correct_answers": [
+        "Job status, last run, next run, and additional details"
+      ]
+    },
+    {
+      "id": "training-jobs-007",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Creating and Managing Jobs",
+      "topic": "Chart Panel",
+      "source_file": "Lessons/Automation/Creating and Managing Jobs.txt",
+      "question": "What does the Jobs page Chart Panel display?",
+      "options": [
+        "Counts of jobs by states and trigger types, such as running, waiting, error, disabled, time triggered, and event triggered",
+        "Only the raw JSON output of the selected job",
+        "Only a list of installed Marketplace integrations",
+        "Only command-line help for list commands"
+      ],
+      "correct_answers": [
+        "Counts of jobs by states and trigger types, such as running, waiting, error, disabled, time triggered, and event triggered"
+      ]
+    },
+    {
+      "id": "training-jobs-008",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Creating and Managing Jobs",
+      "topic": "Job Actions",
+      "source_file": "Lessons/Automation/Creating and Managing Jobs.txt",
+      "question": "What does the Disable job action do?",
+      "options": [
+        "It stops the job from running next time without affecting a job that is already running",
+        "It permanently deletes the job from the table",
+        "It immediately aborts every running job in Cortex",
+        "It converts a time-triggered job into a feed-triggered job"
+      ],
+      "correct_answers": [
+        "It stops the job from running next time without affecting a job that is already running"
+      ]
+    },
+    {
+      "id": "training-jobs-009",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Creating and Managing Jobs",
+      "topic": "Job Actions",
+      "source_file": "Lessons/Automation/Creating and Managing Jobs.txt",
+      "question": "Which job action starts an aborted or completed job immediately?",
+      "options": [
+        "Run Now",
+        "Pause",
+        "Disable",
+        "Delete"
+      ],
+      "correct_answers": [
+        "Run Now"
+      ]
+    },
+    {
+      "id": "training-jobs-010",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Creating and Managing Jobs",
+      "topic": "Job Actions",
+      "source_file": "Lessons/Automation/Creating and Managing Jobs.txt",
+      "question": "Which action should be used to halt a running job without deleting it?",
+      "options": [
+        "Pause",
+        "Delete",
+        "Import",
+        "Duplicate"
+      ],
+      "correct_answers": [
+        "Pause"
+      ]
+    },
+    {
+      "id": "training-workplan-001",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Work Plan and Playbook Tasks",
+      "topic": "Work Plans",
+      "source_file": "Lessons/Automation/Work Plan and Playbook Tasks.txt",
+      "question": "What is a work plan in Cortex?",
+      "options": [
+        "A part of an issue that contains playbooks slated to run for that issue",
+        "A global report for all dashboards",
+        "A list import wizard",
+        "A content pack dependency manifest"
+      ],
+      "correct_answers": [
+        "A part of an issue that contains playbooks slated to run for that issue"
+      ]
+    },
+    {
+      "id": "training-workplan-002",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Work Plan and Playbook Tasks",
+      "topic": "Work Plans",
+      "source_file": "Lessons/Automation/Work Plan and Playbook Tasks.txt",
+      "question": "Where does the lesson say playbooks for issues can be viewed from the case interface?",
+      "options": [
+        "In the Automation section of the Overview tab on the Cases page",
+        "Only in the Marketplace Browse tab",
+        "Only in the endpoint inventory table",
+        "In the list version history panel"
+      ],
+      "correct_answers": [
+        "In the Automation section of the Overview tab on the Cases page"
+      ]
+    },
+    {
+      "id": "training-workplan-003",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Work Plan and Playbook Tasks",
+      "topic": "Work Plan Options",
+      "source_file": "Lessons/Automation/Work Plan and Playbook Tasks.txt",
+      "question": "What is an important consequence of changing the assigned playbook for an event?",
+      "options": [
+        "All completed tasks are removed and the change cannot be undone",
+        "All lists are automatically duplicated",
+        "The issue is closed immediately",
+        "Only failed tasks are removed"
+      ],
+      "correct_answers": [
+        "All completed tasks are removed and the change cannot be undone"
+      ]
+    },
+    {
+      "id": "training-workplan-004",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Work Plan and Playbook Tasks",
+      "topic": "Playbook Tasks",
+      "source_file": "Lessons/Automation/Work Plan and Playbook Tasks.txt",
+      "question": "What are playbook tasks?",
+      "options": [
+        "The fundamental building blocks that compose playbooks",
+        "Static screenshots stored in the Marketplace",
+        "Only fields used for license enforcement",
+        "Archived job logs that cannot be edited"
+      ],
+      "correct_answers": [
+        "The fundamental building blocks that compose playbooks"
+      ]
+    },
+    {
+      "id": "training-workplan-005",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Work Plan and Playbook Tasks",
+      "topic": "Task Types",
+      "source_file": "Lessons/Automation/Work Plan and Playbook Tasks.txt",
+      "question": "Which set contains the four playbook task types described in the lesson?",
+      "options": [
+        "Standard tasks, conditional tasks, data collection, and section headers",
+        "Lists, dashboards, reports, and licenses",
+        "Issues, cases, assets, and endpoints",
+        "Imports, exports, deletes, and downloads"
+      ],
+      "correct_answers": [
+        "Standard tasks, conditional tasks, data collection, and section headers"
+      ]
+    },
+    {
+      "id": "training-workplan-006",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Work Plan and Playbook Tasks",
+      "topic": "Task Icons",
+      "source_file": "Lessons/Automation/Work Plan and Playbook Tasks.txt",
+      "question": "What does a white diamond on a violet square indicate in a playbook task?",
+      "options": [
+        "Conditional task",
+        "Completed task",
+        "Failed task",
+        "Data collection task"
+      ],
+      "correct_answers": [
+        "Conditional task"
+      ]
+    },
+    {
+      "id": "training-workplan-007",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Work Plan and Playbook Tasks",
+      "topic": "Task Icons",
+      "source_file": "Lessons/Automation/Work Plan and Playbook Tasks.txt",
+      "question": "What does a small red triangle on a task indicate?",
+      "options": [
+        "The task failed and requires inspection or troubleshooting",
+        "The task is a section header",
+        "The task is waiting for scheduled execution next week",
+        "The task was imported from a local list"
+      ],
+      "correct_answers": [
+        "The task failed and requires inspection or troubleshooting"
+      ]
+    },
+    {
+      "id": "training-workplan-008",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Work Plan and Playbook Tasks",
+      "topic": "Inputs and Outputs",
+      "source_file": "Lessons/Automation/Work Plan and Playbook Tasks.txt",
+      "question": "How do outputs function in a Cortex playbook?",
+      "options": [
+        "They can become inputs for subsequent tasks, creating an interconnected flow",
+        "They are discarded before the next task runs",
+        "They can only be viewed in the license settings page",
+        "They are always converted into HTML templates"
+      ],
+      "correct_answers": [
+        "They can become inputs for subsequent tasks, creating an interconnected flow"
+      ]
+    },
+    {
+      "id": "training-workplan-009",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Work Plan and Playbook Tasks",
+      "topic": "Indicator Extraction",
+      "source_file": "Lessons/Automation/Work Plan and Playbook Tasks.txt",
+      "question": "Which indicator extraction mode means indicators are not extracted automatically?",
+      "options": [
+        "None",
+        "Inline",
+        "Out-of-Band",
+        "Built-in"
+      ],
+      "correct_answers": [
+        "None"
+      ]
+    },
+    {
+      "id": "training-workplan-010",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Work Plan and Playbook Tasks",
+      "topic": "Filters and Transformers",
+      "source_file": "Lessons/Automation/Work Plan and Playbook Tasks.txt",
+      "question": "What is the purpose of filters in Cortex?",
+      "options": [
+        "To extract relevant data for further use within the platform",
+        "To delete all task outputs after execution",
+        "To replace playbook inputs with static screenshots",
+        "To disable custom context roots"
+      ],
+      "correct_answers": [
+        "To extract relevant data for further use within the platform"
+      ]
+    },
+    {
+      "id": "training-lists-001",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Working with Lists",
+      "topic": "List Basics",
+      "source_file": "Lessons/Automation/Working with Lists.txt",
+      "question": "What is a list in Cortex?",
+      "options": [
+        "A container for storing data that is mainly used in playbooks and scripts",
+        "A required replacement for every playbook task",
+        "A dashboard-only visualization",
+        "A type of content pack update"
+      ],
+      "correct_answers": [
+        "A container for storing data that is mainly used in playbooks and scripts"
+      ]
+    },
+    {
+      "id": "training-lists-002",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Working with Lists",
+      "topic": "List Access",
+      "source_file": "Lessons/Automation/Working with Lists.txt",
+      "question": "How can a playbook task access data from a list?",
+      "options": [
+        "Through the context button under Lists or with the path ${lists.<list_name>}",
+        "Only by exporting the list to PDF",
+        "Only by opening the Marketplace Browse tab",
+        "By disabling the War Room CLI"
+      ],
+      "correct_answers": [
+        "Through the context button under Lists or with the path ${lists.<list_name>}"
+      ]
+    },
+    {
+      "id": "training-lists-003",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Working with Lists",
+      "topic": "List Content",
+      "source_file": "Lessons/Automation/Working with Lists.txt",
+      "question": "Which types of data can be stored in Cortex lists according to the lesson?",
+      "options": [
+        "Text, strings, numbers, Markdown, HTML, CSS, and JSON objects",
+        "Only IP addresses",
+        "Only screenshots",
+        "Only completed job IDs"
+      ],
+      "correct_answers": [
+        "Text, strings, numbers, Markdown, HTML, CSS, and JSON objects"
+      ]
+    },
+    {
+      "id": "training-lists-004",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Working with Lists",
+      "topic": "Use Cases",
+      "source_file": "Lessons/Automation/Working with Lists.txt",
+      "question": "Which list use case helps focus investigations on the most important users or servers?",
+      "options": [
+        "Prioritizing case response with critical asset lists",
+        "Deleting all imported threat feeds",
+        "Hiding list version history",
+        "Converting dashboards into playbooks"
+      ],
+      "correct_answers": [
+        "Prioritizing case response with critical asset lists"
+      ]
+    },
+    {
+      "id": "training-lists-005",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Working with Lists",
+      "topic": "Creating Lists",
+      "source_file": "Lessons/Automation/Working with Lists.txt",
+      "question": "Where does the lesson say lists can be created and managed?",
+      "options": [
+        "Settings > Configurations > Object Setup > Lists",
+        "Cases & Issues > Case War Room only",
+        "Marketplace > Version History",
+        "Dashboards > Widgets > Reports"
+      ],
+      "correct_answers": [
+        "Settings > Configurations > Object Setup > Lists"
+      ]
+    },
+    {
+      "id": "training-lists-006",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Working with Lists",
+      "topic": "List Page Options",
+      "source_file": "Lessons/Automation/Working with Lists.txt",
+      "question": "Which option is used to import list items from a local file?",
+      "options": [
+        "The cloud icon at the top right of the Lists page",
+        "The playbook brackets icon",
+        "The issue severity filter",
+        "The table detailed view icon"
+      ],
+      "correct_answers": [
+        "The cloud icon at the top right of the Lists page"
+      ]
+    },
+    {
+      "id": "training-lists-007",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Working with Lists",
+      "topic": "CLI Commands",
+      "source_file": "Lessons/Automation/Working with Lists.txt",
+      "question": "Which command creates a new list with a name and list data?",
+      "options": [
+        "createList",
+        "getList",
+        "setList",
+        "removeFromList"
+      ],
+      "correct_answers": [
+        "createList"
+      ]
+    },
+    {
+      "id": "training-lists-008",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Working with Lists",
+      "topic": "CLI Commands",
+      "source_file": "Lessons/Automation/Working with Lists.txt",
+      "question": "Which command should be used with the listName argument to retrieve the contents of a list?",
+      "options": [
+        "getList",
+        "addToList",
+        "setList",
+        "createList"
+      ],
+      "correct_answers": [
+        "getList"
+      ]
+    },
+    {
+      "id": "training-lists-009",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Working with Lists",
+      "topic": "CLI Commands",
+      "source_file": "Lessons/Automation/Working with Lists.txt",
+      "question": "Which command appends single or multiple items to a specified list?",
+      "options": [
+        "addToList",
+        "setList",
+        "removeFromList",
+        "getList"
+      ],
+      "correct_answers": [
+        "addToList"
+      ]
+    },
+    {
+      "id": "training-lists-010",
+      "module": "Training Lessons",
+      "source_type": "generated_lesson",
+      "category": "Working with Lists",
+      "topic": "Playbook Tasks",
+      "source_file": "Lessons/Automation/Working with Lists.txt",
+      "question": "How can playbook tasks use lists in Cortex?",
+      "options": [
+        "They can automate creating, viewing, and manipulating lists",
+        "They can only delete lists after every run",
+        "They can use lists only as screenshots",
+        "They cannot interact with lists"
+      ],
+      "correct_answers": [
+        "They can automate creating, viewing, and manipulating lists"
+      ]
+    }
+  ]
+}

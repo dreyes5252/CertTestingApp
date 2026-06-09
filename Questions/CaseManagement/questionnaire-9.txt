@@ -1,0 +1,99 @@
+Question 1 of 5
+What is the function of the correlations_auditing dataset?
+
+
+Monitor the results of correlation rules.
+
+
+Audit the configuration of correlation rules.
+
+
+Optimize the performance of correlation rules.
+
+
+Audit access changes to correlation rules.
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Monitor the results of correlation rules.
+
+Question 2 of 5
+Which type of Cortex rule can use threat indicators from trusted threat intelligence streams?
+
+
+IOC
+
+BTP
+
+BIOC
+
+Correlation
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+IOC
+Question 3 of 5
+Which attribute uniquely identifies an IOC rule in the IOC Rules table?
+
+
+File
+
+Name
+
+Domain
+
+Indicator
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Indicator
+Question 4 of 5
+Which of the following is a scope for IOC/BIOC Suppression Rules?
+
+
+All IOC
+
+
+Specific IOC
+
+
+Specific BIOC
+
+
+Specific Process
+
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Specific BIOC
+
+Question 5 of 5
+Which Cortex dataset can BIOC rules be checked against?
+
+
+host_data
+
+
+agent_auditing
+
+
+host_inventory
+
+
+cloud_audit_log
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+cloud_audit_log

@@ -1,0 +1,90 @@
+Question 1 of 5
+Which value is known as an untyped constant in XQL?
+
+
+null
+
+0
+
+True
+
+true
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+null
+Question 2 of 5
+Given that the DS1 dataset is not empty, which value appears in column F1 in the result table? Query: dataset = DS1 | alter f1 = "ABC" | filter f1 = "AB" | alter f1 = "ABCD"
+
+
+null
+
+AB
+
+ABC
+
+ABCD
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+null
+Question 3 of 5
+Which two data types can be used in alter stages for assignment? (Choose two)
+
+
+boolean
+(disabled)
+
+json
+(disabled)
+
+enum
+(disabled)
+
+array
+(disabled)
+Options
+You gave the correct answer and your score is 2
+Correct answer
+Score: 2
+Correct answers:
+boolean
+json
+Question 4 of 5
+Which feature on the XQL Search page of the Cortex XSIAM console displays the enum values for enum fields?
+
+
+Autocomplete
+
+Schema
+
+XQL Helper
+
+Query Library
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Autocomplete
+Question 5 of 5
+Given that the DS1 dataset has 20 fields, how many columns are in the result table of the query below? (Ignore columns automatically added to the result set, such as _time.) Query: dataset = xdr_data | fields fld1, fld2 | fields * | limit 4
+
+
+2
+
+4
+
+20
+
+22
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+2

@@ -1,0 +1,85 @@
+Question 1 of 5
+In which of the following ways can Cortex Copilot speed incident investigation or response?
+
+
+Cortex Copilot can automatically compose and send status updates during an incident.
+
+Cortex Copilot can automatically and independently isolate endpoints when they are involved in an incident.
+
+Cortex Copilot can help users generate Cortex Query Language (XQL) queries for incident investigation.
+
+Cortex Copilot can automatically and independently destroy all instances of unsafe file hashes identified in an incident.
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Cortex Copilot can help users generate Cortex Query Language (XQL) queries for incident investigation.
+Question 2 of 5
+What Cortex Copilot feature is deactivated by default in unsupported regions?
+
+
+Chat-based Help Center access
+
+Asset and artifact insights
+
+Contextualized response options
+
+Contextualized support ticket creation
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Chat-based Help Center access
+Question 3 of 5
+What conditions are required for Cortex Copilot to execute an action in the XSIAM backend?
+
+
+The user must have the Cortex Copilot permissions to perform the action.
+
+The user must have the Active Directory permissions to perform the action.
+
+The user must confirm the action and the user must have the Cortex Copilot permissions to perform the action.
+
+The user must confirm the action and the user must have the XSIAM Rule-Based Access Control permissions to perform the action.
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+The user must confirm the action and the user must have the XSIAM Rule-Based Access Control permissions to perform the action.
+Question 4 of 5
+How can a Cortex Copilot user access the Cortex Copilot Daily Recap screen?
+
+
+By entering “Show me the Daily Recap” in the Cortex Copilot chat bar
+
+By enabling the Daily Recap option in the Dashboard Manager menu
+
+By opening the Cortex Copilot overlay using the Cortex Copilot button in the XSIAM interface
+
+By selecting the Daily Recap option from the Dashboards and Reports menu in the XSIAM interface
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+By opening the Cortex Copilot overlay using the Cortex Copilot button in the XSIAM interface
+Question 5 of 5
+What suggestion categories will Cortex Copilot provide when users examine an asset or artifact?
+
+
+Research, Respond, and Report
+
+Investigate, Respond, and Report
+
+Research, Respond, and Navigate
+
+Investigate, Respond, and Navigate
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Investigate, Respond, and Navigate

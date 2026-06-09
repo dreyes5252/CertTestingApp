@@ -1,0 +1,119 @@
+Question 1 of 7
+How does Cortex handle the deletion of agents, and what happens to the associated data?
+
+
+Agents are instantly removed, and data is permanently deleted.
+
+Data is archived for one year.
+
+Data is retained for 90 days
+
+Agents cannot be deleted once registered.
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Data is retained for 90 days
+Question 2 of 7
+How are Dynamic Groups in Cortex populated?
+
+
+Manually selecting specific registered endpoints
+
+Automatically based on endpoint characteristics such as tags, hostname, and agent version
+
+By generating rolling tokens at regular intervals
+
+By creating static groups
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Automatically based on endpoint characteristics such as tags, hostname, and agent version
+Question 3 of 7
+Which of the following is a crucial aspect of endpoint security in modern cybersecurity?
+
+
+Application development
+
+Device procurement
+
+Protecting against exploit and malware threats
+
+Network architecture design
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Protecting against exploit and malware threats
+Question 4 of 7
+What is the main purpose of Exploit Security Profiles in Cortex?
+
+
+Detecting known malware
+
+Blocking spam messages
+
+Safeguarding against malware
+
+Protecting against vulnerabilities in browsers and operating systems
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Protecting against vulnerabilities in browsers and operating systems
+Question 5 of 7
+What is one of the key considerations for a successful Cortex deployment?
+
+
+Agent uninstallation
+
+Scalability and compatibility
+
+Server configuration
+
+Network architecture design
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Scalability and compatibility
+Question 6 of 7
+How do different security profiles in Cortex work together to protect endpoints?
+
+
+They provide user authentication.
+
+They deploy specific protections based on the nature of the attack and security policy configuration.
+
+They enhance network performance.
+
+They conduct digital forensics analysis.
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+They deploy specific protections based on the nature of the attack and security policy configuration.
+Question 7 of 7
+What is the purpose of the File Analysis and Protection Flow within Cortex?
+
+
+Preventing data loss on endpoints
+
+Providing real-time network monitoring
+
+Safeguarding against known and unknown threats, and preventing software vulnerabilities
+
+Enhancing endpoint user interfaces
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Safeguarding against known and unknown threats, and preventing software vulnerabilities

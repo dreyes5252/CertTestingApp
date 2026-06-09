@@ -1,0 +1,90 @@
+Question 1 of 5
+Which two options are valid XQL operators? (Choose two)
+
+
+In
+(disabled)
+
+Or
+(disabled)
+
+Not
+(disabled)
+
+Out
+(disabled)
+Options
+You gave the correct answer and your score is 2
+Correct answer
+Score: 2
+Correct answers:
+In
+Or
+Question 2 of 5
+What is the primary XQL stage where XQL operators are used?
+
+
+Filter
+
+Alter
+
+Fields
+
+Dataset
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Filter
+Question 3 of 5
+Which data type do almost all XQL operators return?
+
+
+Boolean
+
+String
+
+Type of left operand
+
+Type of right operand
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Boolean
+Question 4 of 5
+Which operator tests if a string matches a regular expression?
+
+
+~=
+
+=~
+
+!=
+
+<
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+~=
+Question 5 of 5
+Which XQL operator has two different functions that differ depending on the stage in which it is used?
+
+
+=
+
++
+
+~=
+
+!=
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+=

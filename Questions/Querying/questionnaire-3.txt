@@ -1,0 +1,90 @@
+Question 1 of 5
+Which type of object does object_create() produce?
+
+
+JSON
+
+Array
+
+List
+
+Map
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+JSON
+Question 2 of 5
+What is the XQL-native format used to access JSON data?
+
+
+Sugar
+
+JMESPath
+
+JSONiq
+
+GraphQL
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Sugar
+Question 3 of 5
+What do brackets ([]) return in an XQL function synopsis?
+
+
+An optional parameter
+
+A required parameter
+
+An array position parameter
+
+Varying number of parameters
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+An optional parameter
+Question 4 of 5
+Which XQL query would cause a runtime error?
+
+
+alter ret = arraycreate("10", "20", 30)
+
+alter ret = "a\\b"
+
+alter ret = split("192.168.1.20")
+
+alter ret = len(concat("a", "b"))
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+alter ret = arraycreate("10", "20", 30)
+Question 5 of 5
+Which two XQL functions return an array? (Choose two)
+
+
+regextract()
+(disabled)
+
+split()
+(disabled)
+
+arrayindex()
+(disabled)
+
+object_create()
+(disabled)
+Options
+You gave a partially correct answer and your score is 1
+Partially correct answer
+Score: 1
+Correct answers:
+regextract()
+split()

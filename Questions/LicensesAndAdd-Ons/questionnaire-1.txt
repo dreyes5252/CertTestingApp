@@ -1,0 +1,109 @@
+Question 1 of 5
+Which Cortex product would be the most suitable for an organization that needs to standardize processes, automate repetitive tasks, and manage security incidents across various tools?
+
+
+Cortex XDR
+
+
+Cortex Xpanse
+
+
+Cortex XSOAR
+
+
+Cortex Cloud
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Cortex XSOAR
+
+Question 2 of 5
+Which of the following is available as an optional add-on for Cortex XDR Pro?
+
+
+AI-driven Analytics / Machine Learning
+
+
+Automated Root Cause Analysis
+
+
+Vulnerability Management
+
+
+Next-Generation Antivirus
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Vulnerability Management
+
+Question 3 of 5
+Which Cortex Cloud module should an organization use to protect its running cloud workloads, including hosts and containers, from runtime threats?
+
+
+Cloud Posture
+
+
+Cloud Runtime
+
+
+Attack Surface Management
+
+
+Application Security
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Cloud Runtime
+
+Question 4 of 5
+Which feature is included in the XSIAM NG-SIEM license?
+
+
+External Attack Surface visibility
+
+
+Endpoint Protection
+
+
+Proactive Threat Hunting Tools
+
+
+Threat Intelligence Platform
+
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Proactive Threat Hunting Tools
+
+Question 5 of 5
+What is the main purpose of the Cortex Xpanse module?
+
+
+To automate incident response with playbooks.
+
+
+To provide a complete view of an organization's global internet-facing assets and identify risks.
+
+
+To secure endpoints from malware and exploits.
+
+
+To manage and enforce least-privilege access for cloud identities.
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+To provide a complete view of an organization's global internet-facing assets and identify risks.

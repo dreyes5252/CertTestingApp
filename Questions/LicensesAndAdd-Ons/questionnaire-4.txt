@@ -1,0 +1,109 @@
+Question 1 of 5
+When an email contains a known malicious URL that matches an internal blocklist, which detection category is most likely to be triggered?
+
+
+AURL issue
+
+
+WF Analysis issue
+
+
+IOC-Based issue
+
+
+User-Reported Phishing issue
+
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+IOC-Based issue
+
+Question 2 of 5
+Which statement about the Cortex Advanced Email Security module's data collection method is correct?
+
+
+It operates inline and requires Mail Exchange path modifications
+
+
+It uses a continuous, API-based method for data collection
+
+
+It relies on journaling to ingest rich message-level data
+
+
+It can only collect data from on-premise Exchange deployments
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+It uses a continuous, API-based method for data collection
+
+Question 3 of 5
+What is the primary purpose of the allow list in the Cortex Advanced Email Security module?
+
+
+To define trusted indicators used to generate true positive security issues
+
+
+To trigger a specific type of alert when a match is found
+
+
+To prevent a detection rule from generating an issue for a trusted indicator
+
+
+To identify known malicious indicators from a user-reported email
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+To prevent a detection rule from generating an issue for a trusted indicator
+
+Question 4 of 5
+What is the primary enhancement provided by the LLM-based engine for detecting sophisticated phishing emails?
+
+
+It correlates weak signals from multiple domains to create a holistic story.
+
+
+It analyzes URLs and file attachments using sandbox integration.
+
+
+It detects linguistic anomalies and tone manipulation that bypass static indicators.
+
+
+It evaluates the sender-recipient relationship history and header anomalies.
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+It detects linguistic anomalies and tone manipulation that bypass static indicators.
+
+Question 5 of 5
+Which statement describes the relationship between block lists and detection rules?
+
+
+A block list rule is a type of detection rule that prevents issues from being generated.
+
+
+A block list acts as a data source for a specific type of detection rule.
+
+
+A block list rule is the same as a detection rule, but for malicious indicators.
+
+
+A block list is a set of policies for managing detection rules.
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+A block list acts as a data source for a specific type of detection rule.

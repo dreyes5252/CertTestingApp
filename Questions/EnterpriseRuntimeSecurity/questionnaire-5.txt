@@ -1,0 +1,109 @@
+Question 1 of 5
+Which Cortex feature allows you to define which host, user, or IP address values will have a flag in their associated Name field on the Issues table when they appear?
+
+
+Featured Fields
+
+
+Featured Values
+
+
+Flagged Fields
+
+
+Flagged Values
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Featured Fields
+
+Question 2 of 5
+Which profile cannot be deleted?
+
+
+Agent Settings
+
+
+Default Settings
+
+
+Exploit Settings
+
+
+Malware Settings
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Default Settings
+
+Question 3 of 5
+Which of the following sections from the Policy Management Page limits the attack surface on the protected Endpoint?
+
+
+Prevention
+
+
+Extensions
+
+
+Global Exceptions
+
+
+Exemptions
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Extensions
+
+Question 4 of 5
+Which of the following prevents the Cortex XDR agent from being tampered with or maliciously modified?
+
+
+Agent Services
+
+
+Agent Security
+
+
+Security Services
+
+
+Security Protection
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Agent Security
+
+Question 5 of 5
+Which Cortex feature associates profiles with selected endpoints?
+
+
+Policy Rules
+
+
+Profile Rules
+
+
+Agent Settings
+
+
+Policy Settings
+
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Policy Rules

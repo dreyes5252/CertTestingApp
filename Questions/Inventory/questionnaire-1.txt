@@ -1,0 +1,109 @@
+Question 1 of 5
+How is an unmanaged asset specifically characterized within Cortex?
+
+
+A network device that is not actively transmitting data
+
+
+An endpoint without the Cortex XDR agent installed
+
+
+Any cloud compute instance that lacks proper tagging
+
+
+A server operating outside a defined network segment
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+An endpoint without the Cortex XDR agent installed
+
+Question 2 of 5
+What specific action does the Network Mapper perform to detect devices within selected IP address ranges?
+
+
+Monitors network traffic for suspicious patterns
+
+
+Scans the network to detect unmanaged hosts
+
+
+Automatically configures new network devices
+
+
+Collects DHCP logs for IP address assignments
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Scans the network to detect unmanaged hosts
+
+Question 3 of 5
+In addition to the distributed network scan in the XDR Agent Settings profile, what discovery method is also used by Cortex?
+
+
+Public internet scanning tools
+
+
+SNMP calls
+
+
+Broker VM Network Mapper
+
+
+DNS reverse lookups
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Broker VM Network Mapper
+
+Question 4 of 5
+The Cortex Vulnerability Assessment component regularly searches Common Vulnerabilities and Exposures (CVE) databases. How often does it correlate these CVE databases with the application and kernel patch lists to detect new vulnerabilities?
+
+
+Every 24 hours
+
+
+Every 12 hours
+
+
+Every 8 hours
+
+
+Every four hours
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Every four hours
+
+Question 5 of 5
+What is the consolidated view in Cortex that integrates all on-premises and cloud assets called?
+
+
+Aggregated Asset Overview
+
+
+Comprehensive Asset List
+
+
+Consolidated Asset Inventory
+
+
+Unified Asset Inventory
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Unified Asset Inventory

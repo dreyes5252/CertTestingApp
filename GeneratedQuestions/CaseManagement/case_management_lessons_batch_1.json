@@ -1,0 +1,1096 @@
+{
+  "questions": [
+    {
+      "id": "training-case-management-001",
+      "category": "Case Management",
+      "source_file": "Lessons/Case Management/Case Management.txt",
+      "question": "Why does Cortex group related security information into cases?",
+      "options": [
+        "To organize issues, assets, artifacts, and investigation context around a security event",
+        "To prevent analysts from viewing individual issues after correlation",
+        "To move issue data into long-term storage before triage",
+        "To replace issue severity with only asset criticality"
+      ],
+      "correct_answers": ["To organize issues, assets, artifacts, and investigation context around a security event"]
+    },
+    {
+      "id": "training-case-management-002",
+      "category": "Case Management",
+      "source_file": "Lessons/Case Management/Case Management.txt",
+      "question": "What does the Key Assets & Artifacts tab help analysts review?",
+      "options": [
+        "Hosts, users, and notable artifacts associated with the case",
+        "Only the playbook task execution graph for the case",
+        "Only the licensing details for endpoint data collection",
+        "The global list of all integrations installed in the tenant"
+      ],
+      "correct_answers": ["Hosts, users, and notable artifacts associated with the case"]
+    },
+    {
+      "id": "training-case-management-003",
+      "category": "Case Management",
+      "source_file": "Lessons/Case Management/Case Management.txt",
+      "question": "What is the practical effect of case thresholds?",
+      "options": [
+        "They define when a case should stop accepting additional issues",
+        "They prevent issues from being assigned a severity",
+        "They determine which artifacts are sent to WildFire",
+        "They disable case comments after a case is assigned"
+      ],
+      "correct_answers": ["They define when a case should stop accepting additional issues"]
+    },
+    {
+      "id": "training-case-management-004",
+      "category": "Case Management",
+      "source_file": "Lessons/Case Management/Case Management.txt",
+      "question": "How do external integrations improve case investigations?",
+      "options": [
+        "They enrich investigation context with information from external security sources",
+        "They automatically close every issue that joins an existing case",
+        "They replace Cortex case fields with integration-specific fields",
+        "They prevent analysts from changing a case status manually"
+      ],
+      "correct_answers": ["They enrich investigation context with information from external security sources"]
+    },
+    {
+      "id": "training-case-management-005",
+      "category": "Case Management",
+      "source_file": "Lessons/Case Management/Case Management.txt",
+      "question": "Which view is most useful when an analyst needs a consolidated case summary plus related tabs for investigation data?",
+      "options": [
+        "The case details pane",
+        "The XQL query editor",
+        "The endpoint policy profile editor",
+        "The content pack version history view"
+      ],
+      "correct_answers": ["The case details pane"]
+    },
+    {
+      "id": "training-case-management-006",
+      "category": "Case Management",
+      "source_file": "Lessons/Case Management/Case Management.txt",
+      "question": "A case contains multiple issues tied to related assets and artifacts. What is the main benefit of this grouping?",
+      "options": [
+        "It gives analysts a more complete view of the security event and its impact",
+        "It removes the need to preserve individual issue evidence",
+        "It converts every issue into a separate standalone incident",
+        "It forces every asset to use the same remediation action"
+      ],
+      "correct_answers": ["It gives analysts a more complete view of the security event and its impact"]
+    },
+    {
+      "id": "training-case-management-007",
+      "category": "Case Management",
+      "source_file": "Lessons/Case Management/Case Management.txt",
+      "question": "Which outcome best describes effective case management in Cortex?",
+      "options": [
+        "Faster investigation through organized evidence, related issues, and actionable context",
+        "Reduced visibility by separating artifacts from issue data",
+        "Automated deletion of issues after the first investigation step",
+        "Manual recreation of all endpoint and artifact relationships"
+      ],
+      "correct_answers": ["Faster investigation through organized evidence, related issues, and actionable context"]
+    },
+    {
+      "id": "training-working-cases-001",
+      "category": "Working with Cases",
+      "source_file": "Lessons/Case Management/Working with cases.txt",
+      "question": "Which components are central to how Cortex organizes incident information into cases?",
+      "options": [
+        "Cases, issues, assets, and artifacts",
+        "Queries, dashboards, widgets, and reports",
+        "Jobs, feeds, schedules, and recurrence intervals",
+        "Lists, commands, indicators, and context keys"
+      ],
+      "correct_answers": ["Cases, issues, assets, and artifacts"]
+    },
+    {
+      "id": "training-working-cases-002",
+      "category": "Working with Cases",
+      "source_file": "Lessons/Case Management/Working with cases.txt",
+      "question": "What does issue matching help Cortex do?",
+      "options": [
+        "Associate new issues with an existing case when matching criteria are met",
+        "Assign every issue to a new case even when related cases exist",
+        "Remove issue attributes before displaying them in the case list",
+        "Apply the same score to all cases regardless of evidence"
+      ],
+      "correct_answers": ["Associate new issues with an existing case when matching criteria are met"]
+    },
+    {
+      "id": "training-working-cases-003",
+      "category": "Working with Cases",
+      "source_file": "Lessons/Case Management/Working with cases.txt",
+      "question": "Why would an analyst use case actions while working a case?",
+      "options": [
+        "To update, manage, or progress the case based on investigation findings",
+        "To prevent any additional issues from being displayed in Cortex",
+        "To convert the case into a static report before triage",
+        "To remove all scoring logic from the tenant"
+      ],
+      "correct_answers": ["To update, manage, or progress the case based on investigation findings"]
+    },
+    {
+      "id": "training-working-cases-004",
+      "category": "Working with Cases",
+      "source_file": "Lessons/Case Management/Working with cases.txt",
+      "question": "What is the purpose of detail view tabs in a case?",
+      "options": [
+        "To separate and organize investigation information such as overview, issues, artifacts, and related details",
+        "To hide case information from analysts until a playbook finishes",
+        "To display only historical dashboard widgets",
+        "To configure endpoint policy enforcement"
+      ],
+      "correct_answers": ["To separate and organize investigation information such as overview, issues, artifacts, and related details"]
+    },
+    {
+      "id": "training-working-cases-005",
+      "category": "Working with Cases",
+      "source_file": "Lessons/Case Management/Working with cases.txt",
+      "question": "How do case scoring rules support analysts?",
+      "options": [
+        "They help evaluate and prioritize cases based on defined scoring logic",
+        "They delete cases that fall below a defined severity",
+        "They replace artifact enrichment with manual notes",
+        "They prevent related issues from binding to a case"
+      ],
+      "correct_answers": ["They help evaluate and prioritize cases based on defined scoring logic"]
+    },
+    {
+      "id": "training-working-cases-006",
+      "category": "Working with Cases",
+      "source_file": "Lessons/Case Management/Working with cases.txt",
+      "question": "An issue matches an existing case. What action best preserves investigation continuity?",
+      "options": [
+        "Bind the issue to the matching case",
+        "Delete the issue and create a note",
+        "Export the issue and remove it from Cortex",
+        "Disable the case scoring rule"
+      ],
+      "correct_answers": ["Bind the issue to the matching case"]
+    },
+    {
+      "id": "training-working-cases-007",
+      "category": "Working with Cases",
+      "source_file": "Lessons/Case Management/Working with cases.txt",
+      "question": "What is the purpose of the Case ID in the Issues table?",
+      "options": [
+        "It helps analysts identify which case an issue is associated with",
+        "It replaces the issue's external ID",
+        "It indicates whether endpoint isolation is enabled",
+        "It shows the name of the assigned playbook only"
+      ],
+      "correct_answers": ["It helps analysts identify which case an issue is associated with"]
+    },
+    {
+      "id": "training-working-issues-001",
+      "category": "Working with Issues",
+      "source_file": "Lessons/Case Management/Working with Issues.txt",
+      "question": "Which objects are common across issue handling in Cortex?",
+      "options": [
+        "Issue, case, and log",
+        "Feed, job, and recurrence",
+        "Dashboard, report, and widget",
+        "Script, Docker image, and timeout"
+      ],
+      "correct_answers": ["Issue, case, and log"]
+    },
+    {
+      "id": "training-working-issues-002",
+      "category": "Working with Issues",
+      "source_file": "Lessons/Case Management/Working with Issues.txt",
+      "question": "Why do issue attributes matter during triage?",
+      "options": [
+        "They provide context analysts use to understand, prioritize, and act on issues",
+        "They replace causality data with a static severity label",
+        "They are used only after an issue is closed",
+        "They prevent Cortex from linking issues to cases"
+      ],
+      "correct_answers": ["They provide context analysts use to understand, prioritize, and act on issues"]
+    },
+    {
+      "id": "training-working-issues-003",
+      "category": "Working with Issues",
+      "source_file": "Lessons/Case Management/Working with Issues.txt",
+      "question": "Which issue action helps an analyst examine the sequence of related events?",
+      "options": [
+        "Investigate Causality Chain",
+        "Create list",
+        "Pause job",
+        "Revert content pack"
+      ],
+      "correct_answers": ["Investigate Causality Chain"]
+    },
+    {
+      "id": "training-working-issues-004",
+      "category": "Working with Issues",
+      "source_file": "Lessons/Case Management/Working with Issues.txt",
+      "question": "What are issue starring rules used for?",
+      "options": [
+        "Prioritizing issues based on defined policies",
+        "Suppressing all network alerts globally",
+        "Changing the case threshold timer",
+        "Running a feed-triggered playbook"
+      ],
+      "correct_answers": ["Prioritizing issues based on defined policies"]
+    },
+    {
+      "id": "training-working-issues-005",
+      "category": "Working with Issues",
+      "source_file": "Lessons/Case Management/Working with Issues.txt",
+      "question": "How do featured issue fields help focus investigation work?",
+      "options": [
+        "They surface selected values that can influence issue priority and analyst attention",
+        "They remove issue JSON from the issue details pane",
+        "They prevent the issue from being starred",
+        "They disable causality and timeline investigation"
+      ],
+      "correct_answers": ["They surface selected values that can influence issue priority and analyst attention"]
+    },
+    {
+      "id": "training-working-issues-006",
+      "category": "Working with Issues",
+      "source_file": "Lessons/Case Management/Working with Issues.txt",
+      "question": "What does a stitched issue provide that is useful for deeper investigation?",
+      "options": [
+        "Additional linked causality or event context related to the issue",
+        "A guarantee that no endpoint data is associated with the issue",
+        "A replacement for all issue actions",
+        "A static report that cannot be expanded"
+      ],
+      "correct_answers": ["Additional linked causality or event context related to the issue"]
+    },
+    {
+      "id": "training-working-issues-007",
+      "category": "Working with Issues",
+      "source_file": "Lessons/Case Management/Working with Issues.txt",
+      "question": "When would an analyst use pivots from an issue?",
+      "options": [
+        "To move from issue details into related views for deeper investigation",
+        "To remove the issue from all cases",
+        "To convert the issue into a scheduled query",
+        "To disable featured issue fields"
+      ],
+      "correct_answers": ["To move from issue details into related views for deeper investigation"]
+    },
+    {
+      "id": "training-analysis-collab-001",
+      "category": "Analysis and Collaboration",
+      "source_file": "Lessons/Case Management/Analysis and Collaboration.txt",
+      "question": "What is the main role of a Cortex War Room?",
+      "options": [
+        "To provide a collaborative space for investigation activity, artifacts, notes, and commands",
+        "To replace all case fields with static comments",
+        "To store only dashboard reports",
+        "To configure global exception profiles"
+      ],
+      "correct_answers": ["To provide a collaborative space for investigation activity, artifacts, notes, and commands"]
+    },
+    {
+      "id": "training-analysis-collab-002",
+      "category": "Analysis and Collaboration",
+      "source_file": "Lessons/Case Management/Analysis and Collaboration.txt",
+      "question": "Which set of actions can be performed on War Room entries?",
+      "options": [
+        "Mark as note, view artifact in a new tab, attach to task, download artifact, and add tags",
+        "Pause job, resume job, abort job, and delete job",
+        "Create IOC, import BIOC, revert content pack, and update list",
+        "Disable endpoint, isolate network, edit license, and purge logs"
+      ],
+      "correct_answers": ["Mark as note, view artifact in a new tab, attach to task, download artifact, and add tags"]
+    },
+    {
+      "id": "training-analysis-collab-003",
+      "category": "Analysis and Collaboration",
+      "source_file": "Lessons/Case Management/Analysis and Collaboration.txt",
+      "question": "What can analysts execute from the Cortex CLI?",
+      "options": [
+        "Automation scripts, integration commands, and collaboration commands",
+        "Only dashboard widget exports",
+        "Only case scoring formulas",
+        "Only Marketplace update checks"
+      ],
+      "correct_answers": ["Automation scripts, integration commands, and collaboration commands"]
+    },
+    {
+      "id": "training-analysis-collab-004",
+      "category": "Analysis and Collaboration",
+      "source_file": "Lessons/Case Management/Analysis and Collaboration.txt",
+      "question": "Which CLI feature helps analysts find commands faster while typing?",
+      "options": [
+        "Auto-complete",
+        "Case binding",
+        "Issue starring",
+        "Chart panel"
+      ],
+      "correct_answers": ["Auto-complete"]
+    },
+    {
+      "id": "training-analysis-collab-005",
+      "category": "Analysis and Collaboration",
+      "source_file": "Lessons/Case Management/Analysis and Collaboration.txt",
+      "question": "Why is context data useful in Cortex investigations?",
+      "options": [
+        "It stores structured investigation data that commands, automations, and playbooks can reference",
+        "It prevents commands from returning output",
+        "It stores only analyst usernames",
+        "It deletes artifacts after download"
+      ],
+      "correct_answers": ["It stores structured investigation data that commands, automations, and playbooks can reference"]
+    },
+    {
+      "id": "training-analysis-collab-006",
+      "category": "Analysis and Collaboration",
+      "source_file": "Lessons/Case Management/Analysis and Collaboration.txt",
+      "question": "When reviewing a War Room artifact, why might an analyst attach it to a task?",
+      "options": [
+        "To connect relevant evidence to a specific investigation or response step",
+        "To hide it from the War Room entry list",
+        "To convert it into an endpoint policy",
+        "To mark the case as closed automatically"
+      ],
+      "correct_answers": ["To connect relevant evidence to a specific investigation or response step"]
+    },
+    {
+      "id": "training-analysis-collab-007",
+      "category": "Analysis and Collaboration",
+      "source_file": "Lessons/Case Management/Analysis and Collaboration.txt",
+      "question": "What is a practical benefit of filtering War Room entries?",
+      "options": [
+        "It helps analysts focus on relevant notes, commands, artifacts, or activity during an investigation",
+        "It permanently deletes nonmatching entries",
+        "It disables integration commands",
+        "It removes context data from the case"
+      ],
+      "correct_answers": ["It helps analysts focus on relevant notes, commands, artifacts, or activity during an investigation"]
+    },
+    {
+      "id": "training-causality-001",
+      "category": "Analyzing Issue Causality",
+      "source_file": "Lessons/Case Management/Analyzing Issue Causality.txt",
+      "question": "What is the Causality View designed to help analysts understand?",
+      "options": [
+        "The causal relationships and investigation context behind an issue",
+        "The list of scheduled jobs for a tenant",
+        "The version history of installed content packs",
+        "The available columns in Query Center"
+      ],
+      "correct_answers": ["The causal relationships and investigation context behind an issue"]
+    },
+    {
+      "id": "training-causality-002",
+      "category": "Analyzing Issue Causality",
+      "source_file": "Lessons/Case Management/Analyzing Issue Causality.txt",
+      "question": "Why are stitched issues valuable in causality analysis?",
+      "options": [
+        "They provide richer linked information for causal and timeline investigation",
+        "They remove all event details from the issue",
+        "They disable process node shortcut actions",
+        "They prevent timeline analysis from opening"
+      ],
+      "correct_answers": ["They provide richer linked information for causal and timeline investigation"]
+    },
+    {
+      "id": "training-causality-003",
+      "category": "Analyzing Issue Causality",
+      "source_file": "Lessons/Case Management/Analyzing Issue Causality.txt",
+      "question": "What does a causality instance graph represent?",
+      "options": [
+        "Connected nodes and events that form the activity chain for an issue",
+        "A list of all imported indicators",
+        "A scheduled query run history",
+        "A content pack dependency tree"
+      ],
+      "correct_answers": ["Connected nodes and events that form the activity chain for an issue"]
+    },
+    {
+      "id": "training-causality-004",
+      "category": "Analyzing Issue Causality",
+      "source_file": "Lessons/Case Management/Analyzing Issue Causality.txt",
+      "question": "What do process node shortcut menu actions enable?",
+      "options": [
+        "Investigation or response actions from the context of a selected process",
+        "Editing case SLA thresholds",
+        "Creating list version history entries",
+        "Changing the query schedule type"
+      ],
+      "correct_answers": ["Investigation or response actions from the context of a selected process"]
+    },
+    {
+      "id": "training-causality-005",
+      "category": "Analyzing Issue Causality",
+      "source_file": "Lessons/Case Management/Analyzing Issue Causality.txt",
+      "question": "How does Timeline View complement causality analysis?",
+      "options": [
+        "It lets analysts review event data over time for the issue",
+        "It replaces all causal graph nodes with static text",
+        "It is used only to create exclusions",
+        "It suppresses all related endpoint events"
+      ],
+      "correct_answers": ["It lets analysts review event data over time for the issue"]
+    },
+    {
+      "id": "training-causality-006",
+      "category": "Analyzing Issue Causality",
+      "source_file": "Lessons/Case Management/Analyzing Issue Causality.txt",
+      "question": "If a non-stitched issue has limited information, what should an analyst expect?",
+      "options": [
+        "Some causality or investigation details may be unavailable compared with stitched issues",
+        "The issue will always contain a complete process tree",
+        "All shortcut menu actions will become mandatory",
+        "Timeline analysis will automatically close the case"
+      ],
+      "correct_answers": ["Some causality or investigation details may be unavailable compared with stitched issues"]
+    },
+    {
+      "id": "training-causality-007",
+      "category": "Analyzing Issue Causality",
+      "source_file": "Lessons/Case Management/Analyzing Issue Causality.txt",
+      "question": "What is an attack region in a causality chain useful for?",
+      "options": [
+        "Focusing investigation on the portion of the chain most relevant to suspicious activity",
+        "Changing job trigger frequency",
+        "Importing external lists into Cortex",
+        "Reverting an installed content pack"
+      ],
+      "correct_answers": ["Focusing investigation on the portion of the chain most relevant to suspicious activity"]
+    },
+    {
+      "id": "training-integrated-analysis-001",
+      "category": "Integrated Analysis",
+      "source_file": "Lessons/Case Management/Integrated Analysis.txt",
+      "question": "What is the purpose of log stitching in Cortex?",
+      "options": [
+        "To correlate logs and issues so analysts can use causality chains and timelines",
+        "To delete raw endpoint telemetry after issue creation",
+        "To convert every log into a manual task",
+        "To disable machine learning analytics"
+      ],
+      "correct_answers": ["To correlate logs and issues so analysts can use causality chains and timelines"]
+    },
+    {
+      "id": "training-integrated-analysis-002",
+      "category": "Integrated Analysis",
+      "source_file": "Lessons/Case Management/Integrated Analysis.txt",
+      "question": "Which data types are associated with enhanced endpoint data collection?",
+      "options": [
+        "Process operations and network operations",
+        "Only dashboard widgets and reports",
+        "Only list names and list data",
+        "Only query templates and query schedules"
+      ],
+      "correct_answers": ["Process operations and network operations"]
+    },
+    {
+      "id": "training-integrated-analysis-003",
+      "category": "Integrated Analysis",
+      "source_file": "Lessons/Case Management/Integrated Analysis.txt",
+      "question": "Which fields are used when checking stitching status?",
+      "options": [
+        "matching_status and agent_data_collection_status",
+        "case_score and case_weight",
+        "listName and listData",
+        "job_type and recurrence_interval"
+      ],
+      "correct_answers": ["matching_status and agent_data_collection_status"]
+    },
+    {
+      "id": "training-integrated-analysis-004",
+      "category": "Integrated Analysis",
+      "source_file": "Lessons/Case Management/Integrated Analysis.txt",
+      "question": "How does the Analytics Engine identify suspicious behavior?",
+      "options": [
+        "It models normal behavior with machine learning and detects deviations or suspicious patterns",
+        "It only compares files against manually imported allow lists",
+        "It disables behavioral analytics when issues are stitched",
+        "It relies only on case scoring rules"
+      ],
+      "correct_answers": ["It models normal behavior with machine learning and detects deviations or suspicious patterns"]
+    },
+    {
+      "id": "training-integrated-analysis-005",
+      "category": "Integrated Analysis",
+      "source_file": "Lessons/Case Management/Integrated Analysis.txt",
+      "question": "Why is MITRE ATT&CK coverage relevant to integrated analysis?",
+      "options": [
+        "It helps map detector coverage and suspicious behavior to recognized attack tactics",
+        "It defines how lists are imported from local files",
+        "It controls whether War Room commands can run",
+        "It decides which content packs can be deleted"
+      ],
+      "correct_answers": ["It helps map detector coverage and suspicious behavior to recognized attack tactics"]
+    },
+    {
+      "id": "training-integrated-analysis-006",
+      "category": "Integrated Analysis",
+      "source_file": "Lessons/Case Management/Integrated Analysis.txt",
+      "question": "What can analysts do with stitched issues in the Issues table?",
+      "options": [
+        "Open related investigative views such as the card or timeline when data is available",
+        "Only export the issue to a local spreadsheet",
+        "Only convert the issue into a scheduled query",
+        "Only disable endpoint data collection"
+      ],
+      "correct_answers": ["Open related investigative views such as the card or timeline when data is available"]
+    },
+    {
+      "id": "training-integrated-analysis-007",
+      "category": "Integrated Analysis",
+      "source_file": "Lessons/Case Management/Integrated Analysis.txt",
+      "question": "What is the relationship between issues and logs in integrated analysis?",
+      "options": [
+        "Logs provide event context that can be correlated with issues for deeper investigation",
+        "Logs are discarded once an issue is generated",
+        "Issues are stored only as raw logs without enrichment",
+        "Logs can be viewed only from list commands"
+      ],
+      "correct_answers": ["Logs provide event context that can be correlated with issues for deeper investigation"]
+    },
+    {
+      "id": "training-response-actions-001",
+      "category": "Response Actions",
+      "source_file": "Lessons/Case Management/Response Actions.txt",
+      "question": "Which set describes Cortex response action categories?",
+      "options": [
+        "Instant Response, Further Investigation, and Maintenance and Administration",
+        "Issue Matching, Case Scoring, and Case Thresholds",
+        "Time Triggered, Feed Triggered, and Manual Jobs",
+        "Template Query, XQL Query, and Query Helper"
+      ],
+      "correct_answers": ["Instant Response, Further Investigation, and Maintenance and Administration"]
+    },
+    {
+      "id": "training-response-actions-002",
+      "category": "Response Actions",
+      "source_file": "Lessons/Case Management/Response Actions.txt",
+      "question": "Which targets can response actions apply to?",
+      "options": [
+        "Processes and files, endpoints, and networks",
+        "Only cases and dashboards",
+        "Only lists and commands",
+        "Only reports and widgets"
+      ],
+      "correct_answers": ["Processes and files, endpoints, and networks"]
+    },
+    {
+      "id": "training-response-actions-003",
+      "category": "Response Actions",
+      "source_file": "Lessons/Case Management/Response Actions.txt",
+      "question": "What transport is associated with server-initiated actions?",
+      "options": [
+        "WebSocket",
+        "SMTP relay",
+        "Local file upload",
+        "DOCX media extraction"
+      ],
+      "correct_answers": ["WebSocket"]
+    },
+    {
+      "id": "training-response-actions-004",
+      "category": "Response Actions",
+      "source_file": "Lessons/Case Management/Response Actions.txt",
+      "question": "What is the Action Center used for?",
+      "options": [
+        "Performing and tracking response actions",
+        "Building scheduled XQL queries",
+        "Editing issue matching thresholds",
+        "Managing list version history"
+      ],
+      "correct_answers": ["Performing and tracking response actions"]
+    },
+    {
+      "id": "training-response-actions-005",
+      "category": "Response Actions",
+      "source_file": "Lessons/Case Management/Response Actions.txt",
+      "question": "Which response actions are specifically associated with endpoint response work?",
+      "options": [
+        "Run Live Terminal and isolate an endpoint",
+        "Create scoring rules and case layouts",
+        "Import list items and view version history",
+        "Create periodic and non-periodic scheduled queries"
+      ],
+      "correct_answers": ["Run Live Terminal and isolate an endpoint"]
+    },
+    {
+      "id": "training-response-actions-006",
+      "category": "Response Actions",
+      "source_file": "Lessons/Case Management/Response Actions.txt",
+      "question": "Why is limiting access to response actions important?",
+      "options": [
+        "Response actions can affect endpoints, processes, files, or networks and should be controlled",
+        "Response actions are only visual labels with no operational effect",
+        "All users must always be able to isolate endpoints",
+        "Access controls prevent issues from being generated"
+      ],
+      "correct_answers": ["Response actions can affect endpoints, processes, files, or networks and should be controlled"]
+    },
+    {
+      "id": "training-response-actions-007",
+      "category": "Response Actions",
+      "source_file": "Lessons/Case Management/Response Actions.txt",
+      "question": "What does a failover to HTTP option support for server-initiated actions?",
+      "options": [
+        "Alternative communication if the preferred live session path is unavailable",
+        "Automatic deletion of failed actions",
+        "Conversion of actions into case scoring rules",
+        "Export of all response actions to a list"
+      ],
+      "correct_answers": ["Alternative communication if the preferred live session path is unavailable"]
+    },
+    {
+      "id": "training-advanced-response-001",
+      "category": "Advanced Response Actions",
+      "source_file": "Lessons/Case Management/Advanced Response Actions.txt",
+      "question": "What are remediation suggestions used for?",
+      "options": [
+        "Presenting recommended actions analysts can take to remediate detected issues",
+        "Building query templates for recurring hunts",
+        "Creating case scoring rules from artifact fields",
+        "Replacing all manual response actions with exclusions"
+      ],
+      "correct_answers": ["Presenting recommended actions analysts can take to remediate detected issues"]
+    },
+    {
+      "id": "training-advanced-response-002",
+      "category": "Advanced Response Actions",
+      "source_file": "Lessons/Case Management/Advanced Response Actions.txt",
+      "question": "Which set contains examples of remediation suggestion actions?",
+      "options": [
+        "Delete, restore, or rename file; delete or restore registry value; terminate causality",
+        "Create scheduled query; edit dataset; save query template",
+        "Create list; import list; view list version history",
+        "Open dashboard; export report; add widget"
+      ],
+      "correct_answers": ["Delete, restore, or rename file; delete or restore registry value; terminate causality"]
+    },
+    {
+      "id": "training-advanced-response-003",
+      "category": "Advanced Response Actions",
+      "source_file": "Lessons/Case Management/Advanced Response Actions.txt",
+      "question": "What is a key purpose of remote script execution?",
+      "options": [
+        "Running custom scripts on endpoints and tracking execution status",
+        "Replacing issue causality graphs with static notes",
+        "Disabling all endpoint response actions",
+        "Automatically closing every case with a registry value"
+      ],
+      "correct_answers": ["Running custom scripts on endpoints and tracking execution status"]
+    },
+    {
+      "id": "training-advanced-response-004",
+      "category": "Advanced Response Actions",
+      "source_file": "Lessons/Case Management/Advanced Response Actions.txt",
+      "question": "Which task is performed from the Scripts Library workflow?",
+      "options": [
+        "Uploading ready-to-use Python scripts or adding a new script",
+        "Binding issues to cases with matching rules",
+        "Creating a scheduled query from Query Center",
+        "Viewing the case details pane"
+      ],
+      "correct_answers": ["Uploading ready-to-use Python scripts or adding a new script"]
+    },
+    {
+      "id": "training-advanced-response-005",
+      "category": "Advanced Response Actions",
+      "source_file": "Lessons/Case Management/Advanced Response Actions.txt",
+      "question": "What does the Cortex EDL service help manage?",
+      "options": [
+        "External dynamic lists of IP addresses and domain names",
+        "Case detail tabs and scoring rules",
+        "War Room command auto-complete",
+        "Scheduled query recurrence intervals"
+      ],
+      "correct_answers": ["External dynamic lists of IP addresses and domain names"]
+    },
+    {
+      "id": "training-advanced-response-006",
+      "category": "Advanced Response Actions",
+      "source_file": "Lessons/Case Management/Advanced Response Actions.txt",
+      "question": "Why would an analyst track remediation status?",
+      "options": [
+        "To verify whether suggested or initiated remediation actions completed successfully",
+        "To suppress all future issues from the same endpoint",
+        "To convert a remediation suggestion into a report widget",
+        "To remove the related issue from all cases"
+      ],
+      "correct_answers": ["To verify whether suggested or initiated remediation actions completed successfully"]
+    },
+    {
+      "id": "training-advanced-response-007",
+      "category": "Advanced Response Actions",
+      "source_file": "Lessons/Case Management/Advanced Response Actions.txt",
+      "question": "What is the benefit of performing remediation actions in bulk?",
+      "options": [
+        "It allows the same remediation action to be applied efficiently across multiple relevant items",
+        "It forces each item to be investigated in a separate tenant",
+        "It disables manual remediation options",
+        "It prevents remediation status from being tracked"
+      ],
+      "correct_answers": ["It allows the same remediation action to be applied efficiently across multiple relevant items"]
+    },
+    {
+      "id": "training-alerting-detection-001",
+      "category": "Alerting and Detection",
+      "source_file": "Lessons/Case Management/Alerting and Detection.txt",
+      "question": "Which capabilities contribute to Cortex threat detection strategy?",
+      "options": [
+        "Threat visibility, behavioral analytics, endpoint protection, network security integration, investigation, and threat intelligence",
+        "Only case scoring, dashboard widgets, and report exports",
+        "Only list commands and War Room notes",
+        "Only content pack deletion and version history"
+      ],
+      "correct_answers": ["Threat visibility, behavioral analytics, endpoint protection, network security integration, investigation, and threat intelligence"]
+    },
+    {
+      "id": "training-alerting-detection-002",
+      "category": "Alerting and Detection",
+      "source_file": "Lessons/Case Management/Alerting and Detection.txt",
+      "question": "Which MITRE ATT&CK tactics are listed as part of threat coverage?",
+      "options": [
+        "Execution, Persistence, Discovery, Lateral Movement, Command and Control, and Exfiltration",
+        "Create, Read, Update, Delete, Search, and Export",
+        "Time Triggered, Feed Triggered, Manual, Paused, Disabled, and Error",
+        "Inline, Out-of-Band, None, Manual, Automatic, and Built-in"
+      ],
+      "correct_answers": ["Execution, Persistence, Discovery, Lateral Movement, Command and Control, and Exfiltration"]
+    },
+    {
+      "id": "training-alerting-detection-003",
+      "category": "Alerting and Detection",
+      "source_file": "Lessons/Case Management/Alerting and Detection.txt",
+      "question": "What is the difference between an IOC and a BIOC at a high level?",
+      "options": [
+        "An IOC represents a threat indicator, while a BIOC represents suspicious behavior patterns",
+        "An IOC is a dashboard widget, while a BIOC is a report widget",
+        "An IOC is used only for jobs, while a BIOC is used only for lists",
+        "An IOC closes a case, while a BIOC creates a case threshold"
+      ],
+      "correct_answers": ["An IOC represents a threat indicator, while a BIOC represents suspicious behavior patterns"]
+    },
+    {
+      "id": "training-alerting-detection-004",
+      "category": "Alerting and Detection",
+      "source_file": "Lessons/Case Management/Alerting and Detection.txt",
+      "question": "What are Correlation Rules used for in detection?",
+      "options": [
+        "Finding patterns across events that can indicate threats and generate issues",
+        "Importing lists from local files",
+        "Managing case detail view tabs",
+        "Running Live Terminal on endpoints"
+      ],
+      "correct_answers": ["Finding patterns across events that can indicate threats and generate issues"]
+    },
+    {
+      "id": "training-alerting-detection-005",
+      "category": "Alerting and Detection",
+      "source_file": "Lessons/Case Management/Alerting and Detection.txt",
+      "question": "How does network security analytics support Cortex detections?",
+      "options": [
+        "It adds network activity visibility that can reveal suspicious behavior or attack patterns",
+        "It replaces all endpoint telemetry with user notes",
+        "It prevents correlation rules from generating issues",
+        "It is used only for report formatting"
+      ],
+      "correct_answers": ["It adds network activity visibility that can reveal suspicious behavior or attack patterns"]
+    },
+    {
+      "id": "training-alerting-detection-006",
+      "category": "Alerting and Detection",
+      "source_file": "Lessons/Case Management/Alerting and Detection.txt",
+      "question": "Why are detection rule use cases important?",
+      "options": [
+        "They define the security scenario or behavior a detection rule is meant to identify",
+        "They determine which DOCX images are embedded in a lesson",
+        "They assign every alert to the same analyst",
+        "They replace incident investigation with a static list"
+      ],
+      "correct_answers": ["They define the security scenario or behavior a detection rule is meant to identify"]
+    },
+    {
+      "id": "training-alerting-detection-007",
+      "category": "Alerting and Detection",
+      "source_file": "Lessons/Case Management/Alerting and Detection.txt",
+      "question": "What is the relationship between analytics use cases and issue generation?",
+      "options": [
+        "Analytics identify suspicious activity and can generate issues for investigation",
+        "Analytics suppress all issues by default",
+        "Analytics only change case scoring values",
+        "Analytics are used only to import threat feeds"
+      ],
+      "correct_answers": ["Analytics identify suspicious activity and can generate issues for investigation"]
+    },
+    {
+      "id": "training-basic-rules-001",
+      "category": "Basic Rules",
+      "source_file": "Lessons/Case Management/Basic Rules.txt",
+      "question": "Which rule types are part of the Basic Rules lesson content?",
+      "options": [
+        "IOC, BIOC, Custom Prevention, suppression, and correlation rules",
+        "Case scoring, detail tab, and case threshold rules only",
+        "List import, list export, and list version rules only",
+        "Job recurrence and feed monitoring rules only"
+      ],
+      "correct_answers": ["IOC, BIOC, Custom Prevention, suppression, and correlation rules"]
+    },
+    {
+      "id": "training-basic-rules-002",
+      "category": "Basic Rules",
+      "source_file": "Lessons/Case Management/Basic Rules.txt",
+      "question": "What are IOC rules based on?",
+      "options": [
+        "Indicators of compromise used as custom threat indicators",
+        "Job execution state changes",
+        "Case detail tab selections",
+        "War Room note formatting"
+      ],
+      "correct_answers": ["Indicators of compromise used as custom threat indicators"]
+    },
+    {
+      "id": "training-basic-rules-003",
+      "category": "Basic Rules",
+      "source_file": "Lessons/Case Management/Basic Rules.txt",
+      "question": "What do BIOC rules focus on?",
+      "options": [
+        "Behavioral indicators that identify suspicious activity patterns",
+        "Static report widgets in dashboards",
+        "Case comments created by analysts",
+        "Local files imported into a list"
+      ],
+      "correct_answers": ["Behavioral indicators that identify suspicious activity patterns"]
+    },
+    {
+      "id": "training-basic-rules-004",
+      "category": "Basic Rules",
+      "source_file": "Lessons/Case Management/Basic Rules.txt",
+      "question": "When would suppression rules be useful?",
+      "options": [
+        "When known IOC or BIOC matches should be suppressed to reduce unwanted detections",
+        "When every endpoint response action should be forced to run",
+        "When case detail tabs need to be reordered",
+        "When a scheduled query needs to run weekly"
+      ],
+      "correct_answers": ["When known IOC or BIOC matches should be suppressed to reduce unwanted detections"]
+    },
+    {
+      "id": "training-basic-rules-005",
+      "category": "Basic Rules",
+      "source_file": "Lessons/Case Management/Basic Rules.txt",
+      "question": "How can lookup datasets be managed in relation to correlation rules?",
+      "options": [
+        "Through correlation rules and APIs",
+        "Only through War Room notes",
+        "Only through endpoint isolation actions",
+        "Only by deleting content packs"
+      ],
+      "correct_answers": ["Through correlation rules and APIs"]
+    },
+    {
+      "id": "training-basic-rules-006",
+      "category": "Basic Rules",
+      "source_file": "Lessons/Case Management/Basic Rules.txt",
+      "question": "What is a Custom Prevention Rule intended to do?",
+      "options": [
+        "Define custom prevention logic for specified suspicious or unwanted activity",
+        "Create dashboard widgets from case details",
+        "Schedule a playbook to run on a feed",
+        "Assign every issue to a new case"
+      ],
+      "correct_answers": ["Define custom prevention logic for specified suspicious or unwanted activity"]
+    },
+    {
+      "id": "training-basic-rules-007",
+      "category": "Basic Rules",
+      "source_file": "Lessons/Case Management/Basic Rules.txt",
+      "question": "Why are datasets relevant to rule matching?",
+      "options": [
+        "They provide lookup data that rules can reference while evaluating events",
+        "They replace all issue attributes with attachments",
+        "They are used only to store exported screenshots",
+        "They determine whether a case can be scored"
+      ],
+      "correct_answers": ["They provide lookup data that rules can reference while evaluating events"]
+    },
+    {
+      "id": "training-exclusions-001",
+      "category": "Exclusions and Exceptions",
+      "source_file": "Lessons/Case Management/Exclusions and Exceptions.txt",
+      "question": "What is the primary purpose of an issue exclusion?",
+      "options": [
+        "Suppressing expected or noisy issues so analysts can focus on relevant detections",
+        "Disabling a protection module on selected endpoints",
+        "Running a remediation script from the Action Center",
+        "Creating a scheduled query from Query Builder"
+      ],
+      "correct_answers": ["Suppressing expected or noisy issues so analysts can focus on relevant detections"]
+    },
+    {
+      "id": "training-exclusions-002",
+      "category": "Exclusions and Exceptions",
+      "source_file": "Lessons/Case Management/Exclusions and Exceptions.txt",
+      "question": "What do exceptions affect?",
+      "options": [
+        "Protection modules",
+        "Case detail tabs",
+        "Query templates",
+        "War Room note filters"
+      ],
+      "correct_answers": ["Protection modules"]
+    },
+    {
+      "id": "training-exclusions-003",
+      "category": "Exclusions and Exceptions",
+      "source_file": "Lessons/Case Management/Exclusions and Exceptions.txt",
+      "question": "How do exceptions profiles help manage exceptions?",
+      "options": [
+        "They organize exception settings so they can be applied and managed consistently",
+        "They convert exclusions into correlation rules",
+        "They automatically close every case with excluded issues",
+        "They remove the need to audit exclusions"
+      ],
+      "correct_answers": ["They organize exception settings so they can be applied and managed consistently"]
+    },
+    {
+      "id": "training-exclusions-004",
+      "category": "Exclusions and Exceptions",
+      "source_file": "Lessons/Case Management/Exclusions and Exceptions.txt",
+      "question": "Which statement best differentiates an exclusion from an exception?",
+      "options": [
+        "An exclusion suppresses issues, while an exception disables or modifies protection behavior",
+        "An exclusion creates issues, while an exception creates dashboards",
+        "An exclusion runs a script, while an exception runs a query",
+        "An exclusion manages lists, while an exception manages reports"
+      ],
+      "correct_answers": ["An exclusion suppresses issues, while an exception disables or modifies protection behavior"]
+    },
+    {
+      "id": "training-exclusions-005",
+      "category": "Exclusions and Exceptions",
+      "source_file": "Lessons/Case Management/Exclusions and Exceptions.txt",
+      "question": "Which practices support healthy exclusion management?",
+      "options": [
+        "Review, scope, audit, and consolidate exclusions",
+        "Disable all protection modules globally",
+        "Convert exclusions into case scoring rules",
+        "Delete related issues without review"
+      ],
+      "correct_answers": ["Review, scope, audit, and consolidate exclusions"]
+    },
+    {
+      "id": "training-exclusions-006",
+      "category": "Exclusions and Exceptions",
+      "source_file": "Lessons/Case Management/Exclusions and Exceptions.txt",
+      "question": "Why is scoping exclusions important?",
+      "options": [
+        "It limits suppression to the intended conditions and reduces the chance of hiding real threats",
+        "It forces every issue to be excluded globally",
+        "It disables exceptions profiles",
+        "It replaces audit review with automatic deletion"
+      ],
+      "correct_answers": ["It limits suppression to the intended conditions and reduces the chance of hiding real threats"]
+    },
+    {
+      "id": "training-exclusions-007",
+      "category": "Exclusions and Exceptions",
+      "source_file": "Lessons/Case Management/Exclusions and Exceptions.txt",
+      "question": "What is the risk of poorly managed exclusions?",
+      "options": [
+        "Important detections may be suppressed unintentionally",
+        "All endpoint protection modules become enabled",
+        "Case details become read-only",
+        "Correlation rules stop supporting lookup datasets"
+      ],
+      "correct_answers": ["Important detections may be suppressed unintentionally"]
+    },
+    {
+      "id": "training-queries-001",
+      "category": "Building and Managing Queries",
+      "source_file": "Lessons/Case Management/Building and Managing Queries.txt",
+      "question": "What is a lead in the context of investigation?",
+      "options": [
+        "A potential threat or suspicious finding that may require further investigation",
+        "A completed case that cannot accept new issues",
+        "A disabled endpoint response action",
+        "A list item imported from a local file"
+      ],
+      "correct_answers": ["A potential threat or suspicious finding that may require further investigation"]
+    },
+    {
+      "id": "training-queries-002",
+      "category": "Building and Managing Queries",
+      "source_file": "Lessons/Case Management/Building and Managing Queries.txt",
+      "question": "What is Query Builder used for?",
+      "options": [
+        "Building queries to investigate data in Cortex",
+        "Managing endpoint response actions",
+        "Creating EDL domain lists",
+        "Reviewing case War Room artifacts"
+      ],
+      "correct_answers": ["Building queries to investigate data in Cortex"]
+    },
+    {
+      "id": "training-queries-003",
+      "category": "Building and Managing Queries",
+      "source_file": "Lessons/Case Management/Building and Managing Queries.txt",
+      "question": "Which query types are referenced in the lesson?",
+      "options": [
+        "Template-based queries and XQL queries",
+        "IOC rules and BIOC rules",
+        "Time-triggered jobs and feed-triggered jobs",
+        "Instant response actions and further investigation actions"
+      ],
+      "correct_answers": ["Template-based queries and XQL queries"]
+    },
+    {
+      "id": "training-queries-004",
+      "category": "Building and Managing Queries",
+      "source_file": "Lessons/Case Management/Building and Managing Queries.txt",
+      "question": "What is Query Center used for?",
+      "options": [
+        "Managing saved and scheduled queries",
+        "Editing case scoring rules",
+        "Managing EDL IP lists only",
+        "Uploading endpoint scripts"
+      ],
+      "correct_answers": ["Managing saved and scheduled queries"]
+    },
+    {
+      "id": "training-queries-005",
+      "category": "Building and Managing Queries",
+      "source_file": "Lessons/Case Management/Building and Managing Queries.txt",
+      "question": "What is the difference between periodic and non-periodic scheduled queries?",
+      "options": [
+        "Periodic queries run repeatedly on a schedule, while non-periodic queries are scheduled without recurring execution",
+        "Periodic queries use XQL, while non-periodic queries can only use templates",
+        "Periodic queries create cases, while non-periodic queries create lists",
+        "Periodic queries run only in War Rooms, while non-periodic queries run only in Action Center"
+      ],
+      "correct_answers": ["Periodic queries run repeatedly on a schedule, while non-periodic queries are scheduled without recurring execution"]
+    },
+    {
+      "id": "training-queries-006",
+      "category": "Building and Managing Queries",
+      "source_file": "Lessons/Case Management/Building and Managing Queries.txt",
+      "question": "Why would an analyst use a query template?",
+      "options": [
+        "To start from a structured query pattern for a common investigation scenario",
+        "To disable all query scheduling options",
+        "To convert a lead into an endpoint policy",
+        "To suppress query results from the interface"
+      ],
+      "correct_answers": ["To start from a structured query pattern for a common investigation scenario"]
+    },
+    {
+      "id": "training-queries-007",
+      "category": "Building and Managing Queries",
+      "source_file": "Lessons/Case Management/Building and Managing Queries.txt",
+      "question": "How does the XQL Helper support query building?",
+      "options": [
+        "It helps analysts construct or understand XQL syntax and query elements",
+        "It automatically isolates endpoints that appear in results",
+        "It imports EDL lists into Query Center",
+        "It prevents query templates from being saved"
+      ],
+      "correct_answers": ["It helps analysts construct or understand XQL syntax and query elements"]
+    }
+  ]
+}

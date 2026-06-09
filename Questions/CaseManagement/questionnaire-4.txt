@@ -1,0 +1,95 @@
+Question 1 of 5
+Where can the Remediation Suggestions action be found?
+
+
+Incident Overview
+
+
+Action Center
+
+
+Key Assets & Artifacts
+
+
+Causality Instance
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Causality Instance
+
+Question 2 of 5
+What settings can be edited on the "Integrations > External Dynamic List Integration" page in the management console?
+
+
+Enumeration
+
+
+Authorization
+
+
+Authentication
+
+
+Generic integration
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Authentication
+
+Question 3 of 5
+Which statement about the Scripts Execution action is true?
+
+
+You can run Python scripts only.
+
+Python script support is limited to versions 2.2 to 3.5.
+
+Scripts run on endpoints under the running user's authority.
+
+Scripts are first checked by WildFire before running on endpoints.
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+You can run Python scripts only.
+Question 4 of 5
+Which type of Cortex profile has a key setting that can affect how the Remediations Suggestions action works?
+
+
+Malware
+
+Exceptions
+
+Limitations
+
+Agent Settings
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Agent Settings
+Question 5 of 5
+Which entity best represents a typical consumer of Cortex EDL service?
+
+
+Third-party subscriber
+
+Cortex XSOAR device
+
+PAN-OS NGFW device
+
+Other Cortex XDR instance
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+PAN-OS NGFW device

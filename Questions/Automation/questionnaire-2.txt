@@ -1,0 +1,94 @@
+Question 1 of 5
+A playbook can be exported from a Work Plan in which file format?
+
+
+PNG
+
+JPG
+
+PDF
+
+GIF
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+PNG
+Question 2 of 5
+What does the orange user icon on a playbook task mean?
+
+
+Active
+
+Pending
+
+Completed
+
+Error
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Pending
+Question 3 of 5
+Which option in the Work Plan of a case allows you to re-run the playbook?
+
+
+Navigator Pane
+
+Run Again
+
+Review
+
+Follow playbook
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Run Again
+Question 4 of 5
+What is the benefit of using field mapping in Cortex playbooks?
+
+
+To encrypt sensitive data
+
+
+To generate new tasks automatically
+
+
+To populate issue fields with output values
+
+
+To create sub-playbook loops
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+To populate issue fields with output values
+
+Question 5 of 5
+What is the main purpose of using conditional tasks in a playbook workflow?
+
+
+To create new integrations
+
+
+To generate reports automatically
+
+
+To serve as decision trees
+
+
+To send system notifications
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+To serve as decision trees

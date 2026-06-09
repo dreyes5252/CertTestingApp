@@ -1,0 +1,90 @@
+Question 1 of 5
+Which command do you use to append a new item to a list?
+
+
+addToList
+
+
+setList
+
+
+appendList
+
+
+listAppend
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+addToList
+
+Question 2 of 5
+Which menu option on the Lists page do you use to make changes to a list?
+
+
+Edit
+
+Settings
+
+Advanced
+
+Preferences
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Edit
+Question 3 of 5
+What playbook option gives you the ability to create and manage lists in playbooks?
+
+
+Scripts
+
+Logs
+
+CLI
+
+Indicators
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Scripts
+Question 4 of 5
+With a war room page displayed, which command do you use to display the content of a specified list?
+
+
+getList
+
+getItems
+
+displayList
+
+getListItems
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+getList
+Question 5 of 5
+To overwrite the content of a list, which command do you use?
+
+
+setList
+
+getList
+
+addToList
+
+removeFromList
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+setList

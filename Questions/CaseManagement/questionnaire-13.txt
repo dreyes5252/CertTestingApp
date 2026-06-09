@@ -1,0 +1,219 @@
+Question 1 of 10
+A critical issue indicates potential malware execution on a few key servers. As a SOC analyst, you need to perform a deep dive analysis on these specific endpoints to gather detailed system information, including full file listings and registry hives, to understand the full scope of activity on these hosts. Which type of collection should you create within an investigation to achieve this goal?
+
+
+Hunt collection
+
+
+Triage collection
+
+
+Legacy Forensics collection
+
+
+Global collection
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Triage collection
+
+Question 2 of 10
+Your team has completed the analysis for an investigation and is ready to finalize it. You need to close the investigation in Cortex. After you close an investigation, what happens, and what option do you have regarding its deletion?
+
+
+It is immediately and permanently deleted.
+
+
+It gets archived indefinitely.
+
+
+It enters a 'closed pending' status and will be automatically deleted after 24 hours, but you have the option to reopen it during this grace period
+
+
+It requires manual approval from an administrator for final deletion.
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+It enters a 'closed pending' status and will be automatically deleted after 24 hours, but you have the option to reopen it during this grace period
+
+Question 3 of 10
+You are reviewing an investigation that contains multiple Hunt and Triage collections and you want to quickly see flagged artifacts across all collections, view a consolidated timeline of events, and identify key findings such as potentially compromised endpoints, users, or malware. Which features or tabs within the investigation view consolidate and present this summarized analysis information?
+
+
+The Collection Details view.
+
+
+The Artifact Details view.
+
+
+The Issues, Timeline, and Key Assets and Artifacts tabs.
+
+
+The Endpoint List view.
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+The Issues, Timeline, and Key Assets and Artifacts tabs.
+
+Question 4 of 10
+You are reviewing the results of a Hunt collection focused on process execution and you notice an executable running from a user's temporary directory that appears suspicious based on external threat intelligence. You want to highlight this finding for other analysts collaborating on the investigation. How can you mark this for further investigation and collaboration?
+
+
+Right-click the item and select "Delete Artifact".
+
+
+Left-click the item to automatically flag it.
+
+
+Right-click the item and choose "add to investigation timeline" to flag it with a tag.
+
+
+Export the individual item as a CSV file.
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Right-click the item and choose "add to investigation timeline" to flag it with a tag.
+
+Question 5 of 10
+You have initiated a Triage collection on an endpoint. You check the collection status and you see a list of actions performed by the search, including artifact type, path, status, and details. What does the 'Status' field primarily indicate for these actions?
+
+
+The severity of the detected activity.
+
+
+The ingestion status and whether the action timed out, failed, or succeeded
+
+
+The number of artifacts found for that specific action.
+
+
+The phase of the Moon at the time of collection.
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+The ingestion status and whether the action timed out, failed, or succeeded
+
+Question 6 of 10
+You are unable to set up user permissions. What do you need enabled in order to do so?
+
+
+Role-Based Access Control (RBAC)
+
+
+Scope-Based Access Control (SBAC)
+
+
+Policies
+
+
+Profiles
+
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Scope-Based Access Control (SBAC)
+
+Question 7 of 10
+After completing an investigation into a data exfiltration event, you need to ensure the collected forensic evidence is saved securely for long-term retention or potential offline analysis. How can you typically save the forensic data from a completed investigation collection for these purposes?
+
+
+Permanently delete the investigation immediately after closing.
+
+
+Export the data using the available download or export icons
+
+
+Rely on the automatic 24-hour deletion grace period for retention
+
+
+Manually copy files from the individual endpoints.
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Export the data using the available download or export icons
+
+Question 8 of 10
+You are investigating a potential phishing attack and need to identify which users across your Windows workstations may have executed a specific suspicious file attachment. You want to search for this activity across many endpoints to determine the breadth of the potential compromise. Which type of collection is best suited for searching for a specific activity across a large number of hosts to find out where and when it occurred?
+
+
+Triage collection
+
+
+Deep Dive collection
+
+
+Hunt collection
+
+
+Artifact collection
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Hunt collection
+
+Question 9 of 10
+You are attempting to create a new investigation in the Cortex Forensics add-on, but the option to create an investigation is not available to you. What is the most likely reason you are unable to create an investigation?
+
+
+The Cortex Forensics add-on is not enabled for your account.
+
+
+You do not have a role with forensics permissions set to view or edit.
+
+
+The maximum number of open investigations has been reached.
+
+
+You are not an Instance Administrator.
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+You do not have a role with forensics permissions set to view or edit.
+
+Question 10 of 10
+You are preparing to conduct a forensic investigation in XSIAM to document the timeline of activities related to an incident that spans across different geographical locations with varying time zones. What time zone setting is generally recommended for forensic investigations to avoid timeline issues, such as those caused by daylight savings?
+
+
+The local time zone of the endpoint.
+
+
+The analyst's local time zone.
+
+
+Coordinated Universal Time (UTC)
+
+
+The time zone of the XSIAM tenant default.
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Coordinated Universal Time (UTC)

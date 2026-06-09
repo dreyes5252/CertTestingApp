@@ -1,0 +1,85 @@
+Question 1 of 5
+What are some of the specific security configurations that can be applied from parent tenants to child tenants? 
+
+
+IOC rules and correlations
+
+BIOC rules, alert policies, endpoint prevention profiles, and allow/block lists
+
+Endpoints and endpoint groups
+
+Only user access controls and data encryption methods
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+BIOC rules, alert policies, endpoint prevention profiles, and allow/block lists
+Question 2 of 5
+What field may be added to XQL result views when you are querying multiple child tenants to differentiate them better?
+
+
+Tenant
+
+Severity
+
+Host
+
+Alert Source
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Tenant
+Question 3 of 5
+What is the primary function of a parent tenant in the Cortex XSIAM platform?
+
+
+To manage their own security settings
+
+To oversee operational functions for child tenants
+
+To automatically activate new child tenants
+
+To monitor external threats to all child tenants
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+To oversee operational functions for child tenants
+Question 4 of 5
+How can security configurations for child tenants be managed from the parent tenants? 
+
+
+They cannot be managed from the parent tenant
+
+As managed or unmanaged
+
+Using Marketplace packages
+
+Through playbooks and scripts on the parent
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+As managed or unmanaged
+Question 5 of 5
+Which of the following child tenant areas can parent tenants view?
+
+
+Assets
+
+All Endpoints
+
+Incidents, alerts, causality graphs, queries, and forensics
+
+Host Inventories
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Incidents, alerts, causality graphs, queries, and forensics

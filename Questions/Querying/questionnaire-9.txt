@@ -1,0 +1,113 @@
+Question 1 of 5
+Which three XQL stages are supported in XQLP? (Choose three)
+
+
+Alter
+(disabled)
+
+Fields
+(disabled)
+
+Filter
+(disabled)
+
+Dataset
+(disabled)
+
+Divide
+(disabled)
+Options
+You gave the correct answer and your score is 3
+Correct answer
+Score: 3
+Correct answers:
+Alter
+Fields
+Filter
+Question 2 of 5
+Which Parsing Rules section is required?
+
+
+INGEST
+
+COLLECT
+
+CONST
+
+RULE
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+INGEST
+Question 3 of 5
+Which two Cortex XSIAM roles can access the Parsing Rules page in the management console? (Choose two)
+
+
+Account Administrator
+(disabled)
+
+Instance Administrator
+(disabled)
+
+Privileged IT Administrator
+(disabled)
+
+Security Administrator
+(disabled)
+Options
+You gave a partially correct answer and your score is 1
+Partially correct answer
+Score: 1
+Correct answers:
+Account Administrator
+Instance Administrator
+Question 4 of 5
+Which two components can run XSIAM parsing rules? (Choose two)
+
+
+Broker VM
+(disabled)
+
+XDR Collector
+(disabled)
+
+XDR Agent
+(disabled)
+
+Network Mapper
+(disabled)
+Options
+You gave the correct answer and your score is 2
+Correct answer
+Score: 2
+Correct answers:
+Broker VM
+XDR Collector
+Question 5 of 5
+What are three possible reasons to use XSIAM parsing rules? (Choose three)
+
+
+Saving storage space
+(disabled)
+
+Adjusting log time
+(disabled)
+
+Labeling data
+(disabled)
+
+Detecting attacks as early as possible
+(disabled)
+
+Preparing raw data for SIEM
+(disabled)
+Options
+You gave a partially correct answer and your score is 2
+Partially correct answer
+Score: 2
+Correct answers:
+Saving storage space
+Adjusting log time
+Labeling data

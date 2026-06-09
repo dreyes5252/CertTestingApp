@@ -1,0 +1,85 @@
+Question 1 of 5
+Which technique takes illegitimate advantage of known-legitimate library functions?
+
+
+NOP sled
+
+Post-execution canaries
+
+Supply side compromises
+
+Return-Oriented Programing
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Return-Oriented Programing
+Question 2 of 5
+Which threat vector can be vulnerable on an Endpoint?
+
+
+Insider threats
+
+Asymmetrical Routing
+
+Flat switching segmentation
+
+Libraries and loading mechanisms
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Libraries and loading mechanisms
+Question 3 of 5
+Which exploitation technique takes advantage of the failure of a programmer to ensure that data fits into its destination area in memory?
+
+
+JIT Spray
+
+Heap Spray
+
+Buffer Overflow
+
+DEP circumvention
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Buffer Overflow
+Question 4 of 5
+What is one technique used by many attackers to attempt to overcome the difficulty of placing shellcode at known memory locations?
+
+
+ROP
+
+NOP sled
+
+Using OS Function
+
+DEP circumvention
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+NOP sled
+Question 5 of 5
+Which command will list process IDs (PIDs) that are protected by Cortex XDR on an Endpoint?
+
+
+xdr list
+
+xdr enum
+
+cytool list
+
+cytool enum
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+cytool enum

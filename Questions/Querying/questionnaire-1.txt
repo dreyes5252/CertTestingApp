@@ -1,0 +1,93 @@
+Question 1 of 5
+Which XQL component handles the grammar and language of its elements?
+
+
+Schema
+
+Semiotics
+
+Syntax
+
+Semantics
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Syntax
+Question 2 of 5
+Which of the following will result in a run action being disabled?
+
+
+There are one or more syntax errors.
+
+There is no dataset associated with the query.
+
+The query has too many lines.
+
+More than five fields are established within the query.
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+There are one or more syntax errors.
+Question 3 of 5
+Where is the Query Builder located within the Cortex XDR or XSIAM Console?
+
+
+Incident Response > Query Builder
+
+Incident Response > Action Center > Query Builder
+
+Endpoints > Reports > Query Builder
+
+Endpoints > Query Builder > XQL Search
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Incident Response > Query Builder
+Question 4 of 5
+Which two are available options for running queries? (Choose two.)
+
+
+Execute
+(disabled)
+
+Run
+(disabled)
+
+Run At [a later time]
+(disabled)
+
+Export
+(disabled)
+
+Schedule Query
+(disabled)
+Options
+You gave the correct answer and your score is 2
+Correct answer
+Score: 2
+Correct answers:
+Run
+Schedule Query
+Question 5 of 5
+Which character will create a comment (i.e., the editor will ignore the text)?
+
+
+*
+
+/
+
+//
+
+**
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+//

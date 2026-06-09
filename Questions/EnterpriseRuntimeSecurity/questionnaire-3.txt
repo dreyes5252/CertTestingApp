@@ -1,0 +1,90 @@
+Question 1 of 5
+How are Malware Protection Modules (MPMs) configured for specific endpoints?
+
+
+By downloading content updates directly to the endpoints
+
+By configuring a Malware Profile added to a Policy associated with the endpoints
+
+By navigating to the agent running on the endpoints and configuring it under settings
+
+By navigating to the console for endpoints > all endpoints > then right-clicking on an endpoint and selecting endpoint control
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+By configuring a Malware Profile added to a Policy associated with the endpoints
+Question 2 of 5
+What options compose a Behavioral Threat Protection Rule?
+
+
+A hash
+
+
+An IP address
+
+
+A name and action, such as block
+
+
+A WildFire verdict on a file or set of files
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+A name and action, such as block
+
+Question 3 of 5
+Which option is inspected by the Network Packet Inspection Engine?
+
+
+SEO
+
+POP
+
+HTTP
+
+Gopher
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+HTTP
+Question 4 of 5
+When a file is attempting to run, in which order does the examination flow occur?
+
+
+Allow List: Path > WildFire > Local Analysis
+
+Local Analysis > Allow List: Path > WildFire
+
+Local Analysis > WildFire > Allow List: Path
+
+WildFire > Allow List: Path > Local Analysis
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Allow List: Path > WildFire > Local Analysis
+Question 5 of 5
+At which stage in the execution of applications does WildFire Lookup occur?
+
+
+Pre-execution after Local Analysis
+
+Pre-execution prior to Local Analysis
+
+Pre-execution after Behavioral Threat Protection
+
+Post-execution prior to Behavioral Threat Protection
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Pre-execution prior to Local Analysis

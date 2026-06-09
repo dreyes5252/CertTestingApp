@@ -1,0 +1,85 @@
+Question 1 of 5
+Which of the following is a stage in an XQL query?
+
+
+Dataset
+
+Parse
+
+LogLookup
+
+Compound
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Dataset
+Question 2 of 5
+Which stage erases all the fields and variables defined before it?
+
+
+Config
+
+Alter
+
+Fields
+
+Limit
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Fields
+Question 3 of 5
+When present, in which position must the “config” stage be used in an XQL query?
+
+
+It must always follow a Filter stage
+
+It must be the first stage
+
+It must always be the final stage
+
+It must always follow a Field stage
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+It must be the first stage
+Question 4 of 5
+Which function does the Timeframe parameter perform in an XQL query?
+
+
+It denotes when the XQL query is to be performed.
+
+It indicates that only logs excluded within a specific timeframe will be evaluated.
+
+It denotes when the XQL query is unavailable to be performed.
+
+It indicates that only logs included within a specific timeframe will be evaluated.
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+It indicates that only logs included within a specific timeframe will be evaluated.
+Question 5 of 5
+Which stage controls which items create the results table columns for an XQL query?
+
+
+Filter
+
+Fields
+
+Limit
+
+Dedup
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Fields

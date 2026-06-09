@@ -1,0 +1,104 @@
+Question 1 of 5
+What is the default data retention period for all ingested data types in Cortex?
+
+
+186 days for all logs
+
+
+60 days for issues only
+
+
+31 days for logs and issues
+
+
+90 days for case data
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+31 days for logs and issues
+
+Question 2 of 5
+What does the phrase “Parsing is forever” mean in Cortex?
+
+
+Parsing saves data longer than data models.
+
+Parsing is the best option for organizing data.
+
+Parsing makes changes that can’t be reversed.
+
+Parsing is compute intensive and should be avoided.
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Parsing makes changes that can’t be reversed.
+Question 3 of 5
+Which dataset is configured as the Default Query Target by default in Cortex?
+
+
+email_data
+
+
+xdr_data
+
+
+host_inventory
+
+
+Panw_network_mapper_raw
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+xdr_data
+
+Question 4 of 5
+What is a primary benefit of using role-based dataset views?
+
+
+They enforce data standardization across all datasets.
+
+
+They automate the creation of new raw datasets.
+
+
+They offer enhanced data security by controlling access at the dataset level.
+
+
+They convert all data into a unified data model.
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+They offer enhanced data security by controlling access at the dataset level.
+
+Question 5 of 5
+What characteristic defines Hot Storage in Cortex?
+
+
+It is a cheaper storage option for compliance
+
+
+It is a fully searchable storage type
+
+
+It has limited search capabilities for long-term data
+
+
+It only stores data older than 186 days
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+It is a fully searchable storage type

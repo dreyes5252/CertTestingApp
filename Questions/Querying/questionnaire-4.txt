@@ -1,0 +1,92 @@
+Question 1 of 5
+Which syntactic sugar format can reference element B?
+
+
+root->B{}
+
+root->B
+
+root.B[]
+
+root.B
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+root->B{}
+Question 2 of 5
+Which JSON path references the element with a numeric value 40?
+
+
+$.B.D[1].E
+
+$.B.D.E[1]
+
+$B.D.E[1]
+
+$B.D[].E[1]
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+$.B.D[1].E
+Question 3 of 5
+Which syntactic sugar format can reference the value 70?
+
+
+root->B.F[2]
+
+root->['B'][2]
+
+$root.B.F[2]
+
+$.root.B.F[2]
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+root->B.F[2]
+Question 4 of 5
+What does the json_extract(root, "$['B']['D'][1]['E']") function call return?
+
+
+
+
+40
+
+"40"
+
+E":"40
+
+E":40
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+40
+Question 5 of 5
+Which two function calls can output the numeric value 50? (Choose two.)
+
+
+json_extract_scalar (root, "$.B.F[0]")
+(disabled)
+
+json_extract(root, "$.B.F")->[0]
+(disabled)
+
+json_extract(root, "$['B']->F[0]")
+(disabled)
+
+json_extract_scalar(root, "$B.F[0]")
+(disabled)
+Options
+You gave the correct answer and your score is 2
+Correct answer
+Score: 2
+Correct answers:
+json_extract_scalar (root, "$.B.F[0]")
+json_extract(root, "$.B.F")->[0]

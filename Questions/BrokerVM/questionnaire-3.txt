@@ -1,0 +1,88 @@
+Question 1 of 5
+In which format are Broker VM logs available for download?
+
+
+Tarball
+
+Syslog
+
+Tech support file
+
+CSV
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Tarball
+Question 2 of 5
+Which folder has Syslog Collector applet logs?
+
+
+Conf.txt
+
+Rabbitmq
+
+Anubis
+
+Oddysseus
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Anubis
+Question 3 of 5
+Which is an expected consequence of rebooting a Broker VM instance from Cortex?
+
+
+Broker VM instance configurations are lost.
+
+The rebooted Broker VM instance is temporarily unreachable.
+
+Connection to the rebooted Broker VM instance requires a new token.
+
+Broker VM logs are erased.
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+The rebooted Broker VM instance is temporarily unreachable.
+Question 4 of 5
+How are commands entered using Broker VM Live Terminal?
+
+
+in the upper window with <enter>
+
+in the lower window with <enter>
+
+in the upper window with <shift-enter>
+
+in the lower window with <shift-enter>
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+in the lower window with <shift-enter>
+Question 5 of 5
+Where do you access a path to detailed Broker VM configuration views?
+
+
+Cortex management console Add-ons menu
+
+
+Cortex management console Endpoints menu
+
+
+Cortex management console Settings (gear) icon
+
+
+Agent Console menu
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Cortex management console Settings (gear) icon

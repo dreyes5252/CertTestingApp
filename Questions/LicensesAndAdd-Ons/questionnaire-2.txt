@@ -1,0 +1,216 @@
+Question 1 of 10
+Which of the following does Identity Analytics primarily focus on as a proactive identity protection?
+
+
+Post-breach detection of data exfiltration
+
+
+Monitoring privileged user activity
+
+
+Initial access use cases like session hijacking
+
+
+Analyzing endpoint detection and response logs
+
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Initial access use cases like session hijacking
+
+Question 2 of 10
+What approach does ITDR primarily take in detecting identity attacks?
+
+
+Blocking known malicious IP addresses
+
+
+Signature-based detection of malware
+
+
+Profiling behavior and detecting anomalies
+
+
+Relying solely on Security Information and Event Management (SIEM) data
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Profiling behavior and detecting anomalies
+
+Question 3 of 10
+What is the function of the ITDR Profiling Engine?
+
+
+To enforce multi-factor authentication policies
+
+
+To manage and update threat intelligence feeds
+
+
+To analyze user and device activity against various profiles
+
+
+To automate incident response workflows
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+To analyze user and device activity against various profiles
+
+Question 4 of 10
+What does the Peer Profile component of the ITDR Profiling Engine establish a baseline of?
+
+
+The user's activity over a long period
+
+
+The typical behaviour of different device types
+
+
+Activity based on the user's and device's peers
+
+
+Current real-time network traffic patterns
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Activity based on the user's and device's peers
+
+Question 5 of 10
+What is the purpose of the Risk Scoring feature in Cortex ITDR?
+
+
+To block suspicious user accounts automatically
+
+
+To encrypt sensitive data at rest
+
+
+To help in prioritizing security investigations
+
+
+To generate compliance reports for regulatory bodies
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+To help in prioritizing security investigations
+
+Question 6 of 10
+What does the Score Trend Timeline on the Risk Management Dashboard display?
+
+
+The number of users currently logged in
+
+
+A real-time map of active security incidents
+
+
+The organizational risk score trend over time
+
+
+The list of all configured asset roles
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+The organizational risk score trend over time
+
+Question 7 of 10
+What is the function of Asset Roles in Cortex?
+
+
+To define network segmentation policies
+
+
+To manage software deployment across endpoint
+
+
+To automatically classify users and endpoints based on their activities
+
+
+To enforce data loss prevention rules
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+To automatically classify users and endpoints based on their activities
+
+Question 8 of 10
+How do fine-tuned asset roles aid Cortex Analytics?
+
+
+By increasing the speed of data ingestion
+
+
+By suggesting remediation guidance
+
+
+By improving analytics accuracy
+
+
+By simplifying the user interface.
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+By improving analytics accuracy
+
+Question 9 of 10
+What type of user activity might indicate a data exfiltration attempt, as detected by ITDR?
+
+
+Frequent login attempts during business hours
+
+
+Accessing internal company websites
+
+
+Possible internal data exfiltration over a USB storage device
+
+
+Sending encrypted emails to internal recipients
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Possible internal data exfiltration over a USB storage device
+
+Question 10 of 10
+Monitoring for which administrative action falls under the Suspicious Administrative Operations use case?
+
+
+A user changing their own password
+
+
+Regular system updates being applied
+
+
+An identity assigned an Azure AD administrator role
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+An identity assigned an Azure AD administrator role

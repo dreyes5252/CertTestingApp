@@ -1,0 +1,109 @@
+Question 1 of 5
+How are new custom widgets created for a dashboard in the Cortex console?
+
+
+By importing a template from the Marketplace
+
+
+By submitting a request to Palo Alto Networks support
+
+
+By creating and saving an XQL Search query
+
+
+By duplicating and editing an existing default widget
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+By creating and saving an XQL Search query
+
+Question 2 of 5
+In the Session Security Settings, what does the "Allowed Sessions" feature control?
+
+
+Sets the session timeout duration for users
+
+
+Restricts user access by IP address or domain
+
+
+Automatically deactivates inactive user accounts
+
+
+Enforces multi-factor authentication for logins
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Restricts user access by IP address or domain
+
+Question 3 of 5
+What is one of the methods mentioned for filtering entries within a management console table?
+
+
+Using natural language processing in the search bar.
+
+
+Pivoting from the contents of a specific data cell
+
+
+Dragging and dropping columns into a filter zone
+
+
+Applying a universal filter across all console pages
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Pivoting from the contents of a specific data cell
+
+Question 4 of 5
+What console feature allows you to create a shortcut to a frequently visited page in the navigation pane?
+
+
+Pinning the page to the top of the menu
+
+
+Using the Quick Launcher's "Go To" mode
+
+
+Creating a custom dashboard with page links
+
+
+Adding the page to the Favorites section
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Adding the page to the Favorites section
+
+Question 5 of 5
+Which is the default landing page when opening the Cortex Management Console?
+
+
+Cases
+
+
+Issues
+
+
+Reports
+
+
+Dashboard
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Dashboard

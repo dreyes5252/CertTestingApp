@@ -1,0 +1,107 @@
+Question 1 of 5
+Which case scoring method in Cortex takes precedence over all others?
+
+
+Rule-based scoring.
+
+
+Smartscore.
+
+
+Manual assignment
+
+
+Automatic threshold scoring.
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Manual assignment
+
+Question 2 of 5
+Which type of issues are displayed in the Issues table within the Issues & Insights tab?
+
+
+Informational issues.
+
+
+High and medium severity issues.
+
+
+Only critical severity issues.
+
+
+All issues, regardless of severity.
+
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+High and medium severity issues.
+
+Question 3 of 5
+In Cortex, what do assets specifically refer to?
+
+
+The various types of malware and exploits detected.
+
+
+The names of affected endpoints and users.
+
+
+The tools and processes used by attackers.
+
+
+The attributes of attacking objects.
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+The names of affected endpoints and users.
+
+Question 4 of 5
+What is the correct action to take to close Cortex cases?
+
+
+Close
+
+
+Resolve
+
+
+Archive
+
+Stop Investigation
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Resolve
+
+Question 5 of 5
+What does an artifact represent in the context of a Cortex case?
+
+
+An attribute such as filename, process, or IP address associated with the issues in the case.
+
+
+A compiled report of all security events on an endpoint
+
+
+A digital certificate used for code signing
+
+
+A log of user login timestamps and session durations
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+An attribute such as filename, process, or IP address associated with the issues in the case.

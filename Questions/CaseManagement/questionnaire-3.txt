@@ -1,0 +1,103 @@
+Question 1 of 5
+Which option is an example of instance-initiated actions available via the Cortex XDR WebSocket?
+
+
+Edit a file.
+
+
+Initiate a process.
+
+
+Terminate a process.
+
+
+Send a file to an endpoint.
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Terminate a process.
+
+Question 2 of 5
+Which portion of the Cortex management console displays the results of response actions taken?
+
+
+Action Center
+
+Response Center
+
+Audit logs
+
+
+Response logs
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Action Center
+Question 3 of 5
+Once an Endpoint has had Disable Capabilities initiated, how can it be reversed?
+
+
+Navigate to the Cortex management console and uncheck the Disable Capabilities box in All Endpoints.
+
+
+Open the agent UI on the endpoint, then click “Check in Now."
+
+
+Uninstall and reinstall the agent on the Endpoint.
+
+Open a Live Terminal to the Endpoint and uncheck the Disable Capabilities box.
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Uninstall and reinstall the agent on the Endpoint.
+Question 4 of 5
+Which Response Action can be taken from the Cortex management console?
+
+
+Shell Terminal
+
+
+Isolate Endpoint
+
+
+Reboot Endpoint
+
+
+Reimage Endpoint
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Isolate Endpoint
+
+Question 5 of 5
+Which action can be taken once a Live Terminal connection is established?
+
+
+Install Updates via Updater.
+
+
+Shut down Endpoint via Power Management.
+
+
+Reboot Endpoint via Power Management.
+
+
+Run applications and commands via Command Line.
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Run applications and commands via Command Line.

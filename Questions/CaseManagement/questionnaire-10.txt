@@ -1,0 +1,128 @@
+Question 1 of 7
+What is the primary purpose of Behavioral Indicators of Compromise (BIOCs)?
+
+
+To identify known malware strains
+
+To detect specific threat signatures
+
+To provide early warning signs of threats
+
+To focus on the behavior and actions of attackers
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+To focus on the behavior and actions of attackers
+Question 2 of 7
+What is the main purpose of Threat Intelligence in the context of Cortex?
+
+
+Detecting insider threats
+
+Providing global threat research
+
+Feeding data to WildFire
+
+Ensuring organizations can defend against evolving threats
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Ensuring organizations can defend against evolving threats
+Question 3 of 7
+How does Cortex accommodate organizations' growth and changing needs?
+
+
+By providing static threat detection
+
+By limiting the number of devices it protects
+
+By adapting to the organization's dynamic nature
+
+By focusing on case response only
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+By adapting to the organization's dynamic nature
+Question 4 of 7
+How does Cortex use behavioral analytics and machine learning for threat detection?
+
+
+It relies on static signatures
+
+It monitors network traffic exclusively
+
+It identifies abnormal activities and deviations
+
+It relies on user-reported cases
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+It identifies abnormal activities and deviations
+Question 5 of 7
+What is the key difference between Issues and Cases in Cortex?
+
+
+Issues are more detailed and comprehensive
+
+
+Issues require a coordinated and structured response
+
+
+Issues represent individual security events, while cases group related issues
+
+
+Cases serve as early indicators of security issues
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Issues represent individual security events, while cases group related issues
+
+Question 6 of 7
+Which aspect of threat detection does Cortex primarily focus on?
+
+
+Data exfiltration
+
+System restarts
+
+Lateral movement
+
+Cases investigation
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Lateral movement
+Question 7 of 7
+Which of the following is an example of an Indicator of Compromise (IOC)?
+
+
+A well-defined case management plan
+
+
+An advanced threat detection strategy
+
+A specific malware hash value
+
+A network traffic monitoring tool
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+A specific malware hash value

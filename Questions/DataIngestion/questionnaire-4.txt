@@ -1,0 +1,99 @@
+Question 1 of 5
+What is a primary function of Cortex data models?
+
+
+They obfuscate logs to protect sensitive information from all users.
+
+
+They categorize log data into predefined, fixed security threat levels.
+
+
+They map diverse logs into a single, unified data model.
+
+
+They convert structured data into an unstructured format.
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+They map diverse logs into a single, unified data model.
+
+Question 2 of 5
+Which component is the entity that normally initiates communication with a target system?
+
+
+Source
+
+Intermediate
+
+Observer
+
+Object
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Source
+Question 3 of 5
+Which component acts as the “normalization layer” within XSIAM?
+
+
+XDM
+
+XDR
+
+SIEM
+
+XQL
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+XDM
+Question 4 of 5
+What is the primary role of "filter" within the context of modeling rules?
+
+
+To assign new values to existing fields in the dataset.
+
+
+To define which data records should be returned by the query.
+
+
+To identify the specific data that should be mapped to the data model
+
+
+To automatically enrich data with external information.
+
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+To identify the specific data that should be mapped to the data model
+
+Question 5 of 5
+What is the main purpose of correlation rules in Cortex?
+
+
+To enforce strict data retention policies across all datasets.
+
+
+To detect patterns and generate alerts based on multi-event correlations.
+
+
+To convert raw log data into an unstructured text format.
+
+
+To manage user access permissions for different data sources.
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+To detect patterns and generate alerts based on multi-event correlations.

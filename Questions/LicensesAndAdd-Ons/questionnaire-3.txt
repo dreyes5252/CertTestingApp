@@ -1,0 +1,92 @@
+Question 1 of 5
+What is the purpose of the "Verdict" metric in Cortex?
+
+
+To identify devices on a network
+
+To categorize indicators based on their threat level
+
+To calculate the reputation of indicators
+
+To merge indicators related to files
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+To categorize indicators based on their threat level
+Question 2 of 5
+How do Feed Integrations keep security teams informed about threats?
+
+
+By creating case reports
+
+
+By analyzing security issues
+
+
+By providing up-to-date threat intelligence data
+
+By automating security operations
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+By providing up-to-date threat intelligence data
+Question 3 of 5
+How does automation work in Cortex?
+
+
+By applying static rules to cases
+
+
+By automatically responding to all cases
+
+
+By defining a set of rules and actions based on triggers or conditions
+
+By generating threat indicators
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+By defining a set of rules and actions based on triggers or conditions
+Question 4 of 5
+What is the significance of the "New Hits" metric in Cortex?
+
+
+It helps identify the most prevalent indicators within a case.
+
+
+It determines the reputation of indicators.
+
+It provides real-time threat intelligence data.
+
+It indicates whether a case is evolving or active.
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+It indicates whether a case is evolving or active.
+
+Question 5 of 5
+How do Indicator Profiles contribute to Cortex?
+
+
+They automatically merge file indicators.
+
+They define the playbook for automations.
+
+They manage and process indicators of specific types.
+
+They calculate the verdict for indicators.
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+They manage and process indicators of specific types.

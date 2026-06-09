@@ -1,0 +1,140 @@
+Question 1 of 7
+Which two are the thresholds for cases in Cortex? (Choose two.)
+
+
+7 days after the case was created
+
+(disabled)
+
+30 days after the case was created
+
+(disabled)
+
+14 days since the last issue in the case was detected
+
+(disabled)
+
+Cases have no thresholds
+
+(disabled)
+Options
+You gave the correct answer and your score is 2
+Correct answer
+Score: 2
+Correct answers:
+30 days after the case was created
+
+14 days since the last issue in the case was detected
+
+Question 2 of 7
+What does the "Assets and Artifacts" tab provide in Cortex around case management?
+
+
+A timeline of case actions
+
+
+Details about assigned analysts
+
+Information about hosts, users, and key artifacts
+
+Information about resolution reasons
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Information about hosts, users, and key artifacts
+Question 3 of 7
+Why is case management important?
+
+
+To make security breaches more damaging
+
+To maintain the confidentiality, integrity, and availability of data and systems
+
+To confuse security teams further
+
+To increase potential data loss
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+To maintain the confidentiality, integrity, and availability of data and systems
+Question 4 of 7
+How does the "Executions" tab in Cortex help analysts investigate issues?
+
+
+It displays a chronological representation of actions
+
+It allows you to update case details
+
+
+It provides a consolidated summary of IP addresses
+
+It shows the entire process execution chain leading to the issue
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+It shows the entire process execution chain leading to the issue
+
+Question 5 of 7
+How do external integrations within Cortex enhance the threat investigation process?
+
+
+By providing irrelevant information
+
+By adding more complexity to investigations
+
+By displaying WildFire-issued verdicts for Key Artifacts in each case
+
+
+They do not enhance the threat investigation process
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+By displaying WildFire-issued verdicts for Key Artifacts in each case
+
+Question 6 of 7
+What feature allows you to assign a case layout based on the case?
+
+
+Case fields
+
+
+Case layout
+
+
+Layout rules
+
+Layout views
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Layout rules
+Question 7 of 7
+In Cortex, what is the purpose of the "Case War Room"?
+
+
+To display IP addresses over a defined time frame
+
+To perform tasks related to case investigation through ChatOps
+
+
+To create custom case statuses
+
+
+To manage assigned analysts
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+To perform tasks related to case investigation through ChatOps

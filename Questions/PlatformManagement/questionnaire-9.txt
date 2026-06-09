@@ -1,0 +1,85 @@
+Question 1 of 5
+Which statement about Cortex XSIAM multitenancy is most accurate?
+
+
+It is a software architecture that allows a child tenant to share data with another child tenant for management.
+
+It is a software feature that allows the main tenant to establish communication between multiple point products.
+
+It is a software architecture that allows a central main tenant to manage the security operations of one or more child tenants.
+
+It is a software feature that scales the XSIAM environment horizontally to automatically account for increased workloads in a tenant.
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+It is a software architecture that allows a central main tenant to manage the security operations of one or more child tenants.
+Question 2 of 5
+What is a benefit of the central licensing model from the perspective of a large enterprise using the Cortex XSIAM multi-tenant environment?
+
+
+It allows individual tenants of the enterprise to purchase their own XSIAM licenses.
+
+It offers a managed security solution for large enterprises that do not have enough expertise and resources.
+
+It provides a way for the enterprise administrators to dynamically allocate the central license across multiple subsidiaries.
+
+It acts as a stepping stone for an enterprise with multiple point solutions by offering a way to purchase only the necessary pieces of XSIAM and centrally manage the other solutions.
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+It provides a way for the enterprise administrators to dynamically allocate the central license across multiple subsidiaries.
+Question 3 of 5
+How is the Cortex Gateway used during the Cortex XSIAM tenant pairing process? 
+
+
+It is a webpage used to initiate the pairing process.
+
+It is a webpage used to purchase licensing for each of the tenants.
+
+It is a private API endpoint address of the child tenant that is passed on to the main tenant.
+
+It is a public API endpoint address of the main tenant that is used by the child tenants to register under the main tenant.
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+It is a webpage used to initiate the pairing process.
+Question 4 of 5
+Which organization is most likely to purchase and manage a parent tenant of Cortex XSIAM?
+
+
+A fast-growing startup
+
+A managed security service provider
+
+A medium-sized business looking to expand their footprint
+
+A company that was recently targeted for a ransomware attack
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+A managed security service provider
+Question 5 of 5
+Which statement describes a valid operation between a Cortex XSIAM main tenant and its child tenant?
+
+
+The main tenant administrator can manage configurations such as setting user roles of the child tenants.
+
+The main tenant administrator can provision a child tenant that is a different product from the parent tenant.
+
+The main tenant configures the child tenant licensing automatically by referencing the number of endpoints on the child tenant.
+
+The main tenant stores the data of all of its child tenants and logically separates the data to present to each of the child tenants.
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+The main tenant administrator can manage configurations such as setting user roles of the child tenants.

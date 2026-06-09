@@ -1,0 +1,175 @@
+Question 1 of 10
+Which describes best the value a SIEM brings to a Security Operation Center?
+
+
+It provides the “big picture” view of security events
+
+It prevents attacks at the endpoint level
+
+It blocks network access to specific segments
+
+It provides the “granular” view of specific processes at the endpoint level
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+It provides the “big picture” view of security events
+Question 2 of 10
+Which of the following is a current challenge faced by legacy SOC analysts?
+
+
+Issues are processed automatically and have little use for analysts
+
+
+They see thousands of issues with little, or no, context to go with them
+
+
+Too many systems are connected to the SIEM
+
+Too many data sources
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+They see thousands of issues with little, or no, context to go with them
+
+Question 3 of 10
+Which challenge is often associated with a SIEM?
+
+
+It displays a large number of false positives
+
+The correlation engine constantly requires restarting
+
+There is too much information on each issue
+
+
+It prevents too many processes from running
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+It displays a large number of false positives
+Question 4 of 10
+What is one goal of adopting Cortex XSIAM into a security operation center?
+
+
+Multi vendor approach strategy
+
+Consolidation of many security products into one
+
+Prevent access to restricted network segments
+
+Complement the existing SIEM
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Consolidation of many security products into one
+Question 5 of 10
+What is a significant advantage of XSIAM over a traditional SIEM?
+
+
+It is able to ingest 3rd party logs
+
+It produces less noise
+
+It provides the “big picture” to the security operation center
+
+It provides correlation rules to unite otherwise disparate events
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+It produces less noise
+Question 6 of 10
+What is one of the benefits of adopting Cortex XDR?
+
+
+It fails over in case of outages
+
+It prevents access to restricted network segments
+
+It blocks known and unknown attacks
+
+It provides Drive access when offline
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+It blocks known and unknown attacks
+Question 7 of 10
+Which component of a SIEM is responsible for collecting and forwarding various types of security-related data from different sources across an organization's IT infrastructure?
+
+
+Real time alerting
+
+Event correlation engine
+
+Data collecting agents
+
+Dashboards and reports
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Data collecting agents
+Question 8 of 10
+Which challenge is commonly faced by Security Operations Centers currently?
+
+
+Analysts have too few issues to process
+
+
+Log sources are difficult to parse
+
+Automation is too complex
+
+Outdated security tools and tools that don’t talk to each other
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Outdated security tools and tools that don’t talk to each other
+Question 9 of 10
+What is a known limitation of Cortex XDR?
+
+
+It automatically remediates an endpoint before forensic triage can occur
+
+It lacks the ability to create data models to accommodate 3rd party logs
+
+It is unable to give visibility at the process level
+
+It is unable to detect or block zero day attacks
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+It lacks the ability to create data models to accommodate 3rd party logs
+Question 10 of 10
+What is the challenge of solely relying on endpoint protection products?
+
+
+There is lack of visibility into endpoint processes
+
+Supporting new OS is challenging
+
+Hunting is limited to endpoint data
+
+Switching endpoint product takes a lot of effort
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Hunting is limited to endpoint data

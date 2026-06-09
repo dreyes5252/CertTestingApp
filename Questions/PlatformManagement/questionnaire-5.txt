@@ -1,0 +1,87 @@
+Question 1 of 5
+Where can customers submit a form to receive a security compliance report about Palo Alto Networks?
+
+
+Enterprise Portal
+
+FlexLearn
+
+Loop
+
+NextWave Partner Portal
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Enterprise Portal
+Question 2 of 5
+Which certified entities enforce compliance regulations?
+
+
+Lawyers
+
+Judges
+
+Auditors
+
+Cybersecurity Companies
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Auditors
+Question 3 of 5
+True or False? Auditor determines what evidence is acceptable and it is important to note that evidence collected by one auditor may not meet the needs of another.
+
+
+True
+
+False
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+True
+Question 4 of 5
+How does the PCI DSS audit practice determine what level of scrutiny is needed?
+
+
+Number of end users
+
+Amount of personal data
+
+Number of credit card transactions per year
+
+Number of patient data points
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Number of credit card transactions per year
+Question 5 of 5
+What are three possible consequences for not following compliance regulations? (Choose three.)
+
+
+Fines and penalties
+(disabled)
+
+Server downtime
+(disabled)
+
+Potential jail time
+(disabled)
+
+Forced leadership departure
+(disabled)
+Options
+You gave the correct answer and your score is 3
+Correct answer
+Score: 3
+Correct answers:
+Fines and penalties
+Potential jail time
+Forced leadership departure
