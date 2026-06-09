@@ -1,0 +1,433 @@
+Work Plan and
+Playbook Tasks
+This course covers the features and functions of a case work plan, its application in case investigations, and provides an introduction to the various types of playbook tasks.
+
+
+
+Course Objectives
+After completing this course, you should be able to:
+
+
+Identify and explain the key features and functions of a work plan
+Describe how to identify and interpret the status of work plan tasks through icons
+Describe the four types of playbook tasks
+Describe the role of inputs and outputs in playbooks
+Describe the role of filters and transformers in playbooks
+Lesson Topics
+We recommend that you take the lessons in numerical order, but you can use the menu for quick access to any lesson at any time.
+
+Click the lesson title buttons to go to each lesson. You can also navigate the course using the navigation arrows below or the menu bar at the top left of the screen.
+
+Lesson 1: Work Plan                                      
+Lesson 2: Playbook Tasks                           
+Lesson 3: Playbook Task Types                 
+Lesson 4: Playbook Inputs and Outputs
+Lesson 5: Filters and Transformers         
+
+Work
+Plan
+This lesson describes the work plan options to manage a playbook and explains various actions on the playbook tasks.
+
+
+
+Work Plan Overview
+Work plans are a part of issues, and contains the playbooks that are slated to be run for that issue. Playbooks are used to consistently perform and document security monitoring, orchestration, and response activities.
+
+Viewing Work Plans
+The Automation pane, on the Cases page, displays all the issues that have playbooks—either completed, are pending an action, or have failed. It also provides any playbook recommendations the system may have.
+
+
+
+To view a work plan and associated playbook for an issue, first navigate to the Cases & Issues > Cases section, then locate the specific case you wish to view, and ensure the Overview tab is selected. Within the Automation section, click the playbook.
+
+
+
+
+
+This image shows four playbooks. Two playbooks are recommended, while the other two playbooks are complete. Click the image to enlarge it.
+
+
+Clicking the playbook will open the Work Plan view, which displays the associated playbook and its contents, allowing you to consistently perform and document the prescribed security monitoring, orchestration, and response activities.
+
+This image shows details of the Work Plan. Click the image to enlarge it.
+
+
+Work Plan Options
+Click the arrows for more information about the options for monitoring and managing a playbook. Click the images to enlarge them.
+
+
+Change the Playbook
+
+
+If needed, you can change the assigned playbook for an event. You can select a playbook to run on a case from the playbook menu. Changing a playbook will remove all completed tasks and cannot be undone.
+
+
+
+
+
+
+
+
+
+
+
+
+Playbook Management
+Playbook management in Cortex involves the strategic oversight and administration of playbooks, encompassing various features and functionalities to optimize case response and automation processes.
+
+Playbook Management
+Click the arrows for more information about key aspects of playbook management, including sub-playbook loops, playbook polling, playbook debugger, and issue field management. Click the images to enlarge them.
+
+
+Sub-Playbook Loops
+
+
+As an advanced feature, sub-playbook loops involve the creation of loops within a parent playbook using sub-playbooks. The parent playbook can be configured to exit the loop based on conditions like "For Each Input" or "Built-in." This feature is instrumental for iterating over a set of tasks multiple times, enhancing automation capabilities.
+
+
+
+
+
+
+
+
+
+
+Demo: Work Plan Options
+Watch this demonstration on how to use some of the options available in work plans. 
+
+​Playbook
+Tasks​
+
+This lesson describes how playbooks in Cortex consist of various task types, such as standard, conditional, and data collection, enabling modular and flexible automation for case response.
+
+What Are Playbook Tasks?
+Playbooks are composed of tasks which are the fundamental building blocks. Playbook tasks encompass various types, including standard tasks, conditional tasks, data collection, and section headers. Depending on the task type, playbooks feature inputs and outputs crucial for task execution. Sub-playbooks, categorized as parent or child playbooks, provide modularity and reusability in playbook development.
+
+Creating a Playbook Task
+Step 1: 
+
+Navigate to Investigation & Response > Automations > Playbooks.
+
+
+
+Step 2: 
+
+Create or select a Playbook to add a task. Then, click Blank Task under the Task Library.
+
+
+
+Step 3:
+
+Select the Task Type and select a script for the task.
+
+
+
+Step 4: 
+
+Click Save to add the task to the Playbook. 
+
+The following image provides the steps for creating a playbook task. Click the image to enlarge it.
+
+
+Playbook Task Management Features
+You can manage playbook tasks more efficiently by using features such as metadata and version control.
+
+Click the arrows for more information about playbook task management features. Click the images to enlarge them.
+
+
+Metadata
+
+
+Understanding playbook metadata helps in troubleshooting system performance issues. By accessing playbook metadata, users can analyze playbook task inputs and outputs, storage usage, and task types.
+
+
+Navigate to the Case War Room on the Cases page and run the following command:
+
+
+
+!getInvPlaybookMetaData caseId=<case ID> minSize=<size of the data you want to return in KB. Default is 10>
+
+
+
+For example, to view the playbook metadata that is used in case number 2465, enter:
+
+!getInvPlaybookMetaData caseid=”2465” minSize=”0”.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Task Types and Fields
+There are several types of playbook tasks and fields within Cortex.
+
+Task types include standard tasks, conditional tasks, data collection, and section headers, each serving specific purposes in playbook execution. Task fields vary depending on the task type selected, covering manual task settings, advanced settings, details, timers, error handling, and timing. These fields play a crucial role in configuring tasks according to specific requirements.
+
+
+Authentication for Communication Tasks
+Ensuring secure access to forms is paramount in playbook execution. Communication Task Authentication provides a mechanism for authenticating external users through single sign-on (SSO). Organizations can configure this feature by setting up dedicated groups of external users in their identity provider (IdP) such as Okta. Parameters such as Single Sign-On URL, Audience URI (Unified Resource Identifier), and IdP SSO URL are specified to establish a secure authentication process.
+
+Click the image to enlarge it.
+
+
+Task Icons and Colors
+Now that you are familiar with the Work Plan page, let's look at what the icons within a playbook task can tell us about each task. Some of the tasks, within playbooks, display color-coded icons to indicate the status or other attributes of the task.  
+
+
+Standard Automated Task
+Any task with the word script underneath it indicates a standard automated task. Automated tasks require no analyst intervention.
+
+
+Manual Task
+The blue arrow alone indicates a standard manual task. The analyst needs to mark the task as completed manually.
+
+
+Conditional Task
+The white diamond on a violet square indicates a conditional task. Conditional tasks are used as decision trees in your playbook.
+
+
+Data Collection
+The white speech bubble on an aqua square indicates a data-collection task. This task collects data through a multi-question survey.
+
+
+Completed Task
+A green square indicates a completed task. The white icon shows the type of action.
+
+
+Pending Manual Task
+A white arrow on an orange square indicates that further progress in the playbook is pending intervention by an analyst. The associated task requires an analyst to open it and manually mark it as complete.
+
+
+Failed Task
+Any task with a small red triangle indicates that the associated task has failed to complete as expected and requires inspection and troubleshooting. When a task fails due to a third-party service outage, API overage, or other temporary access condition, the solution might be to rerun the task or playbook.
+
+
+Sub-Playbook Task
+The sub-playbook icon in a square indicates that the task is a playbook nested within the parent playbook.
+
+Playbook Task Actions
+You can manage a task in a playbook workflow using the action links in Task details. These links enable you to take appropriate actions based on the task type.
+
+Click the arrows for more information about how you can manage a task in a playbook. Click the images to enlarge them.
+
+
+Add Comment
+
+Click Add comment to add a comment to a task. It is available in all task types.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Adding an Ad-Hoc Task
+Within the work plan, you can create tasks for a specific iteration of a playbook. The task type can be an automation or another playbook. For example, within a manual task, you might need to enrich some data when running an investigation playbook.
+
+
+
+Click the arrows for more information about adding an ad-hoc task. Click the images to enlarge them.
+
+
+
+
+
+
+Step 3
+
+
+In the playbook, hover over the task where you want to add a new task and click the + sign at the bottom right-hand corner of the task. The ad-hoc task is added after the task you clicked.
+
+
+
+
+
+Playbook
+Task Types
+This lesson describes the playbook task types and their capabilities.
+
+
+
+Building Blocks of Playbooks
+Playbook tasks are the building blocks of playbooks. You can run automation and sub-playbooks with tasks, communicate with end users, set conditions, and store relevant data.
+
+The Four Playbook Task Types
+There are four playbook tasks that can be used to build a playbook. Click the arrows for more information about each task. Click the images to enlarge them.
+
+
+
+
+
+
+
+Section Header
+
+
+Use section header tasks to manage the flow of the playbook and to help organize tasks efficiently by grouping several related tasks under one heading. These tasks make it easy to identify the playbook's start, various sections, and end.
+
+
+
+
+Demo: Playbook Task Types
+Watch this demonstration about the four types of tasks used for creating a playbook.
+
+
+
+
+​Playbook
+Inputs and Outputs​
+
+
+This lesson describes the integral role of inputs and outputs in Cortex playbooks and tasks, emphasizing their interconnected flow and the use of tools like the Task Cheatsheet for efficient playbook development.
+
+
+
+Inputs and Outputs in Cortex
+Playbooks and tasks rely on inputs and outputs. Inputs are data pieces originating from issues or external integrations. These inputs undergo manipulation and enrichment, resulting in outputs. An example could be extracting user credentials from Active Directory. Outputs serve as inputs for subsequent tasks, creating an interconnected flow within the playbook. 
+
+Playbook Inputs
+Playbooks and tasks in Cortex leverage inputs, which are data elements present within the playbook or task. These inputs may originate from the issue itself, determining crucial information like the role responsible for handling the case. Additionally, inputs can be obtained from integrations. This is exemplified by the extraction of a user's credentials through the Active Directory integration.
+
+
+Playbook Outputs
+Outputs play a pivotal role in the Cortex playbook ecosystem, serving as data generated or enriched during the playbook's execution. For instance, a playbook might create a list of endpoint IP addresses or MAC addresses, which can be further enriched or utilized for obtaining additional information in subsequent tasks.
+
+
+
+
+Task Cheatsheet
+The Task Cheatsheet is a valuable tool for playbook development, offering quick access to the system and custom fields. By clicking on the playbook brackets, developers can efficiently populate task inputs and outputs, simplifying the configuration process and enhancing overall playbook development.
+
+Viewing Cheat Sheets
+Navigate to a task.
+Click the { } icon.
+Expand the Cheatsheet menu to display the available system and custom fields.
+Select a field and it populates the task input with the corresponding context key.
+Click the image to enlarge it.
+
+
+Indicator Extraction
+Indicator extraction is a crucial feature in identifying indicators from various text sources such as email content or war room entries. It operates in different modes, including inline mode for synchronous extraction, and out-of-band for asynchronous extraction. Troubleshooting involves checking the extraction mode and configuring rules for effective indicator extraction.
+
+Indicator Mode Options
+Click the tabs to view the modes that indicator extraction supports.
+
+None
+Inline
+Out-of-Band
+Indicators are not extracted automatically. Use this option when you do not want to further evaluate the indicators.
+
+Indicator Extractor Defaults
+The following components are extracted with the specified defaults.
+
+Case Creation
+(Default: Inline)
+Sets the indicator extraction mode for case creation. It extracts from all associated fields at the point of case creation. You can change the value when editing a case type, which overrides this system configuration for this case type. 
+
+Case Field Change
+(Default: Out-of-band)
+Sets the indicator extraction mode for case field change. You can change the value when editing a case type, which overrides this system configuration for this case type. 
+
+Tasks
+(Default: none)
+Applies to the result of the task. You can change the value when editing a task, which overrides the system configuration for this task. 
+
+Manual
+(Default: Out-of-band)
+Applies to commands triggered from the CLI (Command Line Interface). You can change the value when using the indicator extraction parameter, which overrides the system configuration for this command. 
+
+
+
+Indicator Extraction Rules and Options
+Enhancing indicator extraction within tasks involves creating rules for efficient playbook execution. Default extraction values are set to inline, and commands like extractIndicators, !ip, and enrichIndicators are used. Choosing extraction modes, such as inline, none, or out-of-band, depends on specific playbook needs.
+
+Click the image to enlarge it.
+
+
+Creating Indicator Extract Rules for a Playbook Task
+A practical use case involves extracting indicators from phishing emails effectively. It is essential to extract the original email used in a phishing attack to ensure accurate extraction. Configuration steps include setting the indicator extraction mode to inline and adjusting rules within specific tasks for optimal performance.
+
+Click the image to enlarge it.
+
+
+
+
+Extending Context
+Extending context in Cortex enhances the platform's capabilities, enabling users to enrich and customize information within playbook tasks or through the command line.
+
+Advanced Tab
+Within a playbook task, the Extend Issue context field in the Advanced tab is the key element. In this context, inputting the desired field name and its corresponding value is crucial. For instance, using the !ad-get-user command, parameters like name="John" attributes=displayname can be employed to place the user's name in the displayName key. 
+
+
+
+Multiple fields can be added, providing flexibility in playbook design. Optimize performance by selecting the Ignore outputs checkbox to focus on requested values.
+
+
+
+
+
+
+Command Line Context Extension
+Similar principles apply when extending context through the command line, whether in a playbook task or directly from the Case and Issue War Rooms. Use commands like !ad-get-user with raw-response=true for precision in identifying information for extension.
+
+​Filters and
+Transformers​
+This lesson describes the pivotal role of filters and transformers in Cortex, elucidating their significance in extracting, manipulating, and presenting data in JSON format.
+
+Filters and Transformers in Cortex
+In Cortex, data manipulation is crucial for effective case response. Filters and transformers play a pivotal role in this process by allowing users to extract, manipulate, and present data in JSON format. Whether applied in playbook tasks or instance mapping, these tools empower users to shape the information according to their specific needs.
+
+Click the tabs for more information about filters and transformers in Cortex.
+
+Filters
+Filters serve the purpose of extracting relevant data for further use within the platform. 
+
+When dealing with issues containing multiple files of varying types, filters can be applied to select specific files based on attributes like file extension or type.
+Cortex supports the creation of multiple filters, offering flexibility in data extraction.
+It is important to note that filters can be nested, and users have the option to customize the context root.
+Transformers
+
+
+
+Click the image to enlarge it.
+
+
+Application in Playbooks
+Both filters and transformers can be seamlessly integrated into playbook tasks. During task creation or modification, users can access the Filters and Transformers options. The process involves specifying the data to be filtered or transformed, setting parameters, and saving the configuration. This capability enables users to tailor their playbooks to handle diverse scenarios effectively.
+
+Example Scenario: Creating a Filter
+To illustrate the practical application of filters, consider a scenario where you want to filter all EWS-named items with the extension "exe." This involves specifying the context root, adding a filter for the file extension, and saving the filter. The ability to test filters ensures that the desired data is accurately extracted, enhancing the reliability of the case response process.
+
+
+Filter Categories and Built-In Filters
+Click the tabs for more information about filter categories and built-in filters.
+
+Filter Categories
+Built-In Filters
+Filters in Cortex are categorized based on their functionality. These categories include Boolean, Date, General, String, Number, and Unknown. Each category offers a range of operators tailored to specific data types, providing users with a comprehensive set of tools to extract and manipulate data effectively.
+
+Course Summary
+Now that you've completed this course, you should be able to:
+
+
+Identify and explain the key features and functions of a work plan
+Describe how to identify and interpret the status of work plan tasks through icons
+Describe the four types of playbook tasks
+Describe the role of inputs and outputs in playbooks
+Describe the role of filters and transformers in playbooks

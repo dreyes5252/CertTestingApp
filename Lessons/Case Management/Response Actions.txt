@@ -1,0 +1,378 @@
+
+
+Response
+Actions
+This course describes the centralized endpoint response actions you can take on incidents in the Action Center.
+
+Course Objectives
+After completing this course, you should be able to:
+
+
+Describe and differentiate action categories and action targets
+Describe server-initiated actions over WebSocket
+Perform and track response actions from the Action Center
+Run Live Terminal and isolate an endpoint
+Lesson Topics
+We recommend that you take the lessons in numerical order, but you can use the menu for quick access to any lesson at any time.
+
+Click the lesson title buttons to go to each lesson. You can also navigate the course using the navigation arrows below or the menu bar at the top left of the screen.
+
+Lesson 1: Action Categories and Server-Initiated Actions   
+Lesson 2: Action Center                                                                
+Lesson 3: Endpoint Response Actions                                       
+
+Action Categories and
+Server-Initiated Actions
+This lesson describes the Cortex® action categories and server-initiated actions. The lesson also describes how you can initiate actions in the management console and use roles to limit access to actions.
+
+Cortex Actions
+You can initiate three types of actions from the Cortex management console: response, investigation, and maintenance.
+
+Instant Response
+Instant Response
+
+
+
+You can immediately respond to malicious activities on an endpoint by quarantining a file or terminating a process. Alternatively, you can completely isolate an endpoint from its network. To respond to malicious network activities, you can use the external dynamic list (EDL) response action, which adds the malicious domains or IP addresses to the block lists to be consumed by next-generation firewalls (NGFWs).
+
+Further Investigation
+Further Investigation
+
+
+
+To further investigate incidents and alerts, you can initiate a Live Terminal session to remotely connect to an endpoint. You can also utilize the extensive remote capabilities of Live Terminal to quickly respond to malicious activities.
+
+Maintenance and Administration 
+Maintenance and Administration
+
+
+
+For management of your Cortex deployment, you can perform maintenance actions, such as uninstalling and upgrading the Cortex XDR agents. 
+
+
+
+Targets of Response Actions
+The response actions can impact three different components: processes and files, endpoints, and networks.
+
+Processes and Files
+Actions such as quarantining a file or terminating a process directly target individual processes or files. All the remaining files or processes remain intact. 
+
+Endpoints
+Some actions can act on the entire endpoint. For example, the Isolate Endpoint action disconnects the endpoint from its network.
+
+
+
+Networks
+The EDL action can impact network activities by maintaining block lists of IP addresses and domain names that are enforceable by your NGFWs.
+
+
+
+​Server-Initiated Actions​
+Cortex uses WebSocket to send actions to the Cortex XDR agents, which has more benefits compared to the Hypertext Transfer Protocol (HTTP) protocol.
+
+Click the tabs for more information about WebSocket.
+
+Speed
+
+Live Sessions
+
+Failover to HTTP Option
+
+Cortex server-initiated actions include:
+
+
+Initiating Actions in the Management Console
+You can initiate response actions from the management console in a variety of ways.
+
+
+
+Click the images to enlarge them.
+
+From the Action Center Page​
+
+
+Go to Investigation and Response > Response > Action Center > + New Action and choose the action you want to take.
+
+
+From the Shortcut Menu
+
+
+Hover the cursor over a row in the endpoints table and take the required action from the available options.
+
+
+Shortcut Menu
+The object's shortcut menu (also known as the right-click menu or context-sensitive menu) depends on the object category (an exploit or a malware, or a Windows or a Linux endpoint) and on the object's status (a running or stopped process, or a connected or disconnected endpoint). For example, the Terminate action does not appear in the shortcut menu of an already stopped process.
+
+​Limiting Access to Actions​
+You can restrict access to the actions that users can perform in the management console using Cortex roles.
+
+To access the Cortex roles for the current instance, go to Setting > Configurations > Access Management > Roles. Click the image to enlarge it.
+
+
+To verify your role, click your Customer Support Portal (CSP) username and click About. Click the image to enlarge it.
+
+Action
+Center
+This lesson describes how you can use the Action Center to initiate response actions, initiate new actions, and track the status of those actions. The lesson also describes how you can follow up on the actions you have taken.
+
+​Initiating Actions in the Action Center​
+Action Center hosts lists of objects modified by the successfully completed actions, such as the lists for quarantined files, blocked and allowed files, and isolated endpoints.
+
+You can take the following actions in the Action Center.
+
+Initiating New Actions
+Initiating New Actions
+
+
+
+You can initiate new actions on one or multiple files or endpoints in bulk directly from the Action Center.
+
+Tracking New Actions
+Tracking New Actions
+
+
+
+Track the progress of all the actions initiated from various action buttons and shortcut menus on the Cortex management console.
+
+Accessing Currently Applied Actions
+Accessing Currently Applied Actions
+
+
+
+Access the Currently Applied Actions lists (e.g., File Quarantine and Block List).
+
+Access Agent Script Library
+Accessing Agent Script Library
+
+
+
+Access the Agent Script Library to run scripts remotely on endpoints.
+
+Archiving Actions
+Archiving Actions
+
+
+
+To archive any action listed under the Action Center, right-click it and select Archive.
+
+Benefits of Tracking Actions
+If you initiate an action over multiple endpoints in bulk, action tracking is useful because some endpoints may be disconnected at the time of initiation. When disconnected endpoints later connect to Cortex (before the action expires), they will receive the action, perform it, and then respond accordingly to Cortex.
+
+
+
+Tracking is also useful for some action types that may require some time to complete. For example, the Support File Retrieval action may take up to 10 minutes depending on the size of your log files, memory dumps, and the size of the other support-related metadata.
+
+Actions in the Action Center
+Here is a list of the actions that you can initiate from the Action Center. Be aware, the availability of some actions may vary based on license.
+
+Action	Description
+Files Retrieval	Download up to 20 files from each targeted endpoint.
+Retrieve Support File	Download all logs, memory dumps, etc., in a zip file to work with Technical Support.
+Malware Scan	Scan endpoints for Portable Executable (PE) files and Office files with macro.
+Abort Malware Scan	Cancel an ongoing scan activity.
+Isolate	Isolate an endpoint from its network.
+Run Endpoint Script	Run Python scripts on endpoints.
+Add to block list	Add hashes to block list.
+Add to allow list	Assign a Malware verdict to files to override WildFire and Local Analysis verdicts.
+Import Hash Exceptions	Import hash exceptions (block lists and allow lists) from CSV files.
+Agent Upgrade	Initiate a Cortex XDR agent version software upgrade on endpoints.
+Agent Uninstall	Uninstall the Cortex XDR agents from endpoints.
+File Search	Search files by file SHA256, path or path with wildcard.
+Destroy file	Find and destroy all instances of a file on an endpoint by using file path or hash.
+Memory Collection	Collect a memory image from a Windows endpoint.
+
+Agent Isolation (Linux)
+When isolating a Linux endpoint, you can cancel the option to isolate an agent if the connection with the managing server has lost connection after a defined period of time.
+
+Settings are found within Endpoints > Policy Management > Prevention > Profiles. Once in the profiles menu, select Agent Settings within the Linux profiles section. 
+
+
+Demo: Initiating Response Actions
+Watch this demonstration about how you can initiate a new action on an endpoint from the Action Center. 
+
+
+
+
+Elapsed time0:00/Total0:58
+
+​Tracking Actions Status​
+You can track the status of your actions in the Status column of the All Actions table. Tracking the status of an action is especially important for the actions that may not be completed immediately and for bulk actions taken on multiple endpoints.
+
+The following are the different action statuses:
+
+Pending
+
+
+There are no endpoints that have started to run the action.
+
+In Progress
+
+
+At least one endpoint has started to run the action.
+
+Expired
+
+
+The action expired before an endpoint could start running it.
+
+​Canceled​
+
+
+The action was canceled before any endpoint started performing it.
+
+Completed Successfully
+
+
+The action was successfully completed on all the endpoints.
+
+Completed with Partial Success
+
+
+The action was successfully completed on some endpoints.
+
+Failed
+
+
+The action has failed on all the endpoints.
+
+Click the image to enlarge it.
+
+
+Expiration Timeout
+Depending on the action, expiration timeout can be four or 30 days. For example, the Quarantine action expires after four days, while the Agent Uninstall action expires after 30 days.
+
+​Follow-Up Actions​
+You can take follow up actions on an already-performed action from its shortcut menu, such as restore, move to allow list, and cancel isolation. 
+
+Click the tabs for more information about the shortcut menu.
+
+Restore
+Move to Allow List
+Cancel Endpoint Isolation
+
+
+Use the Cancel Endpoint Isolation action to resume the normal communication of an endpoint.
+
+
+Follow-Up Actions: Additional Data
+When viewing completed actions, you can click Additional data to view supplemental information such as file paths for quarantined files or operating systems for agent upgrades. 
+
+
+
+For example, you can use the additional data menu for a Retrieve Issue Data action to review when that action was completed. You can also right click on the action in that menu and select Download files to download data associated with the action.
+
+
+Block List Hash Override
+Cortex allows you to define an optional setting to terminate hashes on an endpoint regardless of the malware profile settings.
+
+Even though the profile is set to Report, Cortex will still block items from the block list regardless of the report status if the Override Report mode option is enabled. Click the image to enlarge it.
+
+
+From the Investigation & Response > response > Action Center > Block List page, you can enable the Override Report mode. Click the image to enlarge it.
+
+Endpoint Response
+Actions
+This lesson describes the response actions you can take on endpoints, such as isolating an endpoint and initiating Live Terminal.
+
+​Isolate and Cancel Isolation Endpoints Response Actions​
+You can isolate a malicious endpoint from its network, allow certain processes on it while it is still in isolation, and cancel its isolation.
+
+Click the images to enlarge them. 
+
+Isolating an Endpoint
+You can use an endpoint's shortcut menu to initiate the isolate action on the endpoint. The endpoint will be completely isolated from the rest of the network when this action is complete. However, the agent can still connect to the Cortex instance.
+
+
+Allowing Processes on an Isolated Endpoint
+On an isolated endpoint, certain processes can be allowed to connect to specific IPv4 or IPv6 addresses using the Response Actions setting in the applied Agent Settings Profile. For each entry in the allow list, specify process names with wildcard (*) and IPv4 or IPv6 addresses.
+
+
+Canceling Endpoint Isolation
+You can cancel an endpoint isolation in two ways: using the Cancel Endpoint Isolation action from the Action Center (shown in the example) or using the Cytool app with the isolate stop command option.
+
+
+​Live Terminal Response Action​
+To respond to and further investigate an alert associated with an endpoint, initiate a Live Terminal session that establishes a stateful connection to the endpoint.
+
+Live Terminal provides four interfaces for performing several operating system-specific tasks remotely on an endpoint.
+
+Task Manager
+Task Manager
+
+
+
+Use Task Manager to investigate and manage processes, such as performing terminate, suspend, or resume processes.
+
+File Explorer
+File Explorer
+
+
+
+Use File Explorer to investigate and manage files and perform tasks, such as renaming, moving, and deleting files or folders.
+
+Command Line
+Command Line
+
+
+
+Use Command Line to run non-interactive, non-web interface applications or commands.
+
+Python
+Python
+
+
+
+You can initiate Python 3 commands, or load and run a Python script file without installing Python. You can save the session report in text when you disconnect the session. 
+
+The graphic shows the Live Terminal interface. 
+
+
+Task Manager and File Explorer Provisions
+Task Manager and File Explorer provide remote process management and file management on a connected endpoint respectively. Click the images to enlarge them.
+
+Task Manager
+The tree icon, located on the header of the process table, is used to toggle between the flat view and tree view of the process hierarchy.
+
+
+
+Open the shortcut menu of a process in the table to perform a process-specific action, such as Terminate process, Suspend process, Get WildFire verdict, or Open hash view (shown in the image).
+
+
+File Explorer
+File Explorer provides remote file management on a connected endpoint. The right pane on File Explorer shows the directory tree, which is used to remotely manage files and folders on a connected endpoint.
+
+
+
+To display action options for a file or folder, use its shortcut menu.
+
+
+Disabling Endpoint Capabilities
+Cortex allows you to disable endpoint capabilities, such as Live Terminal, File Retrieval, and Script Execution from its shortcut menu. 
+
+
+
+Note: Disabling capabilities on an endpoint is an irreversible action. To enable a capability, you must uninstall and reinstall the agent. The reinstallation is required as a security precaution.
+
+ 
+To disable an endpoint's capabilities, navigate to Inventory> Endpoints> All Endpoints. Then, right click an endpoint and select Endpoint Control > Disable Capabilities. On the pop-up window that appears, select the capability you want to disable and then click Set. Click the image to enlarge it.
+
+
+Automated Response Capabilities
+Some of the response capabilities are available with simple automation, where customers can automate:
+
+Isolating endpoints
+
+Running scripts
+
+Conducting forensics
+
+Performing malware scans
+
+​Course Summary​
+Now that you've completed this course, you should be able to:
+
+
+Describe and differentiate action categories and action targets
+Describe server-initiated actions over WebSocket
+Perform and track response actions from the Action Center
+Run Live Terminal and isolate an endpoint

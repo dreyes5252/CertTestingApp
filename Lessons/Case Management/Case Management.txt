@@ -1,0 +1,476 @@
+Case
+Management
+This course describes case management in Cortex, including viewing and analyzing cases.
+
+
+
+Course Objectives
+After completing this course, you should be able to:
+
+
+Describe the key reasons why case management is important
+
+Explain how cases help organize and manage security-related information
+
+Describe the conditions under which cases stop accepting new issues
+
+Describe the customizable attributes of cases
+
+Describe the various information that can be viewed and managed for cases
+
+List the features and tools provided for case management
+
+Explain how to assign and service level agreements (SLAs) to cases and view their status
+
+Lesson Topics
+We recommend that you take the lessons in numerical order, but you can use the menu for quick access to any lesson at any time.
+
+Click the lesson title buttons to go to each lesson. You can also navigate the course using the navigation arrows below or the menu bar at the top left of the screen.
+
+Lesson 1: Overview of Cases                             
+Lesson 2: Cases in Cortex                                  
+Lesson 3: Case SLAs                                            
+Lesson 4: Investigating Artifacts and Assets 
+
+Overview of
+Cases
+This lesson describes what a case is, how Cortex creates a case, and why case management is so important.
+
+
+
+What Are Cases?
+A case is a grouping of various artifacts, assets, and issues that result from a single threat event or attack. It's a way to organize and manage security-related information in the Cortex platform. When an attack affects multiple hosts or users and triggers different types of issues stemming from the same event, all of these elements are aggregated into a single case.
+
+How Cortex Creates a Case
+Cortex uses predefined rules to determine which issues should be associated with a specific case. These rules consider various issue attributes such as the source of the issue, issue type, and the time period in which they occurred. If multiple issues are part of the same causality chain and there's already an open case for them, they are grouped under that existing case. Otherwise, a new case is created for incoming issues.
+
+
+Why Cases Are Important
+Cases play a vital role in the Cortex platform by helping security teams prioritize, track, triage, investigate, and remediate security issues and threats effectively. These cases are customizable; various attributes and information about them can be viewed and managed, including case description, status, severity, the involved host and users, MITRE ATT&CK tactics and techniques, and much more.
+
+
+
+Cases provide a big picture on what is transpiring as opposed to viewing issues in silos. They are more efficient than individual issues for the SOC team to manage. They can be enriched with threat intelligence to make SOC analysts much more productive and significantly reduce mean time to detect (MTTD) and mean time to resolve (MTTR).
+
+
+Thresholds and External Integrations
+Here are two concepts that Cortex uses.
+
+Thresholds
+To maintain the relevance and timeliness of cases, Cortex has thresholds for when a case stops accepting new issues and when subsequent related issues are grouped into a new case. This ensures efficient tracking and organization of security-related information.  
+
+
+
+These thresholds include:
+
+30 days after the case was created.
+14 days since the last issue in the case was detected (excluding backward-scan issues).
+The case accrues 1,000 issues. This usually only happens with runaway IOCs but sometimes scripts or other routine activity is blocked enough times to hit this threshold.
+The case is marked as resolved. Any new issues spill over to a new case.
+External Integrations
+External integrations within Cortex significantly enhance the threat investigation process. One key element is the display of WildFire-issued verdicts for Key Artifacts in each case, which provides essential insights into known and unknown threats, including malware behavior. WildFire's detailed analysis aids in understanding the nature of the threats, and this information is presented alongside relevant Key Artifacts in the case details to help facilitate more informed investigations.
+
+Case Management
+Case managing within Cortex involves reviewing and responding to security cases efficiently. Cortex provides various features and tools for triaging, investigating, and managing cases.
+
+Case management plays a critical role in maintaining the confidentiality, integrity, and availability of data and systems within an organization. The following are key reasons why case management is important:
+
+
+Security Breach Mitigation
+
+
+
+Case management is essential for mitigating the impact of security breaches and minimizing potential damage. When a case occurs, it's crucial to respond promptly and effectively to prevent or limit data loss, financial loss, and reputational damage.
+
+
+Identifying Security Threats
+
+
+
+Effective case management helps organizations identify and understand various security threats and vulnerabilities. This knowledge is essential for improving security measures and reducing the risk of future cases.
+
+
+Data Protection
+
+
+
+Case management protects sensitive and confidential data such as customer information, intellectual property, and financial records. Failing to address cases can result in data breaches and significant harm to individuals or the organization.
+
+Cases
+in Cortex
+This lesson describes cases and case management within Cortex.
+
+
+
+Case Management View
+The Case view allows you to track cases, investigate case details, and take remedial action. To locate the case you want to investigate, navigate to Cases and Issues > Cases. Cases can be viewed at a high level from the Case List view and from the Details pane to drill down deeper.
+
+Case List View
+The Case List allows you to filter and sort cases based on various fields like status, score, severity, and timestamp. Click the image to enlarge it.
+
+
+
+
+Details Pane View
+The Details Pane displays detailed information about the selected case. The context-sensitive tabs in this pane enable users to focus on desired case information. Click the image to enlarge it.
+
+
+Details Pane View Tabs
+Click the arrows for more information about the six tabs that provide an advanced view of cases. Click the images to enlarge them.
+
+
+Overview
+
+
+The Overview tab offers a case header with details, MITRE tactics and techniques, a summarized timeline, and widgets to visualize various aspects of the case, such as the number of issues, issue sources, hosts, and users associated with the case. One benefit is that you can view a breakdown of all of the case sources right in the overview. This helps to contextualize the rest of the case and to plan for what the next steps might be in the event that the issue(s) need to be tuned.
+
+
+Key Assets & Artifacts
+
+
+This tab provides information about the assets and artifacts associated with the case such as hosts, users, and key artifacts. It allows you to investigate these artifacts in detail, including file information, IP addresses, and domains.
+
+
+Issues & Insights
+
+
+This tab displays a table of issues and insights related to the case. You can select and investigate individual issues or alerts, view details, and perform actions.
+
+
+Timeline
+
+
+The Timeline tab offers a chronological representation of actions related to the case, including when the case was created, assigned, updated, and resolved. It also shows automated case updates and automation actions.
+
+
+Case War Room
+
+
+Real-time investigation is facilitated through the Case War Room, powered by ChatOps. Analysts can use Command-Line-Interface (CLI) commands to perform tasks related to case investigation, run security actions, scripts, and commands, all without switching consoles.
+
+
+Executions
+
+
+The Executions tab displays the Causality View of different issues inside the case, which provides a powerful way to analyze and respond to issues. The Causality View presents the issue and includes the entire process execution chain that led up to the issue.
+
+
+
+
+Case Management
+The different case views allow you to investigate and perform actions on cases such as updating case details, scoring cases, assigning status, resolving cases, and more.
+
+Managing Cases
+This section allows you to update case details, including severity, name, description, score, assignee, and status. You can also merge cases, if necessary, to allow for more effective management of related cases.
+
+
+Case Scoring
+Cases can be scored based on rules and manual adjustments. The system calculates a case score to help prioritize response efforts. Click the image to enlarge it.
+
+
+Assigned and Status
+View the following information on assigning cases and setting their status. In addition,  you can create custom case statuses and resolution reasons but these should be used carefully, as they might not be universally supported and can affect how Cortex handles future cases. 
+
+Assigning Cases
+To delegate a case for investigation or resolution, choose the assignee from the list, or leave it as Unassigned. 
+
+
+Case Status Updates
+Modify a case's status to reflect its progress, choosing from options like 'New,' 'Under Investigation,' or 'Resolved.' This status change aids in tracking reviewed cases and enables filtering in the incidents table.
+
+
+Resolution & Issue Handling
+When marking a case as Resolved, specify the reason for resolution and optionally include comments. Additionally, choose whether to mark all related issues as Resolved, ensuring comprehensive case closure.
+
+ 
+ 
+
+
+
+
+
+
+Resolution Reasons
+When resolving cases or issues in Cortex, you can select from multiple resolution reasons to provide context for the closure.
+
+
+True Positive
+
+
+
+Used when the case was a real threat and has been effectively resolved.
+
+
+False Positive
+
+
+
+For cases that were not actual threats.
+
+
+Security Testing
+
+
+
+When the case is related to security testing or simulations.
+
+
+Known Issue
+
+
+
+Appropriate for cases tied to existing or ongoing problems.
+
+
+Duplicate Case
+
+
+
+Selected when the case is a duplicate of another.
+
+ 
+
+
+
+
+
+
+
+Custom Case Fields, Layouts, and Layout Rules
+You can create custom case fields, custom case layouts, and layout rules in Cortex. Custom case layouts can include both out-of-the-box and custom case fields. Case layouts are applied to cases according to layout rules. This does require that role-based access control (RBAC) is set up for fields, types, and layouts.
+
+Creating Custom Case Fields
+In addition to the out-of-the-box and installed content pack case fields, Cortex allows you to create user-defined custom case fields. These fields can then be used for custom case layouts and for display in the Case table. Some common use cases for using custom case fields include mapping raw JSON fields from incoming issues, displaying custom fields data in the Case table, and creating correlation rules that generate issues from XQL queries that map the output of the queries to custom case fields.
+
+To create custom case fields, navigate to Settings > Configurations > Object Setup > Cases > Fields. Click the + New Field button to add a new customized field. On the New Case Field pop-up window, select a field type from the Field Type drop-down menu, enter the new field name, and then click Save.
+
+Click the image to enlarge it.
+
+
+Creating Custom Case Layouts
+Custom case layouts let you choose the specific fields and buttons that are displayed for different types of cases. You can create custom case layouts that include both custom and out-of-the-box case fields. Click the arrows to view how to create new case layouts.  Click the images to enlarge them.
+
+
+Custom Cases Layout Main View
+
+
+Navigate to Settings > Configurations > Object Setup > Cases > Layouts. Here you can view existing layouts as well as import and export layouts.
+
+
+
+Select + New Layout to add a new customized field.
+
+
+Adding New Tabs and Sections
+
+
+To add a section, click on + New or under the Sections tab, drag and drop a new section into the custom tab. 
+
+
+
+Click New tab to add a new tab.
+
+
+
+
+Editing Section Settings
+
+
+After creating a new section, you can edit the section settings by selecting New Section > Edit section settings.
+
+
+Adding Fields and Buttons to Sections
+
+
+From the Fields and Buttons tab of the Library, drag fields into a section of the layout or select + New Button.
+
+
+
+For button configuration, click to configure and enter a descriptive name for the button. Select a color and select the script that you want to run when the button is clicked.
+
+
+
+
+Creating Layout Rules
+Case layouts are applied to cases according to layout rules. When using a layout rule, you can assign a custom case layout based on the case (e.g., a specific layout for cases with a high severity). You can create layout rules in two steps. Click the images to enlarge them.
+
+Step One
+Navigate to Settings > Configurations > Object Setup > Cases > Layout Rules. Here you can view existing layout rules. Select + New Rule to add a new customized rule to a layout.
+
+
+
+
+Step Two
+Enter a Rule Name and select the custom or out-of-the-box layout to display if the rule is met. Enter an optional layout rule description. Search for case(s) that match the criteria you want to use for the layout rule. For example, you can search for cases from a specific case source. Lastly, select Create.
+
+
+Demo: Custom Case Fields, Layouts, and Layout Rules
+Watch this demo on how to create custom case fields and case layouts as well as how to create layout rules.
+
+Case
+SLAs
+This lesson describes the Case SLAs feature and how it can be used to meet SLA requirements.
+
+
+
+Case SLAs Overview
+Cortex allows organizations to efficiently track Key Performance Indicators (KPIs) associated with cases by using the Case SLAs feature. This feature provides real-time insights into operational performance and promotes alignment with established objectives, thereby helping organizations monitor and assess their KPIs. Case SLAs enables the association of specific SLAs with individual cases, which can then be easily viewed, filtered, and sorted directly within the Cases view.
+
+
+ 
+
+How Case SLAs Works
+There are a few basic steps that you need to do in order to create and use Case SLAs. 
+
+
+Determine SLA Goals by Cases
+
+
+
+It is important to have clear SLA goals that are tied to cases. Identify what types of cases need SLAs and how you are going to track SLA measurables for the cases. Then, determine the time limits to complete the SLA actions.
+
+
+Create a Timer Field
+
+
+
+The Timer field requires both a case filter and conditions to determine when the timer should start. The SLA field, in turn, needs the associated timer and defined SLA goals. Once the timer condition is met, the SLA goals come into effect. The Timer field counts forward, while the SLA field counts backward.
+
+
+Permissions
+
+
+
+In order to modify layouts with the case SLA fields, you need to have permission to add and modify fields, layouts, and ideally, layout rules.
+
+
+Create SLA Fields
+
+
+
+Create new SLA fields that will be associated to the timer field as well as contain the SLA goals.
+
+
+
+
+
+This graphic shows a custom layout section with an SLA Timer Field and a Case Response SLA field.
+
+
+
+
+Case SLAs Use Case Example
+In order to understand how to create and use Case SLAs, let's look at a potential use case where an organization wants to ensure that cases are moved from status New to Under Investigation within specific time durations based on their severity level (e.g., critical < 60 minutes, high < 120 minutes, medium < 12 hours).
+
+Creating Case SLAs
+View the following steps on how to create a case SLA. Click the images to enlarge them.
+
+Step One: Create the Timer Field
+
+
+Navigate to Settings > Configurations >
+Object Setup > Cases and select Fields. 
+
+
+
+Perform the following steps:
+
+
+
+Select + New Field.
+Select Timer in Field Type.
+Add a Field name.
+Add a tooltip (optional).
+Create an Case filter. Cases that are in this filter will have this SLA applied to them. 
+Add Start and End conditions. In this example, Start is when the case is created and End is when it is under investigation.
+Click Save.
+
+Step Two: Create the SLA Field
+
+
+Select + New Field.
+Select SLA in Field Type.
+Add a Field name.
+Add a tooltip (optional).
+Select Timer and choose the timer that you created for this SLA.
+Add the goals. Give them a name, duration, and a filter for a case field. This example has three goals for critical, high, and medium severity cases with their associated filters.
+Click Save.
+
+Viewing Case SLAs and Their Status
+There are two primary ways to view SLAs within cases. The first is in the Cases Table view and the second is by creating a custom layout with the SLA fields. Click the images to enlarge them.
+
+View Option One: Cases Table View
+
+
+If you filter for the SLA case, you can view the timer and SLA fields for it in the Cases table.
+
+
+View Option Two: Custom Layout View
+
+
+This examples shows how you can view SLA cases in a custom case layout. This custom layout was created by adding a new SLA tab and a new section. Within the section are the two Case SLA fields.
+
+
+Additional Case SLAs Information
+Let's look at some useful information to know about Case SLAs.
+
+Case Resolution
+When a case is resolved, the timer calculation stops.
+
+Updating the Timer Logic
+Updating timer logic affects open and new cases. Therefore, the timer and associated SLA will be removed from any case that no longer qualifies, even if the timer is already running.
+
+SLA in Breach
+When a case is in violation of its SLA, its SLA field shows a red time clock icon. Cases still within their SLAs show a black time clock icon in this field.
+
+Deleting a Timer Field
+If you delete a timer field, the SLA associated to the timer is also deleted.
+
+XQL Queries
+Timer and SLA data is available in XQL queries.
+
+War Room CLI Command or Playbook Task
+You can update Timer and SLA fields by running the following CLI command in the War Room:
+
+!RefreshIncidentDynamicCustomFields 
+
+Investigating
+Artifacts and Assets
+This lesson describes the different views and abilities when it comes to investigating artifacts and assets within Cortex.
+
+
+
+Artifacts and Assets
+Cortex provides powerful tools to investigate and analyze various artifacts and assets such as IP addresses, network assets, and file/process hashes. This functionality streamlines the investigation process and makes it more efficient.
+
+Cortex artifacts and assets include the following. Click the images to enlarge them.
+
+Investigate IP Addresses
+The IP Address view in Cortex simplifies the process of investigating and responding to IP addresses. It offers a consolidated summary of all available information about a specific IP address over a defined time frame (either 24 hours or 7 days). This comprehensive view aims to assist you in quickly assessing whether an IP address is associated with malicious activity. This map is accessed by selecting Open IP View from the context-sensitive right-click menu associated with IP addresses in asset tables.
+
+
+Investigate Assets
+The Asset view in Cortex streamlines the process of collecting and researching information related to hosts and assets. It automatically aggregates host information and displays insights, making it easier to assess the status of assets.
+
+
+Investigate File and Process Hashes
+The Hash View in Cortex is designed to expedite the investigation of SHA256 hash processes and files. It compiles and presents a summary of all available information regarding a specific hash over a chosen time frame (24 hours or 7 days).
+
+
+Course Summary
+Now that you've completed this course, you should be able to:
+
+
+Outline the key reasons why case handling is important
+
+Explain how cases help organize and manage security-related information
+
+Describe the conditions under which cases stop accepting new issues
+
+Describe the customizable attributes of cases
+
+Discuss the various information that can be viewed and managed for cases
+
+Outline the features and tools provided for case handling
+
+Explain how to assign and SLAs to cases and view their status.

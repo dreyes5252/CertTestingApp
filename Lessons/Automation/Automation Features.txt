@@ -1,0 +1,255 @@
+Cortex
+Automation Features
+This course introduces Automation Features, a feature used to quickly automate actions across the Cortex platform. It covers core components like playbooks, triggers, jobs, and Quick Actions. It also explains how to create rules, schedule playbook runs, and connect integrations directly from the task editor.
+
+
+
+Course Objectives
+After completing this course, you should be able to:
+
+
+Identify how Automation Features simplify automation setup using prebuilt playbooks and Quick Actions
+Explain the role of triggers, jobs, and integration instances in automating detection and response workflows
+Describe how to adopt, customize, and manage playbooks for different use cases
+Demonstrate how Quick Actions are used to streamline repetitive Software Operations Center (SOC) tasks through manual and automated execution
+Lesson Topics
+We recommend that you take the lessons in numerical order, but you can use the menu for quick access to any lesson at any time.
+
+Click the lesson title buttons to go to each lesson. You can also navigate the course using the navigation arrows below or the menu bar at the top left of the screen.
+
+Lesson 1: Introduction to Automation Features   
+Lesson 2: Automating Playbooks                            
+Lesson 3: Quick Actions in Automation Features
+
+Introduction to
+Automation Features
+
+
+This lesson introduces Automation Features and its core components. It explains how to explore, adopt, and customize playbooks for common security operations use cases.
+
+What Is Automation Features?
+Automation is a critical component in modern security operations, helping teams scale their response to growing alert volumes. Automation Features are designed to simplify repetitive tasks and reduce the need for manual intervention by enabling predefined responses to specific triggers within the SOC environment.
+
+How It Works
+Automation Features operate at the issue level, where analysts define conditions such as issue source, severity, or detection type, and assign targeted actions to run automatically when those conditions are met. These actions are implemented through lightweight playbooks, which are simpler and more focused than those typically used at the case level. This structure offers a balance between automation and control, enabling consistent responses without the overhead of complex, multi-issue workflows. It allows teams to create and deploy automation rules, jobs, and actions quickly without a complex setup, making it easy to enable or disable rules and iterate as needed. The simplified design also supports analysts of all experience levels, enhancing both flexibility and usability.
+
+
+Key Components
+Automation Features is built around four key building blocks. Click the tabs to learn more about how these components help build faster, more modular, and more manageable automations.
+
+Triggers
+Triggers define the conditions under which a playbook or Quick Action should run. These are typically driven by new issues or case updates.
+
+Jobs
+
+Integrations
+
+Quick Actions
+
+No Context Switching Design
+A standout feature of Automation Features is its no-context-switching workflow. Previously, it was necessary to jump between different parts of the platform, like Data Sources, Playbook Management, and Integrations, to set up automation. Now, nearly everything can be done from within the same screen, including connecting integrations while editing a playbook task, creating trigger rules directly from the playbook settings, and building automation rules without leaving the case management view. This seamless flow makes it easier to stay focused and build automations quickly, without interrupting the thought process.
+
+Supported Versions
+Automation Features is available on the latest Cortex platform versions, including XSIAM 3.x, XDR 4.x, and Cortex Cloud 1.1 and above. Earlier platform versions, such as XSIAM 2.x and XDR 3.x, do not support this functionality or may offer a different automation experience. As platform upgrades continue, feature availability may vary depending on the deployment version.
+
+Exploring and Adopting Playbooks
+Playbooks are structured automation workflows that execute predefined sequences of tasks to handle specific security or Information Technology (IT) scenarios. Playbooks are designed to reduce manual effort, improve consistency, and accelerate response times in operational environments.
+
+Understanding the Playbook Catalog
+Automation Features streamlines the way playbooks are discovered and implemented by introducing a structured, use-case-first approach and a simplified adoption process, both of which allow teams to quickly integrate playbooks that fit their operational needs. Playbook availability varies by product. The playbooks shown in the catalog depend on the Cortex platform in use; XSIAM, XDR, or Cortex Cloud. XSIAM tenants offer a broader set of playbooks due to their extended use cases and access to Marketplace content. In contrast, XDR and Cortex Cloud tenants may display fewer playbooks, as only compatible content is made available. This behavior is expected and helps align available automations to each product’s scope and purpose. Click the images to enlarge them.
+
+Browsing and Filtering Playbooks
+The playbook catalog provides a searchable and filterable view of all available playbooks. Playbooks can be located by name, content pack, or keyword using the global search bar. Filters help narrow down the options based on category, tags, or adoption status. Adopted playbooks are marked with a check icon for easy identification.
+
+
+Understanding Use-Case-Driven Structure
+Each playbook is developed with a specific operational use case in mind, whether it's deploying resources, running enrichment tasks, or triggering actions across integrated systems. This structure allows teams to begin automation workflows with a clear objective, reducing the need for custom creation from scratch.
+
+
+Task-level Input Visibility
+
+Before adopting a playbook, users can preview task-level inputs directly from the catalog view. This detailed insight helps clarify what data is required for each step, such as the userName parameter in this Amazon Web Services (AWS) Identity and Access Management (IAM) example, and ensures that the playbook aligns with the available data sources and intended automation goals.
+
+
+ 
+Adopting and Editing Playbooks
+Out-of-the-box playbooks are designed to address common security operations use cases and are readily available in the playbook catalog. When a playbook is adopted, the system installs its underlying Marketplace content pack in the background. These playbooks can be reviewed, customized, and edited, all within the same interface, without the need for context switching. Click the images to enlarge them.
+
+Adopting Playbooks into Org Playbooks
+Playbooks found in the catalog can be added to the organization’s library by adopting them. Adoption makes the playbook available in the Org Playbooks section, where it can be enabled, disabled, or modified. This allows teams to incorporate vetted, reusable automation logic into their environments with minimal configuration overhead.
+
+
+Duplicating and Editing Playbooks
+Out-of-the-box playbooks are locked for direct editing to preserve the integrity of the original template. To modify one, it must first be adopted and then duplicated. The duplicate is editable and functions independently of the original, enabling tailored adjustments to fit specific operational needs.
+
+
+In-Editor Playbook Customization
+The playbook editor offers a streamlined workspace for modifying adopted playbooks. Tasks can be reordered, updated, or removed directly within the canvas. The Task Library on the left provides components like Quick Actions, Commands, and Manual Tasks that can be added to expand logic. Each task's inputs, outputs, and behavior can be configured using the task detail pane, enabling quick and flexible customization without leaving the editor.
+
+Automating
+Playbooks
+This lesson explains how Automation Features uses triggers and jobs to automate playbook execution. It covers rule configuration, filtering logic, scheduling options, and how to set up integrations directly from the playbook editor.
+
+
+
+Automation Rules
+Automation rules define how and when a playbook should run based on incoming issues or specific criteria. These rules replace the older concept of playbook triggers and are designed for greater flexibility and control. With Automation Features, automation rules can be created and managed directly within the playbook screen.
+
+Trigger Types
+Automation rules support three trigger methods that define how a playbook is initiated.
+
+Issue-Based Triggers
+
+These are automatically activated when new issues are generated that meet specific criteria. They are ideal for real-time response scenarios where immediate action is required, such as alerting on critical vulnerabilities, suspicious login attempts, or malware detection.
+
+Sub-Playbook Triggers
+
+When a playbook is nested inside another playbook, it is triggered automatically as a step in the parent workflow. This approach promotes reusability and simplifies complex workflows by breaking them into smaller, manageable parts. It ensures consistent logic can be applied across multiple playbooks without duplication.
+
+Manual Triggers
+
+Playbooks can also be run manually from the issue or case view by authorized users. This is particularly useful for one-off investigations, testing automation logic before deploying, or when immediate analyst discretion is needed.
+
+Creating and Configuring Automation Rules
+Automation rules can be created directly from the playbook editor interface. This eliminates the need to navigate to the case configuration panel separately, aligning with the no-context-switching design philosophy. Click the arrows to learn more about how automation rules can be configured. Click the images to enlarge them.
+
+
+
+
+
+Edit Automation Rule
+
+Editing an existing automation rule provides flexibility to fine-tune trigger logic and associated actions. The rule follows a clear structure defining when the rule activates, what conditions must be met, and which playbook should be executed. Basic fields like the rule’s name, description, and enable status can also be modified. Once triggered, the selected playbook runs automatically and its execution details appear in the case's automation pane.
+
+
+
+
+Automating Recurring Tasks with Jobs
+Jobs provide a way to schedule playbook execution on a recurring basis, based on either time or data feed changes. They are ideal for tasks that must run at regular intervals, such as periodic enrichment, cloud threat hunting, or continuous monitoring activities. Unlike automation rules, which are typically reactive, jobs follow a proactive approach to automation.
+
+When to Use Jobs in Automation Features
+Jobs allow playbooks to run automatically on a set schedule or in response to changes in incoming data feeds. They are best suited for background tasks that do not depend on a specific incident but still enhance security posture through routine actions. Use cases include weekly persistence hunts across cloud providers or regular enrichment of asset data. Jobs can be triggered in the following two ways:
+
+Time-based
+Time-based triggers schedule playbooks to run at consistent intervals. This can be configured to occur every few minutes, hourly, daily, weekly, or at custom intervals depending on operational needs. Time-based jobs are ideal for use cases like regular threat hunts, periodic data enrichment, or scheduled compliance checks where consistent execution is more important than real-time responsiveness.
+
+Feed-based
+Feed-based triggers launch playbooks in response to changes in external or internal data sources, known as feeds. These triggers monitor incoming datasets and execute the assigned playbook when new or updated records are detected. This approach is particularly useful for use cases such as ingesting third-party threat intelligence, synchronizing asset inventories, or enriching new identity records as they appear.
+
+Creating Jobs for Recurring Tasks
+Jobs are ideal for executing playbooks in response to consistent operational needs, such as recurring threat hunts or regular enrichment activities. In this example, a multi-cloud persistence threat hunting job is scheduled to run weekly, helping maintain consistent visibility across cloud environments. Click the tabs to learn how to create a job for recurring tasks.
+
+Adding Trigger Type and Frequency
+Defining Job and Queue Handling
+Trigger Type: You can initiate jobs using a time-based or feed-based trigger. This configuration allows users to match the job’s behavior with the type of task it supports. In this case, a time-triggered setup is selected for regular execution.
+
+Frequency: Once the trigger type is chosen, the next step is to define when and how often the job runs. The schedule can be fine-tuned by specifying the start time, end condition, recurrence interval, and day(s) of the week the job should run.
+
+Integration Setup in Playbooks
+When adopting new out-of-the-box playbooks, there may often be the need to configure integration instances, particularly when those playbooks use high-privilege scripts requiring access to third-party environments like AWS. This process is now easy and straightforward within the playbook editor.
+
+Note: The availability of certain playbooks and integration setup features shown here may vary depending on your Cortex product. Currently, some capabilities demonstrated in this section are only available in Cortex XSIAM.
+
+Setting Up Integrations Directly from the Playbook Editor
+In this example, we walk through adopting an AWS Lambda deployment playbook and setting up integration instances directly within the playbook editor. Click the images to enlarge them.
+
+Locate the Playbook in the Catalog
+Begin by heading to the Playbook Catalog under the Automation section. Use the global search bar to filter for Lambda to find playbooks related to managing functions and roles in EKS clusters. Once you’ve identified the relevant playbook - in this case, Function Deployment - AWS - review its description and structure to confirm it meets the automation goals.
+
+
+Adopt the Playbook
+Click Adopt this playbook to add it to the organization’s library. This allows you to customize and configure it as needed. After adoption, the playbook appears under Org Playbooks and can now be edited like any custom-built workflow.
+
+
+Open the Playbook and Identify Integration Gaps
+Inside the playbook editor, each task is visually represented. Tasks that rely on external integrations will show a warning icon if no instance is connected. These scripts typically come from content packs (e.g., Amazon Elastic Kubernetes Service (AWS-EKS), AWS-IAM), and require an application programming interface (API)-based integration setup before they can execute.
+
+
+Configure the Integration Instance
+Clicking on a task with a missing integration opens its details panel. From here, you can directly create a new integration instance by clicking Create an instance now.
+
+
+For example, to configure the AWS EKS instance:
+
+
+Provide a name for the instance
+
+Enter the AWS default region
+
+Supply the access and secret keys associated with an IAM user who has the necessary permissions to manage Lambda and EKS resources
+
+
+Final Touches and Execution
+As soon as the required integration is connected, the task updates from a warning to a ready state. No refresh is needed. You can repeat this process for other tasks until the full playbook shows no missing dependencies. Once all integrations are in place, the playbook is ready to run. This inline experience significantly reduces operational friction. Instead of navigating to the Settings menu and pre-configuring integrations, you’re guided step-by-step inside the same workflow where the automation logic lives. It enables teams to move from discovery to deployment in minutes, empowering SOCs to stay agile and responsive to dynamic environments.
+
+
+At this point, you can optionally test the playbook in a non-production environment, add inputs or error handling if needed, or save and deploy it as a job or connect it to a rule trigger.
+
+Quick Actions in
+Automation Features
+This lesson introduces Quick Actions, a lightweight automation feature that allows fast execution of common security operations tasks. It explains how they work, where they can be triggered, and how they streamline response workflows.
+
+
+
+Introduction to Quick Actions
+Quick Actions are lightweight automation components designed for fast, repetitive tasks that don’t require the full logic of a playbook. These single-command automations help streamline routine tasks like sending notifications, updating issue fields, or resolving known false positives. They can be implemented rapidly and reused in multiple contexts without additional configuration.
+
+Types of Quick Actions
+Quick Actions typically support tasks like sending alert summaries via email or chat platforms, updating issue severity or status, and triggering remediation scripts. These actions are available out-of-the-box and require minimal setup, making them ideal for use cases that prioritize agility and ease of implementation. They are particularly useful in high-volume environments where response speed and consistency are critical.
+
+Ways to Run Quick Actions
+There are three main ways to execute Quick Actions. Click the tabs to learn more.
+
+Manual Execution
+Quick Actions can be run manually from the Issues Table by right-clicking on an issue and selecting Run Automation. This is ideal for ad hoc use cases like escalating a high-severity issue or alerting another team via Slack.
+
+Automation Rule Trigger
+
+Tasks within Playbooks
+
+Configuring Quick Actions
+Quick Actions offer a fast and flexible way to respond to issues without opening the full playbook editor. They are especially useful for SOC analysts who need to perform repetitive tasks, such as notifying teams or updating issue details, directly from the alert interface.
+
+Manual Execution from the Issues Page
+Let's take a look at how to launch Quick Actions manually from the Issues page, with real-world examples and in-line integration capabilities. Click the images to enlarge them.
+
+Filter and Select Issue
+The Issues table provides a one-click path to launch a Quick Action on any issue. To search for a particular alert or group of issues, apply column filters (e.g., Severity = Critical) to narrow the results, then highlight the relevant row in the list. From the list of issues, Quick Actions can be launched by right-clicking on an individual issue. Selecting Run Automation reveals a list of available Quick Actions, offering a lightweight way to automate standard responses.
+
+
+Quick Action Catalog
+After selecting Run Automation, the full Quick Actions catalog appears. A search bar at the top filters actions by keyword, while each tile represents an out-of-the-box command ranging from Send Issue Summary Email and Send Slack Message to remediation tasks such as Quarantine File or Isolate Endpoint.
+
+
+Sending Summary via Email
+Selecting Send Issue Summary Email opens a configuration panel to the right. Here, recipients can be specified directly. Once the recipient’s email address is added, clicking OK triggers the automation and delivers a concise issue summary from Cortex, eliminating the need for composing separate emails manually. This action is particularly useful for communicating critical issues quickly and consistently. After initiating the Quick Action, we get visibility into its execution confirmation, letting us know our Quick Action ran successfully.
+
+
+
+Sending Slack Alerts
+To send Slack messages using Quick Actions, the first step is to connect a valid Slack integration instance. This can be done directly from the Quick Action interface, without switching context. Once the integration instance is initiated, access tokens from the Slack workspace are generated and configured to complete the connection. With the Slack instance connected, selecting Send Slack Message opens a configuration panel. Here, the target channel and message body can be specified.
+
+
+
+Automating Quick Actions with Rules
+Penetration testing activities often trigger a wave of false positives. Analysts are forced to manually triage alerts that are already known and expected, leading to fatigue and distracting from real threats. With Instant Automations, it’s possible to automatically identify and resolve issues generated by known PT activity. Click the tabs to learn how to build an automation rule that auto-resolves PT-related issues based on common identifiers.
+
+Step 1
+Step 2
+Step 3
+Step 4
+Step 5
+Step 6
+Finalize the Rule
+
+With the trigger, condition, and Quick Action fully defined, click Create to complete the rule setup. The new automation rule now appears in the list, showing the condition (description contains run_while_u_can), the action (Set Issue Status), and the configured outcome (Resolved - Security Testing). This ensures that future issues matching the pattern are automatically marked and deprioritized, streamlining analyst workload.
+
+
+Course Summary
+Now that you've completed this course, you should be able to:
+
+
+Identify how Automation Features simplify automation setup using prebuilt playbooks and Quick Actions
+Explain the role of triggers, jobs, and integration instances in automating detection and response workflows
+Describe how to adopt, customize, and manage playbooks for different use cases
+Demonstrate how Quick Actions are used to streamline repetitive SOC tasks through manual and automated execution

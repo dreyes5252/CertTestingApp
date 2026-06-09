@@ -1,0 +1,285 @@
+Building and Managing
+Queries
+This course describes how to investigate leads and use Cortex® tools like Query Builder, Query Center, and the Scheduled Queries page to build and manage queries.
+
+Course Objectives
+After completing this course, you should be able to:
+
+
+Investigate a lead using Cortex
+
+Build a query in Query Builder
+
+Manage queries from Query Center
+
+Differentiate periodic and non-periodic scheduled queries
+
+Lesson Topics
+We recommend that you take the lessons in numerical order, but you can use the menu for quick access to any lesson at any time.
+
+Click the lesson title buttons to go to each lesson. You can also navigate the course using the navigation arrows below or the menu bar at the top left of the screen.
+
+Lesson 1: Building Simple Queries     
+Lesson 2: Managing Queries                
+
+Building
+Simple Queries
+This lesson describes how to investigate potential threats and set up different types of queries using Query Builder.
+
+Investigating Potential Threats
+Potential threats are investigated via threat hunting and the identification of leads.
+
+What Is a Lead?
+A lead refers to the first contact with a potential threat. A lead can be obtained from the following sources:
+
+
+Issue
+
+
+
+An issue from a non-Palo Alto Networks system relevant to endpoints or firewalls.
+
+
+
+
+Threat Information
+
+
+
+Well-defined threat information from online articles or external threat intelligence.
+
+
+
+
+Users and Endpoint
+
+
+
+Users or endpoints that have been reported as acting abnormally.
+
+
+
+
+
+Distinguishing Between Issues and Leads
+In the realm of cybersecurity, it’s crucial to distinguish between issues and leads for effective threat management. Here’s a breakdown of each:
+
+Issue
+
+
+An issue is an immediate notification that is readily available to you. Cortex excels in precisely detecting and presenting these issues, allowing for swift action.
+
+Lead
+
+
+A lead, however, is a potential indicator of a threat that requires further definition. Cortex provides integrated tools to help you locate and define these leads, which can then be escalated to issues once validated.
+
+Threat Hunting
+Threat hunting, also called lead investigation, is when analysts use Cortex investigation tools to find unknown threats hidden in Cortex datasets. You can use the tools in the Cortex management console for threat hunting. The tools should be used in the following order.
+
+
+Query Builder
+Use Query Builder to build queries that search for unknown threats in Cortex datasets. Since the management console does not provide a dedicated table for logs, search queries are the only way to view logs in datasets.
+
+Types of Queries
+Query Builder provides two ways to create queries: using query templates and using the Cortex Query Language (XQL). Click the tabs for more information about these query creation methods.
+
+Template-Based Queries
+XQL Queries
+You can search for any log attributes available in datasets as well as correlate logs using XQL.
+
+Query Builder Page
+The Query Builder page offers interfaces for both template-based query creation and XQL-based query creation. Click a template under General Search or Templates to open it and enter relevant attributes to create a search query. There are templates to create Basic, Free text, Identity, Endpoint, Network IP, or Cloud queries. The Query Builder page is accessed via Investigation & Response > Search > Query Builder.
+
+
+Building XQL Queries
+Click the XQL icon at the top right of the page under Start free search to open the XQL Search page, where you can type, run XQL queries, and view execution results. The beta Graph Search provides a more intuitive and visual display to assist in building queries from the Query Library.
+
+
+Legacy Mode Option
+General Search, Templates, and Start free search are the preferred modes of query building, but the Query Builder page also offers a legacy mode option. Legacy mode uses forms to build queries for specific entities like processes, files, and network activity. These queries search on predefined datasets only. XQL queries and Graph Search are also supported in Legacy mode.
+
+Click the image to enlarge it.
+
+
+Query Templates
+Query templates include predefined fields and fieldsets based on your selected template. You can specify values for these fields and can add other fields to refine their search. To get started with queries, you can build an empty template query with no values specified. The query results will include all of the fields in the template-specific fieldset. You can refine the query and run subsequent queries to narrow down your search.
+
+
+
+Click the arrows for more information about the available query templates. Click the images to enlarge them.
+
+
+Basic Query
+
+To create a basic query, enter the IP Address, Host Name, User Name, and Domain into the Basic Query template. Add a time frame. Click Add Field to add additional predefined fields to the query.
+
+
+
+For each field, you can specify what the field should match (=) or not match (≠), and whether to include empty values for the field in the search results. To add another option to match the field, click the +!= icon to the right of the field entry.
+
+
+
+You can choose whether to use a default dataset or search against all datasets.
+
+
+Datasets
+
+If you choose Default datasets, hover over the adjacent question mark to see the datasets used for your chosen template. In this case, for the Basic template, the dataset is xdr_data.
+
+
+Query Builder Helper
+
+To learn more about what the search fields mean and how to use them, click Query builder helper in the lower left of the template. For example, in this image, the helper gives a complete explanation of how to use the IP address field.
+
+
+XQL Helper
+
+To make a more advanced or complex query starting from a template, click the Continue in XQL button at the bottom right of the template.
+
+
+
+Cortex will show the XQL generated in an editable field, and provide explanations and syntax examples of relevant XQL statements to enhance your template-based query.
+
+
+Endpoint Template
+
+The other templates are used similarly to the Basic template. In the image, the Endpoint template guides you to provide Host Name, IP Address, File\Process Name, and File\Process Hash fields.
+
+
+
+
+Querying Processes and Endpoints
+In Cortex, you can investigate connections among processes, child processes, and endpoints by building a query. For example, you can build a query to search for processes that have been executed on a specific endpoint. There are several ways to build such a query. You can use the Endpoint template to search by processes, host names, and files. You can use XQL to build a complex query that searches specific datasets containing process information. Or, you can use the Legacy Query Builder.
+
+Legacy Query Builder
+In the Legacy Query Builder, an entity is a specific type of data that you can query, such as Process, File, Network, Image Load, Registry, Event Log, Network Connections, Authentications, and All Actions. You create queries for these entities, and specify a type of action to search for within that entity. For example, when building a file query, you can specify the file activity type, such as create, read, or delete. For a registry query, you can select actions such as Key Create or Value Set.
+
+The image shows available actions on some entity types.
+
+
+Process Entity in Legacy Query Builder
+To investigate connections among processes, child processes, and endpoints in the Legacy Query Builder, you can use the process query to define search criteria for process actions, process attributes, acting (parent) process, endpoints, and endpoint attributes. Click the images to enlarge them.
+
+Process Entity Search Criteria
+Search criteria are specified via attributes. For example, process actions can be specified as process execution or injection into another process. Acting (parent) process attributes limit the scope of the search to a specific parent process using attributes such as hashes, user name, signer, or PID.
+
+
+Endpoint Attributes in Process Entity
+From the Process entity, click + HOST Add Host to your search to specify endpoint attributes. Endpoint attributes limit the scope of a search to those endpoints matching host criteria such as host name, host IP address, host MAC address, host OS, and host installation type.
+
+
+All Actions Entity in New Query Builder
+You can also search for endpoints and processes across all endpoint activity, including file events, network events, registry events, process events, and event logs.
+
+Select All Actions Entity
+From the Legacy mode of the Query Builder, select the All Actions entity.
+
+
+Process and Endpoint Attributes
+To limit the scope to specific acting processes, select +Process Add Process to your search. This will enable you to specify process attributes like Name, Path, Cmd, or User Name. The query will search across causality and OS actors as well. To limit the scope to specific endpoints, select +Host Add Host to your search and specify attributes for the host, such as Host Name, IP address, or Host OS. (Host and endpoint are used interchangeably throughout Palo Alto Networks documentation and user interface).
+
+
+
+In the Legacy Query Builder, once you have specified attributes to match, specify a search time period. Then you can run or schedule your query.
+
+
+​Query Execution Results​
+When you run a search query, regardless of the type, Cortex displays the execution results in the Results table.
+
+In the results table, you can sort your data using:
+
+Filters
+
+
+As with other management console tables, you can create filters on columns, change the table layout by hiding some columns, export the table content, and take action on one or more rows of the Results table.
+
+Columns and Shortcut Menus
+
+
+The columns and shortcut menu actions depend on the type of search entity given in the query definition. For example, the columns for a File query are different from those of a Process query, while entity types can also have many common columns.
+
+Other Views
+
+
+You can also open the causality or timeline views to further investigate using the open card and open timeline actions, respectively, in the search results.
+
+This image depicts an example of the Results Table and the right-click context-sensitive menus associated with a selected result. Click the image to enlarge it. 
+
+Managing
+Queries
+This lesson describes how to manage executed and scheduled queries using the Query Center and Scheduled Queries pages and identify key attributes and actions for these queries.
+
+​Query Center Page​
+The Query Center page of the management console displays a table of executed queries. Here is where you can manage your queries. The Query Center is accessed via Investigation & Response > Search > Query Center.
+
+In this table, you can right-click the executed queries and obtain a context-sensitive menu that includes: Show results, Copy query URL, Rename, Save as a new query, Schedule, Remove and other options.
+
+
+Query Actions
+There are several actions in the right-click menu that can be performed on queries. Click the images to enlarge them.
+
+Show Results and Rerun Query
+By selecting Show results from the context-sensitive menu, you can see the query and its result in more detail. From the results page, you can also edit the query, save the query, or run the query again. When you rerun a query, Cortex creates a new query with the same Query Name as the source query. The Query ID of the new query is newly created based on the timestamp its creation.
+
+
+Query Scheduling
+You can schedule a query to run once or periodically. Every time a scheduled query runs in the background, Cortex creates a new query with the same Query Name and Query ID, but with a different Execution ID. It is the Execution ID attribute that uniquely identifies query runs in Query Center.
+
+
+Queries on a Recurring Schedule
+When you create a query and schedule it to run later, you won't immediately see the query in Query Center because the query isn't running yet. You can find this query in the Scheduled Queries page. Once the query starts its schedule with its first run, the query will appear in the Query Center table. If it's scheduled to run periodically, a recurring schedule icon appears to the left of its Query Name in the Query Center table. The context-sensitive right-click menu for the query will now allow you to select Show Scheduled Query to see the query's schedule and other information in the Scheduled Queries table.
+
+
+New XQL Query
+Query Center also provides an action button + New XQL Query to create XQL queries; this opens the XQL Query Builder page.
+
+
+Query Attributes
+The Query Center page shows query attributes in columns. Among other attributes, these include Query Name, Execution ID, Query ID, Query Status, and Num of Results. To specify which columns are shown in a Cortex console table and to change the column order, click the table settings menu in the upper right corner. This table settings menu is represented by three vertical dots.  
+
+Query Name
+
+
+The friendly name of the query.
+
+Execution ID
+
+
+A unique identifier generated when the query is run.
+
+Query ID
+
+
+An identifier generated when the query is created.
+
+Query Status
+
+
+Status of the query, such as Queued, Running, Failed, or Completed.
+
+Num of Results
+
+
+The number of rows in the results table of the query.
+
+Click the image to enlarge it. 
+
+
+​Scheduled Queries Page​
+The Scheduled Queries page displays a table of filtered scheduled queries. Scheduled query attributes are displayed in columns, which can be specified using the table settings menu. The Query ID is the unique identifier for the Scheduled Queries table, and the Execution ID is the unique identifier for the Query Center table.
+
+The image shows the query name, schedule time, next execution, and query ID displayed in the table, and other attributes that can be selected for display.
+
+
+​Course Summary​
+Now that you've completed this course, you should be able to:
+
+
+Investigate a lead using Cortex
+
+Build a query in Query Builder
+
+Manage queries from Query Center
+
+Differentiate periodic and non-periodic scheduled queries

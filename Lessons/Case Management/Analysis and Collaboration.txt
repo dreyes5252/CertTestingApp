@@ -1,0 +1,169 @@
+Analysis and
+Collaboration
+This course describes the functionality, use cases, and operational details of some core analytical and collaboration-oriented components of Cortex, including the War Rooms, command-line interface (CLI), and context data. 
+
+
+
+Course Objectives
+After completing this course, you should be able to:
+
+
+Identify the common tasks that are associated with the Case and Issue War Rooms pages
+
+Describe how to review, export, and import artifacts  
+Explain the capabilities and feature set of the CLI and use the CLI to execute commands
+
+Lesson Topics
+We recommend that you take the lessons in numerical order, but you can use the menu for quick access to any lesson at any time.
+
+Click the lesson title buttons to go to each lesson. You can also navigate the course using the navigation arrows below or the menu bar at the top left of the screen.
+
+Lesson 1: War Rooms                                   
+Lesson 2: The Command-Line Interface 
+Lesson 3: Context Data                               
+
+War
+Rooms
+This lesson describes how to access and use the Case and Issue War Rooms in Cortex.
+
+Cortex War Rooms 
+War Rooms in Cortex centralize all investigation actions, entries, and collaboration related to playbooks. Think of War Rooms as interactive timelines of your automated case response, capturing every action and decision taken. Analysts can use War Rooms to add comments, collaborate with team members, and even run manual commands via the CLI. 
+
+Each case and issue has its own unique War Room. While case War Rooms offer a comprehensive view of the investigation, enabling collaboration and program execution, issue War Rooms provide a more focused perspective, capturing an overview of the case, malicious issues, and related artifacts. The following describes what analysts can do in War Rooms:
+
+View
+View a timeline of the entries made by the investigatiaon stakeholders.
+
+Collaborate
+Collaborate with your team in a controlled and audited environment.
+
+Run
+Run security playbooks, scripts, and commands.
+
+Case War Room
+The Case War Room is used to manage and coordinate the response to confirmed security cases. Some issues create cases, which themselves can contain many other related issues. Cases also have their own unique War Room. The Case War Room provides a centralized space for collaboration among case responders, allowing them to share information, assign tasks, track progress, and communicate effectively during the case response. Click the image to enlarge it.
+
+
+Issue War Room
+The Issue War Room is designed for initial triage and investigation of security issues. When an issue is triggered, it is routed to its War Room where analysts can assess the severity and relevance of the issue. They can gather additional context, investigate related indicators of compromise (IOCs), and decide whether further action is required. Click the images to enlarge them.
+
+
+
+Hover over an issue and click the Investigate icon (four arrows icon) to the right of the issue labeled to see the Issue War Room.
+
+
+The following image shows the selected Issue War Room.
+
+
+Filtering War Room Entries 
+You can filter information using Chats, Notes, Files, Case History, Command and Task results, and by the tags associated with the case.
+
+
+Actions on War Room Entries
+After you filter the information in the War Rooms, you can take several actions. 
+
+Click the tabs to view additional information about War Room entries. Click the images to enlarge them.
+
+​​​​Mark as Note
+
+
+
+
+View Artifact in New Tab
+
+
+
+
+Attach to Task
+
+Download Artifact
+
+Add Tags
+
+
+Demo: Cortex War Rooms
+Watch this demonstration about how to access and use Issue and Case War Rooms.
+
+The Command-Line
+Interface
+
+This lesson describes how to use the command-line interface (CLI) for effective security investigations.
+
+Accessing the CLI
+The graphical CLI feature is located at the bottom of the War Rooms interface. It allows you to execute commands and scripts. The CLI also supports the platform’s ChatOps function and is a critical component for testing and debugging activities related to developing custom automations and playbooks.
+
+
+CLI Commands
+The CLI enables you to perform different tasks in the system. You can think of the CLI as an operating system in which you can run commands that execute different actions. CLI commands can be divided into two primary areas.  
+
+View the following CLI command areas. Click the images to enlarge them.
+
+Automation Scripts and Integration Commands
+To run automation scripts, commands that are supported by the enabled integration, or system commands, use ! commands.
+
+
+
+An analyst can click on the "!" on the left side of the CLI to easily browse through the available commands and run them in a user friendly manner.
+
+
+User Collaboration Commands
+To contact other team members to collaborate on a case, use @ commands.
+
+
+
+
+
+
+
+
+Other CLI Features
+Apart from enabling you to run commands, the CLI has other helpful features. 
+
+Auto-Complete
+As you start typing in the CLI, the CLI auto-complete feature uses a fuzzy search to suggest relevant scripts, commands, and even user names (when using @ followed by the first or last name).
+
+Formatting
+The CLI provides an editor to format analyst notes in Hyper Text Markup Language (HTML) or Markdown. Using the CLI, analysts can add images, tables, quotes and more in their investigation notes.
+
+Demo: Cortex CLI
+Watch this demonstration to see how analysts can collaborate effectively using the CLI within a War Room.
+
+
+
+Context
+Data
+This lesson introduces context data, how to find it, and how it is useful to analysts in Cortex.
+
+Displaying Context Data
+Context data, often referred to as "context," is stored for each issue and/or case.
+
+The context for an issue/case is a JSON-formatted repository for output data from automation, integration, and playbook commands. The context also stores all data that is associated with the creation of the issue/case.
+
+
+
+If an automation or playbook task requires variable data input, the prior automations or tasks that generate the input data must write that data to the context for retrieval by the subsequent automation or task. 
+
+
+
+To display context data for an issue or case, click the Context Data button (represented by three stacked squares).  
+
+
+Benefits of Context Data
+Context data serves as a foundation for two essential functions used by analysts, Cortex engineers, playbook tasks, and automation scripts.
+
+Analysts, Cortex engineers, playbook tasks, and automation scripts may use context data as a basis for two basic functions:
+
+Capture Data
+You can use context data to capture the important structured data from automations and display the data in the case summary.
+
+Share Data
+You can use context data to pass data between playbook tasks. This is the only way to share data between automations, and it is where inputs come from and where outputs go.
+
+Course Summary
+Now that you've completed this course, you should be able to:
+
+
+Identify the common tasks that are associated with the Case and Issue War Rooms pages
+
+Describe how to review, export, and import artifacts  
+Explain the capabilities and feature set of the CLI and use the CLI to execute commands

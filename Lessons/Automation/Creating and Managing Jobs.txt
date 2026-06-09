@@ -1,0 +1,184 @@
+Creating and
+Managing Jobs
+
+This course covers the basic skills needed for creating and managing jobs in Cortex. The course covers understanding job functionality, designing various job types, and effectively managing them using a range of tools and options.  
+
+
+
+Course Objectives
+After completing this course, you should be able to:
+
+
+Describe the purpose and applications of jobs within Cortex
+Design and implement different job types tailored to specific job needs
+Explain the techniques for managing and optimizing jobs using a variety of options and tools 
+Lesson Topics
+We recommend that you take the lessons in numerical order, but you can use the menu for quick access to any lesson at any time.
+
+Click the lesson title buttons to go to each lesson. You can also navigate the course using the navigation arrows below or the menu bar at the top left of the screen.
+
+Lesson 1: Creating Jobs     
+Lesson 2: Managing Jobs  
+
+Creating 
+Jobs
+
+This lesson describes the use cases of jobs in Cortex and the steps to create time-triggered and feed-triggered jobs.
+
+
+
+Introduction to Jobs
+Jobs are a crucial feature on the Cortex platform, enabling automation and orchestration of diverse security operations tasks. By configuring a job, you can execute a playbook in response to specific events or time triggers.
+
+Cortex Job View
+The Jobs view provides the ability to create new jobs, view current job status, and perform actions on jobs like run now, abort, and delete.
+
+
+Job Types
+There are two types of jobs.
+
+
+A time-triggered job allows you to schedule the execution of tasks at a pre-determined time or regular intervals. By specifying the desired time and playbook, you can utilize a time-triggered job to automate task execution.
+
+
+A job can be triggered by changes or updates in a feed, allowing you to automate the execution of a playbook. This type of job can be utilized to execute a playbook, either when changes occur in all feeds or specific feeds of your choice.
+
+Jobs Use Case Examples
+The following are use cases for when jobs are used in Cortex:
+
+Creating Indicators List
+Creating Indicators List
+
+
+
+Use time-triggered jobs to create a list of high-risk or benign indicators at the end of each day.
+
+Vulnerability Management
+Vulnerability Management
+
+
+
+Use a feed-triggered job to monitor a vulnerability feed for new vulnerabilities to run a playbook for remediation.
+
+ Indicators Enrichment
+Indicators Enrichment
+
+
+
+A job can be created to run an indicator enrichment playbook whenever there is any update in the threat intelligence feeds.  
+
+System Health Check
+System Health Check  
+
+
+
+Create a time-triggered job to regularly check the system health status, generating alerts or notifications when system resources are excessively utilized.  
+
+Generating Summary Reports
+Generating Summary Reports 
+
+
+
+Create a job to produce a summary report of incident statuses and send it regularly to the appropriate team member.
+
+Demo: Creating Time-Triggered Jobs
+Cortex provides the interface to create time-triggered jobs. You can specify the time interval and playbook while creating a job. Watch this demonstration on creating a time-triggered job in Cortex.
+
+
+
+
+Elapsed time0:00/Total2:09
+
+Demo: Creating Feed-Triggered Jobs
+Cortex provides the interface that allows you to create a job triggered by changes in specific feeds or across all feeds. You can specify the feeds you want to monitor and select a playbook to execute when the job is triggered. Watch this demonstration on creating a feed-triggered job.
+
+Managing
+Jobs
+
+This lesson describes how to monitor and manage existing jobs using the Jobs page views.
+
+
+
+Jobs Page Views
+You can keep track of jobs in the Jobs Page by using the Chart Panel, Table view, and Summary view. In this view, you can check the job status, the last and next run, as well as additional details.
+
+Click the images to enlarge them.
+
+Chart Panel
+The Jobs page has a Chart Panel at the top, which displays graphical information related to jobs. The Chart Panel displays the number of jobs running, waiting, error, disabled, time triggered, and event triggered. 
+
+
+
+Click Hide Chart Panel or Show Chart Panel to toggle the display.
+
+
+
+To switch to the Detailed view, select the table icon in the upper-right corner.
+
+
+Table View
+Table view shows job information in columns by name, job status, details, and other important information.
+
+
+
+To customize the column information, use the gear icon at the top right of the Table view, then check or uncheck columns to display or remove them as required.
+
+
+Detailed View
+The Detailed view has two panels. The left panel lists all jobs, and the right panel displays information about incidents created by the job, playbook, last run, next run, and incident status.
+
+
+Job Management Options
+You can manage jobs in Cortex using multiple options in the Table and Summary views. In the Table view, the options are visible when you select a job from the list to manage.
+
+Job Action Options
+The following actions can be performed on selected jobs.
+
+Edit
+Click the Edit option to make changes in the selected job’s settings.
+
+Run Now
+Click the Run now option to start running an aborted or completed job.
+
+Disable
+Click the Disable option to stop the job from running next time. It will not impact the job already running.
+
+Enable
+Click the Enable option to continue running the job next time.
+
+Pause
+Click the Pause option to halt a running job.
+
+Resume
+Click the Resume option to continue running any paused job.
+
+​​​​Abort
+Click the Abort option to stop any running job.
+
+Delete
+Click the Delete option to remove the job from the table.
+
+
+
+
+
+Click the image to enlarge it.
+
+
+Demo: Jobs Management Options
+Watch this demonstration on using the various options to manage jobs in Cortex.
+
+
+
+
+Elapsed time0:00/Total2:15
+
+Course Summary
+Now that you've completed this course, you should be able to:
+
+
+Describe the purpose and applications of jobs witin Cortex
+Design and implement different types tailored to specific job needs
+Explain the techniques for managing and optimizing jobs using diverse options and tools
+
+

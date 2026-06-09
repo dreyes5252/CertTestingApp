@@ -1,0 +1,508 @@
+Basic
+Rules
+This course describes different types of Cortex rules, including indicators of compromise (IOCs), behavioral indicators of compromise (BIOCs), correlation rules, and the management of lookup datasets. The course also details how to create and manage IOC, BIOC, Custom Prevention Rules, IOC/BIOC Suppression rules, and correlation rules. Additionally, it covers updating and managing lookup datasets through correlation rules and application programming interfaces (APIs), enhancing the ability to correlate data and manage security threats effectively.
+
+Course Objectives
+After completing this course, you should be able to:
+
+
+Describe and differentiate Cortex indicators: BIOCs and IOCs
+Create and manage IOC rules
+Create and manage BIOC rules
+Create and manage Custom Prevention Rules
+Create and manage IOC/BIOC Suppression rules
+Create, implement and manage Cortex correlation rules
+Manage lookup datasets via correlation rules and APIs
+Lesson Topics
+We recommend that you take the lessons in numerical order, but you can use the menu for quick access to any lesson at any time.
+
+Click the lesson title buttons to go to each lesson. You can also navigate the course using the navigation arrows below or the menu bar at the top left of the screen.
+
+Lesson 1: Overview of Rules                       
+Lesson 2: IOC Rules                                      
+Lesson 3: BIOC Rules                                   
+Lesson 4: Custom Prevention Rules        
+Lesson 5: IOC/BIOC Suppression Rules  
+Lesson 6: Correlation Rules                         
+
+Overview of
+Rules
+This lesson describes the Cortex rules that you can define based on characteristics of threat indicators.
+
+
+
+Rules Based on Custom Threat Indicators
+You can create your own Cortex rules by specifying the characteristic of threat indicators as rule criteria. Note that one way to identify threat indicators is to search for leads in Cortex datasets. Alternatively, threat indicators can be obtained from reliable threat intelligence streams.
+
+
+
+Cortex checks incoming log streams against these rules. When a match is found, Cortex generates a detection issue. The issue inherits attributes such as name, category, and severity generated from the matching rule definition. In addition to live streams, Cortex can compare rules against historical datasets, for example, during rule testing to adjust rule parameters.
+
+
+
+A detection issue is when an attack is detected and not blocked. Examples include issues triggered by IOCs, BIOCs, and Correlation Rules. The XDR agent can block attacks against endpoints. However, Cortex server side rules can only detect these attacks and generate detection rules.
+
+In this example, the Issues table shows two detection issues raised from IOC rules. These rules define the criteria for detecting specific threats. When a threat matching these criteria is detected, an issue is generated. Most of the issue fields, except for the Case ID, are inherited from the underlying rule's definition. For example, the incident's severity level is set to the same severity level defined in the triggering rule (e.g., Low or Medium). Click the image to enlarge it.
+
+
+Cortex Rule Types
+There are different types of Cortex rules that you can create depending on your needs.
+
+Click the tabs for more information about each rule type.
+
+IOCs
+BIOCs
+Correlation Rules
+Correlation Rules can be used to identify complex behavioral threat patterns across your network, which may include multiple BIOC characteristics. It is defined by creating Cortex Query Language (XQL) queries against multiple events and datasets that are scheduled to run at certain times.
+
+Datasets and Rule Matching
+Rule matching is based on two components: rule condition and incoming log streams stored in datasets.
+
+The following describes how different datasets are being used by the XDR rule engine.
+
+
+The Cortex rule engine constantly checks if the incoming log streams match rule conditions. Incoming logs are eventually stored in Cortex datasets. 
+
+
+Some datasets are created to store only the logs created by the Cortex components, such as the XDR agents. Others store third-party logs. 
+
+
+BIOC rules are checked against the datasets xdr_data and cloud_audit_log, whereas Correlation Rules are checked against all datasets, including third-party log sources.
+
+
+The dataset xdr_data contains endpoint logs and alerts that would be stitched with next-generation firewall (NGFW) traffic logs, if integration is provided.
+
+IOC
+Rules
+This lesson describes how to create an IOC rule or upload a list of IOCs from various threat-intelligence sources, and how to derive issue attributes from any IOC definition.
+
+
+
+Working with IOCs
+Cortex IOC rules are intended to detect known, simple malware. On the management console, you can create and manage IOC rules from the Threat Management > Detection Rules > IOC page.
+
+On the IOC page, you can add a single IOC rule or upload IOCs in bulk by clicking the + Add IOC button. To manage a rule, use its context (right-click) menu to take actions, such as Edit, Disable, and Delete. 
+
+
+
+Alternatively, the quickest way to create multiple IOC rules is to import IOCs from other reliable threat-intelligence sources into your Cortex instance.
+
+
+IOC Actions and Attributes
+ The key attributes of IOC rules are as follows:
+
+
+
+Attributes	Descriptions
+Indicator	
+Indicator is the value of the indicator, such as name of a file, an IP address, or a hash value.
+
+Type	Type is the type of the threat indicator, such as Full Path, File Name, Domain, and Hash.
+Expiration Date	
+Expiration Date is the date and time when the IOC will automatically be removed from the Cortex XDR instance. 
+
+Reputation	Reputation is the level of the IOC rule’s reliability ranging from Completely Reliable to Reliability Cannot Be Judged.
+
+
+Note that a Cortex IOC rule does not have a name attribute. The indicator value in the Indicator field ensures the uniqueness of the IOC table. In other words, you cannot add two IOC rules with the same indicator value, such as the same IP address.
+
+Demo: Adding and Importing IOCs
+Watch this video for more information about adding a single IOC, importing multiple IOCs, and how to derive issue attributes from IOC rule definition. 
+
+BIOC
+Rules
+This lesson describes how to import user-defined BIOC rules and update the predefined global BIOC rules via the content updates from the Palo Alto Networks Research team. The lesson also describes the key attributes and context menu actions of the BIOC rules and how you can manage prevention separately from detections when disabling a BIOC rule.
+
+
+
+Working with BIOCs
+BIOC rules are intended to detect advanced threats based on behavioral characteristics.
+
+You can create and manage BIOC rules from Threat Management > Detection Rules > BIOC in the management console. Besides adding your custom BIOC rules, there are two other methods to obtain BIOC rules. Click the tabs for more information about each method.
+
+Import Rules
+Update Rules Via Content Updates
+In addition to user-defined BIOC rules, the Palo Alto Networks Research team creates and distributes BIOC rules to all the Cortex instances through content updates. These predefined rules are known as "global" BIOC rules. Cortex periodically updates the global BIOC rules created by the Palo Alto Networks Research team. You can check the latest update information by hovering the pointer over the Content up to date button. To manually update, click the button.
+
+
+Key BIOC Attributes
+The key attributes of BIOC rules are as follows:
+
+
+
+Attribute	Description
+Global Rule ID	
+Global rule ID is a globally unique identification number for the rule. If a rule is not of type Global BIOC rule, this attribute is empty.
+
+Name	
+Name is a unique name that describes the rule. 
+
+Type	
+Type outlines the type of the attack event, which is typically the stage in the attack lifecycle. This could include dropper, evasion, lateral movement, or tampering. 
+
+Behavior	
+Behavior indicates the search condition to extract this issue from the data stream. 
+
+Severity	Severity specifies the severity level of the issues created based on the rule definition.
+# of Issues	Number of Issues represents the number of matches triggered by this rule.
+Source	
+Source can be the user who created the BIOC, the name of a file from which it was created, or Palo Alto Networks if it is a global rule. 
+
+MITRE ATT&CK Tactic
+MITRE ATT&CK Tactic is the type of MITRE ATT&CK tactic that this BIOC rule detected.
+Actions on BIOC Rules
+You can use the context menu to take an action on one or more selected rules. The availability of actions depends on the source. For example, editing, deleting, and exporting are not available if the source is Palo Alto Networks. However, you can clone such a rule by performing the Save as new action and then editing the rule criteria to match your needs. 
+
+
+
+To transfer the BIOC rules to other Cortex instances, you can use the Export action on the source instance to create a file with the rules. Then, on the target instance, click the Import Rules button and select the file. 
+
+ 
+This image shows the actions for Palo Alto Networks BIOCs.
+
+
+Adding a BIOC Rule
+Adding a BIOC rule consists of two consecutive steps. First, define the rule condition and set a rule name. Then, specify other rule parameters such as issue-related fields. 
+
+Step 1: Define Rule Condition and Set a Rule Name
+In this step, you define the rule condition using threat indicators and a BIOC rule name. This is similar to creating a query search, but with the ability to generate issues. The Cortex rules engine continuously checks log streams for matching rule conditions.
+
+
+
+In the management console, click + Add BIOC and you will be presented with two options for specifying the rule condition: using XQL Search or using form-based search queries. Click the tabs for more information about each option. Click the images to enlarge them.
+
+Using XQL Search
+Form-Based BIOCs
+Another way to define BIOC rule conditions is to select an entity (resource) type from the provided list and to enter related search parameters. The rule form is basically a search query form. Available entity types are Process, File, Network, Image Load, and Registry. Event Log is the Windows Event Log, while Network Connections is the Traffic logs provided by Palo Alto Networks firewalls. 
+
+
+File Type BIOC Form
+Click the tabs for more information about the parameters that you need to specify on a File type BIOC form.
+
+1. Rule Name
+
+2. Entity Type
+
+3. Actions
+
+4. File(s) Attributes
+
+5. Actor Process and Location (Host)
+
+6. Test
+
+
+
+
+7. Save
+
+ 
+The screenshot shows a File type BIOC form as an example. Click the image to enlarge it.
+
+
+Step 2: Specify Other Rules Parameters
+In this step, you specify the remaining rule parameters related to issues, such as Severity and Type, which will generate issues if a rule match is found. For example, the Type field of the rule is copied to the Category field of the newly created issue, while  the name of the BIOC rule becomes the issue name. Note that only Medium and High severity issues will generate cases. Low severity issues will appear in the Issues table, while Informational severity issues are only visible in Insights.
+
+
+Custom
+Prevention Rules
+This lesson describes what Custom Prevention Rules are and how to create them.
+
+
+
+Custom Prevention Rules Overview
+Custom Prevention Rules are BIOC rules that are transferred to endpoints using Restrictions profiles.
+
+Functionality
+These BIOC rules on endpoints enable agents to block activities that match the rule criteria. Server-based BIOC rules are used only for threat detections. Cortex XDR agents are unaware of these rules; therefore, agents do not block any malicious activity that matches any BIOC rule criteria on the cloud.                                                                                                   
+
+
+
+
+
+
+
+      
+
+Capability
+To transport the desired BIOC rules to the agents in the form of the Behavioral Threat Protection (BTP) rules, Custom Prevention Rules use Restrictions profiles. This profile type has been available for Windows endpoints since it was introduced. Restrictions profiles are also available for macOS and Linux endpoints to provide the custom-prevention-rules capability to more users. Note that these are asynchronous rules and will kill the process after it is launched. They are not pre-execution rules, meaning the process will start before it's terminated if it matches the rule criteria.
+
+Creating Custom Prevention Rules
+You can create Custom Prevention Rules in two steps.
+
+Click the arrows for more information about each step.
+
+
+Step 1: Enable Custom Prevention Rules in the Restrictions Profiles
+
+To create a Custom Prevention Rule, you first need to enable the Custom Prevention Rules setting within your Restrictions profile.
+
+
+Step 2: Add to Restrictions Profile from the Shortcut Menu of a Rule
+
+After you have enabled Custom Prevention Rules, locate the BIOC rule you want to add in the BIOC table and then click Add to restrictions profile from its shortcut menu. This action opens a dialog box where you can select the Restrictions profile that you enabled earlier. After you click Add, your BIOC rule is associated with the requested Restrictions profile.
+
+
+
+
+Managing Prevention Separately from Detections
+To provide you with more granularity, Cortex enables you to manage detection separately from prevention when disabling a BIOC rule.
+
+Click the images to enlarge them.
+
+Identify a BIOC Rule
+Begin by identifying a BIOC rule tied to a prevention profile.
+
+
+Disable BIOC Components
+Navigate to Threat Management > Detection Rules > BIOC and select the previously identified BIOC tied to a prevention profile. Right-click on the BIOC rule and click Disable. A pop-up window will appear with two choices.
+
+
+Disabling an Agent or a Server
+Disabling the "Agent" will partially disable the rule by removing prevention (protection), while detection capabilities remain on the server.
+
+
+
+Disabling the "Server" will also partially disable the rule. This time, the server doesn't perform detections, but the prevention capabilities stay in place on the prevention profiles associated with the rule. 
+
+
+
+Best practice is to enter a note regarding the reason for the disabling. Click Yes after making your selection.
+
+IOC/BIOC
+Suppression Rules
+This lesson describes how to create Suppression rules for IOCs and/or BIOCs.
+
+
+
+Suppression Rules Creation
+You can create an IOC or BIOC suppression rule to define conditions when not to be matched from Settings > Exceptions Configuration > IOC/BIOC Suppression Rules. Although, you can disable an IOC or BIOC rule directly from the context menu, the suppression rules are more detailed in their exception definitions.
+
+The same Suppression rule can be applied to matching BIOCs and IOC rules. 
+
+
+Creating Suppression Rule Steps
+To create a suppression rule, navigate to Settings > Exceptions Configuration > IOC/BIOC Suppression Rules. In the General step, you provide a rule name. In Rule Conditions, you define rule (exception) criteria in terms of process attributes, including hash, name, (file) path, and the authority it runs under (the User Name). All the attribute-value pairs must match for the exception to apply; so, all the specified values are Boolean "and."
+
+
+
+You also specify a rule scope, whether the Suppression rule applies to IOCs, BIOCs, or both. For the BIOC scope, you can also specify individual BIOC rules instead of all BIOCs.
+
+
+
+
+
+Reply
+
+ 
+Click the image to enlarge it.
+
+Correlation
+Rules
+This lesson provides an overview of correlation rules in Cortex, covering their purpose, creation, key components, performance considerations, ongoing management, and the enhancements to look up datasets through both correlation rules and APIs.
+
+Understanding Correlation Rules in Cortex
+Correlation rules are a powerful feature in Cortex that enable advanced threat detection by analyzing multi-event correlations from multiple data sources. This section covers the basics of correlation rules and their requirements.
+
+Here are the basics of correlation rules and their requirements.
+
+Rule Purpose
+Rule Purpose
+
+
+
+Correlation rules in Cortex are designed to analyze correlations of multi-events from multiple sources using the Cortex Query Language based engine for creating scheduled rules.
+
+Licensing Requirements
+Licensing Requirements 
+
+
+
+Your access to correlation rules features is determined by your Cortex licenses. Users should be aware that future changes to correlation rules offerings may impact licensing agreements.
+
+Comprehensive Analysis
+Comprehensive Analysis 
+
+
+
+Correlation rules can analyze data from multiple sources, allowing for more comprehensive threat detection within a defined time frame and set schedule.
+
+XQL Foundation
+XQL Foundation 
+
+
+
+XQL is the foundation for creating correlation rules, enabling powerful and flexible querying across different data sources.
+
+ 
+Correlation Rule Key Capabilities
+Here are some key capabilities of correlation rules.
+
+
+Flexible Syntax
+
+
+
+XQL enables complex correlation logic.
+
+
+Actionable Alerts
+
+
+
+Alerts can trigger notifications, workflows, and more based on correlation results.
+
+
+Additional Analysis
+
+
+
+Correlation results can be saved as a dataset for further investigation.
+
+
+Drill Down Query
+
+
+
+Rapidly investigate the underlying events after an alert occurs.
+
+
+Alert Suppression
+
+
+
+Prevents duplicate alerts by de-duplicating based on fields and time windows.
+
+
+MITRE Mapping
+
+
+
+Correlations can be mapped to the MITRE matrix.
+
+
+Export and Import
+
+
+
+You can export and import rules and move them between tenants.
+
+Creating and Managing Correlation Rules
+Administrators have various options for setting up and maintaining correlation rules in Cortex.
+
+Click the arrows for more information about the creation process. Click the images to enlarge them.
+
+
+Rule Initiation
+
+
+To create a new rule, open the Add Correlation editor from either Threat Management > Detection Rules > Correlations or an XQL Search. Then, configure the General settings, including the name and description.
+
+
+Query Definition
+
+
+Next, define the XQL query that will form the basis of your rule. Set the timing and schedule for when the rule should run.
+
+
+Issue Configuration
+
+
+If you want the rule to generate issues, configure the issues settings accordingly. Map issue fields for case enrichment to provide more context to any generated issues.
+
+
+
+
+Import and Export Correlation Rules
+Correlation rules can be imported and exported in JSON format, facilitating easy sharing and backup of rules. Bulk export and import of multiple rules are supported. Click the image to enlarge it.
+
+
+Key Components of Correlation Rules
+When setting up a correlation rule, several crucial elements need to be defined. This section delves into the essential components that make up an effective correlation rule. Click the images to enlarge them.
+
+Time Schedule
+Time Schedule rules can be set to run on different schedules, such as every X minutes, daily, weekly, or custom, depending on the use case and required detection speed.
+
+
+Issue Suppression Settings
+To prevent issue fatigue, administrators can configure issue suppression for a specified duration and by specific fields after an issue is generated.
+
+
+Resulting Actions
+Correlation rules can be configured using one of the following resulting actions:
+
+Generate issues 
+Save data to a dataset (useful for testing and fine-tuning new rules) 
+Add or remove data from lookup datasets
+
+Issues Fields Mapping
+When generating issues, fields can be mapped to enrich the resulting case with relevant information.
+
+
+MITRE ATT&CK Association
+Correlation rules can be associated with MITRE ATT&CK tactics and techniques for better threat classification and analysis.
+
+
+Performance and Monitoring
+To ensure optimal performance and effectiveness, correlation rules have certain limitations and monitoring capabilities. This section covers these aspects to help maintain efficient rule operation.
+
+Automatic Disabling of High-Volume Rules
+
+
+To prevent issue overload, Cortex automatically disables correlation rules that reach 5,000 or more hits over a 24-hour period.
+
+Correlations Auditing Dataset
+
+
+You can monitor rule executions using the correlations_auditing dataset, which provides insights into rule performance and results, including query initiation times, end times, retry attempts, and failure reasons.
+
+
+
+Query Limitations and Error Handling
+
+
+The Correlation Rules page helps identify and resolve errors, displaying the number of errors found and allowing filtering to show only rules with errors. Common error messages include: Invalid query, Query timeout, Dependency correlation did not complete, Unknown error, Delayed rule, and Dataset does not exist.
+
+
+
+Rule Management and Maintenance
+Ongoing management of correlation rules is essential for maintaining an effective threat detection strategy. This section outlines the various actions available for rule maintenance.
+
+Click the tabs for more information about rule management and maintenance. Click the images to enlarge them. 
+
+Viewing and Managing Rules
+Filtering and Searching Rules
+Monitoring Rule Performance
+Updating MITRE ATT&CK Associations
+As the MITRE ATT&CK framework evolves, administrators should review and update the associations of rules with tactics and techniques.
+
+Utilizing Lookup Datasets in Correlation Rules
+Cortex enables lookup datasets through correlation rules and APIs.
+
+Update Lookup Datasets Using
+Correlation Rules
+Based on their license, many Cortex users can update lookup datasets directly through correlation rules. This feature allows for the dynamic addition and removal of entries in lookup datasets, enabling users to fine-tune how data from external sources correlates with the events detected in their environment. This capability helps maintain up-to-date information that enhances threat detection and response strategies.
+
+Update Lookup Datasets Using
+the API
+Cortex supports the management of lookup datasets through a set of robust APIs, making it easier to synchronize and correlate data across different platforms. The supported APIs include:
+
+
+
+add_data: Adds or updates entries in a lookup dataset
+remove_data: Removes entries from a lookup dataset
+get_data: Retrieves entries from a lookup dataset
+add_dataset: Creates a new lookup dataset
+delete_dataset: Deletes an existing lookup dataset
+get_datasets: Lists all available lookup datasets
+Course Summary
+Now that you've completed this course, you should be able to:
+
+
+Describe and differentiate Cortex indicators: BIOCs and IOCs
+Create and manage IOC rules
+Create and manage BIOC rules
+Create and manage Custom Prevention Rules
+Create and manage IOC/BIOC Suppression rules
+Create, implement and manage Cortex correlation rules
+Manage lookup datasets via correlation rules and APIs

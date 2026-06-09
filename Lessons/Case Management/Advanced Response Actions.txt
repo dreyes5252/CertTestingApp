@@ -1,0 +1,269 @@
+Advanced
+Response Actions
+This course describes how you can use remediation actions to prevent an attack, run scripts on endpoints, and enable the Cortex External Dynamic Lists (EDL) service.
+
+Course Objectives
+After completing this course, you should be able to:
+
+
+List the remediation suggestion actions
+Describe how to a custom script, run it on endpoints, and track the status
+Describe the workflow to configure and activate the EDL service 
+Explain how to manage EDL lists of IP addresses and domain names
+Lesson Topics
+We recommend that you take the lessons in numerical order, but you can use the menu for quick access to any lesson at any time.
+
+Click the lesson title buttons to go to each lesson. You can also navigate the course using the navigation arrows below or the menu bar at the top left of the screen.
+
+Lesson 1: Remediation Suggestions                
+Lesson 2: Remote Script Executions               
+Lesson 3: Enabling Cortex EDL Service          
+
+​​Remediation
+Suggestions​​​
+This lesson describes the various ways to perform remediation suggestion actions in Cortex.
+
+Advanced Response Action Requirements
+Some Cortex response actions require additional licenses, authorization, and configuration. These actions include remediation suggestions, remote script executions, and EDL.
+
+Requirements for Cortex advanced response actions include:
+
+Authorization
+Script execution requires roles with specific permissions, such as run high-risk scripts and script configuration.
+
+Additional Configuration
+Remediation suggestions require enhanced endpoint data collection.
+
+Operation System Support
+Remediation suggestions action is available only for Windows. 
+
+Remediation Suggestion Actions
+Cortex enables the reversion of changes made by malicious processes. For example, you can revert maliciously changed files and registry keys. Also, note that enhanced endpoint data collection must be enabled.
+
+There are different places within the management console to perform remediation suggestion actions. Click the images to enlarge them.
+
+Right-click menu of a process node:
+
+
+Actions menu of Causality View:
+
+
+Three-dot menu of a case:
+
+
+Remediation Suggestions List
+Initiation of the remediation suggestions brings up a dialog box that displays a table with entries that show malicious process events.
+
+Click the arrows for more information about Remediate action.
+
+
+Suggested Remediation Column
+
+
+The table’s Suggested Remediation column displays a recommended remediation action to revert the malicious processes events. 
+
+
+
+To perform the recommended remediation in this column, right-click the suggested remediation and then click Remediate to initiate.
+
+Track Remediate Status
+
+
+You can track the remediate status from the column labeled Remediation Status within the same event entry. You also can track the status of the action from the action center.
+
+Perform Action in Bulk
+
+
+A suggested remediation action can be performed in bulk. Select multiple event entries, open the shortcut menu by right-clicking over the selection, and then click Remediate. 
+
+Remediation Suggestions Dialog Box
+
+
+The details of the related incident are reviewable by the dialog box that appears, showing the remediation list. 
+
+
+
+This image shows the remediation suggestions dialog box. The suggestions in this dialog are not instantly ready when the dialog is opened; Cortex first analyzes the causality instance in question to prepare a remediation suggestion list. 
+
+Review Incident Details
+
+
+“Completed” in the title of the dialog box shows that this analysis has been completed. You also can review the details of the current incident for which this dialog box brings a remediation list. 
+
+
+
+
+
+Click the image to enlarge it.
+
+
+Suggested Remediations
+The Suggested Remediation column shows possible remediation actions, including manual remediation for cases where Cortex can’t provide a remediate action.
+
+Here are a few Cortex remediation suggestions.
+
+Delete, Restore, or Rename File
+
+Delete or Restore Registry Value
+
+Terminate Causality
+
+Manual Remediation
+
+The Remediation Status table display the status of the remediation action. Click the image to enlarge it. 
+
+​Remote Script
+Executions​
+This lesson describes the Scripts Library, uploading custom scripts, running them on endpoints, and tracking the status.
+
+​Scripts Library​
+To streamline and enhance your security operations, you can run scripts from the Scripts Library in Cortex. You can upload and remotely run Python v3.7 scripts from Investigation & Response > Response > Action Center > Agent Scripts Library.
+
+Click the images to enlarge them.
+
+Upload Ready-to-Use Python Scripts
+The library displays ready-to-use Python scripts written by Palo Alto Networks, as indicated by the Created By column. 
+
+
+
+Only roles with sufficient permissions will be able to run scripts on endpoints.
+
+
+Add a New Script
+Click +New Script to upload your script. Open a script’s shortcut menu to run, edit, or delete it. You can download the source code and definition of a script in the library using the Download actions on the script's shortcut menu. 
+
+
+
+The script definition is a JSON formatted file.
+
+
+Demo: Uploading Scripts
+Watch this demonstration about uploading a script into Cortex.
+
+
+
+
+Elapsed time0:00/Total1:09
+
+​Input/Output Mapping Illustrated​
+This section illustrates the input/output mapping of a script using a simple script source code.
+
+Notice how Cortex parses the script source to get the entry point that is the function ping along with its parameter internet protocol (IP), and the function output (the return value). Also, compare the runtime screens with the definition and the source code.
+
+
+​Running Scripts​
+Below are the steps to run a script in the Scripts Library.
+
+Click the images to enlarge them.  
+
+Step 1: Run Script
+Right-click a script in the Scripts Library and select Run to run the script.
+
+
+Step 2: Enter Input
+In the Choose step, enter the input for your script as defined during the upload and click Next. In this specific example, IP (STRING) is the parameter of the function, the entry point of the script, and 192.168.1.2 is the value of this IP parameter.
+
+
+Step 3: Select Endpoints
+In the Target step, select one or more endpoints to run the script on platform types that are compatible with the script’s specified Supported OS field and click Next.
+
+
+Step 4: Review Selections
+Summarize your selections and click Run.
+
+
+Step 5: Track Execution
+Track the Endpoint Script Execution action from All Actions of Action Center. Check out the All Actions table columns for ACTION TYPE: Endpoint Script Execution and STATUS: Completed Successfully.
+
+
+
+Select the Additional data action from the right-click menu of a script execution action to get details such as Return Value, which is the output of your script.
+
+
+Step 6: View Details
+The Additional data dialog shows the general script execution parameters at the top and the execution results table at the bottom listing each of the targeted endpoints. The general script execution parameters include:
+
+
+
+Script name
+Entry Point as the name of the function called
+Action Parameters as function parameters
+
+Enabling Cortex
+EDL Service
+This lesson describes the steps to configure, activate, and manage the EDL service in Cortex.
+
+External Dynamic Lists
+EDLs are instrumental in blocking potentially harmful IP addresses and domain names. An EDL is a type of block list where each entry on a new line represents an IP address or hostname to be blocked.
+
+EDL Services Provided by Cortex
+Cortex instances can serve two types of block lists over Hypertext Transfer Protocol Secure (HTTPS): IP addresses and domain names. Domain names may also include hostnames in fully qualified domain name (FQDN) form. In this context, Cortex's role is to provide a block list service, and each instance offers its own EDL service to consumers, typically Next-Generation Firewalls (NGFWs) PAN-OS.
+
+EDL Service Tasks
+The Cortex EDL service has a global configuration located in Settings > Configurations > Integrations > External Dynamic List Integration. This one-time task involves globally enabling the Cortex's EDL service.
+
+Ongoing Administrator Tasks
+After setting the global EDL parameter, administrators have two ongoing tasks:
+
+ Adding IP Addresses and Domains
+Adding IP Addresses and Domains
+
+
+
+Malicious IP addresses and domains can be added to the EDL lists from multiple pages in the management console, Investigation & Response > Response > Action Center > Currently Applied Actions > External Dynamic List or Investigation & Response > Response > EDL > Add to EDL, and from Cortex CoPilot, or Quick Launcher, and then selecting IP View.
+
+Managing the EDL Lists
+Managing the EDL Lists
+
+
+
+Management of the EDL lists can be done through Action Center > Currently Applied Actions > External Dynamic List. Tasks include viewing the lists, searching for specific list items, and deleting items from the lists.
+
+EDL Global Configuration
+The global settings for Cortex’s EDL service include:
+
+Authentication Settings
+Settings to connect to the EDL service provided by this Cortex instance.
+
+Enable/Disable Button
+A button to enable or disable the EDL service.
+
+EDL URLs
+URLs for the two EDL lists: IP addresses EDL and domain names EDL. For the IP address list, the URL is in the form: https://edl<subdomain>.xdr<region>.paloaltonetworks.com/block_list?type=ip.
+
+
+
+
+
+Click the image to enlarge it.
+
+
+Note: Refer to the PAN-OS Administrator's Guide for additional configuration details.
+
+Adding IP Addresses and Hosts to EDLs
+You can add malicious IP addresses and domains to the EDL lists.
+
+There are four ways to add an IP address to the EDL. Click the images to enlarge them.
+
+Action Center > External Dynamic List
+
+Action Center > New Action > Add to EDL
+
+Cortex Copilot after IP address search
+
+Actions Menu within IP View
+
+EDL Management in Action Center
+As you add malicious IP addresses and domains to the EDL lists from multiple pages, Cortex keeps your additions in two lists accessible from Investigation & Response > Response > Action Center > Currently Applied Actions > External Dynamic List.
+
+From this page, you can view, search, and delete EDL entries. To delete a list item, right-click an IP address or domain and then click Delete. You can select multiple items and delete them in bulk.
+
+
+Course Summary
+Now that you've completed this course, you should be able to:
+
+
+List the remediation suggestion actions
+Describe how to a custom script, run it on endpoints, and track the status
+Describe the workflow to configure and activate the EDL service 
+Explain how to manage EDL lists of IP addresses and domain names

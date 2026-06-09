@@ -1,0 +1,490 @@
+Working with
+Cases
+This course describes how cases are created in Cortex® and how to use them effectively. The course also describes the different view tabs for viewing cases as well as case scoring rules.
+
+Course Objectives
+After completing this course, you should be able to:
+
+
+Describe how Cortex creates cases
+Work with cases, such as viewing and taking appropriate case actions
+View information on the detail view tabs
+Define case scoring methods and create scoring rules
+Lesson Topics
+We recommend that you take the lessons in numerical order, but you can use the menu for quick access to any lesson at any time.
+
+Click the lesson title buttons to go to each lesson. You can also navigate the course using the navigation arrows below or the menu bar at the top left of the screen.
+
+Lesson 1: Creating Cases           
+Lesson 2: Working with Cases  
+Lesson 3: Detail View Tabs         
+Lesson 4: Case Scoring Rules   
+
+Creating
+Cases
+This lesson introduces terminologies related to cases and describes how you can create cases in Cortex.
+
+Cases Overview
+A case represents a single, self-contained attack. Because of its unique nature, it includes various components that originate from the same root cause, such as attackers, tools, processes, and a combination of malware and exploits.
+
+Incident Components
+Components of an incident:
+
+Case
+Case
+
+
+
+A case is a container object that groups related issues, assets, and artifacts—all of which originate from the same root cause. Each case requires a separate and independent investigation.
+
+Issue
+Issues
+
+
+
+Issues are notification objects that report suspicious activity or events. These issues help in identifying potential threats and initiating the investigation process.
+
+Assets
+Assets
+
+
+
+Assets refer to the names of affected endpoints and users. They help in pinpointing the exact targets of the case.
+
+Artifacts
+Artifacts
+
+
+
+Artifacts are attributes of attacking objects, such as filenames, file signers, processes, domains, and IP addresses. These attributes help in understanding the nature and scope of the attack.
+
+Case Management
+The Cortex management console allows a case or issue to be assigned to a single investigator, ensuring focused and dedicated investigation. However, it is best practice to assign cases to investigators who would then own the attached issues rather than assigning each issue individually.
+
+Case ID in the Issues Table
+Each issue is associated with an issue ID; so, related issues are grouped in the same case. Cortex relates issues based on their attributes that are simply security-related attribute types. For example, issues within the same causality instance are related, and they are placed in the same case because causality instance ID (CID column in the Issues table) is a type of cyber attribute.
+
+Notice that the Case ID of these two issues is the same: 2594.
+
+
+Binding Issues to Matching Cases
+An issue's cyber attributes are security-related or attack-related attributes and include causality ID, IP address, domain, and name of the file and process. Each issue category has its own set of cyber attributes with varying weights.
+
+Cortex binds issues to cases when an issue has just arrived. The linking process relies on complex, proprietary algorithms that use machine learning. The basic issue-binding process is as follows:
+
+Extract
+Extract cyber attributes of the issue. These are security-related issue attributes.
+
+Search
+Search for a matching case using cyber attributes. Note that similar to issues, each case is also associated with some cyber attributes.
+
+Bind
+If a case is found, bind the issue to the matching case.
+
+Create
+If a case is not found, create a new case. The issue cyber attributes automatically become cyber attributes of the instance.
+
+Issue Matching
+Cortex matches issues within a case based on their cyber attributes; such issues are therefore related. Those cyber attributes also automatically become the cyber attributes of the case. The procedure can be thought of as the averaging of all the in-case issue cyber attributes and assigning them to the case.
+
+Dispatch and Weights
+The dispatch of a newly arrived issue to a case is based on the degree of match between the cyber attributes of the new issue and those of the case. Cortex uses weights when multiple matching cases are found for the same issue.
+
+Creating New Cases
+Cortex creates a new case regardless of whether there is a matching case is found or not. 
+
+Cortex creates a new case in either of the following conditions:
+
+Match Found
+Cortex generates a new case when the case has too many issues limited to a predefined threshold.
+
+No Match Found
+Cortex generates a new case to bind with a new issue when no matching case is found.
+
+Case Generated from Issues
+Click the tabs for more information about issues that lead to case creation.
+
+Cases with Many Issues
+Medium, High, or Critical Issues
+Recurring Issues
+Cases that have more issues are more likely to match than cases that have fewer issues. Therefore, Cortex auto-limits the number of issues in a case to prevent starvation of the other cases. Starvation occurs when a case collects all the new issues which doesn't allow other cases to get issues. This limit is 1,000 issues per case, which is subject to change in updates. Note that the limit has no effect when you manually move issues between cases.
+
+Demo: Performing Actions on Cases
+Watch this demonstration about the actions you can take on selected cases. 
+
+Working
+with Cases
+This lesson describes how you can navigate cases in the List pane and Details pane. The lesson also describes how you can take actions on a case, such as changing the status of a case or merging different cases.
+
+Viewing Cases
+You start investigating Cortex cases from the Cases page in the management console. By default, the page opens in a table view but you also have the option to use a split-pane view.
+
+Table View
+To switch to the split-pane mode, select the icon in the upper-right corner.
+
+
+Split-Pane View
+This view displays a split-pane mode that consists of two resizable panes: List pane and Details pane. In this view, you can click a case in the Cases List pane (on the left) to work with the selected case in the Details pane (on the right).
+
+
+List Pane
+The List pane of the split-pane view shows the case list based on filtering options and contains consolidated key incident information. The list is designed to combine and show the most important case properties as part of the list items. The List pane helps an investigator get the most critical attack details as quickly as possible.
+
+You can get a variety of useful information from the list items.
+
+Starred
+
+
+You can click the star icon to star or unstar a case.
+
+
+Case Score
+
+
+The case score shows the score assigned to the case.
+
+
+Case ID
+
+
+Shows the ID number generated for a case. 
+
+
+Action Menu
+
+
+Allows you to take actions on a case.
+
+
+Severity
+
+
+Shows the severity assigned to a case. 
+
+
+Status
+
+
+Shows the status of the case.
+
+
+Assigned / Unassigned
+
+
+You can assign a case to yourself or another investigator.
+
+
+Multiselection Checkbox
+
+
+Allows you to perform actions in bulk on selected cases.
+
+
+Details Pane
+The Details pane of the split-pane view shows full details of the selected instance on the List pane.
+
+The Details pane view shows summary information about the case. You can change most of the case attributes shown in the header, including case severity, name, assignee, and status. Note that you can’t change the case ID. Click the arrows for more information about the Details pane view.
+
+
+Add Name
+
+
+Click the pen icon—next to the case ID—to name a case.
+
+
+Change Severity
+
+
+Change the severity of a case by selecting the desired severity from the drop-down menu—to the left of the star icon.
+
+
+Star or Unstar a Case
+
+
+Click the star icon—next to the incident ID—to star or unstar a case.
+
+
+Take Action
+
+
+Click the ellipsis menu in the top right to take several actions on a case, such as creating exclusions, managing scores, and merging cases.
+
+
+Pin Tabs
+
+
+You can select the pin icon—next to a tab name—to pin the tab. The pinned tab will then be the default tab when the case page is opened.
+
+
+Identify Issue Source
+
+
+You can hover over the area next to Sources to identify the source of the issue. 
+
+
+Identify Number of Issues
+
+
+The number of issues shows the total number of issues for the particular cases. 
+
+
+Change Status
+
+
+Change the status of a case by selecting the desired status from the drop-down menu.
+
+
+Assign a Case
+
+
+You can assign a case to yourself or another analyst. 
+
+
+
+Detail
+View Tabs
+This lesson describes the detail view tabs, such as Overview, Key Assets & Artifacts, Issues & Insights, Timeline, and Execution.
+
+Case Detail View Tabs
+The Details view organizes case information in specialized tabs. The pinned tab is the default tab when the Cases page is opened. To change the default, hover the cursor over a tab to make the pin icon visible, and then click the icon to pin the tab.
+
+Click the arrows for more information about the detail view tabs. Click the images to enlarge them. 
+
+
+Overview
+
+
+The Overview tab provides the aggregated attack information represented by this case into two sections. The MITRE tactics and techniques used during the attack. This section is expandable. 
+
+
+
+The lower section displays the widgets that visualize attack information associated with the case, such as issues per severity type, resource type, host, and users.
+
+
+Key Assets & Artifacts
+
+
+The Key Assets & Artifacts tab displays lists of key assets, which are hosts and users, as well as the key artifacts. Key artifacts are actors involved in the attack that led to this case, such as filenames and IP addresses.
+
+
+
+An artifact can be analyzed and assigned with a verdict, such as Malware or Benign. Key assets are affected entities that were likely to be compromised, such as a user account or an endpoint.
+
+
+Key Assets & Artifacts: Artifacts
+
+
+You can perform further investigation or take response actions on an artifact using the shortcut menu that appears when you click the ellipsis.
+
+ 
+
+An artifact’s WildFire verdict is automatically shown in line under the artifact name. You can access the details of the WildFire analysis by clicking an icon next to the WildFire (WF) verdict.
+
+
+Key Assets & Artifacts: Artifacts WildFire Analysis
+
+
+You can perform two actions in the WildFire Analysis Report dialog: download the report in PDF and report the displayed verdict as incorrect. 
+
+
+
+The Report Verdict as Incorrect action opens a request form where you can suggest a verdict type for the file from the populated verdict drop-down and enter a reason in the Comment field.
+
+
+
+Your email address is automatically included in a read-only field in the form. Click OK to submit your verdict change request.
+
+
+Key Assets & Artifacts: Assets
+
+
+You can manage assets through their ellipsis actions menu. Actions vary depending on the asset type and include viewing options as well as security operations actions, such as initiating malware scans and isolating the endpoint.
+
+ 
+
+
+
+
+Issues & Insights
+
+
+The Issues & Insights tab displays the issues and insights associated with the case in sub-tabs: Issues and Insights. To work with an issue or an insight in the respective tables, right-click an issue or insight and use actions on the shortcut menu. 
+
+
+
+Insights are types of issues. The Issues table shows only high and medium severity issues, while the Insights table shows low and informational severity issues.
+
+
+Issues & Insights: Unlinking Issues from Incidents
+
+
+You can unlink an issue from a case by performing the right-click action on an issue and selecting Manage Issue > Unlink from case. 
+
+
+
+The same action can be performed when working directly on the issue table on the management console page.
+
+
+Timeline
+
+
+The Timeline tab provides a chronological view of case-related issues and actions taken since the case was created. It provides information, such as when a specific issue is added to the incident.
+
+
+Executions
+
+
+The Executions tab lists all the issue causality chains associated with the case. The chains and causality instance graphs are grouped by the hostname and username categories and are organized in expandable and collapsible sections. 
+
+
+
+A green icon indicates the host is connected. You can zoom in and out of the graph as well as view more issue details.
+
+
+
+Case
+Scoring Rules
+This lesson describes how cases are prioritized and highlighted using case scoring rules. The lesson also describes scoring rule hierarchy, and how you can use and manage case scores, including SmartScore.
+
+Prioritizing and Highlighting Cases
+You can automatically prioritize and highlight your cases using rules in the Case Configuration page of the management console. All the rules work at the issue level, and not directly at the case level. However, modifying a case's issues also modifies the case itself. For example, when an issue is starred, the case containing the issue is also starred. Alternatively, you can star a case directly on the Cases page.
+
+The four case configurations options are:
+
+Automation Rules
+Automation Rules
+
+
+
+You can streamline security operations by automatically responding to security events using automation rules.
+
+Case Scoring
+Case Scoring
+
+
+
+You can create rules to score cases.
+
+Starred Alerts
+Starred Issues
+
+
+
+You can star cases by starring its issues.
+
+Featured Fields
+Featured Fields
+
+
+
+Featured Fields contains featured issue fields.
+
+The focus of this lesson is the Case Scoring page. 
+
+
+Case Scoring
+A score is a numeric value assigned to a case to indicate the seriousness or urgency of the case. Case scores help investigators prioritize emergencies. All the case-related management console pages show case scores along with other case attributes.
+
+The graphic shows the case scores in the left and right panes. In this example, the case score is 13. You can view the breakdown of the score or even manually override it.  
+
+
+Three Case Scoring Methods
+There are manual and automatic ways to assign scores to cases. Case scoring methods are prioritized in this order: Manual assignment, rule-based scoring rules, and Smartscore.
+
+Manual
+You can manually assign scores directly to cases from the Cases page. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rule-Based Score
+You can use rule-based case scoring to automatically update case scores when issue are dispatched to cases. Cases Scoring indirectly affects case scores by assigning scores directly to matching issues.      
+
+
+
+
+
+
+
+Smartscore
+Smartscore automatically and intelligently calculates case scores based on machine learning and statistical analysis. Similar to scoring rules, Cortex calculates "intelligent" scores for issues when issues are received or generated by Cortex. These smart issue scores make up the score of the case containing them. Smartscore requires Cortex Analytics to be enabled in Settings.
+
+Demo: Case Scoring Rules
+Watch this demonstration about how you can manage and create case scoring rules.
+
+
+
+
+Elapsed time0:00/Total2:04
+
+Scoring Rule Hierarchy
+New scoring rules are placed in the rule hierarchy to provide finer granularity. Each new rule has a base rule as the parent. When an issue matches to multiple scoring rules, the issue is scored by each matching rule. This principle is also applied to the sub-rules in the hierarchy. If the same issue matches one or more sub-rules, the issue is also scored by each matching sub rule. However, sub-rules are evaluated only if their parent rules are matched.
+
+The topmost rule in the rule hierarchy is predefined as Root.
+
+
+In this example, Rule1 is applied only if HOST is winpoint1 and CATEGORY is Malware.
+
+
+Managing Case Scores
+In the Cases page, you can get to the Manage case score by right-clicking and selecting Manage Case Score. You can then choose to manually set a score or have it automatically set using the rule-based or SmartScore options.
+
+In the example, the case has a score of 13 and was automatically set by SmartScore due to a common issue being detected.
+
+
+
+If you select Use rule-based scores, you can view the issues that caused the scoring rules to be triggered. 
+
+
+
+To override the automatic score assignment in this case, select Set score manually, enter a different score, and click Apply. 
+
+Click the image to enlarge it.
+
+
+SmartScore Technology
+Cortex's SmartScore is an artificial intelligence (AI)-powered case scoring engine designed to combat alert fatigue in cybersecurity teams. Security teams face an overwhelming volume of issues, making it difficult to distinguish critical threats from false alarms. This alert fatigue leads to reduced productivity and increased risk of overlooking genuine security incidents. Conventional scoring methods, relying on static rules and lacking contextual awareness, fail to evolve with the changing security landscape, resulting in high false positives and inefficient resource allocation.
+
+SmartScore Solution
+SmartScore uses AI and machine learning to generate reliable risk scores for security cases. It considers:
+
+
+
+Context analysis
+Case-level feature evaluation
+Statistical prevalence comparison
+Model-based sub-scores
+
+
+The system continuously improves by learning from environmental changes and analyst feedback, ensuring ongoing effectiveness as threat landscapes evolve.
+
+Benefits and Implementation
+SmartScore offers several advantages for Security Operations Centers (SOCs):
+
+
+
+Improved focus on critical threats
+Reduced analyst burnout
+Faster incident response times
+Decreased mean-time-to-respond (MTTR)
+
+
+Users can enable SmartScore through the Cortex console, either alongside existing manual scoring rules or as a replacement. API integration allows incorporation into existing security workflows.
+
+Course Summary
+Now that you've completed this course, you should be able to:
+
+
+Describe how Cortex creates cases
+Work with cases, such as viewing and taking appropriate case actions
+View information on the detail view tabs
+Define case scoring methods and create scoring rules
