@@ -36,6 +36,15 @@ The app's **Question Source** dropdown is driven by the generated `modules` list
 
 ## Common Commands
 
+For a fresh clone, run the app from inside Ubuntu WSL:
+
+```bash
+cd /path/to/CertTestingApp
+python3 -m http.server 8788 --bind 127.0.0.1
+```
+
+Then open `http://localhost:8788/app/`.
+
 Run project commands inside the Ubuntu WSL distro. From PowerShell:
 
 ```powershell

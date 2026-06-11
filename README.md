@@ -4,6 +4,29 @@ Static Cortex XSIAM practice quiz app built from copied quiz exports, generated 
 
 The app runs entirely in the browser and loads its question bank from `data/questions.json`.
 
+## Fresh Clone Quick Start
+
+After cloning the repository, run the app from inside Ubuntu WSL:
+
+```bash
+cd /path/to/CertTestingApp
+python3 -m http.server 8788 --bind 127.0.0.1
+```
+
+Then open:
+
+```text
+http://localhost:8788/app/
+```
+
+If the question source files were changed after cloning, rebuild the generated question bank before starting the server:
+
+```bash
+cd /path/to/CertTestingApp
+python3 scripts/build_question_bank.py
+python3 -m http.server 8788 --bind 127.0.0.1
+```
+
 ## Question Sources
 
 The **Question Source** dropdown is generated from the `module` values in `data/questions.json`.
