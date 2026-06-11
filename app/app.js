@@ -483,7 +483,7 @@ async function loadBank() {
     renderChrome();
     restoreLastAttempt();
   } catch (error) {
-    els.loadStatus.textContent = `Could not load ../data/questions.json. Start a local web server from XSIAM-Questions.`;
+    els.loadStatus.textContent = `Could not load ../data/questions.json. Start a local web server from CertTestingApp.`;
     els.startBtn.disabled = true;
   }
 }

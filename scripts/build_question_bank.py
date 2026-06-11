@@ -12,11 +12,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 QUESTIONS_ROOT = ROOT / "Questions"
 GENERATED_ROOT = ROOT / "GeneratedQuestions"
+TRANSCRIPT_QUIZZES = ROOT / "Transcripts" / "_ALL_QUIZZES.json"
 DEFAULT_OUTPUT = ROOT / "data" / "questions.json"
 DEFAULT_REVIEW = ROOT / "data" / "questions_review.md"
 IGNORED_DIRS = {"app", "data", "scripts", ".git", "__pycache__"}
 QUIZ_MODULE = "Quiz Bank"
 GENERATED_MODULE = "Training Lessons"
+TRANSCRIPT_MODULE = "Transcript Quizzes"
 
 QUESTION_RE = re.compile(r"^Question\s+(\d+)\s+of\s+(\d+)", re.IGNORECASE)
 SCORE_RE = re.compile(r"^Score:\s*\d+$", re.IGNORECASE)
@@ -229,7 +231,109 @@ def load_generated_questions(root: Path) -> tuple[list[dict], list[str]]:
     return questions, warnings
 
 
-def build_bank(root: Path, generated_root: Path = GENERATED_ROOT) -> tuple[list[dict], list[str]]:
+def load_transcript_questions(json_file: Path) -> tuple[list[dict], list[str]]:
+    questions: list[dict] = []
+    warnings: list[str] = []
+
+    if not json_file.exists():
+        return questions, warnings
+
+    try:
+        payload = json.loads(json_file.read_text(encoding="utf-8-sig"))
+    except json.JSONDecodeError as error:
+        return questions, [f"{json_file}: invalid JSON: {error}"]
+
+    items = payload.get("questions", payload) if isinstance(payload, dict) else payload
+    if not isinstance(items, list):
+        return questions, [f"{json_file}: expected a question list or an object with a questions list"]
+
+    source_counts: dict[str, int] = {}
+    for item in items:
+        if isinstance(item, dict):
+            source = item.get("source") or "transcripts"
+            source_counts[source] = source_counts.get(source, 0) + 1
+
+    for index, item in enumerate(items, start=1):
+        if not isinstance(item, dict):
+            warnings.append(f"{json_file}: item {index} is not an object")
+            continue
+
+        raw_options = item.get("options") or []
+        if not isinstance(raw_options, list):
+            warnings.append(f"{json_file}: item {index} options are not a list")
+            raw_options = []
+
+        option_text_by_letter: dict[str, str] = {}
+        options: list[str] = []
+        correct_answers: list[str] = []
+        for option in raw_options:
+            if not isinstance(option, dict):
+                warnings.append(f"{json_file}: item {index} has a non-object option")
+                continue
+
+            letter = str(option.get("letter") or "").strip()
+            text = clean_text(str(option.get("text") or ""))
+            if not text:
+                warnings.append(f"{json_file}: item {index} has an option with no text")
+                continue
+
+            options.append(text)
+            if letter:
+                option_text_by_letter[letter] = text
+            if option.get("correct"):
+                correct_answers.append(text)
+
+        for letter in item.get("correct") or []:
+            if letter not in option_text_by_letter:
+                warnings.append(f"{json_file}: item {index} correct letter {letter} is not in options")
+                continue
+            answer = option_text_by_letter[letter]
+            if answer not in correct_answers:
+                correct_answers.append(answer)
+
+        source = item.get("source") or "transcripts"
+        domain_code = clean_text(str(item.get("domain_code") or ""))
+        domain = clean_text(str(item.get("domain") or ""))
+        category = domain or (f"Domain {domain_code}" if domain_code else clean_text(str(item.get("topic") or source)))
+
+        question = {
+            "id": f"transcript-{item.get('id') or index}",
+            "module": TRANSCRIPT_MODULE,
+            "source_type": "transcript_quiz",
+            "category": category,
+            "source_file": str(json_file.relative_to(ROOT)).replace("\\", "/"),
+            "source_quiz": source,
+            "questionnaire_number": 0,
+            "question_number": index,
+            "total_questions": source_counts.get(source, len(items)),
+            "question": clean_text(str(item.get("question") or "")),
+            "options": options,
+            "correct_answers": correct_answers,
+            "answer_type": "multiple" if len(correct_answers) > 1 else "single",
+            "correct_answer": correct_answers[0] if len(correct_answers) == 1 else None,
+            "domain_code": domain_code,
+            "domain": domain,
+            "topic": clean_text(str(item.get("topic") or "")),
+            "explanation": clean_text(str(item.get("explanation") or "")),
+        }
+
+        if not question["question"]:
+            warnings.append(f"{json_file}: item {index} has no question text")
+        if len(options) < 2:
+            warnings.append(f"{json_file}: item {index} has fewer than two options")
+        if not correct_answers:
+            warnings.append(f"{json_file}: item {index} has no correct answer")
+
+        questions.append(question)
+
+    return questions, warnings
+
+
+def build_bank(
+    root: Path,
+    generated_root: Path = GENERATED_ROOT,
+    transcript_quizzes: Path = TRANSCRIPT_QUIZZES,
+) -> tuple[list[dict], list[str]]:
     questions: list[dict] = []
     warnings: list[str] = []
 
@@ -245,6 +349,10 @@ def build_bank(root: Path, generated_root: Path = GENERATED_ROOT) -> tuple[list[
     generated_questions, generated_warnings = load_generated_questions(generated_root)
     questions.extend(generated_questions)
     warnings.extend(generated_warnings)
+
+    transcript_questions, transcript_warnings = load_transcript_questions(transcript_quizzes)
+    questions.extend(transcript_questions)
+    warnings.extend(transcript_warnings)
 
     return questions, warnings
 
@@ -291,11 +399,12 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Build the XSIAM practice quiz question bank.")
     parser.add_argument("--root", type=Path, default=QUESTIONS_ROOT, help="Folder containing category folders")
     parser.add_argument("--generated-root", type=Path, default=GENERATED_ROOT, help="Folder containing generated question JSON")
+    parser.add_argument("--transcript-quizzes", type=Path, default=TRANSCRIPT_QUIZZES, help="Transcript quiz JSON file")
     parser.add_argument("--json", type=Path, default=DEFAULT_OUTPUT, help="Output JSON path")
     parser.add_argument("--review", type=Path, default=DEFAULT_REVIEW, help="Output Markdown review path")
     args = parser.parse_args()
 
-    questions, warnings = build_bank(args.root, args.generated_root)
+    questions, warnings = build_bank(args.root, args.generated_root, args.transcript_quizzes)
     args.json.parent.mkdir(parents=True, exist_ok=True)
     args.review.parent.mkdir(parents=True, exist_ok=True)
 
