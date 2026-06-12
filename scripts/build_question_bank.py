@@ -247,12 +247,14 @@ def load_transcript_questions(json_file: Path) -> tuple[list[dict], list[str]]:
     if not isinstance(items, list):
         return questions, [f"{json_file}: expected a question list or an object with a questions list"]
 
-    source_counts: dict[str, int] = {}
+    topic_counts: dict[str, int] = {}
     for item in items:
         if isinstance(item, dict):
             source = item.get("source") or "transcripts"
-            source_counts[source] = source_counts.get(source, 0) + 1
+            topic = clean_text(str(item.get("topic") or source))
+            topic_counts[topic] = topic_counts.get(topic, 0) + 1
 
+    topic_seen: dict[str, int] = {}
     for index, item in enumerate(items, start=1):
         if not isinstance(item, dict):
             warnings.append(f"{json_file}: item {index} is not an object")
@@ -292,20 +294,21 @@ def load_transcript_questions(json_file: Path) -> tuple[list[dict], list[str]]:
                 correct_answers.append(answer)
 
         source = item.get("source") or "transcripts"
+        topic = clean_text(str(item.get("topic") or source))
+        topic_seen[topic] = topic_seen.get(topic, 0) + 1
         domain_code = clean_text(str(item.get("domain_code") or ""))
         domain = clean_text(str(item.get("domain") or ""))
-        category = domain or (f"Domain {domain_code}" if domain_code else clean_text(str(item.get("topic") or source)))
 
         question = {
             "id": f"transcript-{item.get('id') or index}",
             "module": TRANSCRIPT_MODULE,
             "source_type": "transcript_quiz",
-            "category": category,
+            "category": topic,
             "source_file": str(json_file.relative_to(ROOT)).replace("\\", "/"),
             "source_quiz": source,
             "questionnaire_number": 0,
-            "question_number": index,
-            "total_questions": source_counts.get(source, len(items)),
+            "question_number": topic_seen[topic],
+            "total_questions": topic_counts.get(topic, len(items)),
             "question": clean_text(str(item.get("question") or "")),
             "options": options,
             "correct_answers": correct_answers,
@@ -313,7 +316,7 @@ def load_transcript_questions(json_file: Path) -> tuple[list[dict], list[str]]:
             "correct_answer": correct_answers[0] if len(correct_answers) == 1 else None,
             "domain_code": domain_code,
             "domain": domain,
-            "topic": clean_text(str(item.get("topic") or "")),
+            "topic": topic,
             "explanation": clean_text(str(item.get("explanation") or "")),
         }
 

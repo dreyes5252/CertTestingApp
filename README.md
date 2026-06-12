@@ -37,7 +37,7 @@ Current source modules:
 - `Training Lessons` - reviewed lesson-generated JSON questions from `GeneratedQuestions/`.
 - `Transcript Quizzes` - converted questions from `Transcripts/_ALL_QUIZZES.json`.
 
-Category scoring is based on each question's `category` field. For transcript quizzes, categories are mapped to the transcript domain labels, such as `2.3 Marketplace content packs`, so results are useful for exam-domain review.
+Category scoring is based on each question's `category` field. For transcript quizzes, each question's `topic` value is used as the category so results can be reviewed by lesson/topic.
 
 ## Project Layout
 
@@ -101,7 +101,7 @@ pkill -f "python3 -m http.server 8788"
 ## Features
 
 - Randomized quiz sessions up to 60 questions.
-- Question source selector for keeping copied quiz questions, generated lesson questions, and transcript quizzes separate.
+- Question source selector for keeping copied quiz questions, generated lesson questions, and transcript topics separate.
 - Category-aware question bank based on `Questions/` subfolder names.
 - Single-answer and multi-answer questions.
 - Final score and review screen.
@@ -146,7 +146,7 @@ Transcript quiz exports should be placed at:
 Transcripts/_ALL_QUIZZES.json
 ```
 
-The builder expects either a list of question objects or an object with a `questions` list. Transcript options are converted from lettered option objects into the app's plain text option format, and correct answer letters are mapped to answer text.
+The builder expects either a list of question objects or an object with a `questions` list. Transcript options are converted from lettered option objects into the app's plain text option format, correct answer letters are mapped to answer text, and each transcript question's `topic` value becomes its app category under the `Transcript Quizzes` source module.
 
 After replacing or updating the transcript export, run:
 

@@ -5293,7 +5293,7 @@ Correct: It helps analysts construct or understand XQL syntax and query elements
 
 ## Transcript Quizzes
 
-### 2.3 Marketplace content packs
+### Automation Foundations
 
 #### Transcripts/_ALL_QUIZZES.json
 
@@ -5341,10 +5341,6 @@ Which content pack capability is available in the Full Experience (Cortex XSIAM)
 
 Correct: Classifiers and Mappers
 
-### 2.4 automation workflow (2.4.2 playbook tasks)
-
-#### Transcripts/_ALL_QUIZZES.json
-
 ##### Question 5
 
 In the Automation Workflow table, which step is described as using filters to isolate relevant information and transformers to convert timestamps?
@@ -5356,10 +5352,6 @@ In the Automation Workflow table, which step is described as using filters to is
 
 Correct: Data Analysis
 
-### 2.4 automation workflow (2.4.3 customize)
-
-#### Transcripts/_ALL_QUIZZES.json
-
 ##### Question 6
 
 What happens to a script when it is detached from its Marketplace Content Pack?
@@ -5370,10 +5362,6 @@ What happens to a script when it is detached from its Marketplace Content Pack?
 [ ] The script becomes read-only and cannot be run in playbooks.
 
 Correct: The script stops receiving future content pack updates.
-
-### 2.4 automation workflow (2.4.2 playbook tasks)
-
-#### Transcripts/_ALL_QUIZZES.json
 
 ##### Question 7
 
@@ -5387,10 +5375,6 @@ In which programming languages can Cortex scripts be written? (Choose two.)
 
 Correct: Python; PowerShell
 
-### 3.3 detection rules (correlation)
-
-#### Transcripts/_ALL_QUIZZES.json
-
 ##### Question 8
 
 What is the specific purpose of Correlation Rules within Cortex content packs, as distinguished from Data Model Rules?
@@ -5402,11 +5386,11 @@ What is the specific purpose of Correlation Rules within Cortex content packs, a
 
 Correct: Correlation Rules use the XQL engine to automate detection of potential threats from multiple events; Data Model Rules normalize and enrich data into a standardized schema.
 
-### 1.4.2 Broker VM
+### Broker VM Overview
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 9
+##### Question 1
 
 How often does the Local Agent Settings applet retrieve the latest installers and content files from Cortex?
 
@@ -5417,7 +5401,7 @@ How often does the Local Agent Settings applet retrieve the latest installers an
 
 Correct: Every 15 minutes
 
-##### Question 10
+##### Question 2
 
 What is the maximum number of XDR agents that the Local Agent Settings applet can route through a single Broker VM as a transparent proxy?
 
@@ -5428,7 +5412,7 @@ What is the maximum number of XDR agents that the Local Agent Settings applet ca
 
 Correct: 50,000
 
-##### Question 11
+##### Question 3
 
 On which default port do agents connect to the Broker VM when using the Local Agent Settings applet?
 
@@ -5439,7 +5423,7 @@ On which default port do agents connect to the Broker VM when using the Local Ag
 
 Correct: 8888
 
-##### Question 12
+##### Question 4
 
 After the Syslog Collector applet server stores received logs in memory, what is the correct sequence of subsequent processing steps?
 
@@ -5450,7 +5434,7 @@ After the Syslog Collector applet server stores received logs in memory, what is
 
 Correct: Aggregator aggregates and compresses logs into batches → Dispatcher reads a batch and sends it to Cortex
 
-##### Question 13
+##### Question 5
 
 How long does the Local Agent Settings applet cache store installer and content files since the last request from an agent?
 
@@ -5461,7 +5445,7 @@ How long does the Local Agent Settings applet cache store installer and content 
 
 Correct: 30 days
 
-##### Question 14
+##### Question 6
 
 What scanning protocols does the Network Mapper applet use when performing network scans to find unmanaged devices?
 
@@ -5472,7 +5456,7 @@ What scanning protocols does the Network Mapper applet use when performing netwo
 
 Correct: ICMP or TCP SYN scans
 
-##### Question 15
+##### Question 7
 
 At what frequency can Network Mapper scans be scheduled? (Choose two.)
 
@@ -5484,7 +5468,7 @@ At what frequency can Network Mapper scans be scheduled? (Choose two.)
 
 Correct: Daily; Weekly
 
-##### Question 16
+##### Question 8
 
 Which two Broker VM applets are specifically listed as part of the Cortex Asset Management feature?
 
@@ -5495,7 +5479,11 @@ Which two Broker VM applets are specifically listed as part of the Cortex Asset 
 
 Correct: Network Mapper and Pathfinder
 
-##### Question 17
+### Broker VM Setup
+
+#### Transcripts/_ALL_QUIZZES.json
+
+##### Question 1
 
 For which hypervisor platform does Palo Alto Networks provide a VMDK Broker VM image?
 
@@ -5506,7 +5494,7 @@ For which hypervisor platform does Palo Alto Networks provide a VMDK Broker VM i
 
 Correct: Amazon Web Services
 
-##### Question 18
+##### Question 2
 
 When a registration token is generated from the Cortex management console to pair a Broker VM, for how long is that token valid?
 
@@ -5517,7 +5505,7 @@ When a registration token is generated from the Cortex management console to pai
 
 Correct: 24 hours
 
-##### Question 19
+##### Question 3
 
 What is the default password used to log in to a freshly loaded Broker VM OVA image for the first time?
 
@@ -5528,7 +5516,7 @@ What is the default password used to log in to a freshly loaded Broker VM OVA im
 
 Correct: `InitialPassw0rd`
 
-##### Question 20
+##### Question 4
 
 Which URL format is used to access the Broker VM local configuration portal for Broker VM Version 19 and above?
 
@@ -5539,7 +5527,7 @@ Which URL format is used to access the Broker VM local configuration portal for 
 
 Correct: `https://<broker-vm-ip>:4443`
 
-##### Question 21
+##### Question 5
 
 What are the two prerequisites that must be deactivated on a Broker VM before it can be added to a High Availability cluster? (Choose two.)
 
@@ -5551,11 +5539,7 @@ What are the two prerequisites that must be deactivated on a Broker VM before it
 
 Correct: Pathfinder; AppSec Transporter
 
-### 4.2 software component updates (Broker VM)
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 22
+##### Question 6
 
 When configuring a Broker VM auto-upgrade time window, what is the minimum duration that window must be?
 
@@ -5566,11 +5550,7 @@ When configuring a Broker VM auto-upgrade time window, what is the minimum durat
 
 Correct: Four hours
 
-### 1.4.2 Broker VM
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 23
+##### Question 7
 
 A Cortex administrator needs to apply the same applet settings from one Broker VM to a newly deployed Broker VM. Which Broker VM page action achieves this?
 
@@ -5581,7 +5561,7 @@ A Cortex administrator needs to apply the same applet settings from one Broker V
 
 Correct: Right-click the target Broker VM, select Import Configuration, and choose the source Broker VM.
 
-##### Question 24
+##### Question 8
 
 In the context of creating a Broker VM HA cluster, which statement about the number of allowable clusters and nodes is accurate?
 
@@ -5592,11 +5572,11 @@ In the context of creating a Broker VM HA cluster, which statement about the num
 
 Correct: There is no limit to the number of clusters and nodes that can be added.
 
-### 2.4 automation workflow (2.4.2 playbook tasks)
+### Cortex: Advanced Response Actions
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 25
+##### Question 1
 
 Remediation Suggestions in Cortex can revert changes made by malicious processes. Which operating system does this action support?
 
@@ -5607,7 +5587,7 @@ Remediation Suggestions in Cortex can revert changes made by malicious processes
 
 Correct: Windows only
 
-##### Question 26
+##### Question 2
 
 From which three locations in the Cortex management console can the Remediation Suggestions action be accessed? (Choose three.)
 
@@ -5619,7 +5599,7 @@ From which three locations in the Cortex management console can the Remediation 
 
 Correct: Right-click menu of a process node in the Causality View; Actions menu of the Causality View; Three-dot menu of a case
 
-##### Question 27
+##### Question 3
 
 In the context of Cortex Remote Script Executions, what is an "entry point"?
 
@@ -5630,7 +5610,7 @@ In the context of Cortex Remote Script Executions, what is an "entry point"?
 
 Correct: The name of the function called within the script
 
-##### Question 28
+##### Question 4
 
 When viewing the results of a completed Endpoint Script Execution in Action Center, which right-click option provides details such as the Return Value for each targeted endpoint?
 
@@ -5641,7 +5621,7 @@ When viewing the results of a completed Endpoint Script Execution in Action Cent
 
 Correct: Additional data
 
-##### Question 29
+##### Question 5
 
 What format is the script definition file that can be downloaded from the Scripts Library?
 
@@ -5652,11 +5632,7 @@ What format is the script definition file that can be downloaded from the Script
 
 Correct: JSON
 
-### 2.2 automation & feed integrations
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 30
+##### Question 6
 
 Cortex's EDL service exposes two types of block lists over HTTPS. What are those two types?
 
@@ -5667,7 +5643,7 @@ Cortex's EDL service exposes two types of block lists over HTTPS. What are those
 
 Correct: IP addresses and domain names
 
-##### Question 31
+##### Question 7
 
 An analyst wants to add a malicious IP address to an EDL directly from the IP View within the management console. Which method supports this?
 
@@ -5678,7 +5654,7 @@ An analyst wants to add a malicious IP address to an EDL directly from the IP Vi
 
 Correct: Actions Menu within IP View
 
-##### Question 32
+##### Question 8
 
 When the EDL global configuration is set in Cortex, what is the format of the URL used to serve the IP address block list?
 
@@ -5689,11 +5665,11 @@ When the EDL global configuration is set in Cortex, what is the format of the UR
 
 Correct: `https://edl<subdomain>.xdr<region>.paloaltonetworks.com/block_list?type=ip`
 
-### 3.3 detection rules (IOC/BIOC)
+### Cortex: Alerting and Detection
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 33
+##### Question 1
 
 According to the source, Palo Alto Networks does NOT provide IOC rules but DOES provide which type of globally distributed rules?
 
@@ -5704,7 +5680,7 @@ According to the source, Palo Alto Networks does NOT provide IOC rules but DOES 
 
 Correct: Global BIOC rules
 
-##### Question 34
+##### Question 2
 
 Which attribute of a BIOC rule uniquely identifies it as a global rule versus a user-created rule?
 
@@ -5715,7 +5691,7 @@ Which attribute of a BIOC rule uniquely identifies it as a global rule versus a 
 
 Correct: The Global Rule ID field is populated.
 
-##### Question 35
+##### Question 3
 
 In the Cortex IOC Rules table, what does the "Expiration Date" attribute of an IOC rule control?
 
@@ -5726,11 +5702,7 @@ In the Cortex IOC Rules table, what does the "Expiration Date" attribute of an I
 
 Correct: The date and time at which the IOC will automatically be removed from the Cortex instance.
 
-### 3.3 detection rules (correlation, IOC/BIOC)
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 36
+##### Question 4
 
 How do Correlation Rules differ from BIOC rules in their approach to threat detection in Cortex?
 
@@ -5741,11 +5713,7 @@ How do Correlation Rules differ from BIOC rules in their approach to threat dete
 
 Correct: Correlation Rules analyze correlations among multiple events from multiple sources using a scheduled XQL-based engine; BIOCs identify behavioral indicators on a per-event basis.
 
-### 3.4 incident & alert layout
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 37
+##### Question 5
 
 According to the source, what is the key distinction in "response intensity" between Issues and Cases in Cortex?
 
@@ -5756,11 +5724,7 @@ According to the source, what is the key distinction in "response intensity" bet
 
 Correct: Issues involve validating the events themselves, whereas cases demand a comprehensive and structured response that may require coordination of multiple teams.
 
-### 3.3 detection rules (scoring)
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 38
+##### Question 6
 
 The Analytics Engine in Cortex creates three types of profiles for endpoints and users. Which of the following correctly names all three profile types?
 
@@ -5771,11 +5735,7 @@ The Analytics Engine in Cortex creates three types of profiles for endpoints and
 
 Correct: Peer group profiles, temporal profiles, and entity classification profiles
 
-### 3.3 detection rules (correlation)
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 39
+##### Question 7
 
 When accessing the XQL development environment via a browser, what must be appended after the base tenant URL?
 
@@ -5786,7 +5746,7 @@ When accessing the XQL development environment via a browser, what must be appen
 
 Correct: `/xql`
 
-##### Question 40
+##### Question 8
 
 In XQL, which two stages are specifically identified in the source as the stages that can use functions for data transformations?
 
@@ -5797,11 +5757,11 @@ In XQL, which two stages are specifically identified in the source as the stages
 
 Correct: `filter` and `alter`
 
-### D2 Integration & Automation
+### Cortex: Analysis and Collaboration
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 41
+##### Question 1
 
 Which statement accurately distinguishes the Case War Room from the Issue War Room?
 
@@ -5812,7 +5772,7 @@ Which statement accurately distinguishes the Case War Room from the Issue War Ro
 
 Correct: The Case War Room manages and coordinates response to confirmed security cases, while the Issue War Room is designed for initial triage and investigation of a single security issue.
 
-##### Question 42
+##### Question 2
 
 An analyst wants to notify a colleague and add them to the case team directly from the War Room CLI. Which command prefix should be used?
 
@@ -5823,7 +5783,7 @@ An analyst wants to notify a colleague and add them to the case team directly fr
 
 Correct: @
 
-##### Question 43
+##### Question 3
 
 What is the keyboard shortcut described in the source for focusing the CLI field in the War Room?
 
@@ -5834,7 +5794,7 @@ What is the keyboard shortcut described in the source for focusing the CLI field
 
 Correct: Ctrl+;
 
-##### Question 44
+##### Question 4
 
 In the Cortex War Room, which of the following filter categories can be used to narrow down War Room entries? (Choose two.)
 
@@ -5845,7 +5805,7 @@ In the Cortex War Room, which of the following filter categories can be used to 
 
 Correct: Notes; Files
 
-##### Question 45
+##### Question 5
 
 A playbook task requires data produced by a prior automation step. How is that data made available to the subsequent task?
 
@@ -5856,7 +5816,7 @@ A playbook task requires data produced by a prior automation step. How is that d
 
 Correct: It is written to the context data repository, from which the subsequent task retrieves it.
 
-##### Question 46
+##### Question 6
 
 Which action available on a War Room entry allows an analyst to associate that entry with an open task in the work plan?
 
@@ -5867,7 +5827,7 @@ Which action available on a War Room entry allows an analyst to associate that e
 
 Correct: Attach to Task
 
-##### Question 47
+##### Question 7
 
 Context data in Cortex is described as serving two essential functions. Which pair correctly identifies both functions?
 
@@ -5878,7 +5838,7 @@ Context data in Cortex is described as serving two essential functions. Which pa
 
 Correct: Capture data and share data
 
-##### Question 48
+##### Question 8
 
 Which of the following statements about context data is accurate according to the source?
 
@@ -5889,11 +5849,11 @@ Which of the following statements about context data is accurate according to th
 
 Correct: Context data is stored per issue and/or case and is formatted as JSON.
 
-### D3 Content Optimization
+### Cortex: Analyzing Issue Causality
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 49
+##### Question 1
 
 What does the highlighted "attack zone" region in the Causality View represent?
 
@@ -5904,7 +5864,7 @@ What does the highlighted "attack zone" region in the Causality View represent?
 
 Correct: All processes directly or indirectly involved in the attack, which the Cortex XDR agent terminates to neutralize the threat.
 
-##### Question 50
+##### Question 2
 
 What is the relationship between a Causality Group Owner (CGO) and its Causality Instance (CI)?
 
@@ -5915,7 +5875,7 @@ What is the relationship between a Causality Group Owner (CGO) and its Causality
 
 Correct: The CGO is the ancestor of all processes in the causality instance and is identified with the same CID as the CI.
 
-##### Question 51
+##### Question 3
 
 How does the Cortex XDR agent use "spawners" during runtime to build causality instances?
 
@@ -5926,7 +5886,7 @@ How does the Cortex XDR agent use "spawners" during runtime to build causality i
 
 Correct: Each child process of a spawner is identified as a CGO, and a new causality instance is created starting from that CGO and including all descendant processes.
 
-##### Question 52
+##### Question 4
 
 Which of the following are listed as common examples of Windows final spawners in the source? (Choose two.)
 
@@ -5937,7 +5897,7 @@ Which of the following are listed as common examples of Windows final spawners i
 
 Correct: chrome.exe; firefox.exe
 
-##### Question 53
+##### Question 5
 
 What does the number displayed inside the circle of a process node in the Causality View indicate?
 
@@ -5948,7 +5908,7 @@ What does the number displayed inside the circle of a process node in the Causal
 
 Correct: The number of child processes belonging to that node.
 
-##### Question 54
+##### Question 6
 
 An injection node in the Causality View has two clickable parts. Which statement correctly describes the difference between the two parts?
 
@@ -5959,7 +5919,7 @@ An injection node in the Causality View has two clickable parts. Which statement
 
 Correct: The injection part shows events performed on behalf of processes inside the CI; the non-injection part shows events performed on behalf of processes outside the CI.
 
-##### Question 55
+##### Question 7
 
 In the Timeline View, what color represents Cortex issues (as opposed to BIOCs/correlation issues or informational activities)?
 
@@ -5970,7 +5930,7 @@ In the Timeline View, what color represents Cortex issues (as opposed to BIOCs/c
 
 Correct: Red
 
-##### Question 56
+##### Question 8
 
 By default, what time period does the Timeline View time scale display, and what is it anchored to?
 
@@ -5981,7 +5941,11 @@ By default, what time period does the Timeline View time scale display, and what
 
 Correct: 24 hours, adjusted to the start time of the investigation.
 
-##### Question 57
+### Cortex: Basic Rules
+
+#### Transcripts/_ALL_QUIZZES.json
+
+##### Question 1
 
 Which two datasets can BIOC XQL rules query? (Choose two.)
 
@@ -5992,7 +5956,7 @@ Which two datasets can BIOC XQL rules query? (Choose two.)
 
 Correct: xdr_data; cloud_audit_log
 
-##### Question 58
+##### Question 2
 
 A security engineer wants to disable a BIOC rule that is also tied to a prevention profile. They want to stop prevention on the endpoint but keep server-side detection active. Which option should they choose in the Disable dialog?
 
@@ -6003,7 +5967,7 @@ A security engineer wants to disable a BIOC rule that is also tied to a preventi
 
 Correct: Agent disabling the Agent removes prevention while detection remains on the server.
 
-##### Question 59
+##### Question 3
 
 A new BIOC rule is created with Informational severity. Where will the generated issues appear?
 
@@ -6014,11 +5978,7 @@ A new BIOC rule is created with Informational severity. Where will the generated
 
 Correct: They will be visible only in Insights, not in the Issues table.
 
-### D4 Maintenance & Troubleshooting
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 60
+##### Question 4
 
 When creating a suppression rule for IOC/BIOC rules, all specified process attribute-value pairs in the Rule Conditions must match simultaneously. What logical operation does this represent?
 
@@ -6029,11 +5989,7 @@ When creating a suppression rule for IOC/BIOC rules, all specified process attri
 
 Correct: Boolean AND all specified values must match for the exception to apply.
 
-### D3 Content Optimization
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 61
+##### Question 5
 
 Which attribute of a BIOC rule, when populated, indicates that the rule was created by the Palo Alto Networks Research team rather than a user or imported file?
 
@@ -6044,7 +6000,7 @@ Which attribute of a BIOC rule, when populated, indicates that the rule was crea
 
 Correct: Global Rule ID
 
-##### Question 62
+##### Question 6
 
 Cortex automatically disables a correlation rule when it reaches a specific hit threshold over a 24-hour period. What is that threshold?
 
@@ -6055,7 +6011,7 @@ Cortex automatically disables a correlation rule when it reaches a specific hit 
 
 Correct: 5,000 hits
 
-##### Question 63
+##### Question 7
 
 What distinguishes a Correlation Rule from a BIOC rule in terms of data source scope?
 
@@ -6066,7 +6022,7 @@ What distinguishes a Correlation Rule from a BIOC rule in terms of data source s
 
 Correct: Correlation Rules can analyze data from multiple sources including third-party datasets; BIOC rules are limited to xdr_data and cloud_audit_log.
 
-##### Question 64
+##### Question 8
 
 A Cortex IOC rule does not have a Name attribute. Which field ensures the uniqueness of each entry in the IOC Rules table?
 
@@ -6077,11 +6033,11 @@ A Cortex IOC rule does not have a Name attribute. Which field ensures the unique
 
 Correct: Indicator
 
-### D1 Planning & Installation
+### Cortex: Bring Your Own Keys (BYOK)
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 65
+##### Question 1
 
 Which cloud platform hosts the dedicated Key Management System (KMS) used by Cortex BYOK?
 
@@ -6092,7 +6048,7 @@ Which cloud platform hosts the dedicated Key Management System (KMS) used by Cor
 
 Correct: Google Cloud Platform (GCP)
 
-##### Question 66
+##### Question 2
 
 For which product types is BYOK available only via a Feature Flag (not all license types)?
 
@@ -6103,11 +6059,7 @@ For which product types is BYOK available only via a Feature Flag (not all licen
 
 Correct: XDR and XSOAR
 
-### D4 Maintenance & Troubleshooting
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 67
+##### Question 3
 
 What happens to existing tenant data when a BYOK key rotation is completed?
 
@@ -6118,11 +6070,7 @@ What happens to existing tenant data when a BYOK key rotation is completed?
 
 Correct: Existing data remains encrypted with the old key; only newly generated data uses the new key.
 
-### D1 Planning & Installation
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 68
+##### Question 4
 
 In the BYOK key import workflow, what is the purpose of the wrapping key (public key) used during the import job?
 
@@ -6133,11 +6081,7 @@ In the BYOK key import workflow, what is the purpose of the wrapping key (public
 
 Correct: It is used to wrap the key material during transit, and access to it is strictly limited to the scope of the import job.
 
-### D4 Maintenance & Troubleshooting
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 69
+##### Question 5
 
 An administrator has paused a key rotation mid-process. What action must they take to complete the rotation?
 
@@ -6148,11 +6092,7 @@ An administrator has paused a key rotation mid-process. What action must they ta
 
 Correct: Select "Continue Rotation" from the additional options menu next to the tenant in Cortex Gateway.
 
-### D1 Planning & Installation
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 70
+##### Question 6
 
 Which role is specifically required to disable encryption keys and deactivate a tenant in Cortex BYOK?
 
@@ -6163,7 +6103,7 @@ Which role is specifically required to disable encryption keys and deactivate a 
 
 Correct: Account Admin
 
-##### Question 71
+##### Question 7
 
 What encryption standard does the Cortex dedicated KMS use to encrypt user data at rest?
 
@@ -6174,11 +6114,7 @@ What encryption standard does the Cortex dedicated KMS use to encrypt user data 
 
 Correct: AES-256
 
-### D4 Maintenance & Troubleshooting
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 72
+##### Question 8
 
 What is one direct consequence of disabling all encryption keys on a Cortex tenant besides making the tenant inaccessible?
 
@@ -6189,11 +6125,11 @@ What is one direct consequence of disabling all encryption keys on a Cortex tena
 
 Correct: Agents may be prevented from receiving updates to policies, configurations, and crucial information, and data loss may result.
 
-### D3 Content Optimization
+### Cortex: Building and Managing Queries
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 73
+##### Question 1
 
 In the correct threat-hunting workflow described in the source, what is the intended sequence of tools?
 
@@ -6204,7 +6140,7 @@ In the correct threat-hunting workflow described in the source, what is the inte
 
 Correct: Query Builder → Causality and Timeline → BIOCs
 
-##### Question 74
+##### Question 2
 
 Which dataset does the Basic Query template use by default in the Query Builder?
 
@@ -6215,7 +6151,7 @@ Which dataset does the Basic Query template use by default in the Query Builder?
 
 Correct: xdr_data
 
-##### Question 75
+##### Question 3
 
 What attribute uniquely identifies each scheduled query run in the Query Center table, distinguishing multiple executions of the same recurring query?
 
@@ -6226,7 +6162,7 @@ What attribute uniquely identifies each scheduled query run in the Query Center 
 
 Correct: Execution ID
 
-##### Question 76
+##### Question 4
 
 What is the unique identifier used in the Scheduled Queries table (as opposed to the Query Center table)?
 
@@ -6237,7 +6173,7 @@ What is the unique identifier used in the Scheduled Queries table (as opposed to
 
 Correct: Query ID
 
-##### Question 77
+##### Question 5
 
 In the Legacy Query Builder, which entity type would an analyst select to search for actions such as "create_registry_key" or "set_registry_value"?
 
@@ -6248,7 +6184,7 @@ In the Legacy Query Builder, which entity type would an analyst select to search
 
 Correct: Registry
 
-##### Question 78
+##### Question 6
 
 When an analyst rerunning a query from the Query Center results page creates a new query, which attribute will be newly generated for the rerun?
 
@@ -6259,7 +6195,7 @@ When an analyst rerunning a query from the Query Center results page creates a n
 
 Correct: Query ID a new ID is generated based on the creation timestamp.
 
-##### Question 79
+##### Question 7
 
 A newly scheduled query is not visible in the Query Center immediately after it is created. Where should the analyst look to find it before its first scheduled run?
 
@@ -6270,7 +6206,7 @@ A newly scheduled query is not visible in the Query Center immediately after it 
 
 Correct: Scheduled Queries page
 
-##### Question 80
+##### Question 8
 
 In the Legacy Query Builder, which two actions can be specified for the Process entity type? (Choose two.)
 
@@ -6281,11 +6217,11 @@ In the Legacy Query Builder, which two actions can be specified for the Process 
 
 Correct: Execution; Injection
 
-### D3 Content Optimization — 3.4 Incident & alert layout
+### Cortex: Case Management
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 81
+##### Question 1
 
 A Cortex case stops accepting new issues and subsequent related issues spill over into a new case when it accrues how many issues?
 
@@ -6296,7 +6232,7 @@ A Cortex case stops accepting new issues and subsequent related issues spill ove
 
 Correct: 1,000
 
-##### Question 82
+##### Question 2
 
 Which of the following is a valid resolution reason when closing a case in Cortex?
 
@@ -6307,7 +6243,7 @@ Which of the following is a valid resolution reason when closing a case in Corte
 
 Correct: Known Issue
 
-##### Question 83
+##### Question 3
 
 In the Case SLA configuration, which field type counts *forward* while the SLA field counts *backward*?
 
@@ -6318,11 +6254,7 @@ In the Case SLA configuration, which field type counts *forward* while the SLA f
 
 Correct: Timer Field
 
-### D1 Planning & Installation — 1.5 Roles/permissions/access
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 84
+##### Question 4
 
 To create custom case fields in Cortex, which navigation path is correct?
 
@@ -6333,11 +6265,7 @@ To create custom case fields in Cortex, which navigation path is correct?
 
 Correct: Settings > Configurations > Object Setup > Cases > Fields
 
-### D3 Content Optimization — 3.4 Incident & alert layout
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 85
+##### Question 5
 
 What visual indicator distinguishes a case whose SLA is in breach from one that is still within its SLA?
 
@@ -6348,11 +6276,7 @@ What visual indicator distinguishes a case whose SLA is in breach from one that 
 
 Correct: The SLA field shows a red time clock icon for breach and a black time clock icon for compliant.
 
-### D2 Integration & Automation — 2.4 Automation workflow/playbook/customize/debug
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 86
+##### Question 6
 
 Which War Room CLI command is used to update Timer and SLA fields within an open case?
 
@@ -6363,11 +6287,7 @@ Which War Room CLI command is used to update Timer and SLA fields within an open
 
 Correct: `!RefreshIncidentDynamicCustomFields`
 
-### D3 Content Optimization — 3.4 Incident & alert layout
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 87
+##### Question 7
 
 Which two primary methods can be used to view SLA data on a case? (Choose two.)
 
@@ -6379,11 +6299,7 @@ Which two primary methods can be used to view SLA data on a case? (Choose two.)
 
 Correct: The XQL Query Center; The Cases Table view; A custom case layout containing the SLA fields
 
-### D3 Content Optimization — 3.3 Detection rules/scoring
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 88
+##### Question 8
 
 SMARTSCORE in Cortex case scoring considers prevalence data from the last 30 days for one specific insight. Which insight uses that 30-day window?
 
@@ -6394,11 +6310,11 @@ SMARTSCORE in Cortex case scoring considers prevalence data from the last 30 day
 
 Correct: Prevalence of incidents associated with alerts in comparison to other Cortex customers
 
-### D1 Planning & Installation — 1.5 Roles/permissions/access
+### Cortex Cloud Features: Graph Search
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 89
+##### Question 1
 
 To use Graph Search in Cortex Cloud, a user must have View and Edit RBAC permissions for which two features?
 
@@ -6409,11 +6325,7 @@ To use Graph Search in Cortex Cloud, a user must have View and Edit RBAC permiss
 
 Correct: Query Center and the Personal Query Library
 
-### D3 Content Optimization — 3.1 Parsing rules / D2 Integration & Automation — 2.1 Onboard data sources
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 90
+##### Question 2
 
 In a Graph Search custom query, which operator is used to filter a set of nodes based on specific attributes or conditions after they have been selected?
 
@@ -6424,11 +6336,7 @@ In a Graph Search custom query, which operator is used to filter a set of nodes 
 
 Correct: WHERE
 
-### D3 Content Optimization — 3.2 Data modeling
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 91
+##### Question 3
 
 When nodes in Graph Search results are automatically grouped, what is the minimum number of nodes that triggers grouping?
 
@@ -6439,11 +6347,7 @@ When nodes in Graph Search results are automatically grouped, what is the minimu
 
 Correct: Five
 
-### D2 Integration & Automation — 2.3 Marketplace content packs
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 92
+##### Question 4
 
 Which of the following is classified as a *Conditional* component of Graph Search, rather than a Core component?
 
@@ -6454,11 +6358,7 @@ Which of the following is classified as a *Conditional* component of Graph Searc
 
 Correct: The Query Library
 
-### D2 Integration & Automation — 2.1 Onboard data sources
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 93
+##### Question 5
 
 During the Graph Search Data Lifecycle, from which two sources is data ingested to populate the Graph Database? (Choose two.)
 
@@ -6470,11 +6370,7 @@ During the Graph Search Data Lifecycle, from which two sources is data ingested 
 
 Correct: The Unified Inventory; The Finding Table
 
-### D3 Content Optimization — 3.5 Dashboards & reports
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 94
+##### Question 6
 
 When saving a custom Graph Search query to the Query Library, which field is *optional* rather than required?
 
@@ -6485,11 +6381,7 @@ When saving a custom Graph Search query to the Query Library, which field is *op
 
 Correct: Query Description
 
-### D3 Content Optimization — 3.2 Data modeling
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 95
+##### Question 7
 
 In the Graph Search output, how is a *grouped* finding node visually represented, as distinct from a single finding node?
 
@@ -6500,11 +6392,7 @@ In the Graph Search output, how is a *grouped* finding node visually represented
 
 Correct: As overlapping diamonds
 
-### D3 Content Optimization — 3.5 Dashboards & reports
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 96
+##### Question 8
 
 What is the default format for viewing Graph Search query results?
 
@@ -6515,11 +6403,11 @@ What is the default format for viewing Graph Search query results?
 
 Correct: Graph
 
-### D1 Planning & Installation — 1.2 Deployment requirements
+### Cortex: Compliance in CyberSecurity
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 97
+##### Question 1
 
 Which compliance regulation specifically focuses on protecting the data of European citizens and defines concepts such as personal data, data controllers, and liability to the misuser?
 
@@ -6530,7 +6418,7 @@ Which compliance regulation specifically focuses on protecting the data of Europ
 
 Correct: GDPR
 
-##### Question 98
+##### Question 2
 
 Which NIST Special Publication sets standards specifically for safeguarding sensitive information on *federal contractors'* IT systems and networks?
 
@@ -6541,7 +6429,7 @@ Which NIST Special Publication sets standards specifically for safeguarding sens
 
 Correct: NIST SP 800-171
 
-##### Question 99
+##### Question 3
 
 Palo Alto Networks' C5 compliance standard is specifically relevant to customers in which country?
 
@@ -6552,11 +6440,7 @@ Palo Alto Networks' C5 compliance standard is specifically relevant to customers
 
 Correct: Germany
 
-### D1 Planning & Installation — 1.3 Communications
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 100
+##### Question 4
 
 Before a customer can request a Security Compliance Report from Palo Alto Networks through the Enterprise Portal, which prerequisite must be completed?
 
@@ -6567,11 +6451,7 @@ Before a customer can request a Security Compliance Report from Palo Alto Networ
 
 Correct: Sign a non-disclosure agreement (NDA)
 
-### D1 Planning & Installation — 1.2 Deployment requirements
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 101
+##### Question 5
 
 Which compliance framework was developed by the American Institute of Certified Public Accountants (AICPA) to ensure third-party service providers store and process client data securely?
 
@@ -6582,11 +6462,7 @@ Which compliance framework was developed by the American Institute of Certified 
 
 Correct: SOC 2
 
-### D3 Content Optimization — 3.5 Dashboards & reports
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 102
+##### Question 6
 
 How does Cortex XSIAM generate evidence for compliance audits within its dashboards and reports?
 
@@ -6597,11 +6473,7 @@ How does Cortex XSIAM generate evidence for compliance audits within its dashboa
 
 Correct: By using custom XQL queries that pull information from relevant data sources
 
-### D1 Planning & Installation — 1.2 Deployment requirements
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 103
+##### Question 7
 
 Which ISO standards does Palo Alto Networks explicitly state it supports for the International Organization for Standardization (ISO) compliance program? (Choose two.)
 
@@ -6613,7 +6485,7 @@ Which ISO standards does Palo Alto Networks explicitly state it supports for the
 
 Correct: ISO 27001; ISO 27701
 
-##### Question 104
+##### Question 8
 
 According to the Cortex compliance module, which compliance standard governs requirements that merchants must meet in order to *store, process, or transmit credit card data*?
 
@@ -6624,7 +6496,11 @@ According to the Cortex compliance module, which compliance standard governs req
 
 Correct: PCI DSS
 
-##### Question 105
+### Cortex: Components
+
+#### Transcripts/_ALL_QUIZZES.json
+
+##### Question 1
 
 Cortex instance activation is performed in which cloud platform?
 
@@ -6635,11 +6511,7 @@ Cortex instance activation is performed in which cloud platform?
 
 Correct: Google Cloud Platform (GCP)
 
-### D1 Planning & Installation — 1.4 Install agents/Broker VM/Engine
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 106
+##### Question 2
 
 How long can a Cortex instance activation take to complete?
 
@@ -6650,11 +6522,7 @@ How long can a Cortex instance activation take to complete?
 
 Correct: Up to one hour
 
-### D1 Planning & Installation — 1.5 Roles/permissions/access
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 107
+##### Question 3
 
 What authentication protocol provides a consistent sign-in method across CSP, Cortex Gateway, and the Cortex management console?
 
@@ -6665,7 +6533,7 @@ What authentication protocol provides a consistent sign-in method across CSP, Co
 
 Correct: Single sign-on (SSO)
 
-##### Question 108
+##### Question 4
 
 For external scripts that use the Cortex API, how is authentication provided?
 
@@ -6676,11 +6544,7 @@ For external scripts that use the Cortex API, how is authentication provided?
 
 Correct: Through API key generation
 
-### D4 Maintenance & Troubleshooting — 4.2 Software updates
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 109
+##### Question 5
 
 When downloading a content update (dynamic update) from the Customer Support Portal, where do you navigate to find the update?
 
@@ -6691,11 +6555,7 @@ When downloading a content update (dynamic update) from the Customer Support Por
 
 Correct: Updates > Dynamic Updates > Traps
 
-### D1 Planning & Installation — 1.2 Deployment requirements
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 110
+##### Question 6
 
 Where are Cortex and Strata Logging Service licenses (such as serial numbers and expiration dates) viewable in the Customer Support Portal?
 
@@ -6706,11 +6566,7 @@ Where are Cortex and Strata Logging Service licenses (such as serial numbers and
 
 Correct: Products > Cloud Services
 
-### D1 Planning & Installation — 1.5 Roles/permissions/access
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 111
+##### Question 7
 
 Which cloud application is responsible for managing CSP user two-factor authentication and CSP account authorization?
 
@@ -6721,11 +6577,7 @@ Which cloud application is responsible for managing CSP user two-factor authenti
 
 Correct: Customer Support Portal (CSP)
 
-### D1 Planning & Installation — 1.1 Evaluate infrastructure
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 112
+##### Question 8
 
 A common best practice when managing multiple Cortex instances is to maintain separate instances for which purpose?
 
@@ -6736,11 +6588,11 @@ A common best practice when managing multiple Cortex instances is to maintain se
 
 Correct: Separate instances for test and production environments
 
-### D1 Planning & Installation — 1.5 Roles/permissions/access
+### Cortex: Console Management
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 113
+##### Question 1
 
 Palo Alto Networks sites that require authentication use single sign-on based on which protocol, and for how long is a session valid before requiring re-authentication?
 
@@ -6751,7 +6603,7 @@ Palo Alto Networks sites that require authentication use single sign-on based on
 
 Correct: SAML; 8 hours
 
-##### Question 114
+##### Question 2
 
 In the Console Security Settings, the Dashboard Expiration can be configured to which two values?
 
@@ -6762,11 +6614,7 @@ In the Console Security Settings, the Dashboard Expiration can be configured to 
 
 Correct: As user login expiration (8 hours) and 7 Days
 
-### D3 Content Optimization — 3.5 Dashboards & reports
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 115
+##### Question 3
 
 By default, which two output channels can reports be set to deliver to, though they are NOT configured out of the box?
 
@@ -6777,11 +6625,7 @@ By default, which two output channels can reports be set to deliver to, though t
 
 Correct: Email and Slack
 
-### D1 Planning & Installation — 1.5 Roles/permissions/access
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 116
+##### Question 4
 
 Which Security Settings feature, when enabled, automatically deactivates user accounts that have not logged in for a defined period?
 
@@ -6792,11 +6636,7 @@ Which Security Settings feature, when enabled, automatically deactivates user ac
 
 Correct: User Expiration
 
-### D3 Content Optimization — 3.5 Dashboards & reports
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 117
+##### Question 5
 
 When creating a custom widget for a dashboard in the Cortex console Widget Library, which two widget types can be created?
 
@@ -6807,11 +6647,7 @@ When creating a custom widget for a dashboard in the Cortex console Widget Libra
 
 Correct: XQL widget and scalar widget
 
-### D4 Maintenance & Troubleshooting — 4.3 Troubleshoot data management
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 118
+##### Question 6
 
 After applying a filter in a management console table, what happens to the filter state when you navigate away from that page?
 
@@ -6822,11 +6658,7 @@ After applying a filter in a management console table, what happens to the filte
 
 Correct: The filter is retained across page navigation.
 
-### D3 Content Optimization — 3.5 Dashboards & reports
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 119
+##### Question 7
 
 What action does clicking the Cortex logo at the top of the navigation pane perform, even when the pane is minimized?
 
@@ -6837,11 +6669,7 @@ What action does clicking the Cortex logo at the top of the navigation pane perf
 
 Correct: It navigates to the default dashboard.
 
-### D4 Maintenance & Troubleshooting — 4.3 Troubleshoot data management
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 120
+##### Question 8
 
 In the Cortex management console tabular views, which three filtering methods are explicitly described for narrowing entries in a table? (Choose three.)
 
@@ -6853,11 +6681,11 @@ In the Cortex management console tabular views, which three filtering methods ar
 
 Correct: By column using the filter icon next to a field heading; By building a filter query for one or more fields using the filter builder; By pivoting from the contents of a cell (show or hide rows containing the cell value)
 
-### D1.2 Deployment Requirements
+### Cortex: Cortex Infrastructure and Access Management
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 121
+##### Question 1
 
 A Cortex instance is being activated in a newly announced install region where a regional WildFire is not yet available. What is the implication?
 
@@ -6868,11 +6696,7 @@ A Cortex instance is being activated in a newly announced install region where a
 
 Correct: Cortex will automatically redirect WildFire file uploads to the nearest available region until the local one is ready.
 
-### D1.5 Roles/Permissions/Access
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 122
+##### Question 2
 
 Which tool is primarily used to manage the Cloud Identity Engine (CIE) cloud service within the Palo Alto Networks ecosystem?
 
@@ -6883,11 +6707,7 @@ Which tool is primarily used to manage the Cloud Identity Engine (CIE) cloud ser
 
 Correct: Palo Alto Networks Hub
 
-### D1.4 Install Agents/Broker VM/Engine
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 123
+##### Question 3
 
 A CIE deployment includes on-premises Windows agents connected to domain controllers. At which configurable intervals do these agents send a full snapshot of directory data to the CIE cloud instance?
 
@@ -6898,7 +6718,7 @@ A CIE deployment includes on-premises Windows agents connected to domain control
 
 Correct: Every 4, 12, or 24 hours
 
-##### Question 124
+##### Question 4
 
 An administrator wants to pair a CIE instance with the current Cortex instance. Which navigation path in the Cortex management console accomplishes this?
 
@@ -6909,11 +6729,7 @@ An administrator wants to pair a CIE instance with the current Cortex instance. 
 
 Correct: Settings > Integrations > Cloud Identity Engine
 
-### D1.5 Roles/Permissions/Access
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 125
+##### Question 5
 
 Which statement accurately distinguishes the Account Admin role from the Instance Administrator role in Cortex?
 
@@ -6924,7 +6740,7 @@ Which statement accurately distinguishes the Account Admin role from the Instanc
 
 Correct: The Account Admin can activate new Cortex instances; the Instance Administrator cannot.
 
-##### Question 126
+##### Question 6
 
 A security team wants to restrict a specific user so they can only manage a subset of endpoints and only see agent-related dashboard widgets for those endpoints. Which Cortex feature should be configured?
 
@@ -6935,7 +6751,7 @@ A security team wants to restrict a specific user so they can only manage a subs
 
 Correct: Scope-Based Access Control (SBAC)
 
-##### Question 127
+##### Question 7
 
 When creating a new custom Cortex role, which two permission levels are available for each permission category? (Choose two.)
 
@@ -6947,7 +6763,7 @@ When creating a new custom Cortex role, which two permission levels are availabl
 
 Correct: Read; View; View/Edit
 
-##### Question 128
+##### Question 8
 
 An engineer notices that managing roles for multiple Cortex instances linked to the same CSP account is not possible from the Cortex management console. Which tool should they use instead, and why?
 
@@ -6958,11 +6774,11 @@ An engineer notices that managing roles for multiple Cortex instances linked to 
 
 Correct: Cortex Gateway, because it allows role and permission management for multiple Cortex instances on the same CSP account.
 
-### D1.2 Deployment Requirements
+### Cortex: Cortex Licensing
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 129
+##### Question 1
 
 Which XSIAM license tier is described as the foundational license that provides the core data ingestion, analytics, and automation engine?
 
@@ -6973,7 +6789,7 @@ Which XSIAM license tier is described as the foundational license that provides 
 
 Correct: XSIAM NG-SIEM
 
-##### Question 130
+##### Question 2
 
 A customer purchases XSIAM Enterprise. Which two capabilities are included in that tier that are NOT included in XSIAM NG-SIEM? (Choose two.)
 
@@ -6985,7 +6801,7 @@ A customer purchases XSIAM Enterprise. Which two capabilities are included in th
 
 Correct: Next-Generation Antivirus; Endpoint Protection (enhanced telemetry from Windows, Mac, Linux, Kubernetes)
 
-##### Question 131
+##### Question 3
 
 Which features are included in XSIAM Premium but are only available as optional add-ons in XSIAM Enterprise? (Choose three.)
 
@@ -6997,7 +6813,7 @@ Which features are included in XSIAM Premium but are only available as optional 
 
 Correct: Cloud Posture; Cloud Runtime; Attack Surface Management
 
-##### Question 132
+##### Question 4
 
 For all XSIAM license tiers, how is data ingestion treated differently compared to how it is handled in Cortex XDR?
 
@@ -7008,7 +6824,7 @@ For all XSIAM license tiers, how is data ingestion treated differently compared 
 
 Correct: In XSIAM, data ingestion is a core and required component sized from the initial purchase, not an add-on.
 
-##### Question 133
+##### Question 5
 
 An organization has XSIAM NG-SIEM and wants to add endpoint security capabilities including the XDR agent. According to the licensing table, which two features become included at no extra cost when adding XDR agents to NG-SIEM?
 
@@ -7019,11 +6835,7 @@ An organization has XSIAM NG-SIEM and wants to add endpoint security capabilitie
 
 Correct: Host Insights and Extended Threat Hunting
 
-### D2.4 Automation Workflow
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 134
+##### Question 6
 
 Which Cortex product is specifically designed as a Security Orchestration, Automation, and Response (SOAR) platform to help teams streamline processes and automate repetitive tasks?
 
@@ -7034,11 +6846,7 @@ Which Cortex product is specifically designed as a Security Orchestration, Autom
 
 Correct: Cortex XSOAR
 
-### D1.2 Deployment Requirements
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 135
+##### Question 7
 
 A security analyst asks which XSIAM add-on is available across ALL three XSIAM tiers (NG-SIEM, Enterprise, and Premium) but is NOT included as standard in any of them. Which add-on fits this description?
 
@@ -7049,11 +6857,7 @@ A security analyst asks which XSIAM add-on is available across ALL three XSIAM t
 
 Correct: ITDR (Identity Threat Detection & Response)
 
-### D1.1 Eval Infrastructure
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 136
+##### Question 8
 
 Cortex Cloud is described in the source as a CNAPP. Which three modules make up Cortex Cloud?
 
@@ -7064,11 +6868,11 @@ Cortex Cloud is described in the source as a CNAPP. Which three modules make up 
 
 Correct: Cloud Posture Security, Cloud Runtime Security, and Application Security (AppSec)
 
-### D3.3 Detection Rules
+### Cortex: Cortex Platform Portfolio Overview
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 137
+##### Question 1
 
 Cortex XDR's Behavioral Threat Protection engine is described as examining the behavior of multiple related processes simultaneously. What type of attacks does this approach uncover that single-file or single-process analysis would miss?
 
@@ -7079,11 +6883,7 @@ Cortex XDR's Behavioral Threat Protection engine is described as examining the b
 
 Correct: Complex multi-process attacks as they unfold
 
-### D3.4 Incident & Alert Layout
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 138
+##### Question 2
 
 How does Cortex XDR's incident grouping capability reduce analyst workload, according to the source?
 
@@ -7094,7 +6894,7 @@ How does Cortex XDR's incident grouping capability reduce analyst workload, acco
 
 Correct: It groups related alerts into a single incident, reducing items to review by up to 98%.
 
-##### Question 139
+##### Question 3
 
 Which threat intelligence sources are described in the source as being automatically integrated into the Cortex XDR incident view to enrich analyst data?
 
@@ -7105,11 +6905,7 @@ Which threat intelligence sources are described in the source as being automatic
 
 Correct: WildFire and VirusTotal
 
-### D2.4 Automation Workflow
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 140
+##### Question 4
 
 Cortex XSOAR is described as ingesting aggregated issues and IoCs from detection sources. After ingestion, what does XSOAR execute to enrich and respond to cases?
 
@@ -7120,7 +6916,7 @@ Cortex XSOAR is described as ingesting aggregated issues and IoCs from detection
 
 Correct: Automatic, process-driven playbooks that coordinate across technologies and teams
 
-##### Question 141
+##### Question 5
 
 Which Cortex XSOAR capability is described in the source as providing "War Room for every case" and enabling teams to manage the full case lifecycle in a single location?
 
@@ -7131,11 +6927,7 @@ Which Cortex XSOAR capability is described in the source as providing "War Room 
 
 Correct: Integrated Case Management
 
-### D1.1 Eval Infrastructure
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 142
+##### Question 6
 
 The source describes Cortex XSIAM as unifying several product categories into a single platform. Which of the following is NOT listed in the source as a capability unified within Cortex XSIAM?
 
@@ -7146,11 +6938,7 @@ The source describes Cortex XSIAM as unifying several product categories into a 
 
 Correct: Privileged Access Management (PAM)
 
-### D3.3 Detection Rules / D3.4 Incident & Alert Layout
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 143
+##### Question 7
 
 According to the source, what is the AI-driven outcome mechanism by which XSIAM transforms low-confidence events into high-confidence cases?
 
@@ -7161,11 +6949,7 @@ According to the source, what is the AI-driven outcome mechanism by which XSIAM 
 
 Correct: Issue grouping and AI-driven case scoring that connect low-confidence events
 
-### D1.1 Eval Infrastructure
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 144
+##### Question 8
 
 Which Cortex Cloud feature is described in the source as consolidating capabilities typically found in CSPM, CIEM, AI-SPM, and vulnerability management into a single offering?
 
@@ -7176,11 +6960,11 @@ Which Cortex Cloud feature is described in the source as consolidating capabilit
 
 Correct: Cloud Posture Security
 
-### D4.4 Troubleshoot Components
+### Cortex: Cortex Runtime Security
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 145
+##### Question 1
 
 The Cortex XDR agent uses two communication protocols with the Cortex instance. Which protocol is used specifically when the agent sends a periodic heartbeat or a prevention alert after an attack?
 
@@ -7191,11 +6975,7 @@ The Cortex XDR agent uses two communication protocols with the Cortex instance. 
 
 Correct: HTTPS, because the agent initiates the connection for these cases
 
-### D1.4 Install Agents/Broker VM/Engine
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 146
+##### Question 2
 
 A Cortex XDR agent is deployed on a Kubernetes cluster. Which deployment method and minimum agent version are required?
 
@@ -7206,11 +6986,7 @@ A Cortex XDR agent is deployed on a Kubernetes cluster. Which deployment method 
 
 Correct: DaemonSet using a supported YAML package or Helm installer; agent version 8.1 or later
 
-### D4.4 Troubleshoot Components
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 147
+##### Question 3
 
 An administrator needs to stop the Cortex XDR agent services on a Windows endpoint. Which tool and command accomplish this, and what credential is required?
 
@@ -7221,11 +6997,7 @@ An administrator needs to stop the Cortex XDR agent services on a Windows endpoi
 
 Correct: Cytool → `cytool runtime stop`; requires the supervisor password
 
-### D1.4 Install Agents/Broker VM/Engine
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 148
+##### Question 4
 
 How does the Cortex XDR agent protect Linux containers without requiring separate licenses per container?
 
@@ -7236,11 +7008,7 @@ How does the Cortex XDR agent protect Linux containers without requiring separat
 
 Correct: It uses a host-based approach that protects containerized processes; only one license is required for the host OS.
 
-### D4.4 Troubleshoot Components
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 149
+##### Question 5
 
 What is the default log level for Cortex XDR agent components, and what does that level correspond to?
 
@@ -7251,11 +7019,7 @@ What is the default log level for Cortex XDR agent components, and what does tha
 
 Correct: Level 6 Info (low priority information)
 
-### D4.2 Software Updates
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 150
+##### Question 6
 
 During an agent health check, an engineer reviews the content version across endpoints. Which of the following is NOT listed in the source as a key point of content version health checks?
 
@@ -7266,11 +7030,7 @@ During an agent health check, an engineer reviews the content version across end
 
 Correct: Verifying that all agents are running the most current and supported agent software version
 
-### D4.4 Troubleshoot Components
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 151
+##### Question 7
 
 The `cytool scan` and `cytool imageprep scan` commands differ in an important operational way. What is that difference?
 
@@ -7281,11 +7041,7 @@ The `cytool scan` and `cytool imageprep scan` commands differ in an important op
 
 Correct: `cytool scan` is limited to 25% CPU as a low-priority thread; `cytool imageprep scan` can use all available resources.
 
-### D4.2 Software Updates
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 152
+##### Question 8
 
 An administrator wants to configure the auto-upgrade rollout to delay pushing a new agent version to endpoints. What is the configurable delay range available in the Cortex management console?
 
@@ -7296,11 +7052,11 @@ An administrator wants to configure the auto-upgrade rollout to delay pushing a 
 
 Correct: 7 to 45 days from the agent release date
 
-### D2.4 Automation Workflow
+### Cortex: Creating and Managing Jobs
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 153
+##### Question 1
 
 A SOC engineer wants to automatically run an indicator enrichment playbook whenever any threat intelligence feed is updated. Which job type should they configure?
 
@@ -7311,7 +7067,7 @@ A SOC engineer wants to automatically run an indicator enrichment playbook whene
 
 Correct: Feed-triggered job
 
-##### Question 154
+##### Question 2
 
 A job is currently executing a playbook and the analyst needs to temporarily stop it with the intention of resuming later. Which action should they select?
 
@@ -7322,7 +7078,7 @@ A job is currently executing a playbook and the analyst needs to temporarily sto
 
 Correct: Pause
 
-##### Question 155
+##### Question 3
 
 Which Jobs page view provides a two-panel layout where the right panel shows information about incidents created by a specific job, including playbook, last run, next run, and incident status?
 
@@ -7333,7 +7089,7 @@ Which Jobs page view provides a two-panel layout where the right panel shows inf
 
 Correct: Detailed View
 
-##### Question 156
+##### Question 4
 
 According to the source, which job action will NOT affect a job that is currently running?
 
@@ -7344,7 +7100,7 @@ According to the source, which job action will NOT affect a job that is currentl
 
 Correct: Disable
 
-##### Question 157
+##### Question 5
 
 The Jobs page Chart Panel displays status information about all jobs. Which of the following status counts is displayed in the Chart Panel?
 
@@ -7355,7 +7111,7 @@ The Jobs page Chart Panel displays status information about all jobs. Which of t
 
 Correct: Running, Waiting, Error, Disabled, Time Triggered, and Event Triggered
 
-##### Question 158
+##### Question 6
 
 An analyst wants to customize which columns are displayed in the Jobs Table View. How do they accomplish this?
 
@@ -7366,7 +7122,7 @@ An analyst wants to customize which columns are displayed in the Jobs Table View
 
 Correct: Use the gear icon at the top right of the Table View to check or uncheck columns
 
-##### Question 159
+##### Question 7
 
 A manager wants to restart a job that had previously been aborted or completed. Which action from the Jobs action bar allows this?
 
@@ -7377,7 +7133,7 @@ A manager wants to restart a job that had previously been aborted or completed. 
 
 Correct: Run Now
 
-##### Question 160
+##### Question 8
 
 Which two of the following are listed in the source as use cases for jobs in Cortex? (Choose two.)
 
@@ -7389,11 +7145,11 @@ Which two of the following are listed in the source as use cases for jobs in Cor
 
 Correct: Generating summary reports of incident statuses sent regularly to team members; Creating a list of high-risk or benign indicators at the end of each day
 
-### D3.5 Dashboards & Reports
+### Cortex: Dashboards and Reports
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 161
+##### Question 1
 
 An analyst wants to generate a recurring scheduled report from an existing dashboard. What is the correct sequence of actions?
 
@@ -7404,7 +7160,7 @@ An analyst wants to generate a recurring scheduled report from an existing dashb
 
 Correct: Go to Dashboard Manager, right-click the dashboard, select **Save as report template**, then edit the template to define a schedule.
 
-##### Question 162
+##### Question 2
 
 Which Dashboards & Reports component is the correct place to set a dashboard as the default for the tenant?
 
@@ -7415,7 +7171,7 @@ Which Dashboards & Reports component is the correct place to set a dashboard as 
 
 Correct: Dashboard Manager
 
-##### Question 163
+##### Question 3
 
 A security engineer needs to build a custom visualization that queries `xdr_data` for endpoint telemetry and displays the result as a chart. Which component and workflow should they use?
 
@@ -7426,7 +7182,7 @@ A security engineer needs to build a custom visualization that queries `xdr_data
 
 Correct: Widget Library → click the plus icon (+) → enter name/description → write XQL query → define visualization → Save widget
 
-##### Question 164
+##### Question 4
 
 In the Widget Library, which two creation modes are available when starting a new widget? (Choose two.)
 
@@ -7438,7 +7194,7 @@ In the Widget Library, which two creation modes are available when starting a ne
 
 Correct: Create an XQL widget; Create a script widget
 
-##### Question 165
+##### Question 5
 
 After a custom XQL widget is saved, where can it be found?
 
@@ -7449,7 +7205,7 @@ After a custom XQL widget is saved, where can it be found?
 
 Correct: In the Widget Library, listed alongside other existing widgets.
 
-##### Question 166
+##### Question 6
 
 A Cortex administrator wants to replicate a dashboard configuration to a newly provisioned tenant for onboarding purposes. Which capability supports this?
 
@@ -7460,7 +7216,7 @@ A Cortex administrator wants to replicate a dashboard configuration to a newly p
 
 Correct: Export the dashboard as a JSON file and import it on the target tenant.
 
-##### Question 167
+##### Question 7
 
 Which of the following operations can be performed directly from the Dashboard Manager right-click context menu? (Choose two.)
 
@@ -7472,7 +7228,7 @@ Which of the following operations can be performed directly from the Dashboard M
 
 Correct: Clone; Set as default
 
-##### Question 168
+##### Question 8
 
 A user downloaded a completed report but later needs to re-run the same report on demand without modifying the schedule. Which navigation path and action accomplish this?
 
@@ -7483,11 +7239,11 @@ A user downloaded a completed report but later needs to re-run the same report o
 
 Correct: Dashboards & Reports > Report Templates > right-click > Generate Report
 
-### D3.2 Data Modeling
+### Cortex: Data Models
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 169
+##### Question 1
 
 In the XDM data flow topology, a proxy server that receives traffic from a workstation and forwards it to an internal web server is classified as which component type?
 
@@ -7498,11 +7254,7 @@ In the XDM data flow topology, a proxy server that receives traffic from a works
 
 Correct: Intermediate
 
-### D3.1 Parsing / D3.2 Data Modeling
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 170
+##### Question 2
 
 What is a key behavioral difference between a parsing rule and a data model rule regarding the original log data?
 
@@ -7513,11 +7265,7 @@ What is a key behavioral difference between a parsing rule and a data model rule
 
 Correct: Parsing rules alter data irreversibly at ingestion; data model rules map data on read without changing the raw data.
 
-### D3.2 Data Modeling
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 171
+##### Question 3
 
 When no dataset is specified in an XQL query, against which dataset does Cortex run the query by default?
 
@@ -7528,7 +7276,7 @@ When no dataset is specified in an XQL query, against which dataset does Cortex 
 
 Correct: `xdr_data`
 
-##### Question 172
+##### Question 4
 
 A data model rule needs to access an unmapped field that is not normally visible in query results. Which technique does the source describe for retrieving it?
 
@@ -7539,7 +7287,7 @@ A data model rule needs to access an unmapped field that is not normally visible
 
 Correct: Query the `_raw_data` field by adding an asterisk (`*`) at the end of a field line.
 
-##### Question 173
+##### Question 5
 
 In a data model rule, the `filter` stage is used to determine whether a set of normalization rules should apply to a given record. Which scenario from the source best illustrates conditional mapping using `filter`?
 
@@ -7550,11 +7298,7 @@ In a data model rule, the `filter` stage is used to determine whether a set of n
 
 Correct: Applying different modeling rules to `event_type = "Login"` records versus `event_type != "HeartBeat"` records.
 
-### D3.1 Parsing / D3.2 Data Modeling
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 174
+##### Question 6
 
 A data model rule workflow in the source describes a specific point at which a parsing rule performs timestamp normalization, while the data model rule handles all other transformations. At which stage does this timestamp normalization occur?
 
@@ -7565,11 +7309,7 @@ A data model rule workflow in the source describes a specific point at which a p
 
 Correct: After raw logs are ingested and the data sits at rest in the tenant, before any query.
 
-### D3.2 Data Modeling
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 175
+##### Question 7
 
 According to the XDM Mapping Workflow, what is the recommended function to use for extracting fields from syslog-format raw logs, and what is the recommended function for JSON-format raw logs?
 
@@ -7580,7 +7320,7 @@ According to the XDM Mapping Workflow, what is the recommended function to use f
 
 Correct: `regextract` for syslog; `json_extract` for JSON
 
-##### Question 176
+##### Question 8
 
 Which characteristic of data model rules distinguishes them from parsing rules in terms of schema and enrichment capabilities? (Choose two.)
 
@@ -7592,11 +7332,11 @@ Which characteristic of data model rules distinguishes them from parsing rules i
 
 Correct: Data model rules are automatically mapped to the Issues table.; Data model rules include support for aliases.
 
-### D2.1 Onboard Data Sources
+### Cortex: Data Sources
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 177
+##### Question 1
 
 The Circuit Log Connection Service (CLCS) is described as a replacement for which prior Palo Alto Networks service, and what is its primary function?
 
@@ -7607,11 +7347,7 @@ The Circuit Log Connection Service (CLCS) is described as a replacement for whic
 
 Correct: It replaces Cortex Data Lake (CDL) as a data broker, streaming PAN-generated logs directly into Cortex.
 
-### D1.4 Install Agents/Broker VM/Engine
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 178
+##### Question 2
 
 Which ingestion protocol does Broker VM explicitly NOT support, according to the source?
 
@@ -7622,7 +7358,7 @@ Which ingestion protocol does Broker VM explicitly NOT support, according to the
 
 Correct: SNMP
 
-##### Question 179
+##### Question 3
 
 For a Broker VM cluster handling a passive collection workload such as Syslog, which statement about load balancing versus high availability is accurate?
 
@@ -7633,7 +7369,7 @@ For a Broker VM cluster handling a passive collection workload such as Syslog, w
 
 Correct: Load balancing requires multiple VMs behind an external load balancer; the customer must provide that load balancer.
 
-##### Question 180
+##### Question 4
 
 When comparing Broker VM to Engines, which three capabilities belong exclusively to Engines and are NOT listed as Broker VM capabilities?
 
@@ -7644,11 +7380,7 @@ When comparing Broker VM to Engines, which three capabilities belong exclusively
 
 Correct: On-prem API data collections, On-prem Intel collections, On-prem enrichments
 
-### D2.1 Onboard Data Sources
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 181
+##### Question 5
 
 An administrator is configuring an XDR Collector to ingest third-party logs from a Windows Server. Where in the Cortex console should they navigate to manage the installed collectors and perform tasks such as changing a collector's alias or setting a proxy address?
 
@@ -7659,7 +7391,7 @@ An administrator is configuring an XDR Collector to ingest third-party logs from
 
 Correct: Settings > Configurations > XDR Collectors > Administration
 
-##### Question 182
+##### Question 6
 
 Which log format is recommended by Cortex for usage when available, as explicitly noted in the Broker VM Ingestion Methods section?
 
@@ -7670,7 +7402,7 @@ Which log format is recommended by Cortex for usage when available, as explicitl
 
 Correct: CEF (Common Event Format), because it is the recommended format for usage if available.
 
-##### Question 183
+##### Question 7
 
 The Data Source Onboarder has a specific limitation regarding which category of data sources. What is that limitation?
 
@@ -7681,7 +7413,7 @@ The Data Source Onboarder has a specific limitation regarding which category of 
 
 Correct: The Onboarder is not available to onboard XDR data sources; these must be enabled via the Data Sources page.
 
-##### Question 184
+##### Question 8
 
 What are three benefits of the Data Source Onboarder that are explicitly enumerated in the source? (Choose three.)
 
@@ -7693,11 +7425,11 @@ What are three benefits of the Data Source Onboarder that are explicitly enumera
 
 Correct: Easy integration of new data sources; Automation; Efficient data analysis
 
-### D3.3 Detection Rules
+### Cortex: Endpoint Protection and Management
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 185
+##### Question 1
 
 The Kernel Integrity Monitor (KIM) Endpoint Protection Module targets which specific platform and threat type?
 
@@ -7708,11 +7440,7 @@ The Kernel Integrity Monitor (KIM) Endpoint Protection Module targets which spec
 
 Correct: Linux endpoints; prevents rootkit and vulnerability exploitation.
 
-### D4.4 Troubleshoot Components
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 186
+##### Question 2
 
 A Cortex agent detects a security event on an endpoint. How does the agent communicate this to the Cortex server, and how does this differ from non-critical status messages?
 
@@ -7723,11 +7451,7 @@ A Cortex agent detects a security event on an endpoint. How does the agent commu
 
 Correct: Security events are immediately sent to the server; non-critical messages such as status reports are sent once an hour.
 
-### D1.5 Roles/Permissions/Access
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 187
+##### Question 3
 
 Which type of endpoint group uses dynamically evaluated characteristics such as partial hostnames, IP address ranges, and agent version to determine membership?
 
@@ -7738,11 +7462,7 @@ Which type of endpoint group uses dynamically evaluated characteristics such as 
 
 Correct: Dynamic group
 
-### D4.2 Software Updates / D4.4 Troubleshoot Components
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 188
+##### Question 4
 
 When a Cortex agent is deleted from the management console, which two outcomes occur immediately or within the defined retention period?
 
@@ -7753,11 +7473,7 @@ When a Cortex agent is deleted from the management console, which two outcomes o
 
 Correct: The license is returned to the pool immediately, and agent data is retained for 90 days.
 
-### D4.2 Software Updates
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 189
+##### Question 5
 
 An agent has been inactive. After how many days of inactivity will a standard (non-VDI) Cortex agent be automatically deleted?
 
@@ -7768,11 +7484,7 @@ An agent has been inactive. After how many days of inactivity will a standard (n
 
 Correct: 180 days
 
-### D3.3 Detection Rules / D4.1 Exceptions/Exclusions
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 190
+##### Question 6
 
 Which endpoint security profile type is specifically designed to limit the locations from which executables can run, and is described as particularly valuable for Windows platforms?
 
@@ -7783,11 +7495,7 @@ Which endpoint security profile type is specifically designed to limit the locat
 
 Correct: Restrictions Profiles
 
-### D3.3 Detection Rules
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 191
+##### Question 7
 
 During the Hash Verdict Determination phase of malware protection, how are files signed by highly trusted signers such as Microsoft treated?
 
@@ -7798,11 +7506,7 @@ During the Hash Verdict Determination phase of malware protection, how are files
 
 Correct: They are allowed to run, with files from prevented signers blocked.
 
-### D4.4 Troubleshoot Components
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 192
+##### Question 8
 
 If a server-initiated action via WebSocket fails to reach the endpoint, what fallback mechanism ensures the action is eventually executed?
 
@@ -7813,11 +7517,11 @@ If a server-initiated action via WebSocket fails to reach the endpoint, what fal
 
 Correct: The action is executed upon the next successful agent heartbeat.
 
-### D1.5 Roles/Permissions/Access
+### Cortex Enterprise Multi-Tenant License Management
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 193
+##### Question 1
 
 In Cortex XSIAM multitenancy, where is child tenant data stored, and can it be accessed from sibling child tenants?
 
@@ -7828,11 +7532,7 @@ In Cortex XSIAM multitenancy, where is child tenant data stored, and can it be a
 
 Correct: Each child tenant has its own isolated data storage; no data is shared between tenants or stored on the main tenant.
 
-### D1.2 Deployment Requirements
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 194
+##### Question 2
 
 Which licensing model is also known as "Co-Managed" and is characterized by individual tenants procuring their own XSIAM licenses?
 
@@ -7843,7 +7543,7 @@ Which licensing model is also known as "Co-Managed" and is characterized by indi
 
 Correct: Customer-Owned licensing model
 
-##### Question 195
+##### Question 3
 
 In the Central licensing model, the resource capacities that the enterprise parent tenant purchases include which three dimensions?
 
@@ -7854,11 +7554,7 @@ In the Central licensing model, the resource capacities that the enterprise pare
 
 Correct: Number of child tenants, number of employees (FTE), and data ingestion capacity in GB/day
 
-### D1.2 Deployment Requirements / D1.4 Install Agents/Broker VM/Engine
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 196
+##### Question 4
 
 When adding a child tenant using the Central licensing model, which interface is used to initiate and complete the process?
 
@@ -7869,11 +7565,7 @@ When adding a child tenant using the Central licensing model, which interface is
 
 Correct: The Cortex Gateway
 
-### D1.2 Deployment Requirements
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 197
+##### Question 5
 
 An enterprise parent tenant currently has a central license of 7500 FTE and 750 GB/Day. Subsidiary 1 is allocated 500 FTE and 100 GB/Day. If Subsidiary 1's workload grows and requires more capacity, which action can the parent tenant administrator take?
 
@@ -7884,7 +7576,7 @@ An enterprise parent tenant currently has a central license of 7500 FTE and 750 
 
 Correct: The parent can increase resource allocations for the child tenant through the Cortex Gateway as needed.
 
-##### Question 198
+##### Question 6
 
 What happens to a child tenant's data and its allocated resources when the child tenant is deleted in the central licensing model?
 
@@ -7895,7 +7587,7 @@ What happens to a child tenant's data and its allocated resources when the child
 
 Correct: Data is permanently removed and allocated resources return to the main tenant pool.
 
-##### Question 199
+##### Question 7
 
 In the Customer-Owned licensing model, what process is required to establish the relationship between an MSSP parent tenant and a managed company's individually licensed tenant?
 
@@ -7906,7 +7598,7 @@ In the Customer-Owned licensing model, what process is required to establish the
 
 Correct: A manual pairing process is configured between the managed company's individually licensed XSIAM tenant and the MSSP parent tenant.
 
-##### Question 200
+##### Question 8
 
 Which two primary types of organizations are described in the source as the main consumers of XSIAM's multitenancy features? (Choose two.)
 
@@ -7918,11 +7610,11 @@ Which two primary types of organizations are described in the source as the main
 
 Correct: Managed Security Service Providers (MSSPs); Large enterprises managing multiple subsidiary companies
 
-### D1.5 Roles/Permissions/Access
+### Cortex Enterprise Multi-Tenant Operations
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 201
+##### Question 1
 
 When a child tenant's security configuration area is set to "managed" by the parent, what immediate effect does this have on the child tenant's interface for that area?
 
@@ -7933,7 +7625,7 @@ When a child tenant's security configuration area is set to "managed" by the par
 
 Correct: The area becomes read-only for the child tenant.
 
-##### Question 202
+##### Question 2
 
 An MSSP manages tenants for clients in different regulatory environments — healthcare, finance, and retail. Which capability of XSIAM multitenancy best supports this scenario?
 
@@ -7944,7 +7636,7 @@ An MSSP manages tenants for clients in different regulatory environments — hea
 
 Correct: Parent tenants can create individual or scaled security configurations per child tenant.
 
-##### Question 203
+##### Question 3
 
 After a parent-child pairing is first established, what is the default state of the five security configuration areas for the child tenant?
 
@@ -7955,11 +7647,7 @@ After a parent-child pairing is first established, what is the default state of 
 
 Correct: All five areas are set to unmanaged with no security configurations applied.
 
-### D3.1 Parsing / D4.3 Troubleshoot Data Management
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 204
+##### Question 4
 
 When a parent tenant queries multiple child tenants simultaneously using the Query Builder, what happens to the data returned?
 
@@ -7970,11 +7658,7 @@ When a parent tenant queries multiple child tenants simultaneously using the Que
 
 Correct: All child tenants' data is stitched together into one combined result set.
 
-### D3.4 Incident & Alert Layout
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 205
+##### Question 5
 
 Which of the following is NOT listed as a parent-viewable area in the Cortex XSIAM management console? (Choose the option that does NOT appear in the source's "Parent Viewable Areas" table.)
 
@@ -7985,11 +7669,7 @@ Which of the following is NOT listed as a parent-viewable area in the Cortex XSI
 
 Correct: Asset Inventory
 
-### D1.5 Roles/Permissions/Access
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 206
+##### Question 6
 
 A parent tenant administrator wants to apply a previously created BIOC Rules configuration to a specific child tenant. What is the correct navigation path to initiate this action?
 
@@ -8000,11 +7680,7 @@ A parent tenant administrator wants to apply a previously created BIOC Rules con
 
 Correct: Settings > Configuration > Tenant Management, then right-click the child and select Edit Configurations.
 
-### D4.4 Troubleshoot Components
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 207
+##### Question 7
 
 While syncing a newly applied security configuration to a child tenant, what color does the status indicator dot next to the child tenant's name display?
 
@@ -8015,11 +7691,7 @@ While syncing a newly applied security configuration to a child tenant, what col
 
 Correct: Yellow, indicating the sync is in progress.
 
-### D3.4 Incident & Alert Layout
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 208
+##### Question 8
 
 A parent tenant SOC analyst needs to investigate a specific child tenant alert down to the causality chain level. Which two capabilities does the source confirm are accessible from the parent tenant for this purpose? (Choose two.)
 
@@ -8030,11 +7702,11 @@ A parent tenant SOC analyst needs to investigate a specific child tenant alert d
 
 Correct: Causality chain view; Timeline view
 
-### D4.1 Exceptions/Exclusions
+### Cortex: Exclusions and Exceptions
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 209
+##### Question 1
 
 When a security analyst right-clicks an issue and selects "Exclude Issue," which of the following accurately describes the scope and visibility of that action?
 
@@ -8045,7 +7717,7 @@ When a security analyst right-clicks an issue and selects "Exclude Issue," which
 
 Correct: The action creates an individual exclusion that affects only that specific issue and does not appear as a rule in the Issue Exclusions table.
 
-##### Question 210
+##### Question 2
 
 If exactly 100% of a case's remaining issues are excluded, what does Cortex do automatically?
 
@@ -8056,7 +7728,7 @@ If exactly 100% of a case's remaining issues are excluded, what does Cortex do a
 
 Correct: The case status automatically changes to Resolved, and Cortex may continue grouping issues into that auto-resolved case for up to six hours.
 
-##### Question 211
+##### Question 3
 
 What is the fundamental operational difference between an Issue Exclusion and an Issue Exception in Cortex?
 
@@ -8067,7 +7739,7 @@ What is the fundamental operational difference between an Issue Exclusion and an
 
 Correct: Exclusions suppress issues in the console while protection continues; exceptions disable the underlying protection entirely.
 
-##### Question 212
+##### Question 4
 
 Which exception type is NOT created directly by an administrator within the Cortex management console, but is instead delivered via an imported JSON file?
 
@@ -8078,7 +7750,7 @@ Which exception type is NOT created directly by an administrator within the Cort
 
 Correct: Support Exception
 
-##### Question 213
+##### Question 5
 
 When the Advanced Analysis cloud service returns a "benign" verdict for a memory dump, what specific action does Cortex take automatically?
 
@@ -8089,7 +7761,7 @@ When the Advanced Analysis cloud service returns a "benign" verdict for a memory
 
 Correct: An Advanced Analysis exception is created that disables the EPM that terminated the process.
 
-##### Question 214
+##### Question 6
 
 An analyst creates an Issue Exception by right-clicking an issue. Where is the exception enforcement ultimately implemented — and what does that mean for future issues of that type?
 
@@ -8100,7 +7772,7 @@ An analyst creates an Issue Exception by right-clicking an issue. Where is the e
 
 Correct: The exception is enforced by the Cortex XDR agent itself; the agent stops generating issues of that type entirely.
 
-##### Question 215
+##### Question 7
 
 An administrator needs to disable an exploit protection module for a specific process on one endpoint because it is causing application crashes. Which action is most appropriate?
 
@@ -8111,7 +7783,7 @@ An administrator needs to disable an exploit protection module for a specific pr
 
 Correct: Create an Exception Rule in that endpoint's Exception Profile.
 
-##### Question 216
+##### Question 8
 
 Which of the following best describes the effect of a Global Exception in Cortex, and how does it differ from a profile-based exception?
 
@@ -8122,11 +7794,11 @@ Which of the following best describes the effect of a Global Exception in Cortex
 
 Correct: Global exceptions apply unconditionally to all endpoints without requiring policy rules; profile-based exceptions apply only to endpoints assigned that specific profile.
 
-### D3.3 Detection Rules
+### Cortex: Exploit Protection
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 217
+##### Question 1
 
 Palo Alto Networks designed Cortex EPMs to block exploitation techniques rather than individual exploits. What statistic from the source best justifies this design decision?
 
@@ -8137,11 +7809,7 @@ Palo Alto Networks designed Cortex EPMs to block exploitation techniques rather 
 
 Correct: Thousands of new exploits emerge each year, but only zero to one new exploitation technique is invented annually.
 
-### D1.4 Install Agents/Broker VM/Engine
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 218
+##### Question 2
 
 When the Cortex agent injects EPMs into a process, at what point in the process lifecycle does injection occur?
 
@@ -8152,11 +7820,7 @@ When the Cortex agent injects EPMs into a process, at what point in the process 
 
 Correct: At the time of process creation by the operating system, before the process begins executing.
 
-### D3.3 Detection Rules
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 219
+##### Question 3
 
 Which Cortex EPM is specifically designed to counter the DEP Circumvention exploitation technique?
 
@@ -8167,7 +7831,7 @@ Which Cortex EPM is specifically designed to counter the DEP Circumvention explo
 
 Correct: UASLR
 
-##### Question 220
+##### Question 4
 
 How does ASLR implementation differ between Windows and Linux, according to the source?
 
@@ -8178,11 +7842,7 @@ How does ASLR implementation differ between Windows and Linux, according to the 
 
 Correct: On Windows only a reboot randomizes the process memory layout; on Linux every new execution of an application creates a randomized layout.
 
-### D1.5 Roles/Permissions/Access / D3.3 Detection Rules
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 221
+##### Question 5
 
 What is the default action mode for the "Exploit Protection for Additional Processes" section in a new Exploit Profile?
 
@@ -8193,11 +7853,7 @@ What is the default action mode for the "Exploit Protection for Additional Proce
 
 Correct: Disabled
 
-### D4.4 Troubleshoot Components
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 222
+##### Question 6
 
 An analyst runs `cytool enum` on a Windows endpoint. What information does the output provide, and what additional tool is needed to map that output to human-readable application names?
 
@@ -8208,11 +7864,7 @@ An analyst runs `cytool enum` on a Windows endpoint. What information does the o
 
 Correct: It lists Process IDs (PIDs); Windows Task Manager is needed to associate PIDs with application names.
 
-### D1.2 Deployment Requirements / D3.3 Detection Rules
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 223
+##### Question 7
 
 A red dot appears in the left navigation pane of an Exploit Profile next to a section name. What does this indicate?
 
@@ -8223,11 +7875,7 @@ A red dot appears in the left navigation pane of an Exploit Profile next to a se
 
 Correct: The section contains incomplete or missing required fields that must be resolved before saving.
 
-### D3.3 Detection Rules / D4.1 Exceptions/Exclusions
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 224
+##### Question 8
 
 The Logical Exploits Protection section of an Exploit Profile includes a configurable block list for which specific EPM, and what does that block list enable administrators to do?
 
@@ -8238,11 +7886,11 @@ The Logical Exploits Protection section of an Exploit Profile includes a configu
 
 Correct: DLL Hijacking Protection block specific DLLs from being loaded by a protected process.
 
-### D4.4 Troubleshoot Components
+### Cortex: Forensics
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 225
+##### Question 1
 
 A SOC analyst needs to perform a deep-dive investigation on a small number of specific key servers to collect full file listings and registry hives. Which collection type within a Cortex Forensics investigation is designed for this purpose?
 
@@ -8253,7 +7901,7 @@ A SOC analyst needs to perform a deep-dive investigation on a small number of sp
 
 Correct: Triage collection
 
-##### Question 226
+##### Question 2
 
 An analyst is investigating a potential phishing campaign and wants to determine which users across a large number of Windows workstations executed a specific suspicious file attachment. Which collection type is best suited for this wide-scope search?
 
@@ -8264,7 +7912,7 @@ An analyst is investigating a potential phishing campaign and wants to determine
 
 Correct: Hunt collection
 
-##### Question 227
+##### Question 3
 
 After closing a Cortex Forensics investigation, what happens to the associated data, and what option does the analyst retain?
 
@@ -8275,7 +7923,7 @@ After closing a Cortex Forensics investigation, what happens to the associated d
 
 Correct: A 24-hour deletion timer starts; the closure can be canceled within that window to preserve the data.
 
-##### Question 228
+##### Question 4
 
 Which of the following Hunt collection capabilities is explicitly listed in the source as a feature of the Hunt tool?
 
@@ -8286,7 +7934,7 @@ Which of the following Hunt collection capabilities is explicitly listed in the 
 
 Correct: Scheduling collections at specific intervals
 
-##### Question 229
+##### Question 5
 
 An analyst reviewing a Hunt collection spots a suspicious executable running from a user's temp directory and wants to flag it for collaborating analysts. What is the correct method to highlight it within the investigation?
 
@@ -8297,11 +7945,7 @@ An analyst reviewing a Hunt collection spots a suspicious executable running fro
 
 Correct: Right-click the item and choose "add to investigation timeline" to flag it with a tag.
 
-### D1.5 Roles/Permissions/Access
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 230
+##### Question 6
 
 An analyst is unable to create a new investigation in the Cortex Forensics add-on, even though the feature is licensed. What is the most likely reason?
 
@@ -8312,7 +7956,7 @@ An analyst is unable to create a new investigation in the Cortex Forensics add-o
 
 Correct: The analyst does not have a role with Forensics permissions set to View or Edit.
 
-##### Question 231
+##### Question 7
 
 You are configuring user permissions within the Cortex Forensics add-on but the option to set up user permissions is unavailable. What must be enabled for this capability?
 
@@ -8323,11 +7967,7 @@ You are configuring user permissions within the Cortex Forensics add-on but the 
 
 Correct: Scope-Based Access Control (SBAC)
 
-### D3.4 Incident & Alert Layout
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 232
+##### Question 8
 
 An investigation contains multiple Hunt and Triage collections. An analyst wants a consolidated view of flagged artifacts, a unified event timeline, and key findings such as compromised endpoints and identified malware. Which features or tabs provide this consolidated analysis?
 
@@ -8338,11 +7978,11 @@ An investigation contains multiple Hunt and Triage collections. An analyst wants
 
 Correct: The Issues, Timeline, and Key Assets and Artifacts tabs
 
-### D3.3 Detection Rules
+### Cortex: ITDR
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 233
+##### Question 1
 
 How does Identity Threat Detection and Response (ITDR) differ from Identity Analytics in its fundamental detection approach?
 
@@ -8353,11 +7993,7 @@ How does Identity Threat Detection and Response (ITDR) differ from Identity Anal
 
 Correct: ITDR focuses on reactive detection of already-compromised accounts and post-initial access activity; Identity Analytics focuses on proactive initial access protection.
 
-### D2.1 Onboard Data Sources
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 234
+##### Question 2
 
 The ITDR free tier (included with Cortex) covers a specific set of use cases. Which of the following use cases requires the paid ITDR add-on rather than the free included protection?
 
@@ -8368,11 +8004,7 @@ The ITDR free tier (included with Cortex) covers a specific set of use cases. Wh
 
 Correct: Privileged User Monitoring
 
-### D3.3 Detection Rules
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 235
+##### Question 3
 
 The ITDR Profiling Engine maintains four profile types to detect anomalies. Which profile type specifically establishes a baseline of activity based on the behaviors of a user's and device's colleagues or similar-role peers?
 
@@ -8383,11 +8015,7 @@ The ITDR Profiling Engine maintains four profile types to detect anomalies. Whic
 
 Correct: Peer Profile
 
-### D3.3 Detection Rules / D3.5 Dashboards & Reports
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 236
+##### Question 4
 
 How does ITDR's risk scoring normalize severity levels, and what numerical range maps to a "High" risk score?
 
@@ -8398,11 +8026,7 @@ How does ITDR's risk scoring normalize severity levels, and what numerical range
 
 Correct: Scores are on a 0–1000 scale; High is 701–1000.
 
-### D3.3 Detection Rules
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 237
+##### Question 5
 
 As an attack progresses from initial indicators (hash, IP/domain) through to its latest stage, what happens to the "Level of Confidence" and "Required Telemetry" according to the ITDR confidence chart?
 
@@ -8413,7 +8037,7 @@ As an attack progresses from initial indicators (hash, IP/domain) through to its
 
 Correct: Level of confidence declines toward zero; required telemetry rises steeply toward its maximum.
 
-##### Question 238
+##### Question 6
 
 Which of the following behaviors, while possibly appearing as normal user activity, is listed in the source as a potential precursor to malicious threat actor behavior that ITDR is designed to detect?
 
@@ -8424,7 +8048,7 @@ Which of the following behaviors, while possibly appearing as normal user activi
 
 Correct: Setting up Exchange user mailbox forwarding
 
-##### Question 239
+##### Question 7
 
 Which of the following scenarios falls under the "Suspicious Administrative Operations" ITDR use case rather than the "Data Exfiltration" or "Compromised Credentials" use cases?
 
@@ -8435,11 +8059,7 @@ Which of the following scenarios falls under the "Suspicious Administrative Oper
 
 Correct: BitLocker key retrieved by an identity
 
-### D3.5 Dashboards & Reports
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 240
+##### Question 8
 
 The Risk Management Dashboard in ITDR displays three top-level number tiles. What does the "Identity Alerts and Insights" tile specifically represent?
 
@@ -8450,11 +8070,11 @@ The Risk Management Dashboard in ITDR displays three top-level number tiles. Wha
 
 Correct: The number of anomalies associated with identity threats tagged by Identity Analytics or the Identity Threat module.
 
-### D3 Content Optimization — 3.4 Incident & alert layout
+### Cortex: Integrated Analysis
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 241
+##### Question 1
 
 What distinguishes a stitched issue from an ordinary (unstitched) issue in the Issues table?
 
@@ -8465,11 +8085,7 @@ What distinguishes a stitched issue from an ordinary (unstitched) issue in the I
 
 Correct: Stitched issues display non-blank causality-related attributes such as CGO Name or Causality ID.
 
-### D4 Maintenance & Troubleshooting — 4.3 Troubleshoot data management
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 242
+##### Question 2
 
 An analyst needs to verify whether enhanced endpoint data upload was active when a specific issue was created. Which JSON attribute, visible via Debug Issue, provides this information?
 
@@ -8480,11 +8096,7 @@ An analyst needs to verify whether enhanced endpoint data upload was active when
 
 Correct: `agent_data_collection_status`
 
-### D4 Maintenance & Troubleshooting — 4.4 Troubleshoot components
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 243
+##### Question 3
 
 Which shortcut opens the Debug Issue menu on a Windows endpoint to inspect an issue's JSON attributes?
 
@@ -8495,11 +8107,7 @@ Which shortcut opens the Debug Issue menu on a Windows endpoint to inspect an is
 
 Correct: Alt + right-click on the issue
 
-### D1 Planning & Installation — 1.2 Deployment requirements
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 244
+##### Question 4
 
 The Cortex Analytics Engine requires data from at least how many endpoints collected over what minimum time period before the Enable button becomes active?
 
@@ -8510,11 +8118,7 @@ The Cortex Analytics Engine requires data from at least how many endpoints colle
 
 Correct: 30 endpoints over two weeks
 
-### D3 Content Optimization — 3.3 Detection rules
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 245
+##### Question 5
 
 Which MITRE ATT&CK tactic does the Analytics Engine detect by examining outbound connection volume and increases in data transfer?
 
@@ -8525,11 +8129,7 @@ Which MITRE ATT&CK tactic does the Analytics Engine detect by examining outbound
 
 Correct: Exfiltration
 
-### D2 Integration & Automation — 2.1 Onboard data sources
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 246
+##### Question 6
 
 Which data source is exclusively required to detect the "Possible Domain Controller Sync" analytics issue, according to the issue-to-data-source table?
 
@@ -8540,11 +8140,7 @@ Which data source is exclusively required to detect the "Possible Domain Control
 
 Correct: Windows Event Collector
 
-### D3 Content Optimization — 3.2 Data modeling
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 247
+##### Question 7
 
 How frequently does the Cortex XDR Pro agent upload enhanced endpoint data (EED) logs to the connected Cortex instance?
 
@@ -8555,11 +8151,7 @@ How frequently does the Cortex XDR Pro agent upload enhanced endpoint data (EED)
 
 Correct: Every five minutes
 
-### D3 Content Optimization — 3.4 Incident & alert layout
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 248
+##### Question 8
 
 Which two actions are available exclusively on stitched issues and are used for advanced investigation and visualization? (Choose two.)
 
@@ -8571,11 +8163,11 @@ Which two actions are available exclusively on stitched issues and are used for 
 
 Correct: Open Card; Open Timeline
 
-### D3 Content Optimization — 3.2 Data modeling
+### Cortex: Introduction to XQL
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 249
+##### Question 1
 
 In the XQL query stage `| dedup event_type, SUBTYPE by asc _time`, what is the function of the `by asc _time` clause?
 
@@ -8586,11 +8178,7 @@ In the XQL query stage `| dedup event_type, SUBTYPE by asc _time`, what is the f
 
 Correct: It determines which record is kept when deduplicating the one earliest in time.
 
-### D2 Integration & Automation — 2.4 Automation workflow
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 250
+##### Question 2
 
 A security analyst wants a query to run automatically every Monday at 06:00 and notify them of the results without manual intervention. Which Query Builder option satisfies this requirement?
 
@@ -8601,11 +8189,7 @@ A security analyst wants a query to run automatically every Monday at 06:00 and 
 
 Correct: Periodic scheduled query
 
-### D3 Content Optimization — 3.2 Data modeling
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 251
+##### Question 3
 
 Which XQL dataset would you query to retrieve VPN activity logs from GlobalProtect?
 
@@ -8616,7 +8200,7 @@ Which XQL dataset would you query to retrieve VPN activity logs from GlobalProte
 
 Correct: `vpn_logs`
 
-##### Question 252
+##### Question 4
 
 What distinguishes a story preset from a regular preset in Cortex XQL?
 
@@ -8627,7 +8211,7 @@ What distinguishes a story preset from a regular preset in Cortex XQL?
 
 Correct: Story presets organize fields into narratives that highlight event sequence and cause-and-effect relationships, while regular presets organize fields by general security categories.
 
-##### Question 253
+##### Question 5
 
 When using the Run option in Query Builder, what happens to the analyst's management console session while the query executes?
 
@@ -8638,11 +8222,7 @@ When using the Run option in Query Builder, what happens to the analyst's manage
 
 Correct: The analyst is blocked from navigating to other pages of the management console until the query completes.
 
-### D3 Content Optimization — 3.3 Detection rules (correlation/BIOC)
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 254
+##### Question 6
 
 An analyst is building a detection rule using XQL and wants to flag processes signed by "anydesk." Based on the source, which XQL stage would narrow the dataset to only process-start events where the vendor name contains "anydesk"?
 
@@ -8653,11 +8233,7 @@ An analyst is building a detection rule using XQL and wants to flag processes si
 
 Correct: `| filter event_type = ENUM.PROCESS and event_sub_type = ENUM.PROCESS_START and action_process_signature_vendor contains "anydesk"`
 
-### D3 Content Optimization — 3.3 Detection rules
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 255
+##### Question 7
 
 In the threat hunting workflow described in the source, after identifying suspicious events in the Query Builder, what is the intended next step before creating BIOCs?
 
@@ -8668,11 +8244,7 @@ In the threat hunting workflow described in the source, after identifying suspic
 
 Correct: Further inspect impacted resources and attributes using Causality and Timeline views.
 
-### D3 Content Optimization — 3.3 Detection rules; D2 Integration & Automation — 2.4 Automation workflow
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 256
+##### Question 8
 
 Which two use cases for XQL involve creating outputs that persist as ongoing monitoring mechanisms rather than one-time investigative searches? (Choose two.)
 
@@ -8684,11 +8256,11 @@ Which two use cases for XQL involve creating outputs that persist as ongoing mon
 
 Correct: Scheduled queries for ongoing data monitoring; Detection and correlation rules that trigger alerts
 
-### D3 Content Optimization — 3.3 Detection rules
+### Cortex: Malware Protection
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 257
+##### Question 1
 
 In the PE/DLL file examination flow, a file is signed by a vendor whose certificate appears on the Trusted Signer allow list. WildFire has returned a Malware verdict for that file's hash. What does the Cortex XDR agent do?
 
@@ -8699,11 +8271,7 @@ In the PE/DLL file examination flow, a file is signed by a vendor whose certific
 
 Correct: Allows the file to run because the Trusted Signer check occurs before the WildFire verdict check.
 
-### D3 Content Optimization — 3.4 Incident & alert layout
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 258
+##### Question 2
 
 An analyst notices that a file scanned by the periodic endpoint scan generated an issue with an empty "Initiated By" field and a medium severity. What explains this behavior?
 
@@ -8714,11 +8282,7 @@ An analyst notices that a file scanned by the periodic endpoint scan generated a
 
 Correct: The file was not executed; it was detected during a scan, so no initiating process exists.
 
-### D1 Planning & Installation — 1.4 Install agents/Broker VM
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 259
+##### Question 3
 
 Which malware protection module is NOT configured within a Malware profile?
 
@@ -8729,11 +8293,7 @@ Which malware protection module is NOT configured within a Malware profile?
 
 Correct: Execution Restrictions
 
-### D3 Content Optimization — 3.3 Detection rules
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 260
+##### Question 4
 
 Ransomware Protection uses decoy files to detect ransomware. In Report action mode, how often does the agent generate a security event for the same attacking process to prevent excessive logging?
 
@@ -8744,7 +8304,7 @@ Ransomware Protection uses decoy files to detect ransomware. In Report action mo
 
 Correct: Once per minute
 
-##### Question 261
+##### Question 5
 
 The Known Signers list differs from the Trusted Signers list in two important ways. Which answer correctly identifies both differences?
 
@@ -8755,11 +8315,7 @@ The Known Signers list differs from the Trusted Signers list in two important wa
 
 Correct: Known Signers is checked after WildFire and is maintained exclusively by Palo Alto Networks via content updates; Trusted Signers is checked before WildFire and can have custom entries added via a Malware profile.
 
-### D4 Maintenance & Troubleshooting — 4.1 Exceptions/exclusions
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 262
+##### Question 6
 
 When configuring a Malicious Child Process Protection exception, which three criteria can be specified to allow a specific parent–child process relationship? (Choose three.)
 
@@ -8771,11 +8327,7 @@ When configuring a Malicious Child Process Protection exception, which three cri
 
 Correct: Parent Process Name; Child Process Name; Child Process Command Line Parameters
 
-### D4 Maintenance & Troubleshooting — 4.4 Troubleshoot components
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 263
+##### Question 7
 
 When the Cortex XDR agent quarantines a malicious file, where are the quarantined files stored on the endpoint?
 
@@ -8786,11 +8338,7 @@ When the Cortex XDR agent quarantines a malicious file, where are the quarantine
 
 Correct: `%PROGRAMDATA%\Cyverai\QuarantineV2`
 
-### D3 Content Optimization — 3.3 Detection rules
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 264
+##### Question 8
 
 Behavioral Threat Protection (BTP) monitors a sequence of process operations over time. Which statement about how BTP matches activity to its ruleset is correct?
 
@@ -8801,11 +8349,11 @@ Behavioral Threat Protection (BTP) monitors a sequence of process operations ove
 
 Correct: BTP can match activity to a rule even if the operations are reordered, because operation order does not matter.
 
-### D2 Integration & Automation — 2.1 Onboard data sources
+### Cortex: Network Asset Discovery and Management
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 265
+##### Question 1
 
 What is the defining characteristic that classifies a network device as an "unmanaged asset" in Cortex?
 
@@ -8816,7 +8364,7 @@ What is the defining characteristic that classifies a network device as an "unma
 
 Correct: It is a network asset that does not have the Cortex XDR agent installed.
 
-##### Question 266
+##### Question 2
 
 When an administrator adds a new IP address range to the IP Address Ranges table, which two attributes are automatically populated for that range?
 
@@ -8827,11 +8375,7 @@ When an administrator adds a new IP address range to the IP Address Ranges table
 
 Correct: Active Assets and Active Managed Assets
 
-### D1 Planning & Installation — 1.4 Install agents/Broker VM
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 267
+##### Question 3
 
 An organization's security team wants the Broker VM Network Mapper to scan their internal network. What must be configured before the Network Mapper can be set up?
 
@@ -8842,11 +8386,7 @@ An organization's security team wants the Broker VM Network Mapper to scan their
 
 Correct: IP Address Ranges must first be defined in the management console.
 
-### D2 Integration & Automation — 2.1 Onboard data sources
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 268
+##### Question 4
 
 What is a key limitation of the standard Vulnerability Assessment for Windows endpoints compared to Linux?
 
@@ -8857,7 +8397,7 @@ What is a key limitation of the standard Vulnerability Assessment for Windows en
 
 Correct: Standard VA on Windows only scans the operating system kernel, not installed applications.
 
-##### Question 269
+##### Question 5
 
 The Enhanced Vulnerability Assessment feature extends CVE detection to installed applications on Windows. Which platforms support this Enhanced VA mode?
 
@@ -8868,11 +8408,7 @@ The Enhanced Vulnerability Assessment feature extends CVE detection to installed
 
 Correct: Windows and macOS only
 
-### D4 Maintenance & Troubleshooting — 4.3 Troubleshoot data management
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 270
+##### Question 6
 
 How often does the Cortex Vulnerability Assessment correlate CVE databases with the application and OS kernel patch list to detect new vulnerabilities?
 
@@ -8883,11 +8419,7 @@ How often does the Cortex Vulnerability Assessment correlate CVE databases with 
 
 Correct: Every four hours
 
-### D1 Planning & Installation — 1.4 Install agents/Broker VM
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 271
+##### Question 7
 
 Which automated log source used for network asset discovery requires explicit configuration and enablement before it can contribute to node discovery?
 
@@ -8898,11 +8430,7 @@ Which automated log source used for network asset discovery requires explicit co
 
 Correct: Broker VM Network Mapper
 
-### D1 Planning & Installation — 1.5 Roles/permissions/access
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 272
+##### Question 8
 
 To access the Vulnerability Management pages (including Vulnerability Issues and Vulnerable Assets), where should an administrator navigate in the management console?
 
@@ -8913,11 +8441,11 @@ To access the Vulnerability Management pages (including Vulnerability Issues and
 
 Correct: Posture Management > Vulnerability Management
 
-### D3 Content Optimization — 3.4 Incident & alert layout
+### Cortex: Profiles, Policy Rules, and Optimization
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 273
+##### Question 1
 
 A security engineer creates a custom prevention profile and attaches it to an active policy rule. They later need to remove it. Which statement correctly describes what is and is not permitted?
 
@@ -8928,11 +8456,7 @@ A security engineer creates a custom prevention profile and attaches it to an ac
 
 Correct: The profile can be edited but cannot be deleted while it is attached to a policy rule.
 
-### D3 Content Optimization — 3.3 Detection rules
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 274
+##### Question 2
 
 In the Action Mode table for Restrictions profiles, which mode allows a file to execute, notifies the user, AND reports the event to Cortex?
 
@@ -8943,11 +8467,7 @@ In the Action Mode table for Restrictions profiles, which mode allows a file to 
 
 Correct: Notify
 
-### D4 Maintenance & Troubleshooting — 4.1 Exceptions/exclusions
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 275
+##### Question 3
 
 An analyst wants to exclude a single process from being terminated by BTP while still generating issues when that process is part of a malicious causality chain. Which mechanism achieves this?
 
@@ -8958,11 +8478,7 @@ An analyst wants to exclude a single process from being terminated by BTP while 
 
 Correct: Add the process file path or name to the Files/Folders in Allow List within the BTP module settings.
 
-### D1 Planning & Installation — 1.5 Roles/permissions/access
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 276
+##### Question 4
 
 Which Agent Settings profile section would an administrator configure to prevent unauthorized personnel from uninstalling the Cortex XDR agent?
 
@@ -8973,7 +8489,7 @@ Which Agent Settings profile section would an administrator configure to prevent
 
 Correct: Uninstall Password
 
-##### Question 277
+##### Question 5
 
 When Cortex evaluates prevention policy rules, which rule is applied to an endpoint?
 
@@ -8984,11 +8500,7 @@ When Cortex evaluates prevention policy rules, which rule is applied to an endpo
 
 Correct: The first rule in the top-down ordered list that matches the endpoint.
 
-### D3 Content Optimization — 3.3 Detection rules
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 278
+##### Question 6
 
 Which Restrictions profile configuration options are available for Windows only and are NOT available for macOS or Linux? (Choose two.)
 
@@ -9000,11 +8512,7 @@ Which Restrictions profile configuration options are available for Windows only 
 
 Correct: Executable Files; Removable Media Files
 
-### D4 Maintenance & Troubleshooting — 4.1 Exceptions/exclusions
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 279
+##### Question 7
 
 What distinguishes Global Exceptions from the Exceptions profile type?
 
@@ -9015,11 +8523,7 @@ What distinguishes Global Exceptions from the Exceptions profile type?
 
 Correct: Global Exceptions is applied universally to all endpoints without requiring a policy rule; the Exceptions profile applies only to endpoints whose policy includes it.
 
-### D4 Maintenance & Troubleshooting — 4.2 Software updates
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 280
+##### Question 8
 
 According to the best practices for optimizing a Cortex environment, which setting should be enabled in Agent Configurations to ensure the latest threat intelligence updates are applied, including minor content version releases?
 
@@ -9030,11 +8534,11 @@ According to the best practices for optimizing a Cortex environment, which setti
 
 Correct: Informative BTP Alerts and Enable Minor Content Version Updates
 
-### D2.4 Automation Workflow
+### Cortex: Response Actions
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 281
+##### Question 1
 
 Cortex uses WebSocket to deliver server-initiated actions to agents. What happens if the WebSocket session fails?
 
@@ -9045,7 +8549,7 @@ Cortex uses WebSocket to deliver server-initiated actions to agents. What happen
 
 Correct: The action is sent at the next agent HTTP heartbeat.
 
-##### Question 282
+##### Question 2
 
 An analyst right-clicks a completed quarantine entry in the Action Center and selects "Restore." What is the purpose of this follow-up action?
 
@@ -9056,11 +8560,7 @@ An analyst right-clicks a completed quarantine entry in the Action Center and se
 
 Correct: It moves the file from quarantine back to its original location on the endpoint.
 
-### D3.3 Detection Rules
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 283
+##### Question 3
 
 A security administrator wants to ensure that all hashes on the block list are enforced even on endpoints whose malware profile is set to Report mode. Which setting must be enabled?
 
@@ -9071,11 +8571,7 @@ A security administrator wants to ensure that all hashes on the block list are e
 
 Correct: Override Report Mode
 
-### D1.4 Install Agents/Broker VM/Engine
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 284
+##### Question 4
 
 Which two capabilities can be disabled on an endpoint using the "Disable Capabilities" option? (Choose two.)
 
@@ -9086,11 +8582,7 @@ Which two capabilities can be disabled on an endpoint using the "Disable Capabil
 
 Correct: Live Terminal; File Retrieval
 
-### D4.4 Troubleshoot Components
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 285
+##### Question 5
 
 An action appears in the All Actions table with the status "Completed with Partial Success." What does this status indicate?
 
@@ -9101,11 +8593,7 @@ An action appears in the All Actions table with the status "Completed with Parti
 
 Correct: The action was successfully completed on some endpoints but has not yet run on the rest.
 
-### D2.4 Automation Workflow
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 286
+##### Question 6
 
 Within Live Terminal, which interface would an analyst use to suspend a suspicious running process on a connected endpoint?
 
@@ -9116,11 +8604,7 @@ Within Live Terminal, which interface would an analyst use to suspend a suspicio
 
 Correct: Task Manager
 
-### D1.5 Roles/Permissions/Access
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 287
+##### Question 7
 
 A Cortex XDR response action on a Linux endpoint is configured so that if the agent loses connection to the managing server for longer than a defined period, isolation is automatically canceled. Where is this setting configured?
 
@@ -9131,11 +8615,7 @@ A Cortex XDR response action on a Linux endpoint is configured so that if the ag
 
 Correct: Endpoints > Policy Management > Prevention > Profiles > Agent Settings (Linux)
 
-### D2.4 Automation Workflow
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 288
+##### Question 8
 
 The Files Retrieval action in the Action Center allows an analyst to download files from a targeted endpoint. What is the maximum number of files that can be downloaded from a single endpoint per action?
 
@@ -9146,7 +8626,11 @@ The Files Retrieval action in the Action Center allows an analyst to download fi
 
 Correct: 20
 
-##### Question 289
+### Cortex: Work Plan and Playbook Tasks
+
+#### Transcripts/_ALL_QUIZZES.json
+
+##### Question 1
 
 An analyst selects the "Follow" checkbox in the Work Plan view. What does this option do?
 
@@ -9157,7 +8641,7 @@ An analyst selects the "Follow" checkbox in the Work Plan view. What does this o
 
 Correct: It allows the analyst to observe the playbook running in real time.
 
-##### Question 290
+##### Question 2
 
 A playbook task displays a white diamond on a violet square icon. What type of task does this represent?
 
@@ -9168,11 +8652,7 @@ A playbook task displays a white diamond on a violet square icon. What type of t
 
 Correct: Conditional Task used as a decision tree in the playbook flow
 
-### D4.4 Troubleshoot Components
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 291
+##### Question 3
 
 A playbook fails because a third-party threat intelligence API temporarily exceeded its rate limit. After the service recovers, which Work Plan option should the analyst use to resume without losing previously completed task results?
 
@@ -9183,7 +8663,7 @@ A playbook fails because a third-party threat intelligence API temporarily excee
 
 Correct: Run Again rerun the currently assigned playbook
 
-##### Question 292
+##### Question 4
 
 When a playbook analyst needs to run the `!getInvPlaybookMetaData` command to troubleshoot performance, where must this command be entered?
 
@@ -9194,11 +8674,7 @@ When a playbook analyst needs to run the `!getInvPlaybookMetaData` command to tr
 
 Correct: The Case War Room
 
-### D2.4 Automation Workflow
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 293
+##### Question 5
 
 An organization wants to collect data from external users through a survey embedded in a playbook, without requiring those recipients to authenticate. Which task type supports this use case?
 
@@ -9209,7 +8685,7 @@ An organization wants to collect data from external users through a survey embed
 
 Correct: Data Collection Task
 
-##### Question 294
+##### Question 6
 
 Which indicator extraction mode makes extracted data available within the issue context but NOT immediately usable as task inputs or outputs during execution?
 
@@ -9220,7 +8696,7 @@ Which indicator extraction mode makes extracted data available within the issue 
 
 Correct: Out-of-Band extraction runs asynchronously in parallel with other actions
 
-##### Question 295
+##### Question 7
 
 A playbook developer wants to convert a date field from a non-Unix timestamp format to Unix format before passing it to the next task. Which Cortex feature handles this transformation?
 
@@ -9231,7 +8707,7 @@ A playbook developer wants to convert a date field from a non-Unix timestamp for
 
 Correct: Transformers convert or render values, including date format conversions
 
-##### Question 296
+##### Question 8
 
 The default indicator extraction mode for Tasks (applied to task results) differs from the default for Case Creation. What are these two defaults, respectively?
 
@@ -9242,11 +8718,11 @@ The default indicator extraction mode for Tasks (applied to task results) differ
 
 Correct: Tasks: None; Case Creation: Inline
 
-### D3.4 Incident & Alert Layout
+### Cortex: Working with Cases
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 297
+##### Question 1
 
 Cortex automatically binds a newly arrived issue to an existing case using a four-step process. What happens in step 3 ("Bind") if a matching case IS found?
 
@@ -9257,7 +8733,7 @@ Cortex automatically binds a newly arrived issue to an existing case using a fou
 
 Correct: The issue's cyber attributes are averaged with the case's existing cyber attributes and the issue is linked to the matching case.
 
-##### Question 298
+##### Question 2
 
 Which severity levels of issues can trigger the creation of a new Cortex case? (Choose two.)
 
@@ -9268,7 +8744,7 @@ Which severity levels of issues can trigger the creation of a new Cortex case? (
 
 Correct: Low (from analytics detectors with an exception); Medium
 
-##### Question 299
+##### Question 3
 
 An analyst notices that a case has the same Case ID (2594) associated with two different Issue IDs. What explains this grouping?
 
@@ -9279,7 +8755,7 @@ An analyst notices that a case has the same Case ID (2594) associated with two d
 
 Correct: Cortex detected that both issues share cyber attributessuch as the same causality instance IDand bound them to the same case.
 
-##### Question 300
+##### Question 4
 
 The Issues & Insights tab displays issues in two sub-tables—Issues and Insights. How does Cortex differentiate which issues appear in each sub-table?
 
@@ -9290,7 +8766,7 @@ The Issues & Insights tab displays issues in two sub-tables—Issues and Insight
 
 Correct: Issues shows high and medium severity issues; Insights shows low and informational severity issues.
 
-##### Question 301
+##### Question 5
 
 A case has accumulated a very large number of issues—far more than other active cases. How does Cortex prevent this case from "starving" other cases of new issues?
 
@@ -9301,11 +8777,7 @@ A case has accumulated a very large number of issues—far more than other activ
 
 Correct: Cortex auto-limits the number of issues per case to a predefined threshold (1,000 issues).
 
-### D3.3 Detection Rules / Correlation
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 302
+##### Question 6
 
 SmartScore requires which prerequisite to be enabled in Cortex Settings before it can calculate case scores?
 
@@ -9316,7 +8788,7 @@ SmartScore requires which prerequisite to be enabled in Cortex Settings before i
 
 Correct: Cortex Analytics
 
-##### Question 303
+##### Question 7
 
 A scoring rule hierarchy has Root at the top. Rule10 (criteria: HOST=winpoint1, score=25) is a child of Root, and Rule11 (criteria: CATEGORY=Malware, score=10) is a child of Rule10. An incoming issue matches both rules. What is the total score applied to the issue?
 
@@ -9327,11 +8799,7 @@ A scoring rule hierarchy has Root at the top. Rule10 (criteria: HOST=winpoint1, 
 
 Correct: 35 both matching rules score the issue, and sub-rules are evaluated only if the parent matched
 
-### D3.4 Incident & Alert Layout
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 304
+##### Question 8
 
 An analyst wants to review the chronological sequence of when specific issues were added to a case and what actions were taken. Which tab in the case Details pane provides this view?
 
@@ -9342,11 +8810,11 @@ An analyst wants to review the chronological sequence of when specific issues we
 
 Correct: Timeline
 
-### D3.2 Data Modeling
+### Cortex: Working with Datasets
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 305
+##### Question 1
 
 A Cortex instance has 142 datasets. An XQL query is submitted with no explicit dataset stage. Against which dataset does the query execute?
 
@@ -9357,7 +8825,7 @@ A Cortex instance has 142 datasets. An XQL query is submitted with no explicit d
 
 Correct: The `xdr_data` dataset, the only one configured as Default Query Target by default
 
-##### Question 306
+##### Question 2
 
 A security engineer creates a dataset using an XQL query with a `target` stage that stores query results. What dataset type does Cortex assign to this dataset?
 
@@ -9368,11 +8836,7 @@ A security engineer creates a dataset using an XQL query with a `target` stage t
 
 Correct: User
 
-### D4.3 Troubleshoot Data Management
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 307
+##### Question 3
 
 An administrator attempts to delete a System dataset from the Datasets table. What will happen?
 
@@ -9383,11 +8847,7 @@ An administrator attempts to delete a System dataset from the Datasets table. Wh
 
 Correct: The delete action is not available for System datasets it does not appear in the right-click menu.
 
-### D2.1 Onboard Data Sources
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 308
+##### Question 4
 
 Which file formats can be uploaded to Cortex as Lookup datasets? (Choose two.)
 
@@ -9398,11 +8858,7 @@ Which file formats can be uploaded to Cortex as Lookup datasets? (Choose two.)
 
 Correct: CSV; JSON
 
-### D1.5 Roles/Permissions/Access
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 309
+##### Question 5
 
 A Cortex administrator wants to restrict a custom role so that analysts with that role can only query a specific subset of datasets. What must the administrator do first before selecting individual datasets for that role?
 
@@ -9413,11 +8869,7 @@ A Cortex administrator wants to restrict a custom role so that analysts with tha
 
 Correct: Enable the "Enable dataset access management" toggle within the Datasets tab of the role configuration.
 
-### D3.1 Parsing
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 310
+##### Question 6
 
 A Cortex engineer wants to test what a new parsing rule will do to incoming data before committing it to production. Which tool on the Parsing Rules page enables this pre-deployment evaluation?
 
@@ -9428,11 +8880,7 @@ A Cortex engineer wants to test what a new parsing rule will do to incoming data
 
 Correct: The Simulate section, which generates log output based on selected vendor-associated logs
 
-### D1.4 Install Agents/Broker VM/Engine
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 311
+##### Question 7
 
 A raw dataset named `panw_network_mapper_raw` appears in the Datasets table. Which component generates data for this specific dataset?
 
@@ -9443,11 +8891,7 @@ A raw dataset named `panw_network_mapper_raw` appears in the Datasets table. Whi
 
 Correct: The Broker VM Network Mapper application
 
-### D4.3 Troubleshoot Data Management
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 312
+##### Question 8
 
 A compliance officer needs long-term log storage for audit purposes and wants to minimize cost. The logs do not need to be fully searchable, but must still be queryable. Which Cortex storage type meets these requirements?
 
@@ -9458,11 +8902,11 @@ A compliance officer needs long-term log storage for audit purposes and wants to
 
 Correct: Cold Storage cheaper, still searchable but with limited search capabilities
 
-### D3.3 Detection Rules / Correlation
+### Cortex: Working with Domains
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 313
+##### Question 1
 
 SmartScore functionality is exclusively supported for cases within which Cortex domain?
 
@@ -9473,11 +8917,7 @@ SmartScore functionality is exclusively supported for cases within which Cortex 
 
 Correct: Security Domain
 
-### D4.1 Exceptions/Exclusions
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 314
+##### Question 2
 
 An organization creates a new Issue Starring rule and an Issue Exclusion rule, and the same incoming issue matches both rules. Which rule takes precedence?
 
@@ -9488,11 +8928,7 @@ An organization creates a new Issue Starring rule and an Issue Exclusion rule, a
 
 Correct: The Issue Exclusion rule takes precedence over the Issue Starring rule.
 
-### D3.4 Incident & Alert Layout
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 315
+##### Question 3
 
 A SOC engineer is creating a new Layout Rule and finds that an incoming issue does not match any of the 17 configured rules. What does Cortex do with this issue's layout?
 
@@ -9503,11 +8939,7 @@ A SOC engineer is creating a new Layout Rule and finds that an incoming issue do
 
 Correct: The issue is assigned the Default layout, which acts as a safety net for all unmatched issues.
 
-### D2.2 Automation & Feed Integrations
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 316
+##### Question 4
 
 An administrator is configuring notification forwarding and wants to send Management Audit Logs to an external syslog receiver. Which navigation path leads to the notification forwarding configuration in the Cortex console?
 
@@ -9518,11 +8950,7 @@ An administrator is configuring notification forwarding and wants to send Manage
 
 Correct: Settings > Configurations > General > Notifications
 
-### D1.5 Roles/Permissions/Access
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 317
+##### Question 5
 
 A Cortex administrator wants to create a custom domain. Before doing so, what does the documentation specifically recommend?
 
@@ -9533,11 +8961,7 @@ A Cortex administrator wants to create a custom domain. Before doing so, what do
 
 Correct: Review the built-in domain options first, as custom domains might not be supported by all content.
 
-### D2.3 Marketplace Content Packs
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 318
+##### Question 6
 
 Cortex Marketplace Packs, such as the "Core – Investigation and Response Pack," contain which types of domain-related content that can be implemented out of the box? (Choose two.)
 
@@ -9548,11 +8972,7 @@ Cortex Marketplace Packs, such as the "Core – Investigation and Response Pack,
 
 Correct: Playbook Triggers; Primary Playbooks
 
-### D3.4 Incident & Alert Layout
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 319
+##### Question 7
 
 An analyst is reviewing the Issues table filtered by Starred status. A star (★) icon appears next to an issue name. From which configuration area are the rules that produced this starring behavior managed?
 
@@ -9563,11 +8983,7 @@ An analyst is reviewing the Issues table filtered by Starred status. A star (★
 
 Correct: Cases and Issues > Case Configuration > Starred Issues
 
-### D1.5 Roles/Permissions/Access
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 320
+##### Question 8
 
 After an administrator assigns a management scope to a user under Scoped Based Access Control (SBAC), what changes about that user's access compared to the default behavior?
 
@@ -9578,11 +8994,11 @@ After an administrator assigns a management scope to a user under Scoped Based A
 
 Correct: The user can manage only the specific tags and their associated entities predefined within that scope, rather than all tags.
 
-### D3.3 Detection rules / alert layout
+### Cortex: Working with Issues
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 321
+##### Question 1
 
 Which issue-related object is described as "the process identified as root cause of an attack"?
 
@@ -9593,7 +9009,7 @@ Which issue-related object is described as "the process identified as root cause
 
 Correct: Causality Group Owner
 
-##### Question 322
+##### Question 2
 
 A stitched issue differs from a standard issue in which way?
 
@@ -9604,11 +9020,7 @@ A stitched issue differs from a standard issue in which way?
 
 Correct: It is automatically correlated with logs to provide better attack visibility.
 
-### D4.3 Troubleshoot data management
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 323
+##### Question 3
 
 When you need to view an issue's full attribute data in JSON format, which action do you use from the Issues table shortcut menu?
 
@@ -9619,11 +9031,7 @@ When you need to view an issue's full attribute data in JSON format, which actio
 
 Correct: Debug Issue
 
-### D3.4 Incident & alert layout
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 324
+##### Question 4
 
 An issue's External ID is hidden by default in the Issues table. Where must an analyst go to make that column visible?
 
@@ -9634,7 +9042,7 @@ An issue's External ID is hidden by default in the Issues table. Where must an a
 
 Correct: The Layout Manager
 
-##### Question 325
+##### Question 5
 
 Which two options are considered Featured Issue Fields in Cortex? (Choose two.)
 
@@ -9646,11 +9054,7 @@ Which two options are considered Featured Issue Fields in Cortex? (Choose two.)
 
 Correct: Host; User
 
-### D4.1 Exceptions / exclusions
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 326
+##### Question 6
 
 What happens when an issue matches both an exclusion rule and a starring rule simultaneously?
 
@@ -9661,11 +9065,7 @@ What happens when an issue matches both an exclusion rule and a starring rule si
 
 Correct: The exclusion rule takes precedence over the starring rule.
 
-### D4.4 Troubleshoot components
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 327
+##### Question 7
 
 Under the "Retrieve Additional Data" right-click option, which sub-option initiates retrieval of attack-related executables from an endpoint?
 
@@ -9676,11 +9076,7 @@ Under the "Retrieve Additional Data" right-click option, which sub-option initia
 
 Correct: Retrieve related files
 
-### D3.4 Incident & alert layout
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 328
+##### Question 8
 
 Under which navigation path do you create a new Issue Starring Configuration?
 
@@ -9691,11 +9087,11 @@ Under which navigation path do you create a new Issue Starring Configuration?
 
 Correct: Cases & Issues > Case Configuration > Starred Issues
 
-### D2.4 Automation workflow
+### Cortex: Working with Lists
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 329
+##### Question 1
 
 A Cortex list is described as a container for storing data. In which two places can lists be primarily accessed during a playbook? (Choose two.)
 
@@ -9706,11 +9102,7 @@ A Cortex list is described as a container for storing data. In which two places 
 
 Correct: Via the context button (double-curly brackets); Via the `${lists.<list_name>}` path
 
-### D2.2 Automation & feed integrations
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 330
+##### Question 2
 
 Which navigation path is used to create and manage lists in the Cortex console?
 
@@ -9721,11 +9113,7 @@ Which navigation path is used to create and manage lists in the Cortex console?
 
 Correct: Settings > Configurations > Object Setup > Lists
 
-### D2.4 Automation workflow
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 331
+##### Question 3
 
 An analyst wants to append a single new IP address to an existing list without overwriting the other entries. Which CLI command should they use?
 
@@ -9736,7 +9124,7 @@ An analyst wants to append a single new IP address to an existing list without o
 
 Correct: addToList
 
-##### Question 332
+##### Question 4
 
 Which command overwrites the entire content of an existing list with new data?
 
@@ -9747,7 +9135,7 @@ Which command overwrites the entire content of an existing list with new data?
 
 Correct: setList
 
-##### Question 333
+##### Question 5
 
 Which CLI command retrieves the content of a specified list when used in the War Room?
 
@@ -9758,7 +9146,7 @@ Which CLI command retrieves the content of a specified list when used in the War
 
 Correct: getList
 
-##### Question 334
+##### Question 6
 
 On the Lists page, which action uses the vertical ellipsis menu?
 
@@ -9769,7 +9157,7 @@ On the Lists page, which action uses the vertical ellipsis menu?
 
 Correct: Duplicating, downloading, or deleting the selected list
 
-##### Question 335
+##### Question 7
 
 Which content type is NOT listed as a supported format when creating a list in Cortex?
 
@@ -9780,11 +9168,7 @@ Which content type is NOT listed as a supported format when creating a list in C
 
 Correct: CSV
 
-### D2.2 Automation & feed integrations
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 336
+##### Question 8
 
 A security analyst wants to import threat feed data into a list for use in IOC identification during case investigations. Which use case from the source material best describes this scenario?
 
@@ -9795,11 +9179,11 @@ A security analyst wants to import threat feed data into a list for use in IOC i
 
 Correct: Import External Data into Lists
 
-### D3.1 Parsing / D3.2 Data modeling
+### Cortex XQL: Building Blocks
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 337
+##### Question 1
 
 Which XQL stage creates or updates variables and fields but does NOT filter rows?
 
@@ -9810,11 +9194,7 @@ Which XQL stage creates or updates variables and fields but does NOT filter rows
 
 Correct: alter
 
-### D3.2 Data modeling
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 338
+##### Question 2
 
 Consider the following query snippet. Why will it produce an error?
 
@@ -9825,7 +9205,7 @@ Consider the following query snippet. Why will it produce an error?
 
 Correct: The `filter` stage comes after the `comp` stage, violating stage ordering rules.
 
-##### Question 339
+##### Question 3
 
 The `fields` stage has a side effect beyond selecting output columns. What is it?
 
@@ -9836,11 +9216,7 @@ The `fields` stage has a side effect beyond selecting output columns. What is it
 
 Correct: It erases all fields and variables defined before it.
 
-### D3.1 Parsing / D3.2 Data modeling
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 340
+##### Question 4
 
 What does the following query return?
 
@@ -9851,11 +9227,7 @@ What does the following query return?
 
 Correct: The 10 agents with the highest count of FILE, NETWORK, or PROCESS events.
 
-### D3.2 Data modeling
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 341
+##### Question 5
 
 You want to set a 7-day lookback window for an XQL query. Which of the following is the correct and complete stage to use, and where must it be placed?
 
@@ -9866,7 +9238,7 @@ You want to set a 7-day lookback window for an XQL query. Which of the following
 
 Correct: `config timeframe = 7D` placed as the first stage, before `dataset`.
 
-##### Question 342
+##### Question 6
 
 In an XQL query, which stage is responsible for specifying the source of data to be queried?
 
@@ -9877,11 +9249,7 @@ In an XQL query, which stage is responsible for specifying the source of data to
 
 Correct: dataset
 
-### D3.1 Parsing / D3.2 Data modeling
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 343
+##### Question 7
 
 Which two aggregate functions are valid in the `comp` stage? (Choose two.)
 
@@ -9892,11 +9260,7 @@ Which two aggregate functions are valid in the `comp` stage? (Choose two.)
 
 Correct: count; avg
 
-### D3.2 Data modeling
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 344
+##### Question 8
 
 What is the correct XQL syntax to sort results by `agent_hostname` ascending and then by `_time` descending in the same sort stage?
 
@@ -9907,11 +9271,11 @@ What is the correct XQL syntax to sort results by `agent_hostname` ascending and
 
 Correct: `| sort asc agent_hostname, desc _time`
 
-### D3.2 Data modeling / D3.3 Detection rules
+### Cortex XQL: Call Function Usage
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 345
+##### Question 1
 
 What is the primary prerequisite for using the `call` stage in an active query?
 
@@ -9922,11 +9286,7 @@ What is the primary prerequisite for using the `call` stage in an active query?
 
 Correct: The referenced query must already exist in the Query Library.
 
-### D3.2 Data modeling
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 346
+##### Question 2
 
 Which of the following correctly describes the behavior of the `call` stage when executed?
 
@@ -9937,7 +9297,7 @@ Which of the following correctly describes the behavior of the `call` stage when
 
 Correct: It inserts the saved search query as if it were written in-line in the active query.
 
-##### Question 347
+##### Question 3
 
 Which of the following is the correct syntax when using a `call` stage inside a `join`?
 
@@ -9948,7 +9308,7 @@ Which of the following is the correct syntax when using a `call` stage inside a 
 
 Correct: `| join (call "30 day agent") as averager agent_id = averager.agent_id`
 
-##### Question 348
+##### Question 4
 
 In the 30-day rolling average example, where is the `call` stage used within the active query?
 
@@ -9959,7 +9319,7 @@ In the 30-day rolling average example, where is the `call` stage used within the
 
 Correct: After the first `comp` stage, inside a `join` stage to bring in the saved average data.
 
-##### Question 349
+##### Question 5
 
 Which three sections support using the `call` command in a `join` stage? (Choose three.)
 
@@ -9971,11 +9331,7 @@ Which three sections support using the `call` command in a `join` stage? (Choose
 
 Correct: CONST; INGEST; RULE
 
-### D3.3 Detection rules
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 350
+##### Question 6
 
 Which statement about using the `call` command with RULE sections is true?
 
@@ -9986,11 +9342,7 @@ Which statement about using the `call` command with RULE sections is true?
 
 Correct: You cannot call a RULE section from Default Rules within the User Defined Rules section.
 
-### D3.2 Data modeling
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 351
+##### Question 7
 
 The `call` stage is described as providing "flexibility that is not commonly associated with XQL." What specific capability does this refer to?
 
@@ -10001,7 +9353,7 @@ The `call` stage is described as providing "flexibility that is not commonly ass
 
 Correct: The ability to insert other queries with varying time frames into the current query.
 
-##### Question 352
+##### Question 8
 
 To save a query for use with the `call` stage, an analyst clicks "Save as" in the Query Builder. Which save destination must they select?
 
@@ -10012,7 +9364,11 @@ To save a query for use with the `call` stage, an analyst clicks "Save as" in th
 
 Correct: Query to Library
 
-##### Question 353
+### Cortex XQL: Data Types
+
+#### Transcripts/_ALL_QUIZZES.json
+
+##### Question 1
 
 XSIAM datasets are described as non-relational (NoSQL) databases. What is the direct consequence of this architecture for field design?
 
@@ -10023,7 +9379,7 @@ XSIAM datasets are described as non-relational (NoSQL) databases. What is the di
 
 Correct: Fields can contain multiple values and are therefore known as multivalued fields.
 
-##### Question 354
+##### Question 2
 
 A dataset schema table has a fixed column definition. Which two columns specifically indicate whether a field supports multiple values and what those values' data type is? (Choose two.)
 
@@ -10034,7 +9390,7 @@ A dataset schema table has a fixed column definition. Which two columns specific
 
 Correct: TYPE; IS ARRAY
 
-##### Question 355
+##### Question 3
 
 In XQL, the equal sign (=) serves two distinct purposes depending on the stage. Which pairing is correct?
 
@@ -10045,7 +9401,7 @@ In XQL, the equal sign (=) serves two distinct purposes depending on the stage. 
 
 Correct: `alter` stage: assignment; `filter` stage: comparison
 
-##### Question 356
+##### Question 4
 
 Which data type CANNOT be used on the left-hand side of an assignment in the `alter` stage?
 
@@ -10056,7 +9412,7 @@ Which data type CANNOT be used on the left-hand side of an assignment in the `al
 
 Correct: Enum
 
-##### Question 357
+##### Question 5
 
 Given the query below, how many columns appear in the result table? (Ignore automatically added columns like `_time`.)
 
@@ -10067,7 +9423,7 @@ Given the query below, how many columns appear in the result table? (Ignore auto
 
 Correct: 2
 
-##### Question 358
+##### Question 6
 
 Which value is the untyped constant in XQL?
 
@@ -10078,7 +9434,7 @@ Which value is the untyped constant in XQL?
 
 Correct: null
 
-##### Question 359
+##### Question 7
 
 An analyst writes the following filter expression. Which result does the XQL engine produce for each row evaluated?
 
@@ -10089,7 +9445,7 @@ An analyst writes the following filter expression. Which result does the XQL eng
 
 Correct: false for all rows, because 2+4=6 ≠ 5, so the entire `and` expression is false.
 
-##### Question 360
+##### Question 8
 
 Which two data types require special XQL functions rather than direct literal assignment to create new variables? (Choose two.)
 
@@ -10100,11 +9456,11 @@ Which two data types require special XQL functions rather than direct literal as
 
 Correct: Datetime; JSON
 
-### D3.2 Data Modeling
+### Cortex XQL: Dataset Joins
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 361
+##### Question 1
 
 In XQL join terminology, what is the "left set"?
 
@@ -10115,7 +9471,7 @@ In XQL join terminology, what is the "left set"?
 
 Correct: The intermediate result set produced by the main query up to (but not including) the join stage
 
-##### Question 362
+##### Question 2
 
 Which three clauses are **required** in a minimal XQL join stage? (Choose three)
 
@@ -10127,7 +9483,7 @@ Which three clauses are **required** in a minimal XQL join stage? (Choose three)
 
 Correct: An XQL query enclosed in parentheses; The `as` clause assigning an alias to the join result set; A Boolean match condition (join predicate)
 
-##### Question 363
+##### Question 3
 
 When `conflict_strategy` is set to `both` and both the main set and join set contain a field named `STATUS`, what appears in the combined result set?
 
@@ -10138,7 +9494,7 @@ When `conflict_strategy` is set to `both` and both the main set and join set con
 
 Correct: Both fields: `STATUS` from the main set and `JOIN(_STATUS)` from the join set
 
-##### Question 364
+##### Question 4
 
 If the `type` clause is omitted from an XQL join stage, which join type is applied by default?
 
@@ -10149,7 +9505,7 @@ If the `type` clause is omitted from an XQL join stage, which join type is appli
 
 Correct: Inner
 
-##### Question 365
+##### Question 5
 
 Given LT has 4 rows and RT has 3 rows, and the join condition is `RT2.R1 = L1`, how many rows does the following query return?
 
@@ -10160,11 +9516,7 @@ Given LT has 4 rows and RT has 3 rows, and the join condition is `RT2.R1 = L1`, 
 
 Correct: 4
 
-### D4.3 Troubleshoot Data Management
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 366
+##### Question 6
 
 Parsing rules are compiled on the Cortex XSIAM instance. After compilation, where are the parsing rules sent, and which components actually execute them?
 
@@ -10175,11 +9527,7 @@ Parsing rules are compiled on the Cortex XSIAM instance. After compilation, wher
 
 Correct: They are pushed to connected Broker VM and XDR Collector instances, which run them when logs are received
 
-### D3.2 Data Modeling
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 367
+##### Question 7
 
 In an XQL query, stages 5 and 6 appear after a join at stage 4. On which result set do stages 5 and 6 operate?
 
@@ -10190,7 +9538,7 @@ In an XQL query, stages 5 and 6 appear after a join at stage 4. On which result 
 
 Correct: On the merged (combined) result set produced when the join stage completed
 
-##### Question 368
+##### Question 8
 
 In XQL, when the default `conflict_strategy` applies and both the left and right result sets have a field named `HOST`, which field value appears in the combined output?
 
@@ -10201,7 +9549,11 @@ In XQL, when the default `conflict_strategy` applies and both the left and right
 
 Correct: The `HOST` value from the right (join) result set
 
-##### Question 369
+### Cortex XQL: Functions
+
+#### Transcripts/_ALL_QUIZZES.json
+
+##### Question 1
 
 What is the return type of `arrayindex(ip_octets, 0)` when `ip_octets` is the result of `split("192.168.1.20", ".")`?
 
@@ -10212,7 +9564,7 @@ What is the return type of `arrayindex(ip_octets, 0)` when `ip_octets` is the re
 
 Correct: String
 
-##### Question 370
+##### Question 2
 
 Which stage command is **not** compatible with the `to_integer()` function?
 
@@ -10223,7 +9575,7 @@ Which stage command is **not** compatible with the `to_integer()` function?
 
 Correct: `comp`
 
-##### Question 371
+##### Question 3
 
 Which of the following calls to `arraycreate()` will produce a **runtime error**?
 
@@ -10234,7 +9586,7 @@ Which of the following calls to `arraycreate()` will produce a **runtime error**
 
 Correct: `alter ret = arraycreate(10, "20", "30")`
 
-##### Question 372
+##### Question 4
 
 An analyst writes the following XQL query. What value is assigned to `num`?
 
@@ -10245,11 +9597,7 @@ An analyst writes the following XQL query. What value is assigned to `num`?
 
 Correct: 2
 
-### D3.3 Detection Rules
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 373
+##### Question 5
 
 The `regextract()` function is called with the pattern `"a\db"` on the string `"a4b aaa aa5b ab9 ab4"`. Which result does the function return?
 
@@ -10260,7 +9608,7 @@ The `regextract()` function is called with the pattern `"a\db"` on the string `"
 
 Correct: An array containing `["a4b", "aa5b"]`
 
-##### Question 374
+##### Question 6
 
 What does the `if()` function return when its first argument evaluates to **false**?
 
@@ -10271,7 +9619,7 @@ What does the `if()` function return when its first argument evaluates to **fals
 
 Correct: The third argument
 
-##### Question 375
+##### Question 7
 
 Which XQL regular-expression library does Cortex XSIAM use, and what distinguishes it from most other regex libraries?
 
@@ -10282,11 +9630,7 @@ Which XQL regular-expression library does Cortex XSIAM use, and what distinguish
 
 Correct: RE2 it uses a finite-state machine (automata theory) rather than backtracking
 
-### D3.2 Data Modeling
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 376
+##### Question 8
 
 A `windowcomp` stage computes values over a group of rows and returns one result per row. Which of the following is listed in the source as a valid `windowcomp` function?
 
@@ -10297,7 +9641,11 @@ A `windowcomp` stage computes values over a group of rows and returns one result
 
 Correct: `rank`
 
-##### Question 377
+### Cortex XQL: JSON Object Manipulation
+
+#### Transcripts/_ALL_QUIZZES.json
+
+##### Question 1
 
 Given the JSON structure below, what value does `json_extract_scalar(root, "$.B.D[1].E")` return, and what is its XQL data type?
 
@@ -10308,7 +9656,7 @@ Given the JSON structure below, what value does `json_extract_scalar(root, "$.B.
 
 Correct: The string `"40"`
 
-##### Question 378
+##### Question 2
 
 Which XQL function must be applied to an XDR_DATA JSON field **before** using `json_extract_scalar()` on it?
 
@@ -10319,7 +9667,7 @@ Which XQL function must be applied to an XDR_DATA JSON field **before** using `j
 
 Correct: `to_json_string()`
 
-##### Question 379
+##### Question 3
 
 What is the key difference between JSONPath **dot notation** and **bracket notation** in XQL, as described in the source?
 
@@ -10330,7 +9678,7 @@ What is the key difference between JSONPath **dot notation** and **bracket notat
 
 Correct: Both notations are functionally equivalent and point to the same elements
 
-##### Question 380
+##### Question 4
 
 An analyst uses the syntactic sugar format to access a JSON array. Which of the following is the correct syntax to extract the entire array `F` from the `root` JSON object?
 
@@ -10341,7 +9689,7 @@ An analyst uses the syntactic sugar format to access a JSON array. Which of the 
 
 Correct: `root->B.F[]`
 
-##### Question 381
+##### Question 5
 
 What value does `root->B.F[1]` return for the following JSON object?
 
@@ -10352,7 +9700,7 @@ What value does `root->B.F[1]` return for the following JSON object?
 
 Correct: `60`
 
-##### Question 382
+##### Question 6
 
 Which XQL function should be used to access a **child JSON object** (an embedded JSON object within another JSON object)?
 
@@ -10363,7 +9711,7 @@ Which XQL function should be used to access a **child JSON object** (an embedded
 
 Correct: `json_extract()`
 
-##### Question 383
+##### Question 7
 
 A developer writes the following two alter stages. What is the value of `e1`?
 
@@ -10374,11 +9722,7 @@ A developer writes the following two alter stages. What is the value of `e1`?
 
 Correct: `30`
 
-### D4.3 Troubleshoot Data Management
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 384
+##### Question 8
 
 The source notes that importing a JSON file with a **null** type in the current version of XSIAM generates an error. What representation is preferred instead?
 
@@ -10389,11 +9733,11 @@ The source notes that importing a JSON file with a **null** type in the current 
 
 Correct: The string `"null"`
 
-### D3.2 Data Modeling
+### Cortex XQL: Operators
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 385
+##### Question 1
 
 An analyst writes the following XQL query. What does the query produce?
 
@@ -10404,7 +9748,7 @@ An analyst writes the following XQL query. What does the query produce?
 
 Correct: A runtime error
 
-##### Question 386
+##### Question 2
 
 In which **two** XQL query contexts does the `=` operator behave differently? (Choose two)
 
@@ -10415,11 +9759,7 @@ In which **two** XQL query contexts does the `=` operator behave differently? (C
 
 Correct: In the `alter` stage it acts as an assignment operator; In the `filter` stage it acts as a comparison operator returning Boolean
 
-### D3.3 Detection Rules
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 387
+##### Question 3
 
 An analyst wants to check whether the IP address `192.1.1.1` falls within the `/31` subnet. Based on the source example, what Boolean value does the following expression return?
 
@@ -10430,11 +9770,7 @@ An analyst wants to check whether the IP address `192.1.1.1` falls within the `/
 
 Correct: `true`
 
-### D3.2 Data Modeling
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 388
+##### Question 4
 
 An analyst creates the following query. What is the value of `bool1`?
 
@@ -10445,11 +9781,7 @@ An analyst creates the following query. What is the value of `bool1`?
 
 Correct: `true`
 
-### D3.3 Detection Rules
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 389
+##### Question 5
 
 What is the operand type accepted by the `incidr6` operator, and what does it test?
 
@@ -10460,7 +9792,7 @@ What is the operand type accepted by the `incidr6` operator, and what does it te
 
 Correct: An IPv6 address string it tests if the address is within an IPv6 CIDR range
 
-##### Question 390
+##### Question 6
 
 The `contains` operator is used in the following expression. What does `bool1` evaluate to?
 
@@ -10471,11 +9803,7 @@ The `contains` operator is used in the following expression. What does `bool1` e
 
 Correct: `true`
 
-### D3.2 Data Modeling
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 391
+##### Question 7
 
 Which operator category includes `incidr` and `not in`?
 
@@ -10486,7 +9814,7 @@ Which operator category includes `incidr` and `not in`?
 
 Correct: Range (membership) operators
 
-##### Question 392
+##### Question 8
 
 The `not` keyword is used in expressions like `not in`. According to the source, how is `not` classified in XQL?
 
@@ -10497,11 +9825,11 @@ The `not` keyword is used in expressions like `not in`. According to the source,
 
 Correct: A keyword that is not considered an operator by itself
 
-### D3.1 Parsing / D4.3 Troubleshoot Data Management
+### Cortex XQL: Parsing Rules
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 393
+##### Question 1
 
 How does a parsing rule differ from an XQL query in terms of its operational role within Cortex XSIAM?
 
@@ -10512,11 +9840,7 @@ How does a parsing rule differ from an XQL query in terms of its operational rol
 
 Correct: Parsing rules operate in the data-ingestion flow and prepare log rows for storage; they cannot query datasets
 
-### D3.1 Parsing
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 394
+##### Question 2
 
 What subset of XQL is used within parsing rules, and which four XQL stages does it support?
 
@@ -10527,7 +9851,7 @@ What subset of XQL is used within parsing rules, and which four XQL stages does 
 
 Correct: XQLP (XQL for Parsing) supports `fields`, `filter`, `join`, and `call`
 
-##### Question 395
+##### Question 3
 
 Palo Alto Networks recommends using parsing rules for **two specific purposes**. Which answer correctly identifies both?
 
@@ -10538,11 +9862,7 @@ Palo Alto Networks recommends using parsing rules for **two specific purposes**.
 
 Correct: Adding or normalizing timestamps and stripping invalid characters from logs
 
-### D4.3 Troubleshoot Data Management
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 396
+##### Question 4
 
 An administrator wants to view and edit **custom** parsing rules while simultaneously referencing the out-of-the-box default rules. Which tab on the Parsing Rules page should they use?
 
@@ -10553,11 +9873,7 @@ An administrator wants to view and edit **custom** parsing rules while simultane
 
 Correct: Both
 
-### D3.1 Parsing / D4.3 Troubleshoot Data Management
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 397
+##### Question 5
 
 In the INGEST section of a parsing rule, what does the `no_hit=drop` attribute instruct the system to do?
 
@@ -10568,11 +9884,7 @@ In the INGEST section of a parsing rule, what does the `no_hit=drop` attribute i
 
 Correct: Drop the raw log if a condition exists and the condition is not met
 
-### D4.3 Troubleshoot Data Management
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 398
+##### Question 6
 
 A parsing rule is visible on the Default Rules tab of the Parsing Rules page. Which statement about this rule is correct?
 
@@ -10583,11 +9895,7 @@ A parsing rule is visible on the Default Rules tab of the Parsing Rules page. Wh
 
 Correct: It can be overridden by a user-defined rule but cannot itself be edited
 
-### D3.1 Parsing / D4.3 Troubleshoot Data Management
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 399
+##### Question 7
 
 Why does Palo Alto Networks caution against using parsing rules to remove fields unless no other options are available?
 
@@ -10598,11 +9906,7 @@ Why does Palo Alto Networks caution against using parsing rules to remove fields
 
 Correct: Removing fields at parsing prevents them from ever being available and cannot be corrected retroactively
 
-### D4.3 Troubleshoot Data Management
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 400
+##### Question 8
 
 Parsing rules require the highest authorization levels to access in the management console. Which statement about the required roles is accurate?
 
@@ -10613,11 +9917,11 @@ Parsing rules require the highest authorization levels to access in the manageme
 
 Correct: Both Account Administrators and Instance Administrators have sufficient access
 
-### D3.5 Dashboards & Reports / XQL Visualization
+### Cortex XQL: Query Result Visualization
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 401
+##### Question 1
 
 The XQL Search page provides three display modes on the Query Results tab. Which three modes are available? (Choose three.)
 
@@ -10629,7 +9933,7 @@ The XQL Search page provides three display modes on the Query Results tab. Which
 
 Correct: Table; Graph; Advanced
 
-##### Question 402
+##### Question 2
 
 In the Advanced display mode, all fields except `_time` are combined into a single column. What is the exact name of that combined column?
 
@@ -10640,7 +9944,7 @@ In the Advanced display mode, all fields except `_time` are combined into a sing
 
 Correct: EVENT
 
-##### Question 403
+##### Question 3
 
 What is the primary benefit of using the Tree log format when analyzing XQL query results?
 
@@ -10651,7 +9955,7 @@ What is the primary benefit of using the Tree log format when analyzing XQL quer
 
 Correct: It lists each field on a separate line, avoiding the need to scroll left and right across many columns.
 
-##### Question 404
+##### Question 4
 
 When you copy an entire row from the **Advanced** display mode versus the **Table** display mode, what is the key structural difference in the pasted output?
 
@@ -10662,7 +9966,7 @@ When you copy an entire row from the **Advanced** display mode versus the **Tabl
 
 Correct: The Advanced mode paste embeds field names alongside field values separated by commas; the Table mode paste contains only field values separated by tabs.
 
-##### Question 405
+##### Question 5
 
 A security analyst needs to share XQL query results with a log-analysis platform that requires logs in JSON format with double-quoted field names and values. Which feature of the Query Results tab supports this requirement?
 
@@ -10673,7 +9977,7 @@ A security analyst needs to share XQL query results with a log-analysis platform
 
 Correct: The Expanded View dialog, which lets the analyst switch between JSON VIEW and TREE VIEW for any row
 
-##### Question 406
+##### Question 6
 
 In the Chart Editor's Graph mode, which two settings must be specified in the **DATA** section to define a chart? (Choose two.)
 
@@ -10684,7 +9988,7 @@ In the Chart Editor's Graph mode, which two settings must be specified in the **
 
 Correct: X-axis field; Y-axis field
 
-##### Question 407
+##### Question 7
 
 An analyst embeds the following stage at the end of an XQL query: `| view highlight fields = process values = "chrome", "explorer"`. What happens when the query is run, in addition to the highlighting effect?
 
@@ -10695,7 +9999,7 @@ An analyst embeds the following stage at the end of an XQL query: `| view highli
 
 Correct: The query automatically switches to the Graph display mode as well.
 
-##### Question 408
+##### Question 8
 
 When using the Fields pane to open a histogram for a selected field, which combination of column names will the histogram table always display?
 
@@ -10706,7 +10010,11 @@ When using the Fields pane to open a histogram for a selected field, which combi
 
 Correct: Value, Count, and Percentage
 
-##### Question 409
+### Cortex XQL: Syntax Basics
+
+#### Transcripts/_ALL_QUIZZES.json
+
+##### Question 1
 
 Which two language element categories, together with stages, make up XQL query syntax? (Choose two.)
 
@@ -10717,7 +10025,7 @@ Which two language element categories, together with stages, make up XQL query s
 
 Correct: Functions; Operators
 
-##### Question 410
+##### Question 2
 
 You omit the `dataset` stage entirely from an XQL query. What does the XQL query engine do?
 
@@ -10728,7 +10036,7 @@ You omit the `dataset` stage entirely from an XQL query. What does the XQL query
 
 Correct: It runs the query against the default dataset.
 
-##### Question 411
+##### Question 3
 
 In XQL, keyword case sensitivity follows which rule?
 
@@ -10739,7 +10047,7 @@ In XQL, keyword case sensitivity follows which rule?
 
 Correct: XQL language elements (stage names, etc.) are case insensitive, but string comparisons are case sensitive by default.
 
-##### Question 412
+##### Question 4
 
 A developer wants all subsequent string comparisons in an XQL query to ignore letter case. Which configuration is correct?
 
@@ -10750,7 +10058,7 @@ A developer wants all subsequent string comparisons in an XQL query to ignore le
 
 Correct: `config case_sensitive = false`
 
-##### Question 413
+##### Question 5
 
 Which two stages are described as the ones that can use functions for data transformations in XQL? (Choose two.)
 
@@ -10761,7 +10069,7 @@ Which two stages are described as the ones that can use functions for data trans
 
 Correct: filter; alter
 
-##### Question 414
+##### Question 6
 
 How does the XQL query compiler treat a non-periodic scheduled query?
 
@@ -10772,7 +10080,7 @@ How does the XQL query compiler treat a non-periodic scheduled query?
 
 Correct: It runs the query once at a single point in time.
 
-##### Question 415
+##### Question 7
 
 When using the **Run** option to execute an XQL query, what is the specific behavioral constraint imposed on the analyst?
 
@@ -10783,7 +10091,7 @@ When using the **Run** option to execute an XQL query, what is the specific beha
 
 Correct: The analyst cannot navigate to other pages of the management console until a result set is generated.
 
-##### Question 416
+##### Question 8
 
 Which option in the **Save As** menu allows an analyst to save an XQL query for use as a detection artifact that correlates events across a dataset?
 
@@ -10794,11 +10102,11 @@ Which option in the **Save As** menu allows an analyst to save an XQL query for 
 
 Correct: Correlation Rule
 
-### D1.1 Evaluate Infrastructure
+### Cortex XSIAM
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 417
+##### Question 1
 
 Cortex XSIAM is described as converging how many previously siloed security products into a single platform?
 
@@ -10809,7 +10117,7 @@ Cortex XSIAM is described as converging how many previously siloed security prod
 
 Correct: Eight
 
-##### Question 418
+##### Question 2
 
 Which four capabilities are explicitly identified in the source as part of Cortex XSIAM? (Choose four.)
 
@@ -10822,11 +10130,7 @@ Which four capabilities are explicitly identified in the source as part of Corte
 
 Correct: XDR; SIEM; CDR; SOAR
 
-### D1.4 Install Agents / Broker VM / Engine
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 419
+##### Question 3
 
 In the Cortex XSIAM architecture, which method is used to collect third-party data from sources that do not have a native Cortex agent?
 
@@ -10837,11 +10141,7 @@ In the Cortex XSIAM architecture, which method is used to collect third-party da
 
 Correct: Broker VM, XDR collector, or HTTP collector
 
-### D1.1 Evaluate Infrastructure
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 420
+##### Question 4
 
 According to the XSIAM architecture diagram described in the source, which two components are explicitly labeled as XSIAM add-ons rather than core platform components? (Choose two.)
 
@@ -10852,7 +10152,7 @@ According to the XSIAM architecture diagram described in the source, which two c
 
 Correct: Threat Intel Management; Attack Surface Management
 
-##### Question 421
+##### Question 5
 
 The source contrasts an "inefficient" SOC model with an "efficient" one using an inverted pyramid diagram. In the efficient model, which layer forms the largest base of the pyramid?
 
@@ -10863,7 +10163,7 @@ The source contrasts an "inefficient" SOC model with an "efficient" one using an
 
 Correct: Automation
 
-##### Question 422
+##### Question 6
 
 What two primary capabilities of a traditional SIEM are identified in the source's knowledge check? (Choose two.)
 
@@ -10874,7 +10174,7 @@ What two primary capabilities of a traditional SIEM are identified in the source
 
 Correct: Event correlation; Security monitoring
 
-##### Question 423
+##### Question 7
 
 Which two statements about Cortex XSIAM are marked as correct descriptions of the platform in the source's knowledge check? (Choose two.)
 
@@ -10885,7 +10185,7 @@ Which two statements about Cortex XSIAM are marked as correct descriptions of th
 
 Correct: An AI-driven security operations platform; An autonomous SIEM and XDR
 
-##### Question 424
+##### Question 8
 
 According to the source, which challenge is often specifically associated with a traditional SIEM?
 
@@ -10896,11 +10196,11 @@ According to the source, which challenge is often specifically associated with a
 
 Correct: It displays a large number of false positives
 
-### D1.4 Install Agents / Broker VM / Engine
+### Cortex XSIAM: Broker VM Management
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 425
+##### Question 1
 
 An administrator needs to open the Broker VM Configurations page for a specific Broker VM instance. What is the correct action sequence from the Broker VMs table?
 
@@ -10911,11 +10211,7 @@ An administrator needs to open the Broker VM Configurations page for a specific 
 
 Correct: Right-click the Broker VM instance and select Configure.
 
-### D4.4 Troubleshoot Components
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 426
+##### Question 2
 
 A Broker VM administrator is reviewing configuration details but the Broker VM is currently not connected to Cortex XSIAM. What limitation applies?
 
@@ -10926,11 +10222,7 @@ A Broker VM administrator is reviewing configuration details but the Broker VM i
 
 Correct: Configuration details can be viewed but not edited while the Broker VM is disconnected.
 
-### D1.4 Install Agents / Broker VM / Engine
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 427
+##### Question 3
 
 Which proxy protocols does the source identify as supported for Broker VM proxy server communication? (Choose three.)
 
@@ -10942,11 +10234,7 @@ Which proxy protocols does the source identify as supported for Broker VM proxy 
 
 Correct: HTTP; SOCKS4; SOCKS5
 
-### D4.2 Software Updates / Broker VM
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 428
+##### Question 4
 
 When configuring Auto Upgrade for a Broker VM, what is the minimum required time window that must be specified for auto upgrade windows?
 
@@ -10957,11 +10245,7 @@ When configuring Auto Upgrade for a Broker VM, what is the minimum required time
 
 Correct: Four hours
 
-### D4.4 Troubleshoot Components
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 429
+##### Question 5
 
 To enable local monitoring of a Broker VM and retrieve usage statistics in Prometheus metrics format, which URL format must be accessed?
 
@@ -10972,7 +10256,7 @@ To enable local monitoring of a Broker VM and retrieve usage statistics in Prome
 
 Correct: `http://<broker_vm_address>:9100/metrics/`
 
-##### Question 430
+##### Question 6
 
 After triggering the "Generate New Logs" action on a Broker VM, what file format are the downloaded logs delivered in?
 
@@ -10983,7 +10267,7 @@ After triggering the "Generate New Logs" action on a Broker VM, what file format
 
 Correct: Tarball (.gz)
 
-##### Question 431
+##### Question 7
 
 Which log folder within a downloaded Broker VM log archive contains the Syslog Collector applet logs?
 
@@ -10994,11 +10278,7 @@ Which log folder within a downloaded Broker VM log archive contains the Syslog C
 
 Correct: logs
 
-### D1.4 Install Agents / Broker VM / Engine
-
-#### Transcripts/_ALL_QUIZZES.json
-
-##### Question 432
+##### Question 8
 
 To configure SSH access to a Broker VM, which role permission is required, and what authentication mechanism is used?
 
@@ -11009,11 +10289,11 @@ To configure SSH access to a Broker VM, which role permission is required, and w
 
 Correct: Instance Administrator role; RSA public key
 
-### D2.4 Automation Workflow
+### Cortex XSIAM: Cortex Copilot
 
 #### Transcripts/_ALL_QUIZZES.json
 
-##### Question 433
+##### Question 1
 
 What is the key architectural advantage that Cortex Copilot has over a standalone large language model (LLM) security assistant?
 
@@ -11024,7 +10304,7 @@ What is the key architectural advantage that Cortex Copilot has over a standalon
 
 Correct: Cortex Copilot is directly linked to the Cortex XSIAM backend, enabling it to access real data, take actions, and submit support cases.
 
-##### Question 434
+##### Question 2
 
 Which license tier is the minimum required to access Cortex Copilot features?
 
@@ -11035,7 +10315,7 @@ Which license tier is the minimum required to access Cortex Copilot features?
 
 Correct: XSIAM Enterprise
 
-##### Question 435
+##### Question 3
 
 In an unsupported region, which Cortex Copilot feature is **disabled** by default — while all other Copilot chat features remain enabled by default?
 
@@ -11046,7 +10326,7 @@ In an unsupported region, which Cortex Copilot feature is **disabled** by defaul
 
 Correct: Chat-based Help Center access
 
-##### Question 436
+##### Question 4
 
 A user in an unsupported region enables Cortex Copilot's Help Center features. What does the source state about where Help Center prompts may be processed?
 
@@ -11057,7 +10337,7 @@ A user in an unsupported region enables Cortex Copilot's Help Center features. W
 
 Correct: Help Center prompts may be calculated on systems outside the user's region.
 
-##### Question 437
+##### Question 5
 
 Cortex Copilot's Responsible AI design requires user confirmation before executing certain actions. What is the other constraint that governs which actions Copilot will execute on behalf of a user?
 
@@ -11068,7 +10348,7 @@ Cortex Copilot's Responsible AI design requires user confirmation before executi
 
 Correct: The user must have the XSIAM Role-Based Access Control (RBAC) permissions to perform the action.
 
-##### Question 438
+##### Question 6
 
 Regarding Cortex Copilot's privacy design, which statement correctly describes how customer data and training are handled?
 
@@ -11079,7 +10359,7 @@ Regarding Cortex Copilot's privacy design, which statement correctly describes h
 
 Correct: No customer data is used to train the Cortex Copilot model; only the user's prompts are sent to Copilot.
 
-##### Question 439
+##### Question 7
 
 An analyst highlights an IP address in the XSIAM interface and presses the Cortex Copilot hotkey. What happens?
 
@@ -11090,7 +10370,7 @@ An analyst highlights an IP address in the XSIAM interface and presses the Corte
 
 Correct: The highlighted IP address is entered into a Cortex Copilot chat prompt.
 
-##### Question 440
+##### Question 8
 
 When a user provides "thumbs up" or "thumbs down" feedback on a Cortex Copilot response, what purpose does this feedback serve according to the source?
 

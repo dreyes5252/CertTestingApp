@@ -6,7 +6,7 @@ This folder contains a local Cortex XSIAM practice quiz app built from copied qu
 
 - `Questions/` contains category folders such as `Automation`, `CaseManagement`, `PlatformManagement`, and `Querying`.
 - `GeneratedQuestions/` can contain reviewed JSON questions generated from lesson material.
-- `Transcripts/_ALL_QUIZZES.json` contains the combined transcript quiz export used for the `Transcript Quizzes` source module.
+- `Transcripts/_ALL_QUIZZES.json` contains the combined transcript quiz export. Transcript questions stay in the `Transcript Quizzes` source module, and each question's `topic` value is used as its app category.
 - `Transcripts/Cortex XSIAM training material/output/` contains structured lesson transcripts and review notes that may be used to generate future questions.
 - `scripts/build_question_bank.py` parses questionnaire text files, generated lesson question JSON, and transcript quiz JSON.
 - `data/questions.json` is generated data consumed by the browser app.
@@ -17,7 +17,7 @@ This folder contains a local Cortex XSIAM practice quiz app built from copied qu
 
 - `Quiz Bank` is for copied quiz-export questions from `Questions/`.
 - `Training Lessons` is for reviewed questions generated from lesson material under `GeneratedQuestions/`.
-- `Transcript Quizzes` is for converted questions from `Transcripts/_ALL_QUIZZES.json`.
+- `Transcript Quizzes` is for converted questions from `Transcripts/_ALL_QUIZZES.json`; each transcript question's `topic` value is used as the category.
 
 The app's **Question Source** dropdown is driven by the generated `modules` list in `data/questions.json`. Add or modify source data through the builder rather than hand-editing the generated JSON.
 
@@ -28,7 +28,7 @@ The app's **Question Source** dropdown is driven by the generated `modules` list
 - Regenerate `data/questions.json` after questionnaire, generated-question, or transcript-quiz changes.
 - Preserve category names from `Questions/` subfolders so score reporting can show category performance.
 - Keep copied quiz-export questions in the `Quiz Bank` module, generated lesson questions in `Training Lessons`, and transcript quiz imports in `Transcript Quizzes`.
-- For transcript imports, use the transcript domain label as the app category when available.
+- For transcript imports, use the transcript `topic` field as the app category.
 - Keep the app static and dependency-free unless there is a clear reason to add a framework.
 - Run project commands from Ubuntu WSL to avoid local Windows execution restrictions.
 - Do not commit secrets, private notes, or unrelated workspace artifacts.
